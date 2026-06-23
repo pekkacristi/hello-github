@@ -1,0 +1,25 @@
+[1mdiff --cc README.md[m
+[1mindex e6c6245,a9ecf29..0000000[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@@ -1,14 -1,2 +1,18 @@@[m
+  # hello-github[m
+[31m -i will make a pull request[m
+[32m++<<<<<<< HEAD[m
+[32m +A practice repo where I learned Git and Github[m
+[32m +[m
+[32m +## What it does[m
+[32m +Tracks my notes while I figured out version control - commits, branches, and merges.[m
+[32m +[m
+[32m +## How to run it[m
+[32m +git clone https://github.com/your-username/hello-github.git[m
+[32m +[m
+[32m +## Example[m
+[32m +!(image.png)[m
+[32m +[m
+[32m +## Tech used[m
+[31m- Git, Github, Markdown[m
+[32m++Git, Github, Markdown[m
+[32m++=======[m
+[32m++i will make a pull request[m
+[32m++>>>>>>> 0f99a1fc926994c7d091f681ef2cb0206d541e2d[m
