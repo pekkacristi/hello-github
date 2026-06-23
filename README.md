@@ -9,7 +9,8 @@ Tracks my notes while I figured out version control - commits, branches, and mer
 git clone https://github.com/your-username/hello-github.git
 
 ## Example
-!(image.png)
+<img width="1146" height="512" alt="Screenshot 2026-06-23 161657" src="https://github.com/user-attachments/assets/a5b29564-7d4c-4fe9-88bb-d046e35b88a9" />
+
 
 ## Tech used
 Git, Github, Markdown
