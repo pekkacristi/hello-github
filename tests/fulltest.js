@@ -455,6 +455,7 @@ async function T6(browser) {
         if (wl === dl) problems.push(`${p.category}: decoy equals word (${w})`);
         const hint = String(e.h || '').replace(/^(a|an|the)\s+/i, '').trim();
         if (!hint) problems.push(`${p.category}: ${w} has no hint`);
+        else if (String(e.h).trim().split(/\s+/).length > 3) problems.push(`${p.category}: ${w} hint "${e.h}" is longer than three words`);
         else if (hint.toLowerCase() === p.category.toLowerCase()) problems.push(`${p.category}: ${w} hint is just the category`);
         if (wl.includes(dl) || dl.includes(wl)) problems.push(`${p.category}: containment ${w}/${d}`);
         if (seen.has(wl)) problems.push(`${p.category}: duplicate secret word ${w}`);
