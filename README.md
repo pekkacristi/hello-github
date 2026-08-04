@@ -22,7 +22,7 @@ No build, no install — it's a single static page:
 4. **The twist** — a caught imposter can still steal points by guessing the secret word from 8 options.
 
 ### ✨ Features
-- **3 imposter modes:** Classic (imposter knows nothing), Hint (imposter gets a clue word about the secret word — Pokemon hints "Nintendo", enough to bluff with but not to know it), and **Decoy** — the imposter gets a similar-but-wrong word and doesn't even know they're the imposter!
+- **3 imposter modes:** Classic (imposter knows nothing), Hint (imposter sees the category **and** a clue word — "🎬 Movies & TV / something to do with a costumed crimefighter" fits Spider-Man, Batman and Superman alike: enough to bluff with, never enough to know), and **Decoy** — the imposter gets a similar-but-wrong word and doesn't even know they're the imposter!
 - 16 categories × 45 words = 720 entries, each with its own decoy and hint. Every secret word is unique across the whole game, with no near-duplicates, and vetted to be recognisable worldwide — not regional trivia (food, animals, movies, sports, video games, history & mythology, fictional characters, countries & cities, technology…)
 - 3–20 players, 1–3 imposters for bigger groups, discussion timer, score tracking across rounds with a final podium 🏆
 - Words never repeat until every selected category is exhausted; players, settings & scores are remembered between sessions

@@ -405,7 +405,13 @@ $('btn-im-ready').addEventListener('click', () => {
     $('secret-category').textContent = '🚨 You are the';
     $('secret-word').textContent = 'Imposter';
     if (S.settings.mode === 'hint') {
-      $('secret-sub').innerHTML = `💡 Hint: it has something to do with<br><b class="hint-word">${esc(g.hint)}</b>`;
+      // two hints together: the category (what the app in the video gives you)
+      // plus a clue word about the word itself — broad enough that several
+      // words in the category still fit
+      $('secret-sub').innerHTML =
+        `<span class="hint-cat">${g.emoji} ${esc(g.category)}</span>` +
+        `<span class="hint-line">💡 something to do with</span>` +
+        `<b class="hint-word">${esc(g.hint)}</b>`;
     } else {
       $('secret-sub').textContent = 'You don’t know the word. Fake it!';
     }
