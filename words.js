@@ -1,4 +1,4 @@
-// Word packs for Imposter Who? — {w: secret word, d: decoy for Decoy mode}
+// Word packs for Imposter Who? — {w: secret word, d: decoy (Decoy mode), h: hint (Hint mode)}
 const WORD_PACKS = [
  {
   "category": "Food & Drink",
@@ -6,183 +6,228 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "Pizza",
-    "d": "Lasagna"
+    "d": "Lasagna",
+    "h": "Italian food"
    },
    {
     "w": "Sushi",
-    "d": "Poke Bowl"
+    "d": "Poke Bowl",
+    "h": "Japanese cuisine"
    },
    {
     "w": "Hamburger",
-    "d": "Hot Dog"
+    "d": "Hot Dog",
+    "h": "American fast food"
    },
    {
     "w": "Espresso",
-    "d": "Cappuccino"
+    "d": "Cappuccino",
+    "h": "a cafe"
    },
    {
     "w": "Pancakes",
-    "d": "Waffles"
+    "d": "Waffles",
+    "h": "breakfast"
    },
    {
     "w": "Ice Cream",
-    "d": "Frozen Yogurt"
+    "d": "Frozen Yogurt",
+    "h": "frozen treats"
    },
    {
     "w": "Tacos",
-    "d": "Burrito"
+    "d": "Burrito",
+    "h": "Mexican food"
    },
    {
     "w": "Spaghetti",
-    "d": "Ramen"
+    "d": "Ramen",
+    "h": "Italian dinners"
    },
    {
     "w": "French Fries",
-    "d": "Onion Rings"
+    "d": "Onion Rings",
+    "h": "a drive-thru"
    },
    {
     "w": "Chocolate Cake",
-    "d": "Brownie"
+    "d": "Brownie",
+    "h": "birthday parties"
    },
    {
     "w": "Orange Juice",
-    "d": "Lemonade"
+    "d": "Lemonade",
+    "h": "breakfast drinks"
    },
    {
     "w": "Popcorn",
-    "d": "Nachos"
+    "d": "Nachos",
+    "h": "movie theaters"
    },
    {
     "w": "Donut",
-    "d": "Bagel"
+    "d": "Bagel",
+    "h": "a bakery case"
    },
    {
     "w": "Fried Chicken",
-    "d": "Chicken Nuggets"
+    "d": "Chicken Nuggets",
+    "h": "Southern cooking"
    },
    {
     "w": "Croissant",
-    "d": "Pretzel"
+    "d": "Pretzel",
+    "h": "French bakeries"
    },
    {
     "w": "Smoothie",
-    "d": "Milkshake"
+    "d": "Milkshake",
+    "h": "a blender"
    },
    {
     "w": "Cereal",
-    "d": "Oatmeal"
+    "d": "Oatmeal",
+    "h": "a breakfast bowl"
    },
    {
     "w": "Grilled Cheese",
-    "d": "Quesadilla"
+    "d": "Quesadilla",
+    "h": "a frying pan"
    },
    {
     "w": "Cupcake",
-    "d": "Muffin"
+    "d": "Muffin",
+    "h": "party desserts"
    },
    {
     "w": "Hot Chocolate",
-    "d": "Mocha"
+    "d": "Mocha",
+    "h": "winter drinks"
    },
    {
     "w": "Watermelon",
-    "d": "Cantaloupe"
+    "d": "Cantaloupe",
+    "h": "summer picnics"
    },
    {
     "w": "Peanut Butter",
-    "d": "Nutella"
+    "d": "Nutella",
+    "h": "lunchboxes"
    },
    {
     "w": "Salad",
-    "d": "Coleslaw"
+    "d": "Coleslaw",
+    "h": "healthy eating"
    },
    {
     "w": "Steak",
-    "d": "Pork Chop"
+    "d": "Pork Chop",
+    "h": "a grill"
    },
    {
     "w": "Dumplings",
-    "d": "Ravioli"
+    "d": "Ravioli",
+    "h": "Chinese cuisine"
    },
    {
     "w": "Pad Thai",
-    "d": "Fried Rice"
+    "d": "Fried Rice",
+    "h": "noodle stir fry"
    },
    {
     "w": "Guacamole",
-    "d": "Hummus"
+    "d": "Hummus",
+    "h": "Mexican dips"
    },
    {
     "w": "Bubble Tea",
-    "d": "Iced Coffee"
+    "d": "Iced Coffee",
+    "h": "Taiwanese drinks"
    },
    {
     "w": "Fish And Chips",
-    "d": "Calamari"
+    "d": "Calamari",
+    "h": "British pubs"
    },
    {
     "w": "Churros",
-    "d": "Funnel Cake"
+    "d": "Funnel Cake",
+    "h": "Spanish snacks"
    },
    {
-    "w": "Mac And Cheese",
-    "d": "Fettuccine Alfredo"
+    "w": "Curry",
+    "d": "Stew",
+    "h": "Indian cooking"
    },
    {
     "w": "Falafel",
-    "d": "Meatballs"
+    "d": "Meatballs",
+    "h": "Middle Eastern food"
    },
    {
     "w": "Tiramisu",
-    "d": "Cheesecake"
+    "d": "Cheesecake",
+    "h": "Italian desserts"
    },
    {
     "w": "Paella",
-    "d": "Risotto"
+    "d": "Risotto",
+    "h": "Spanish cuisine"
    },
    {
     "w": "Miso Soup",
-    "d": "Tomato Soup"
+    "d": "Tomato Soup",
+    "h": "Japanese starters"
    },
    {
     "w": "Crepe",
-    "d": "Tortilla"
+    "d": "Tortilla",
+    "h": "Paris street food"
    },
    {
     "w": "Kebab",
-    "d": "Gyro"
+    "d": "Gyro",
+    "h": "Turkish street food"
    },
    {
     "w": "Matcha",
-    "d": "Chai"
+    "d": "Chai",
+    "h": "Japanese tea"
    },
    {
-    "w": "Croquette",
-    "d": "Spring Roll"
+    "w": "Sandwich",
+    "d": "Wrap",
+    "h": "a packed lunch"
    },
    {
     "w": "Baguette",
-    "d": "Sourdough"
+    "d": "Sourdough",
+    "h": "French bakeries"
    },
    {
-    "w": "Pho",
-    "d": "Udon"
+    "w": "Fried Egg",
+    "d": "Omelette",
+    "h": "a skillet"
    },
    {
-    "w": "Macaron",
-    "d": "Meringue"
+    "w": "Cookie",
+    "d": "Wafer",
+    "h": "baking sheets"
    },
    {
     "w": "Apple Pie",
-    "d": "Peach Cobbler"
+    "d": "Peach Cobbler",
+    "h": "Thanksgiving"
    },
    {
     "w": "Lasagna",
-    "d": "Risotto"
+    "d": "Risotto",
+    "h": "a casserole dish"
    },
    {
     "w": "Waffles",
-    "d": "French Toast"
+    "d": "French Toast",
+    "h": "brunch"
    }
   ]
  },
@@ -192,183 +237,228 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "Lion",
-    "d": "Tiger"
+    "d": "Tiger",
+    "h": "the savanna"
    },
    {
     "w": "Elephant",
-    "d": "Rhinoceros"
+    "d": "Rhinoceros",
+    "h": "ivory"
    },
    {
     "w": "Giraffe",
-    "d": "Camel"
+    "d": "Camel",
+    "h": "tall trees"
    },
    {
     "w": "Dolphin",
-    "d": "Porpoise"
+    "d": "Porpoise",
+    "h": "the open sea"
    },
    {
     "w": "Eagle",
-    "d": "Hawk"
+    "d": "Hawk",
+    "h": "the sky"
    },
    {
     "w": "Penguin",
-    "d": "Puffin"
+    "d": "Puffin",
+    "h": "the Antarctic"
    },
    {
     "w": "Kangaroo",
-    "d": "Wallaby"
+    "d": "Wallaby",
+    "h": "Australia"
    },
    {
     "w": "Wolf",
-    "d": "Coyote"
+    "d": "Coyote",
+    "h": "the forest"
    },
    {
     "w": "Shark",
-    "d": "Barracuda"
+    "d": "Barracuda",
+    "h": "the ocean"
    },
    {
     "w": "Octopus",
-    "d": "Squid"
+    "d": "Squid",
+    "h": "the deep sea"
    },
    {
     "w": "Crocodile",
-    "d": "Alligator"
+    "d": "Alligator",
+    "h": "swamps"
    },
    {
     "w": "Cheetah",
-    "d": "Leopard"
+    "d": "Leopard",
+    "h": "speed"
    },
    {
     "w": "Gorilla",
-    "d": "Chimpanzee"
+    "d": "Chimpanzee",
+    "h": "the jungle"
    },
    {
     "w": "Zebra",
-    "d": "Horse"
+    "d": "Horse",
+    "h": "stripes"
    },
    {
     "w": "Hippopotamus",
-    "d": "Rhinoceros"
+    "d": "Rhinoceros",
+    "h": "African rivers"
    },
    {
     "w": "Panda",
-    "d": "Koala"
+    "d": "Koala",
+    "h": "China"
    },
    {
     "w": "Rabbit",
-    "d": "Hare"
+    "d": "Hare",
+    "h": "Easter"
    },
    {
     "w": "Owl",
-    "d": "Falcon"
+    "d": "Falcon",
+    "h": "the night"
    },
    {
     "w": "Frog",
-    "d": "Toad"
+    "d": "Toad",
+    "h": "ponds"
    },
    {
     "w": "Snake",
-    "d": "Eel"
+    "d": "Eel",
+    "h": "venom"
    },
    {
     "w": "Turtle",
-    "d": "Tortoise"
+    "d": "Tortoise",
+    "h": "shells"
    },
    {
     "w": "Bat",
-    "d": "Owl"
+    "d": "Owl",
+    "h": "caves"
    },
    {
     "w": "Fox",
-    "d": "Jackal"
+    "d": "Jackal",
+    "h": "folk tales"
    },
    {
     "w": "Bear",
-    "d": "Wolverine"
+    "d": "Wolverine",
+    "h": "the woods"
    },
    {
     "w": "Monkey",
-    "d": "Lemur"
+    "d": "Lemur",
+    "h": "bananas"
    },
    {
     "w": "Whale",
-    "d": "Orca"
+    "d": "Orca",
+    "h": "the deep ocean"
    },
    {
     "w": "Parrot",
-    "d": "Toucan"
+    "d": "Toucan",
+    "h": "pirates"
    },
    {
     "w": "Peacock",
-    "d": "Pheasant"
+    "d": "Pheasant",
+    "h": "showing off"
    },
    {
     "w": "Flamingo",
-    "d": "Stork"
+    "d": "Stork",
+    "h": "the color pink"
    },
    {
     "w": "Squirrel",
-    "d": "Chipmunk"
+    "d": "Chipmunk",
+    "h": "parks"
    },
    {
     "w": "Hedgehog",
-    "d": "Porcupine"
+    "d": "Porcupine",
+    "h": "garden hedges"
    },
    {
     "w": "Otter",
-    "d": "Beaver"
+    "d": "Beaver",
+    "h": "riverbanks"
    },
    {
     "w": "Seal",
-    "d": "Walrus"
+    "d": "Walrus",
+    "h": "the Arctic"
    },
    {
-    "w": "Moose",
-    "d": "Elk"
+    "w": "Cow",
+    "d": "Goat",
+    "h": "farms"
    },
    {
     "w": "Llama",
-    "d": "Alpaca"
+    "d": "Alpaca",
+    "h": "the Andes"
    },
    {
     "w": "Ostrich",
-    "d": "Emu"
+    "d": "Emu",
+    "h": "running fast"
    },
    {
     "w": "Jellyfish",
-    "d": "Sea Anemone"
+    "d": "Sea Anemone",
+    "h": "stings"
    },
    {
     "w": "Lobster",
-    "d": "Crab"
+    "d": "Crab",
+    "h": "seafood"
    },
    {
     "w": "Sloth",
-    "d": "Koala"
+    "d": "Koala",
+    "h": "slowness"
    },
    {
     "w": "Raccoon",
-    "d": "Badger"
+    "d": "Badger",
+    "h": "trash cans"
    },
    {
     "w": "Hyena",
-    "d": "Jackal"
+    "d": "Jackal",
+    "h": "laughing"
    },
    {
     "w": "Chameleon",
-    "d": "Iguana"
+    "d": "Iguana",
+    "h": "camouflage"
    },
    {
     "w": "Donkey",
-    "d": "Mule"
+    "d": "Mule",
+    "h": "farm work"
    },
    {
     "w": "Hamster",
-    "d": "Guinea Pig"
+    "d": "Guinea Pig",
+    "h": "pet cages"
    },
    {
     "w": "Swan",
-    "d": "Goose"
+    "d": "Goose",
+    "h": "ballet"
    }
   ]
  },
@@ -378,183 +468,228 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "Titanic",
-    "d": "The Notebook"
+    "d": "The Notebook",
+    "h": "a maritime disaster"
    },
    {
     "w": "Batman",
-    "d": "Iron Man"
+    "d": "Iron Man",
+    "h": "DC Comics"
    },
    {
     "w": "Friends",
-    "d": "How I Met Your Mother"
+    "d": "How I Met Your Mother",
+    "h": "a 90s sitcom"
    },
    {
     "w": "Harry Potter",
-    "d": "Percy Jackson"
+    "d": "Percy Jackson",
+    "h": "a magic school"
    },
    {
     "w": "Frozen",
-    "d": "Tangled"
+    "d": "Tangled",
+    "h": "a Disney musical"
    },
    {
     "w": "Spider-Man",
-    "d": "Ant-Man"
+    "d": "Ant-Man",
+    "h": "Marvel Comics"
    },
    {
     "w": "Star Wars",
-    "d": "Star Trek"
+    "d": "Star Trek",
+    "h": "a space saga"
    },
    {
     "w": "The Lion King",
-    "d": "The Jungle Book"
+    "d": "The Jungle Book",
+    "h": "African savanna animals"
    },
    {
     "w": "Stranger Things",
-    "d": "The X-Files"
+    "d": "The X-Files",
+    "h": "80s Netflix horror"
    },
    {
     "w": "Shrek",
-    "d": "Kung Fu Panda"
+    "d": "Kung Fu Panda",
+    "h": "DreamWorks fairy tales"
    },
    {
     "w": "Jurassic Park",
-    "d": "King Kong"
+    "d": "King Kong",
+    "h": "prehistoric creatures"
    },
    {
     "w": "Toy Story",
-    "d": "The Lego Movie"
+    "d": "The Lego Movie",
+    "h": "Pixar childhood classics"
    },
    {
     "w": "Finding Nemo",
-    "d": "The Little Mermaid"
+    "d": "The Little Mermaid",
+    "h": "underwater Pixar"
    },
    {
     "w": "SpongeBob",
-    "d": "Phineas And Ferb"
+    "d": "Phineas And Ferb",
+    "h": "Nickelodeon cartoons"
    },
    {
     "w": "The Avengers",
-    "d": "Justice League"
+    "d": "Justice League",
+    "h": "a Marvel team"
    },
    {
     "w": "Pirates Of The Caribbean",
-    "d": "Indiana Jones"
+    "d": "Indiana Jones",
+    "h": "high seas adventure"
    },
    {
     "w": "The Simpsons",
-    "d": "Family Guy"
+    "d": "Family Guy",
+    "h": "long running animated sitcoms"
    },
    {
     "w": "Avatar",
-    "d": "Guardians Of The Galaxy"
+    "d": "Guardians Of The Galaxy",
+    "h": "James Cameron blockbusters"
    },
    {
     "w": "Home Alone",
-    "d": "Elf"
+    "d": "Elf",
+    "h": "a Christmas comedy"
    },
    {
     "w": "The Hunger Games",
-    "d": "Divergent"
+    "d": "Divergent",
+    "h": "dystopian YA"
    },
    {
     "w": "Minions",
-    "d": "The Smurfs"
+    "d": "The Smurfs",
+    "h": "Illumination animation"
    },
    {
     "w": "Superman",
-    "d": "Captain America"
+    "d": "Captain America",
+    "h": "DC heroes"
    },
    {
     "w": "Squid Game",
-    "d": "Money Heist"
+    "d": "Money Heist",
+    "h": "Korean survival drama"
    },
    {
     "w": "The Office",
-    "d": "Parks And Recreation"
+    "d": "Parks And Recreation",
+    "h": "workplace mockumentary"
    },
    {
     "w": "Moana",
-    "d": "Pocahontas"
+    "d": "Pocahontas",
+    "h": "Polynesian Disney"
    },
    {
     "w": "Fast And Furious",
-    "d": "Mission Impossible"
+    "d": "Mission Impossible",
+    "h": "street racing"
    },
    {
     "w": "Cinderella",
-    "d": "Snow White"
+    "d": "Snow White",
+    "h": "classic fairy tales"
    },
    {
     "w": "Sherlock",
-    "d": "Doctor Who"
+    "d": "Doctor Who",
+    "h": "British detective drama"
    },
    {
     "w": "Back To The Future",
-    "d": "The Time Machine"
+    "d": "The Time Machine",
+    "h": "80s time travel"
    },
    {
     "w": "E.T.",
-    "d": "WALL-E"
+    "d": "WALL-E",
+    "h": "Spielberg aliens"
    },
    {
     "w": "The Lord Of The Rings",
-    "d": "Game Of Thrones"
+    "d": "Game Of Thrones",
+    "h": "Tolkien epics"
    },
    {
     "w": "Aladdin",
-    "d": "Hercules"
+    "d": "Hercules",
+    "h": "Arabian Nights Disney"
    },
    {
     "w": "Wednesday",
-    "d": "The Munsters"
+    "d": "The Munsters",
+    "h": "a spooky family"
    },
    {
     "w": "Ratatouille",
-    "d": "Chef"
+    "d": "Chef",
+    "h": "Parisian cooking"
    },
    {
-    "w": "Up",
-    "d": "Inside Out"
+    "w": "Cars",
+    "d": "Planes",
+    "h": "Pixar racing"
    },
    {
     "w": "The Matrix",
-    "d": "Inception"
+    "d": "Inception",
+    "h": "cyberpunk sci fi"
    },
    {
     "w": "Scooby-Doo",
-    "d": "Ghostbusters"
+    "d": "Ghostbusters",
+    "h": "cartoon mystery solving"
    },
    {
-    "w": "The Karate Kid",
-    "d": "Kung Fu Hustle"
+    "w": "Rocky",
+    "d": "Rambo",
+    "h": "boxing films"
    },
    {
-    "w": "Zootopia",
-    "d": "Madagascar"
+    "w": "Ice Age",
+    "d": "Rio",
+    "h": "prehistoric animation"
    },
    {
     "w": "Godzilla",
-    "d": "Pacific Rim"
+    "d": "Pacific Rim",
+    "h": "Japanese monster films"
    },
    {
     "w": "The Incredibles",
-    "d": "Fantastic Four"
+    "d": "Fantastic Four",
+    "h": "Pixar superheroes"
    },
    {
     "w": "Encanto",
-    "d": "Coco"
+    "d": "Coco",
+    "h": "Colombian Disney"
    },
    {
     "w": "Mr. Bean",
-    "d": "Charlie Chaplin"
+    "d": "Charlie Chaplin",
+    "h": "British physical comedy"
    },
    {
     "w": "Jaws",
-    "d": "King Kong"
+    "d": "King Kong",
+    "h": "a beach thriller"
    },
    {
-    "w": "The Mandalorian",
-    "d": "Doctor Who"
+    "w": "Breaking Bad",
+    "d": "Prison Break",
+    "h": "prestige crime TV"
    }
   ]
  },
@@ -564,183 +699,228 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "Guitar",
-    "d": "Banjo"
+    "d": "Banjo",
+    "h": "strings"
    },
    {
     "w": "Piano",
-    "d": "Organ"
+    "d": "Organ",
+    "h": "keys"
    },
    {
     "w": "Drums",
-    "d": "Bongos"
+    "d": "Bongos",
+    "h": "keeping time"
    },
    {
     "w": "Violin",
-    "d": "Cello"
+    "d": "Cello",
+    "h": "an orchestra"
    },
    {
     "w": "Trumpet",
-    "d": "Trombone"
+    "d": "Trombone",
+    "h": "brass"
    },
    {
     "w": "Flute",
-    "d": "Clarinet"
+    "d": "Clarinet",
+    "h": "blowing air"
    },
    {
     "w": "Saxophone",
-    "d": "Oboe"
+    "d": "Oboe",
+    "h": "a jazz club"
    },
    {
     "w": "Harp",
-    "d": "Lyre"
+    "d": "Lyre",
+    "h": "angels"
    },
    {
     "w": "Microphone",
-    "d": "Megaphone"
+    "d": "Megaphone",
+    "h": "a stage"
    },
    {
     "w": "DJ",
-    "d": "Producer"
+    "d": "Producer",
+    "h": "a nightclub"
    },
    {
     "w": "Opera",
-    "d": "Musical"
+    "d": "Musical",
+    "h": "Italy"
    },
    {
     "w": "Choir",
-    "d": "Boy Band"
+    "d": "Boy Band",
+    "h": "a church"
    },
    {
     "w": "Orchestra",
-    "d": "Marching Band"
+    "d": "Marching Band",
+    "h": "a concert hall"
    },
    {
     "w": "Conductor",
-    "d": "Composer"
+    "d": "Composer",
+    "h": "a baton"
    },
    {
     "w": "Concert",
-    "d": "Festival"
+    "d": "Festival",
+    "h": "tickets"
    },
    {
     "w": "Karaoke",
-    "d": "Lip Sync"
+    "d": "Lip Sync",
+    "h": "a bar in Japan"
    },
    {
     "w": "Headphones",
-    "d": "Earbuds"
+    "d": "Earbuds",
+    "h": "your ears"
    },
    {
     "w": "Vinyl Record",
-    "d": "Cassette Tape"
+    "d": "Cassette Tape",
+    "h": "the 1970s"
    },
    {
     "w": "Rock",
-    "d": "Metal"
+    "d": "Metal",
+    "h": "electric guitars"
    },
    {
     "w": "Jazz",
-    "d": "Blues"
+    "d": "Blues",
+    "h": "New Orleans"
    },
    {
     "w": "Hip Hop",
-    "d": "R&B"
+    "d": "R&B",
+    "h": "the Bronx"
    },
    {
     "w": "Country",
-    "d": "Folk"
+    "d": "Folk",
+    "h": "Nashville"
    },
    {
     "w": "Pop",
-    "d": "Disco"
+    "d": "Disco",
+    "h": "the charts"
    },
    {
     "w": "Reggae",
-    "d": "Ska"
+    "d": "Ska",
+    "h": "Jamaica"
    },
    {
     "w": "Rapper",
-    "d": "Beatboxer"
+    "d": "Beatboxer",
+    "h": "gold chains"
    },
    {
     "w": "Lullaby",
-    "d": "Serenade"
+    "d": "Serenade",
+    "h": "bedtime"
    },
    {
     "w": "National Anthem",
-    "d": "School Song"
+    "d": "School Song",
+    "h": "a flag"
    },
    {
     "w": "Beethoven",
-    "d": "Mozart"
+    "d": "Mozart",
+    "h": "Vienna"
    },
    {
     "w": "The Beatles",
-    "d": "The Rolling Stones"
+    "d": "The Rolling Stones",
+    "h": "Liverpool"
    },
    {
     "w": "Taylor Swift",
-    "d": "Ariana Grande"
+    "d": "Ariana Grande",
+    "h": "stadium tours"
    },
    {
     "w": "Michael Jackson",
-    "d": "Elvis Presley"
+    "d": "Elvis Presley",
+    "h": "the moonwalk"
    },
    {
     "w": "Ukulele",
-    "d": "Mandolin"
+    "d": "Mandolin",
+    "h": "Hawaii"
    },
    {
     "w": "Bagpipes",
-    "d": "Accordion"
+    "d": "Accordion",
+    "h": "Scotland"
    },
    {
     "w": "Xylophone",
-    "d": "Marimba"
+    "d": "Marimba",
+    "h": "mallets"
    },
    {
     "w": "Tambourine",
-    "d": "Maracas"
+    "d": "Maracas",
+    "h": "shaking"
    },
    {
     "w": "Melody",
-    "d": "Harmony"
+    "d": "Harmony",
+    "h": "humming"
    },
    {
     "w": "Rhythm",
-    "d": "Tempo"
+    "d": "Tempo",
+    "h": "tapping your foot"
    },
    {
     "w": "Sheet Music",
-    "d": "Songbook"
+    "d": "Songbook",
+    "h": "a page of notes"
    },
    {
     "w": "Music Video",
-    "d": "Album Cover"
+    "d": "Album Cover",
+    "h": "MTV"
    },
    {
-    "w": "Boombox",
-    "d": "Jukebox"
+    "w": "Dancing",
+    "d": "Clapping",
+    "h": "a ballroom"
    },
    {
-    "w": "Garage Band",
-    "d": "Street Performer"
+    "w": "Speaker",
+    "d": "Radio",
+    "h": "loud volume"
    },
    {
     "w": "Encore",
-    "d": "Soundcheck"
+    "d": "Soundcheck",
+    "h": "applause"
    },
    {
     "w": "Whistling",
-    "d": "Humming"
+    "d": "Humming",
+    "h": "your lips"
    },
    {
     "w": "Cello",
-    "d": "Banjo"
+    "d": "Banjo",
+    "h": "a bow"
    },
    {
-    "w": "Banjo",
-    "d": "Accordion"
+    "w": "Music Festival",
+    "d": "Talent Show",
+    "h": "a muddy field"
    }
   ]
  },
@@ -750,183 +930,228 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "Soccer",
-    "d": "Futsal"
+    "d": "Futsal",
+    "h": "the World Cup"
    },
    {
     "w": "Basketball",
-    "d": "Netball"
+    "d": "Netball",
+    "h": "the NBA"
    },
    {
     "w": "Tennis",
-    "d": "Badminton"
+    "d": "Badminton",
+    "h": "Wimbledon"
    },
    {
     "w": "Baseball",
-    "d": "Cricket"
+    "d": "Cricket",
+    "h": "American summer"
    },
    {
     "w": "Volleyball",
-    "d": "Handball"
+    "d": "Handball",
+    "h": "the beach"
    },
    {
     "w": "Swimming",
-    "d": "Diving"
+    "d": "Diving",
+    "h": "a pool"
    },
    {
     "w": "Marathon",
-    "d": "Triathlon"
+    "d": "Triathlon",
+    "h": "long distance"
    },
    {
     "w": "Ice Hockey",
-    "d": "Field Hockey"
+    "d": "Field Hockey",
+    "h": "Canada"
    },
    {
     "w": "Skiing",
-    "d": "Snowboarding"
+    "d": "Snowboarding",
+    "h": "the Alps"
    },
    {
     "w": "Skateboarding",
-    "d": "Rollerblading"
+    "d": "Rollerblading",
+    "h": "street culture"
    },
    {
     "w": "Gymnastics",
-    "d": "Cheerleading"
+    "d": "Cheerleading",
+    "h": "flexibility"
    },
    {
     "w": "Karate",
-    "d": "Taekwondo"
+    "d": "Taekwondo",
+    "h": "Japan"
    },
    {
     "w": "Wrestling",
-    "d": "Judo"
+    "d": "Judo",
+    "h": "grappling"
    },
    {
     "w": "Cycling",
-    "d": "Motocross"
+    "d": "Motocross",
+    "h": "France in July"
    },
    {
     "w": "Table Tennis",
-    "d": "Pickleball"
+    "d": "Pickleball",
+    "h": "China"
    },
    {
     "w": "Rugby",
-    "d": "American Football"
+    "d": "American Football",
+    "h": "New Zealand"
    },
    {
     "w": "Archery",
-    "d": "Darts"
+    "d": "Darts",
+    "h": "targets"
    },
    {
     "w": "Bowling",
-    "d": "Curling"
+    "d": "Curling",
+    "h": "pins"
    },
    {
     "w": "Fencing",
-    "d": "Kendo"
+    "d": "Kendo",
+    "h": "blades"
    },
    {
     "w": "Rock Climbing",
-    "d": "Bouldering"
+    "d": "Bouldering",
+    "h": "heights"
    },
    {
     "w": "Figure Skating",
-    "d": "Speed Skating"
+    "d": "Speed Skating",
+    "h": "the Winter Olympics"
    },
    {
     "w": "Rowing",
-    "d": "Kayaking"
+    "d": "Kayaking",
+    "h": "rivers"
    },
    {
     "w": "Weightlifting",
-    "d": "Powerlifting"
+    "d": "Powerlifting",
+    "h": "a gym"
    },
    {
     "w": "Sprinting",
-    "d": "Hurdles"
+    "d": "Hurdles",
+    "h": "a stopwatch"
    },
    {
     "w": "High Jump",
-    "d": "Pole Vault"
+    "d": "Pole Vault",
+    "h": "track and field"
    },
    {
     "w": "Javelin",
-    "d": "Discus"
+    "d": "Discus",
+    "h": "ancient Greece"
    },
    {
     "w": "Water Polo",
-    "d": "Synchronized Swimming"
+    "d": "Synchronized Swimming",
+    "h": "team pool games"
    },
    {
     "w": "Horse Racing",
-    "d": "Show Jumping"
+    "d": "Show Jumping",
+    "h": "betting"
    },
    {
     "w": "Formula One",
-    "d": "NASCAR"
+    "d": "NASCAR",
+    "h": "engines"
    },
    {
     "w": "Sumo",
-    "d": "Arm Wrestling"
+    "d": "Arm Wrestling",
+    "h": "Japanese tradition"
    },
    {
-    "w": "Squash",
-    "d": "Racquetball"
+    "w": "Yoga",
+    "d": "Pilates",
+    "h": "India"
    },
    {
-    "w": "Lacrosse",
-    "d": "Hurling"
+    "w": "Boxing",
+    "d": "Fencing",
+    "h": "a ring"
    },
    {
-    "w": "Dodgeball",
-    "d": "Kickball"
+    "w": "Relay Race",
+    "d": "Obstacle Course",
+    "h": "teamwork on a track"
    },
    {
-    "w": "Ultimate Frisbee",
-    "d": "Disc Golf"
+    "w": "Tug Of War",
+    "d": "Sack Race",
+    "h": "pulling"
    },
    {
-    "w": "Snooker",
-    "d": "Pool"
+    "w": "Jump Rope",
+    "d": "Hula Hoop",
+    "h": "a schoolyard"
    },
    {
     "w": "Sailing",
-    "d": "Canoeing"
+    "d": "Canoeing",
+    "h": "the wind"
    },
    {
-    "w": "Bobsled",
-    "d": "Luge"
+    "w": "Scuba Diving",
+    "d": "Snorkeling",
+    "h": "the ocean floor"
    },
    {
-    "w": "Biathlon",
-    "d": "Cross Country Skiing"
+    "w": "Ice Skating",
+    "d": "Roller Skating",
+    "h": "a frozen rink"
    },
    {
     "w": "Parkour",
-    "d": "Breakdancing"
+    "d": "Breakdancing",
+    "h": "cities"
    },
    {
     "w": "Muay Thai",
-    "d": "MMA"
+    "d": "MMA",
+    "h": "Thailand"
    },
    {
     "w": "Trampoline",
-    "d": "Acrobatics"
+    "d": "Acrobatics",
+    "h": "bouncing"
    },
    {
     "w": "Golf",
-    "d": "Croquet"
+    "d": "Croquet",
+    "h": "country clubs"
    },
    {
     "w": "Kung Fu",
-    "d": "Capoeira"
+    "d": "Capoeira",
+    "h": "Chinese films"
    },
    {
     "w": "Badminton",
-    "d": "Handball"
+    "d": "Handball",
+    "h": "a net and racket"
    },
    {
     "w": "Surfing",
-    "d": "Kayaking"
+    "d": "Kayaking",
+    "h": "Hawaii"
    }
   ]
  },
@@ -936,183 +1161,228 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "Paris",
-    "d": "Rome"
+    "d": "Rome",
+    "h": "France"
    },
    {
     "w": "Airport",
-    "d": "Train Station"
+    "d": "Train Station",
+    "h": "flying somewhere"
    },
    {
     "w": "New York",
-    "d": "Chicago"
+    "d": "Chicago",
+    "h": "the United States"
    },
    {
     "w": "Hotel",
-    "d": "Hostel"
+    "d": "Hostel",
+    "h": "staying overnight"
    },
    {
     "w": "Cruise Ship",
-    "d": "Ferry"
+    "d": "Ferry",
+    "h": "the ocean"
    },
    {
     "w": "Tokyo",
-    "d": "Seoul"
+    "d": "Seoul",
+    "h": "Japan"
    },
    {
     "w": "Passport",
-    "d": "Boarding Pass"
+    "d": "Boarding Pass",
+    "h": "border control"
    },
    {
     "w": "London",
-    "d": "Dublin"
+    "d": "Dublin",
+    "h": "the United Kingdom"
    },
    {
     "w": "Grand Canyon",
-    "d": "Niagara Falls"
+    "d": "Niagara Falls",
+    "h": "the American West"
    },
    {
     "w": "Campsite",
-    "d": "Cabin"
+    "d": "Cabin",
+    "h": "sleeping outdoors"
    },
    {
     "w": "Subway",
-    "d": "Tram"
+    "d": "Tram",
+    "h": "getting around a city"
    },
    {
     "w": "Venice",
-    "d": "Amsterdam"
+    "d": "Amsterdam",
+    "h": "Italy"
    },
    {
     "w": "Mount Everest",
-    "d": "Kilimanjaro"
+    "d": "Kilimanjaro",
+    "h": "the Himalayas"
    },
    {
     "w": "Suitcase",
-    "d": "Backpack"
+    "d": "Backpack",
+    "h": "packing"
    },
    {
     "w": "Taxi",
-    "d": "Rideshare"
+    "d": "Rideshare",
+    "h": "paying for a ride"
    },
    {
     "w": "Sydney",
-    "d": "Melbourne"
+    "d": "Melbourne",
+    "h": "Australia"
    },
    {
     "w": "Lighthouse",
-    "d": "Windmill"
+    "d": "Windmill",
+    "h": "the coast"
    },
    {
     "w": "Road Trip",
-    "d": "Bus Tour"
+    "d": "Bus Tour",
+    "h": "highways"
    },
    {
     "w": "Hawaii",
-    "d": "Bali"
+    "d": "Bali",
+    "h": "the Pacific"
    },
    {
     "w": "Museum",
-    "d": "Art Gallery"
+    "d": "Art Gallery",
+    "h": "culture and history"
    },
    {
     "w": "Ski Resort",
-    "d": "Ice Rink"
+    "d": "Ice Rink",
+    "h": "snowy mountains"
    },
    {
     "w": "Cairo",
-    "d": "Marrakech"
+    "d": "Marrakech",
+    "h": "Egypt"
    },
    {
     "w": "Harbor",
-    "d": "Pier"
+    "d": "Pier",
+    "h": "boats"
    },
    {
     "w": "Rio De Janeiro",
-    "d": "Buenos Aires"
+    "d": "Buenos Aires",
+    "h": "Brazil"
    },
    {
     "w": "Castle",
-    "d": "Palace"
+    "d": "Palace",
+    "h": "medieval Europe"
    },
    {
     "w": "Iceland",
-    "d": "Greenland"
+    "d": "Greenland",
+    "h": "the far north"
    },
    {
     "w": "Souvenir Shop",
-    "d": "Duty Free"
+    "d": "Duty Free",
+    "h": "tourist spending"
    },
    {
     "w": "Cable Car",
-    "d": "Chairlift"
+    "d": "Chairlift",
+    "h": "going uphill"
    },
    {
     "w": "Barcelona",
-    "d": "Lisbon"
+    "d": "Lisbon",
+    "h": "Spain"
    },
    {
     "w": "Dubai",
-    "d": "Singapore"
+    "d": "Singapore",
+    "h": "the Middle East"
    },
    {
     "w": "Ferris Wheel",
-    "d": "Roller Coaster"
+    "d": "Roller Coaster",
+    "h": "a fairground"
    },
    {
     "w": "Machu Picchu",
-    "d": "Angkor Wat"
+    "d": "Angkor Wat",
+    "h": "Peru"
    },
    {
-    "w": "Customs",
-    "d": "Security Check"
+    "w": "Statue Of Liberty",
+    "d": "Eiffel Tower",
+    "h": "famous landmarks"
    },
    {
-    "w": "Boarding Pass",
-    "d": "Luggage Tag"
+    "w": "Zoo",
+    "d": "Aquarium",
+    "h": "animals on display"
    },
    {
-    "w": "Backpacker Hostel",
-    "d": "Resort"
+    "w": "Camel Ride",
+    "d": "Safari",
+    "h": "the desert"
    },
    {
-    "w": "Train Station",
-    "d": "Bus Terminal"
+    "w": "Rental Car",
+    "d": "Motorbike",
+    "h": "driving on vacation"
    },
    {
     "w": "Hot Air Balloon",
-    "d": "Helicopter Tour"
+    "d": "Helicopter Tour",
+    "h": "floating in the sky"
    },
    {
     "w": "Safari",
-    "d": "Whale Watching"
+    "d": "Whale Watching",
+    "h": "Africa"
    },
    {
     "w": "Postcard",
-    "d": "Fridge Magnet"
+    "d": "Fridge Magnet",
+    "h": "mail"
    },
    {
     "w": "Tour Guide",
-    "d": "Flight Attendant"
+    "d": "Flight Attendant",
+    "h": "sightseeing groups"
    },
    {
     "w": "Sunscreen",
-    "d": "Insect Repellent"
+    "d": "Insect Repellent",
+    "h": "the beach"
    },
    {
     "w": "Snorkeling",
-    "d": "Scuba Diving"
+    "d": "Scuba Diving",
+    "h": "underwater"
    },
    {
     "w": "Bullet Train",
-    "d": "Double Decker Bus"
+    "d": "Double Decker Bus",
+    "h": "fast rail"
    },
    {
     "w": "Zip Line",
-    "d": "Bungee Jumping"
+    "d": "Bungee Jumping",
+    "h": "adventure sports"
    },
    {
-    "w": "Duty Free",
-    "d": "Baggage Claim"
+    "w": "Amusement Park",
+    "d": "Water Park",
+    "h": "thrill rides"
    }
   ]
  },
@@ -1122,183 +1392,228 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "Doctor",
-    "d": "Nurse"
+    "d": "Nurse",
+    "h": "a hospital"
    },
    {
     "w": "Teacher",
-    "d": "Tutor"
+    "d": "Tutor",
+    "h": "a classroom"
    },
    {
     "w": "Firefighter",
-    "d": "Paramedic"
+    "d": "Paramedic",
+    "h": "emergencies"
    },
    {
     "w": "Police Officer",
-    "d": "Security Guard"
+    "d": "Security Guard",
+    "h": "crime"
    },
    {
     "w": "Chef",
-    "d": "Baker"
+    "d": "Baker",
+    "h": "a restaurant"
    },
    {
     "w": "Pilot",
-    "d": "Flight Attendant"
+    "d": "Flight Attendant",
+    "h": "airports"
    },
    {
     "w": "Dentist",
-    "d": "Orthodontist"
+    "d": "Orthodontist",
+    "h": "teeth"
    },
    {
     "w": "Farmer",
-    "d": "Gardener"
+    "d": "Gardener",
+    "h": "the countryside"
    },
    {
     "w": "Lawyer",
-    "d": "Judge"
+    "d": "Judge",
+    "h": "courtrooms"
    },
    {
     "w": "Astronaut",
-    "d": "Fighter Pilot"
+    "d": "Fighter Pilot",
+    "h": "outer space"
    },
    {
     "w": "Actor",
-    "d": "Stunt Double"
+    "d": "Stunt Double",
+    "h": "Hollywood"
    },
    {
     "w": "Singer",
-    "d": "DJ"
+    "d": "DJ",
+    "h": "concerts"
    },
    {
     "w": "Barber",
-    "d": "Tattoo Artist"
+    "d": "Tattoo Artist",
+    "h": "hair"
    },
    {
-    "w": "Mail Carrier",
-    "d": "Delivery Driver"
+    "w": "Miner",
+    "d": "Blacksmith",
+    "h": "underground work"
    },
    {
     "w": "Veterinarian",
-    "d": "Zookeeper"
+    "d": "Zookeeper",
+    "h": "animals"
    },
    {
     "w": "Plumber",
-    "d": "Electrician"
+    "d": "Electrician",
+    "h": "pipes"
    },
    {
     "w": "Carpenter",
-    "d": "Welder"
+    "d": "Welder",
+    "h": "wood"
    },
    {
     "w": "Mechanic",
-    "d": "Car Salesman"
+    "d": "Car Salesman",
+    "h": "cars"
    },
    {
     "w": "Waiter",
-    "d": "Barista"
+    "d": "Barista",
+    "h": "restaurants"
    },
    {
     "w": "Cashier",
-    "d": "Bank Teller"
+    "d": "Bank Teller",
+    "h": "shopping"
    },
    {
     "w": "Librarian",
-    "d": "Bookseller"
+    "d": "Bookseller",
+    "h": "books"
    },
    {
     "w": "Photographer",
-    "d": "Cameraman"
+    "d": "Cameraman",
+    "h": "cameras"
    },
    {
     "w": "Journalist",
-    "d": "News Anchor"
+    "d": "News Anchor",
+    "h": "the news"
    },
    {
     "w": "Architect",
-    "d": "Civil Engineer"
+    "d": "Civil Engineer",
+    "h": "buildings"
    },
    {
     "w": "Scientist",
-    "d": "Lab Technician"
+    "d": "Lab Technician",
+    "h": "laboratories"
    },
    {
     "w": "Soldier",
-    "d": "Bodyguard"
+    "d": "Bodyguard",
+    "h": "the military"
    },
    {
     "w": "Fisherman",
-    "d": "Sailor"
+    "d": "Sailor",
+    "h": "the sea"
    },
    {
     "w": "Lifeguard",
-    "d": "Swim Coach"
+    "d": "Swim Coach",
+    "h": "the beach"
    },
    {
     "w": "Magician",
-    "d": "Clown"
+    "d": "Clown",
+    "h": "stage shows"
    },
    {
     "w": "Referee",
-    "d": "Coach"
+    "d": "Coach",
+    "h": "sports matches"
    },
    {
     "w": "Taxi Driver",
-    "d": "Bus Driver"
+    "d": "Bus Driver",
+    "h": "city streets"
    },
    {
     "w": "Painter",
-    "d": "Sculptor"
+    "d": "Sculptor",
+    "h": "colors"
    },
    {
     "w": "Tailor",
-    "d": "Fashion Designer"
+    "d": "Fashion Designer",
+    "h": "clothing"
    },
    {
     "w": "Butcher",
-    "d": "Fishmonger"
+    "d": "Fishmonger",
+    "h": "meat"
    },
    {
     "w": "Pharmacist",
-    "d": "Optometrist"
+    "d": "Optometrist",
+    "h": "medicine"
    },
    {
     "w": "Accountant",
-    "d": "Banker"
+    "d": "Banker",
+    "h": "numbers"
    },
    {
     "w": "Programmer",
-    "d": "Game Designer"
+    "d": "Game Designer",
+    "h": "computers"
    },
    {
     "w": "Translator",
-    "d": "Tour Guide"
+    "d": "Tour Guide",
+    "h": "languages"
    },
    {
     "w": "Ballet Dancer",
-    "d": "Figure Skater"
+    "d": "Figure Skater",
+    "h": "the stage"
    },
    {
-    "w": "Janitor",
-    "d": "Housekeeper"
+    "w": "Beekeeper",
+    "d": "Shepherd",
+    "h": "honey"
    },
    {
     "w": "Construction Worker",
-    "d": "Crane Operator"
+    "d": "Crane Operator",
+    "h": "building sites"
    },
    {
     "w": "Weather Forecaster",
-    "d": "News Reporter"
+    "d": "News Reporter",
+    "h": "rain"
    },
    {
     "w": "Detective",
-    "d": "Spy"
+    "d": "Spy",
+    "h": "mysteries"
    },
    {
     "w": "Astronomer",
-    "d": "Physicist"
+    "d": "Physicist",
+    "h": "the night sky"
    },
    {
     "w": "Electrician",
-    "d": "Plumber"
+    "d": "Plumber",
+    "h": "wiring"
    }
   ]
  },
@@ -1308,183 +1623,228 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "Umbrella",
-    "d": "Raincoat"
+    "d": "Raincoat",
+    "h": "rainy days"
    },
    {
     "w": "Toothbrush",
-    "d": "Dental Floss"
+    "d": "Dental Floss",
+    "h": "the bathroom sink"
    },
    {
     "w": "Pillow",
-    "d": "Blanket"
+    "d": "Blanket",
+    "h": "a bed"
    },
    {
     "w": "Scissors",
-    "d": "Knife"
+    "d": "Knife",
+    "h": "craft supplies"
    },
    {
     "w": "Mirror",
-    "d": "Window"
+    "d": "Window",
+    "h": "getting ready"
    },
    {
     "w": "Candle",
-    "d": "Flashlight"
+    "d": "Flashlight",
+    "h": "a power outage"
    },
    {
     "w": "Wallet",
-    "d": "Purse"
+    "d": "Purse",
+    "h": "your pockets"
    },
    {
     "w": "Clock",
-    "d": "Wristwatch"
+    "d": "Wristwatch",
+    "h": "telling time"
    },
    {
     "w": "Spoon",
-    "d": "Fork"
+    "d": "Fork",
+    "h": "a cutlery drawer"
    },
    {
     "w": "Kettle",
-    "d": "Coffee Maker"
+    "d": "Coffee Maker",
+    "h": "making tea"
    },
    {
     "w": "Broom",
-    "d": "Vacuum Cleaner"
+    "d": "Vacuum Cleaner",
+    "h": "cleaning floors"
    },
    {
     "w": "Ladder",
-    "d": "Stool"
+    "d": "Stool",
+    "h": "reaching high places"
    },
    {
     "w": "Stapler",
-    "d": "Paper Clip"
+    "d": "Paper Clip",
+    "h": "an office desk"
    },
    {
     "w": "Comb",
-    "d": "Razor"
+    "d": "Razor",
+    "h": "hair"
    },
    {
     "w": "Towel",
-    "d": "Bathrobe"
+    "d": "Bathrobe",
+    "h": "drying off"
    },
    {
     "w": "Refrigerator",
-    "d": "Freezer"
+    "d": "Freezer",
+    "h": "a kitchen"
    },
    {
     "w": "Microwave",
-    "d": "Oven"
+    "d": "Oven",
+    "h": "reheating food"
    },
    {
     "w": "Lamp",
-    "d": "Ceiling Fan"
+    "d": "Ceiling Fan",
+    "h": "lighting a room"
    },
    {
     "w": "Keys",
-    "d": "Padlock"
+    "d": "Padlock",
+    "h": "locks"
    },
    {
     "w": "Sunglasses",
-    "d": "Reading Glasses"
+    "d": "Reading Glasses",
+    "h": "a bright day"
    },
    {
     "w": "Chair",
-    "d": "Sofa"
+    "d": "Sofa",
+    "h": "furniture"
    },
    {
     "w": "Table",
-    "d": "Desk"
+    "d": "Desk",
+    "h": "a dining room"
    },
    {
     "w": "Curtains",
-    "d": "Blinds"
+    "d": "Blinds",
+    "h": "windows"
    },
    {
     "w": "Doormat",
-    "d": "Rug"
+    "d": "Rug",
+    "h": "an entryway"
    },
    {
     "w": "Hanger",
-    "d": "Clothespin"
+    "d": "Clothespin",
+    "h": "a closet"
    },
    {
     "w": "Iron",
-    "d": "Steamer"
+    "d": "Steamer",
+    "h": "laundry day"
    },
    {
     "w": "Bucket",
-    "d": "Watering Can"
+    "d": "Watering Can",
+    "h": "carrying water"
    },
    {
     "w": "Envelope",
-    "d": "Postcard"
+    "d": "Postcard",
+    "h": "mail"
    },
    {
     "w": "Battery",
-    "d": "Charger"
+    "d": "Charger",
+    "h": "powering gadgets"
    },
    {
     "w": "Remote Control",
-    "d": "Game Controller"
+    "d": "Game Controller",
+    "h": "watching TV"
    },
    {
     "w": "Trash Can",
-    "d": "Recycling Bin"
+    "d": "Recycling Bin",
+    "h": "garbage"
    },
    {
     "w": "Soap",
-    "d": "Shampoo"
+    "d": "Shampoo",
+    "h": "washing hands"
    },
    {
     "w": "Sponge",
-    "d": "Dishcloth"
+    "d": "Dishcloth",
+    "h": "dirty dishes"
    },
    {
     "w": "Frying Pan",
-    "d": "Saucepan"
+    "d": "Saucepan",
+    "h": "cooking breakfast"
    },
    {
     "w": "Mug",
-    "d": "Teacup"
+    "d": "Teacup",
+    "h": "a hot drink"
    },
    {
     "w": "Calendar",
-    "d": "Planner"
+    "d": "Planner",
+    "h": "dates"
    },
    {
     "w": "Screwdriver",
-    "d": "Wrench"
+    "d": "Wrench",
+    "h": "a toolbox"
    },
    {
-    "w": "Tape",
-    "d": "Glue"
+    "w": "Toothpaste",
+    "d": "Mouthwash",
+    "h": "minty freshness"
    },
    {
     "w": "Thermos",
-    "d": "Water Bottle"
+    "d": "Water Bottle",
+    "h": "a camping trip"
    },
    {
     "w": "Piggy Bank",
-    "d": "Coin Jar"
+    "d": "Coin Jar",
+    "h": "saving coins"
    },
    {
     "w": "Blanket",
-    "d": "Rug"
+    "d": "Rug",
+    "h": "staying warm"
    },
    {
     "w": "Toaster",
-    "d": "Blender"
+    "d": "Blender",
+    "h": "a kitchen counter"
    },
    {
     "w": "Flashlight",
-    "d": "Light Switch"
+    "d": "Light Switch",
+    "h": "the dark"
    },
    {
     "w": "Hammer",
-    "d": "Wrench"
+    "d": "Wrench",
+    "h": "a construction site"
    },
    {
     "w": "Napkin",
-    "d": "Toilet Paper"
+    "d": "Toilet Paper",
+    "h": "a restaurant table"
    }
   ]
  },
@@ -1494,183 +1854,228 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "Albert Einstein",
-    "d": "Isaac Newton"
+    "d": "Isaac Newton",
+    "h": "physics"
    },
    {
     "w": "Lionel Messi",
-    "d": "Cristiano Ronaldo"
+    "d": "Cristiano Ronaldo",
+    "h": "Argentina"
    },
    {
     "w": "Beyonce",
-    "d": "Rihanna"
+    "d": "Rihanna",
+    "h": "pop music"
    },
    {
     "w": "William Shakespeare",
-    "d": "Charles Dickens"
+    "d": "Charles Dickens",
+    "h": "old English plays"
    },
    {
     "w": "Elon Musk",
-    "d": "Jeff Bezos"
+    "d": "Jeff Bezos",
+    "h": "rockets"
    },
    {
     "w": "Bill Gates",
-    "d": "Steve Jobs"
+    "d": "Steve Jobs",
+    "h": "software fortunes"
    },
    {
-    "w": "Oprah Winfrey",
-    "d": "Ellen DeGeneres"
+    "w": "Michael Phelps",
+    "d": "Usain Bolt",
+    "h": "the Olympic pool"
    },
    {
     "w": "Barack Obama",
-    "d": "Abraham Lincoln"
+    "d": "Abraham Lincoln",
+    "h": "the White House"
    },
    {
     "w": "Queen Elizabeth II",
-    "d": "Princess Diana"
+    "d": "Princess Diana",
+    "h": "the British crown"
    },
    {
     "w": "Michael Jordan",
-    "d": "LeBron James"
+    "d": "LeBron James",
+    "h": "the NBA"
    },
    {
     "w": "Serena Williams",
-    "d": "Venus Williams"
+    "d": "Venus Williams",
+    "h": "Grand Slam tennis"
    },
    {
     "w": "Usain Bolt",
-    "d": "Mo Farah"
+    "d": "Mo Farah",
+    "h": "track sprinting"
    },
    {
     "w": "Muhammad Ali",
-    "d": "Mike Tyson"
+    "d": "Mike Tyson",
+    "h": "the boxing ring"
    },
    {
     "w": "Nelson Mandela",
-    "d": "Mahatma Gandhi"
+    "d": "Mahatma Gandhi",
+    "h": "South Africa"
    },
    {
     "w": "Marilyn Monroe",
-    "d": "Audrey Hepburn"
+    "d": "Audrey Hepburn",
+    "h": "old Hollywood glamour"
    },
    {
     "w": "Charlie Chaplin",
-    "d": "Mr. Bean"
+    "d": "Mr. Bean",
+    "h": "silent films"
    },
    {
     "w": "Walt Disney",
-    "d": "Steven Spielberg"
+    "d": "Steven Spielberg",
+    "h": "animation studios"
    },
    {
     "w": "Leonardo DiCaprio",
-    "d": "Brad Pitt"
+    "d": "Brad Pitt",
+    "h": "Oscar movies"
    },
    {
     "w": "Tom Cruise",
-    "d": "Tom Hanks"
+    "d": "Tom Hanks",
+    "h": "action blockbusters"
    },
    {
     "w": "Dwayne Johnson",
-    "d": "Arnold Schwarzenegger"
+    "d": "Arnold Schwarzenegger",
+    "h": "wrestling and movies"
    },
    {
     "w": "Jackie Chan",
-    "d": "Bruce Lee"
+    "d": "Bruce Lee",
+    "h": "martial arts films"
    },
    {
     "w": "Emma Watson",
-    "d": "Emma Stone"
+    "d": "Emma Stone",
+    "h": "Hogwarts"
    },
    {
     "w": "Johnny Depp",
-    "d": "Keanu Reeves"
+    "d": "Keanu Reeves",
+    "h": "quirky film roles"
    },
    {
     "w": "Will Smith",
-    "d": "Eddie Murphy"
+    "d": "Eddie Murphy",
+    "h": "Hollywood and rap"
    },
    {
     "w": "Ed Sheeran",
-    "d": "Justin Bieber"
+    "d": "Justin Bieber",
+    "h": "acoustic pop"
    },
    {
     "w": "Adele",
-    "d": "Lady Gaga"
+    "d": "Lady Gaga",
+    "h": "ballads"
    },
    {
     "w": "Drake",
-    "d": "Kanye West"
+    "d": "Kanye West",
+    "h": "hip hop charts"
    },
    {
     "w": "Shakira",
-    "d": "Jennifer Lopez"
+    "d": "Jennifer Lopez",
+    "h": "Latin pop"
    },
    {
     "w": "Freddie Mercury",
-    "d": "David Bowie"
+    "d": "David Bowie",
+    "h": "classic rock bands"
    },
    {
     "w": "Bob Marley",
-    "d": "Snoop Dogg"
+    "d": "Snoop Dogg",
+    "h": "Jamaica"
    },
    {
     "w": "Mozart",
-    "d": "Beethoven"
+    "d": "Beethoven",
+    "h": "classical composers"
    },
    {
     "w": "Pablo Picasso",
-    "d": "Vincent Van Gogh"
+    "d": "Vincent Van Gogh",
+    "h": "modern painting"
    },
    {
     "w": "Marie Curie",
-    "d": "Rosalind Franklin"
+    "d": "Rosalind Franklin",
+    "h": "radioactivity"
    },
    {
     "w": "Stephen Hawking",
-    "d": "Neil deGrasse Tyson"
+    "d": "Neil deGrasse Tyson",
+    "h": "black holes"
    },
    {
     "w": "Neil Armstrong",
-    "d": "Buzz Aldrin"
+    "d": "Buzz Aldrin",
+    "h": "the moon landing"
    },
    {
     "w": "Mark Zuckerberg",
-    "d": "Larry Page"
+    "d": "Larry Page",
+    "h": "social networks"
    },
    {
     "w": "MrBeast",
-    "d": "PewDiePie"
+    "d": "PewDiePie",
+    "h": "YouTube stunts"
    },
    {
     "w": "Zendaya",
-    "d": "Selena Gomez"
+    "d": "Selena Gomez",
+    "h": "young Hollywood"
    },
    {
     "w": "Roger Federer",
-    "d": "Rafael Nadal"
+    "d": "Rafael Nadal",
+    "h": "Wimbledon"
    },
    {
     "w": "Frida Kahlo",
-    "d": "Salvador Dali"
+    "d": "Salvador Dali",
+    "h": "Mexican art"
    },
    {
     "w": "Cristiano Ronaldo",
-    "d": "Neymar"
+    "d": "Neymar",
+    "h": "Portugal"
    },
    {
     "w": "LeBron James",
-    "d": "Stephen Curry"
+    "d": "Stephen Curry",
+    "h": "basketball courts"
    },
    {
     "w": "Steve Jobs",
-    "d": "Jeff Bezos"
+    "d": "Jeff Bezos",
+    "h": "Silicon Valley"
    },
    {
     "w": "Isaac Newton",
-    "d": "Galileo Galilei"
+    "d": "Galileo Galilei",
+    "h": "gravity"
    },
    {
     "w": "Charles Darwin",
-    "d": "Nikola Tesla"
+    "d": "Nikola Tesla",
+    "h": "evolution"
    }
   ]
  },
@@ -1680,183 +2085,228 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "Minecraft",
-    "d": "Roblox"
+    "d": "Roblox",
+    "h": "building blocks"
    },
    {
     "w": "Mario",
-    "d": "Luigi"
+    "d": "Luigi",
+    "h": "Nintendo"
    },
    {
     "w": "Fortnite",
-    "d": "PUBG"
+    "d": "PUBG",
+    "h": "battle royale"
    },
    {
     "w": "Pac-Man",
-    "d": "Space Invaders"
+    "d": "Space Invaders",
+    "h": "1980s arcades"
    },
    {
     "w": "Tetris",
-    "d": "Candy Crush"
+    "d": "Candy Crush",
+    "h": "falling shapes"
    },
    {
     "w": "Pokemon",
-    "d": "Digimon"
+    "d": "Digimon",
+    "h": "Nintendo"
    },
    {
     "w": "Sonic",
-    "d": "Crash Bandicoot"
+    "d": "Crash Bandicoot",
+    "h": "Sega"
    },
    {
     "w": "Zelda",
-    "d": "Final Fantasy"
+    "d": "Final Fantasy",
+    "h": "fantasy adventure"
    },
    {
     "w": "Among Us",
-    "d": "Fall Guys"
+    "d": "Fall Guys",
+    "h": "finding traitors"
    },
    {
     "w": "Super Smash Bros",
-    "d": "Street Fighter"
+    "d": "Street Fighter",
+    "h": "Nintendo crossovers"
    },
    {
     "w": "FIFA",
-    "d": "NBA 2K"
+    "d": "NBA 2K",
+    "h": "sports leagues"
    },
    {
     "w": "Call of Duty",
-    "d": "Battlefield"
+    "d": "Battlefield",
+    "h": "military shooters"
    },
    {
     "w": "Animal Crossing",
-    "d": "Stardew Valley"
+    "d": "Stardew Valley",
+    "h": "village life"
    },
    {
     "w": "The Sims",
-    "d": "SimCity"
+    "d": "SimCity",
+    "h": "everyday life simulation"
    },
    {
     "w": "Angry Birds",
-    "d": "Fruit Ninja"
+    "d": "Fruit Ninja",
+    "h": "mobile phones"
    },
    {
     "w": "Pikachu",
-    "d": "Charizard"
+    "d": "Charizard",
+    "h": "Nintendo mascots"
    },
    {
     "w": "PlayStation",
-    "d": "Xbox"
+    "d": "Xbox",
+    "h": "Sony"
    },
    {
     "w": "Nintendo Switch",
-    "d": "Game Boy"
+    "d": "Game Boy",
+    "h": "gaming consoles"
    },
    {
     "w": "Donkey Kong",
-    "d": "Kirby"
+    "d": "Kirby",
+    "h": "jungle"
    },
    {
     "w": "Lara Croft",
-    "d": "Nathan Drake"
+    "d": "Nathan Drake",
+    "h": "archaeology"
    },
    {
     "w": "Grand Theft Auto",
-    "d": "Watch Dogs"
+    "d": "Watch Dogs",
+    "h": "crime"
    },
    {
     "w": "Overwatch",
-    "d": "Valorant"
+    "d": "Valorant",
+    "h": "team shooters"
    },
    {
     "w": "League of Legends",
-    "d": "Dota 2"
+    "d": "Dota 2",
+    "h": "esports"
    },
    {
     "w": "Wii Sports",
-    "d": "Just Dance"
+    "d": "Just Dance",
+    "h": "motion controls"
    },
    {
-    "w": "Portal",
-    "d": "Half-Life"
+    "w": "Game Boy",
+    "d": "Tamagotchi",
+    "h": "handheld gaming"
    },
    {
     "w": "Skyrim",
-    "d": "The Witcher"
+    "d": "The Witcher",
+    "h": "dragons"
    },
    {
     "w": "Halo",
-    "d": "Destiny"
+    "d": "Destiny",
+    "h": "space marines"
    },
    {
     "w": "God of War",
-    "d": "Assassin's Creed"
+    "d": "Assassin's Creed",
+    "h": "Greek mythology"
    },
    {
     "w": "Rocket League",
-    "d": "Mario Party"
+    "d": "Mario Party",
+    "h": "cars"
    },
    {
     "w": "Clash of Clans",
-    "d": "Clash Royale"
+    "d": "Clash Royale",
+    "h": "mobile strategy"
    },
    {
     "w": "Subway Surfers",
-    "d": "Temple Run"
+    "d": "Temple Run",
+    "h": "endless running"
    },
    {
     "w": "Kirby",
-    "d": "Yoshi"
+    "d": "Yoshi",
+    "h": "pink characters"
    },
    {
-    "w": "Metroid",
-    "d": "Mega Man"
+    "w": "Tomb Raider",
+    "d": "Uncharted",
+    "h": "ancient ruins"
    },
    {
-    "w": "Elden Ring",
-    "d": "Dark Souls"
+    "w": "Fruit Ninja",
+    "d": "Temple Run",
+    "h": "touchscreen swiping"
    },
    {
-    "w": "Terraria",
-    "d": "Starbound"
+    "w": "Flappy Bird",
+    "d": "Doodle Jump",
+    "h": "one tap mobile"
    },
    {
-    "w": "Hollow Knight",
-    "d": "Celeste"
+    "w": "Street Fighter",
+    "d": "Mortal Kombat",
+    "h": "martial arts"
    },
    {
-    "w": "Cuphead",
-    "d": "Rayman"
+    "w": "Solitaire",
+    "d": "Minesweeper",
+    "h": "Windows computers"
    },
    {
     "w": "Plants vs Zombies",
-    "d": "Bloons TD"
+    "d": "Bloons TD",
+    "h": "tower defense"
    },
    {
-    "w": "Genshin Impact",
-    "d": "Honkai Star Rail"
+    "w": "Pinball",
+    "d": "Air Hockey",
+    "h": "coin machines"
    },
    {
-    "w": "Splatoon",
-    "d": "Overcooked"
+    "w": "Just Dance",
+    "d": "Guitar Hero",
+    "h": "music and movement"
    },
    {
     "w": "Bowser",
-    "d": "Ganondorf"
+    "d": "Ganondorf",
+    "h": "villains"
    },
    {
     "w": "Joystick",
-    "d": "Console"
+    "d": "Console",
+    "h": "controllers"
    },
    {
     "w": "Arcade",
-    "d": "Casino"
+    "d": "Casino",
+    "h": "coin slots"
    },
    {
     "w": "Roblox",
-    "d": "Minecraft"
+    "d": "Minecraft",
+    "h": "user made games"
    },
    {
     "w": "Candy Crush",
-    "d": "Angry Birds"
+    "d": "Angry Birds",
+    "h": "match three puzzles"
    }
   ]
  },
@@ -1866,183 +2316,228 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "Volcano",
-    "d": "Geyser"
+    "d": "Geyser",
+    "h": "eruptions"
    },
    {
     "w": "Camping",
-    "d": "Hiking"
+    "d": "Hiking",
+    "h": "sleeping outdoors"
    },
    {
     "w": "Waterfall",
-    "d": "Rapids"
+    "d": "Rapids",
+    "h": "a cliff edge"
    },
    {
     "w": "Desert",
-    "d": "Savanna"
+    "d": "Savanna",
+    "h": "extreme dryness"
    },
    {
     "w": "Mountain",
-    "d": "Hill"
+    "d": "Hill",
+    "h": "high altitude"
    },
    {
     "w": "Beach",
-    "d": "Lagoon"
+    "d": "Lagoon",
+    "h": "the coast"
    },
    {
     "w": "River",
-    "d": "Stream"
+    "d": "Stream",
+    "h": "flowing water"
    },
    {
     "w": "Lake",
-    "d": "Pond"
+    "d": "Pond",
+    "h": "still fresh water"
    },
    {
     "w": "Ocean",
-    "d": "Bay"
+    "d": "Bay",
+    "h": "salt water"
    },
    {
     "w": "Cave",
-    "d": "Canyon"
+    "d": "Canyon",
+    "h": "underground spaces"
    },
    {
     "w": "Glacier",
-    "d": "Iceberg"
+    "d": "Iceberg",
+    "h": "ancient ice"
    },
    {
     "w": "Island",
-    "d": "Peninsula"
+    "d": "Peninsula",
+    "h": "surrounded by sea"
    },
    {
     "w": "Forest",
-    "d": "Orchard"
+    "d": "Orchard",
+    "h": "lots of trees"
    },
    {
-    "w": "Meadow",
-    "d": "Prairie"
+    "w": "Jungle",
+    "d": "Grassland",
+    "h": "the tropics"
    },
    {
     "w": "Cliff",
-    "d": "Ridge"
+    "d": "Ridge",
+    "h": "a steep drop"
    },
    {
     "w": "Sand Dune",
-    "d": "Oasis"
+    "d": "Oasis",
+    "h": "the Sahara"
    },
    {
     "w": "Coral Reef",
-    "d": "Kelp Forest"
+    "d": "Kelp Forest",
+    "h": "scuba diving"
    },
    {
     "w": "Swamp",
-    "d": "Mangrove"
+    "d": "Mangrove",
+    "h": "murky wetlands"
    },
    {
     "w": "Tornado",
-    "d": "Hurricane"
+    "d": "Hurricane",
+    "h": "the Midwest"
    },
    {
     "w": "Thunderstorm",
-    "d": "Blizzard"
+    "d": "Blizzard",
+    "h": "lightning"
    },
    {
     "w": "Rainbow",
-    "d": "Aurora"
+    "d": "Aurora",
+    "h": "light and color"
    },
    {
     "w": "Sunset",
-    "d": "Sunrise"
+    "d": "Sunrise",
+    "h": "the horizon"
    },
    {
     "w": "Full Moon",
-    "d": "Eclipse"
+    "d": "Eclipse",
+    "h": "the night sky"
    },
    {
     "w": "Campfire",
-    "d": "Lantern"
+    "d": "Lantern",
+    "h": "marshmallows"
    },
    {
     "w": "Fishing",
-    "d": "Kayaking"
+    "d": "Kayaking",
+    "h": "a hobby with rods"
    },
    {
     "w": "Picnic",
-    "d": "Barbecue"
+    "d": "Barbecue",
+    "h": "eating outside"
    },
    {
-    "w": "Trail",
-    "d": "Summit"
+    "w": "Sunflower",
+    "d": "Rose Bush",
+    "h": "a garden"
    },
    {
     "w": "National Park",
-    "d": "Botanical Garden"
+    "d": "Botanical Garden",
+    "h": "protected land"
    },
    {
     "w": "Earthquake",
-    "d": "Landslide"
+    "d": "Landslide",
+    "h": "tectonic plates"
    },
    {
     "w": "Avalanche",
-    "d": "Flood"
+    "d": "Flood",
+    "h": "skiing danger"
    },
    {
     "w": "Valley",
-    "d": "Gorge"
+    "d": "Gorge",
+    "h": "low ground"
    },
    {
     "w": "Hot Spring",
-    "d": "Mud Bath"
+    "d": "Mud Bath",
+    "h": "Iceland"
    },
    {
-    "w": "Tide Pool",
-    "d": "Sandbar"
+    "w": "Seashell",
+    "d": "Starfish",
+    "h": "beachcombing"
    },
    {
     "w": "Quicksand",
-    "d": "Sinkhole"
+    "d": "Sinkhole",
+    "h": "old adventure movies"
    },
    {
     "w": "Mushroom",
-    "d": "Moss"
+    "d": "Moss",
+    "h": "fungi"
    },
    {
     "w": "Cactus",
-    "d": "Tumbleweed"
+    "d": "Tumbleweed",
+    "h": "Arizona"
    },
    {
     "w": "Oak Tree",
-    "d": "Pine Tree"
+    "d": "Pine Tree",
+    "h": "acorns"
    },
    {
     "w": "Wildflower",
-    "d": "Fern"
+    "d": "Fern",
+    "h": "a meadow"
    },
    {
     "w": "Boulder",
-    "d": "Pebble"
+    "d": "Pebble",
+    "h": "climbing rocks"
    },
    {
     "w": "Snowflake",
-    "d": "Hailstone"
+    "d": "Hailstone",
+    "h": "winter weather"
    },
    {
     "w": "Fog",
-    "d": "Dew"
+    "d": "Dew",
+    "h": "poor visibility"
    },
    {
     "w": "Stargazing",
-    "d": "Birdwatching"
+    "d": "Birdwatching",
+    "h": "telescopes"
    },
    {
-    "w": "Hurricane",
-    "d": "Blizzard"
+    "w": "Sandstorm",
+    "d": "Heat Wave",
+    "h": "desert wind"
    },
    {
     "w": "Northern Lights",
-    "d": "Shooting Star"
+    "d": "Shooting Star",
+    "h": "the Arctic sky"
    },
    {
-    "w": "Kayaking",
-    "d": "Snorkeling"
+    "w": "Hammock",
+    "d": "Tent",
+    "h": "lounging between trees"
    }
   ]
  },
@@ -2052,183 +2547,228 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "Microscope",
-    "d": "Telescope"
+    "d": "Telescope",
+    "h": "tiny things"
    },
    {
     "w": "Chemistry",
-    "d": "Biology"
+    "d": "Biology",
+    "h": "a laboratory"
    },
    {
     "w": "Homework",
-    "d": "Exam"
+    "d": "Exam",
+    "h": "evenings at home"
    },
    {
     "w": "Blackboard",
-    "d": "Whiteboard"
+    "d": "Whiteboard",
+    "h": "a classroom wall"
    },
    {
     "w": "Eraser",
-    "d": "Sharpener"
+    "d": "Sharpener",
+    "h": "fixing mistakes"
    },
    {
     "w": "Backpack",
-    "d": "Locker"
+    "d": "Locker",
+    "h": "carrying stuff"
    },
    {
     "w": "Gravity",
-    "d": "Magnetism"
+    "d": "Magnetism",
+    "h": "Newton"
    },
    {
     "w": "Test Tube",
-    "d": "Beaker"
+    "d": "Beaker",
+    "h": "a laboratory"
    },
    {
     "w": "Bunsen Burner",
-    "d": "Hot Plate"
+    "d": "Hot Plate",
+    "h": "a laboratory"
    },
    {
     "w": "Periodic Table",
-    "d": "Multiplication Table"
+    "d": "Multiplication Table",
+    "h": "elements"
    },
    {
     "w": "Calculator",
-    "d": "Abacus"
+    "d": "Abacus",
+    "h": "numbers"
    },
    {
     "w": "Ruler",
-    "d": "Protractor"
+    "d": "Protractor",
+    "h": "measuring"
    },
    {
     "w": "Compass",
-    "d": "Set Square"
+    "d": "Set Square",
+    "h": "finding direction"
    },
    {
     "w": "Globe",
-    "d": "Map"
+    "d": "Map",
+    "h": "geography"
    },
    {
     "w": "Library",
-    "d": "Classroom"
+    "d": "Classroom",
+    "h": "quiet places"
    },
    {
-    "w": "Recess",
-    "d": "Lunch Break"
+    "w": "Telescope",
+    "d": "Microscope",
+    "h": "the night sky"
    },
    {
     "w": "Report Card",
-    "d": "Diploma"
+    "d": "Diploma",
+    "h": "grades"
    },
    {
     "w": "Field Trip",
-    "d": "School Assembly"
+    "d": "School Assembly",
+    "h": "a school outing"
    },
    {
     "w": "Dinosaur Fossil",
-    "d": "Seashell"
+    "d": "Seashell",
+    "h": "a natural history museum"
    },
    {
     "w": "DNA",
-    "d": "Cell"
+    "d": "Cell",
+    "h": "biology"
    },
    {
     "w": "Atom",
-    "d": "Molecule"
+    "d": "Molecule",
+    "h": "very small particles"
    },
    {
     "w": "Electron",
-    "d": "Proton"
+    "d": "Proton",
+    "h": "electricity"
    },
    {
     "w": "Photosynthesis",
-    "d": "Respiration"
+    "d": "Respiration",
+    "h": "plants"
    },
    {
     "w": "Skeleton",
-    "d": "Brain"
+    "d": "Brain",
+    "h": "the human body"
    },
    {
     "w": "Magnet",
-    "d": "Battery"
+    "d": "Battery",
+    "h": "attraction"
    },
    {
     "w": "Lab Coat",
-    "d": "Safety Goggles"
+    "d": "Safety Goggles",
+    "h": "scientists"
    },
    {
     "w": "Notebook",
-    "d": "Textbook"
+    "d": "Textbook",
+    "h": "writing things down"
    },
    {
     "w": "Detention",
-    "d": "Suspension"
+    "d": "Suspension",
+    "h": "punishment"
    },
    {
     "w": "Pop Quiz",
-    "d": "Final Exam"
+    "d": "Final Exam",
+    "h": "surprises in class"
    },
    {
     "w": "Science Fair",
-    "d": "Spelling Bee"
+    "d": "Spelling Bee",
+    "h": "school competitions"
    },
    {
     "w": "Algebra",
-    "d": "Geometry"
+    "d": "Geometry",
+    "h": "maths class"
    },
    {
     "w": "Physics",
-    "d": "Astronomy"
+    "d": "Astronomy",
+    "h": "Einstein"
    },
    {
     "w": "Evolution",
-    "d": "Genetics"
+    "d": "Genetics",
+    "h": "Darwin"
    },
    {
-    "w": "Petri Dish",
-    "d": "Flask"
+    "w": "Magnifying Glass",
+    "d": "Binoculars",
+    "h": "detectives"
    },
    {
     "w": "Frog Dissection",
-    "d": "Plant Experiment"
+    "d": "Plant Experiment",
+    "h": "biology class"
    },
    {
     "w": "Solar Eclipse",
-    "d": "Full Moon"
+    "d": "Full Moon",
+    "h": "the sun and moon"
    },
    {
     "w": "Thermometer",
-    "d": "Barometer"
+    "d": "Barometer",
+    "h": "temperature"
    },
    {
     "w": "Graduation",
-    "d": "Prom"
+    "d": "Prom",
+    "h": "ceremonies"
    },
    {
     "w": "School Bus",
-    "d": "Bicycle"
+    "d": "Bicycle",
+    "h": "the morning commute"
    },
    {
-    "w": "Pipette",
-    "d": "Syringe"
+    "w": "Solar System",
+    "d": "Constellation",
+    "h": "planets"
    },
    {
-    "w": "Lightning Rod",
-    "d": "Weather Vane"
+    "w": "Space Station",
+    "d": "Rocket Launch",
+    "h": "astronauts"
    },
    {
     "w": "Ballpoint Pen",
-    "d": "Crayon"
+    "d": "Crayon",
+    "h": "ink"
    },
    {
-    "w": "Cafeteria Tray",
-    "d": "Locker"
+    "w": "School Uniform",
+    "d": "Gym Class",
+    "h": "dress codes"
    },
    {
     "w": "Locker",
-    "d": "Water Fountain"
+    "d": "Water Fountain",
+    "h": "a school hallway"
    },
    {
     "w": "Protractor",
-    "d": "Abacus"
+    "d": "Abacus",
+    "h": "angles"
    }
   ]
  },
@@ -2238,183 +2778,228 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "Zeus",
-    "d": "Poseidon"
+    "d": "Poseidon",
+    "h": "Mount Olympus"
    },
    {
     "w": "Cleopatra",
-    "d": "Nefertiti"
+    "d": "Nefertiti",
+    "h": "ancient Egypt"
    },
    {
     "w": "Trojan Horse",
-    "d": "Battering Ram"
+    "d": "Battering Ram",
+    "h": "a famous siege"
    },
    {
     "w": "Medusa",
-    "d": "Hydra"
+    "d": "Hydra",
+    "h": "Greek monsters"
    },
    {
     "w": "Julius Caesar",
-    "d": "Alexander The Great"
+    "d": "Alexander The Great",
+    "h": "the Roman Senate"
    },
    {
     "w": "Samurai",
-    "d": "Ninja"
+    "d": "Ninja",
+    "h": "feudal Japan"
    },
    {
     "w": "Thor",
-    "d": "Hercules"
+    "d": "Hercules",
+    "h": "Asgard"
    },
    {
     "w": "Great Wall",
-    "d": "Hadrian's Wall"
+    "d": "Hadrian's Wall",
+    "h": "imperial China"
    },
    {
     "w": "Pyramids",
-    "d": "Ziggurat"
+    "d": "Ziggurat",
+    "h": "the Nile"
    },
    {
     "w": "Sphinx",
-    "d": "Minotaur"
+    "d": "Minotaur",
+    "h": "riddles"
    },
    {
     "w": "Vikings",
-    "d": "Pirates"
+    "d": "Pirates",
+    "h": "Scandinavia"
    },
    {
     "w": "Colosseum",
-    "d": "Parthenon"
+    "d": "Parthenon",
+    "h": "ancient Rome"
    },
    {
     "w": "Excalibur",
-    "d": "Mjolnir"
+    "d": "Mjolnir",
+    "h": "Camelot"
    },
    {
     "w": "Dragon",
-    "d": "Griffin"
+    "d": "Griffin",
+    "h": "fire breathing beasts"
    },
    {
     "w": "Unicorn",
-    "d": "Pegasus"
+    "d": "Pegasus",
+    "h": "rainbows"
    },
    {
     "w": "Mermaid",
-    "d": "Siren"
+    "d": "Siren",
+    "h": "the sea"
    },
    {
     "w": "Atlantis",
-    "d": "El Dorado"
+    "d": "El Dorado",
+    "h": "sunken cities"
    },
    {
     "w": "Napoleon",
-    "d": "Genghis Khan"
+    "d": "Genghis Khan",
+    "h": "French history"
    },
    {
     "w": "Knight",
-    "d": "Gladiator"
+    "d": "Gladiator",
+    "h": "the Middle Ages"
    },
    {
     "w": "Mummy",
-    "d": "Zombie"
+    "d": "Zombie",
+    "h": "tombs"
    },
    {
     "w": "Anubis",
-    "d": "Hades"
+    "d": "Hades",
+    "h": "the afterlife"
    },
    {
     "w": "Odin",
-    "d": "Jupiter"
+    "d": "Jupiter",
+    "h": "Norse myth"
    },
    {
     "w": "Loki",
-    "d": "Hermes"
+    "d": "Hermes",
+    "h": "trickery"
    },
    {
     "w": "Athena",
-    "d": "Aphrodite"
+    "d": "Aphrodite",
+    "h": "Greek gods"
    },
    {
     "w": "Phoenix",
-    "d": "Thunderbird"
+    "d": "Thunderbird",
+    "h": "rebirth"
    },
    {
     "w": "Kraken",
-    "d": "Leviathan"
+    "d": "Leviathan",
+    "h": "sailors tales"
    },
    {
     "w": "Stonehenge",
-    "d": "Easter Island"
+    "d": "Easter Island",
+    "h": "ancient Britain"
    },
    {
-    "w": "King Tut",
-    "d": "Ramses"
+    "w": "Hieroglyphics",
+    "d": "Papyrus Scroll",
+    "h": "ancient writing"
    },
    {
     "w": "Leonardo Da Vinci",
-    "d": "Michelangelo"
+    "d": "Michelangelo",
+    "h": "the Renaissance"
    },
    {
     "w": "Printing Press",
-    "d": "Typewriter"
+    "d": "Typewriter",
+    "h": "early inventions"
    },
    {
     "w": "Silk Road",
-    "d": "Spice Trade"
+    "d": "Spice Trade",
+    "h": "ancient trade"
    },
    {
     "w": "Achilles",
-    "d": "Odysseus"
+    "d": "Odysseus",
+    "h": "Homer"
    },
    {
     "w": "Pandora's Box",
-    "d": "Holy Grail"
+    "d": "Holy Grail",
+    "h": "curiosity"
    },
    {
     "w": "Cyclops",
-    "d": "Ogre"
+    "d": "Ogre",
+    "h": "giants"
    },
    {
-    "w": "Valhalla",
-    "d": "Mount Olympus"
+    "w": "Genie",
+    "d": "Fairy",
+    "h": "Arabian tales"
    },
    {
-    "w": "Ra",
-    "d": "Apollo"
+    "w": "Crown",
+    "d": "Throne",
+    "h": "royalty"
    },
    {
     "w": "Marco Polo",
-    "d": "Christopher Columbus"
+    "d": "Christopher Columbus",
+    "h": "explorers"
    },
    {
     "w": "Joan Of Arc",
-    "d": "Boudicca"
+    "d": "Boudicca",
+    "h": "medieval France"
    },
    {
     "w": "Aztec",
-    "d": "Maya"
+    "d": "Maya",
+    "h": "Mesoamerica"
    },
    {
-    "w": "Terracotta Army",
-    "d": "Rosetta Stone"
+    "w": "Emperor",
+    "d": "Pharaoh",
+    "h": "rulers"
    },
    {
     "w": "Werewolf",
-    "d": "Vampire"
+    "d": "Vampire",
+    "h": "full moons"
    },
    {
     "w": "Centaur",
-    "d": "Satyr"
+    "d": "Satyr",
+    "h": "half human creatures"
    },
    {
-    "w": "Poseidon's Trident",
-    "d": "Zeus's Lightning Bolt"
+    "w": "Chariot",
+    "d": "Catapult",
+    "h": "ancient warfare"
    },
    {
     "w": "Moon Landing",
-    "d": "First Flight"
+    "d": "First Flight",
+    "h": "the space race"
    },
    {
     "w": "Confucius",
-    "d": "Socrates"
+    "d": "Socrates",
+    "h": "ancient philosophy"
    }
   ]
  },
@@ -2424,183 +3009,228 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "Mickey Mouse",
-    "d": "Bugs Bunny"
+    "d": "Bugs Bunny",
+    "h": "Disney parks"
    },
    {
     "w": "Darth Vader",
-    "d": "Kylo Ren"
+    "d": "Kylo Ren",
+    "h": "Star Wars"
    },
    {
     "w": "Elsa",
-    "d": "Rapunzel"
+    "d": "Rapunzel",
+    "h": "a snowy kingdom"
    },
    {
     "w": "Sherlock Holmes",
-    "d": "Hercule Poirot"
+    "d": "Hercule Poirot",
+    "h": "Victorian London"
    },
    {
     "w": "Homer Simpson",
-    "d": "Peter Griffin"
+    "d": "Peter Griffin",
+    "h": "Springfield"
    },
    {
     "w": "Buzz Lightyear",
-    "d": "Iron Man"
+    "d": "Iron Man",
+    "h": "Pixar toys"
    },
    {
     "w": "Winnie the Pooh",
-    "d": "Paddington"
+    "d": "Paddington",
+    "h": "a childrens storybook"
    },
    {
     "w": "Gandalf",
-    "d": "Dumbledore"
+    "d": "Dumbledore",
+    "h": "Middle-earth"
    },
    {
     "w": "Simba",
-    "d": "Bambi"
+    "d": "Bambi",
+    "h": "the African savanna"
    },
    {
     "w": "Ariel",
-    "d": "Moana"
+    "d": "Moana",
+    "h": "under the sea"
    },
    {
     "w": "Woody",
-    "d": "Lightning McQueen"
+    "d": "Lightning McQueen",
+    "h": "Pixar toys"
    },
    {
     "w": "Hulk",
-    "d": "King Kong"
+    "d": "King Kong",
+    "h": "Marvel comics"
    },
    {
     "w": "Yoda",
-    "d": "Gollum"
+    "d": "Gollum",
+    "h": "Star Wars"
    },
    {
     "w": "Peter Pan",
-    "d": "Pinocchio"
+    "d": "Pinocchio",
+    "h": "Neverland"
    },
    {
     "w": "Wonder Woman",
-    "d": "Captain Marvel"
+    "d": "Captain Marvel",
+    "h": "DC comics"
    },
    {
     "w": "Joker",
-    "d": "Lex Luthor"
+    "d": "Lex Luthor",
+    "h": "Gotham City"
    },
    {
     "w": "Tinker Bell",
-    "d": "Thumbelina"
+    "d": "Thumbelina",
+    "h": "Neverland"
    },
    {
     "w": "Olaf",
-    "d": "Frosty the Snowman"
+    "d": "Frosty the Snowman",
+    "h": "a snowy kingdom"
    },
    {
     "w": "Dumbo",
-    "d": "Nemo"
+    "d": "Nemo",
+    "h": "a circus"
    },
    {
-    "w": "Kermit",
-    "d": "Elmo"
+    "w": "Bugs Bunny",
+    "d": "Tom And Jerry",
+    "h": "Looney Tunes"
    },
    {
     "w": "Katniss Everdeen",
-    "d": "Lara Croft"
+    "d": "Lara Croft",
+    "h": "a dystopian arena"
    },
    {
     "w": "Wolverine",
-    "d": "Deadpool"
+    "d": "Deadpool",
+    "h": "the X-Men"
    },
    {
     "w": "James Bond",
-    "d": "Indiana Jones"
+    "d": "Indiana Jones",
+    "h": "British spies"
    },
    {
     "w": "Voldemort",
-    "d": "Sauron"
+    "d": "Sauron",
+    "h": "Hogwarts"
    },
    {
     "w": "Optimus Prime",
-    "d": "Wall-E"
+    "d": "Wall-E",
+    "h": "robot toys"
    },
    {
     "w": "Groot",
-    "d": "Chewbacca"
+    "d": "Chewbacca",
+    "h": "a Marvel space team"
    },
    {
     "w": "Maleficent",
-    "d": "Ursula"
+    "d": "Ursula",
+    "h": "Disney villains"
    },
    {
-    "w": "Willy Wonka",
-    "d": "Mary Poppins"
+    "w": "Fairy Godmother",
+    "d": "Genie",
+    "h": "a royal ball"
    },
    {
     "w": "Dracula",
-    "d": "Frankenstein's Monster"
+    "d": "Frankenstein's Monster",
+    "h": "gothic horror"
    },
    {
     "w": "Thanos",
-    "d": "Darkseid"
+    "d": "Darkseid",
+    "h": "the Avengers"
    },
    {
     "w": "Mowgli",
-    "d": "Tarzan"
+    "d": "Tarzan",
+    "h": "an Indian jungle"
    },
    {
     "w": "Goku",
-    "d": "Naruto"
+    "d": "Naruto",
+    "h": "anime"
    },
    {
-    "w": "Matilda",
-    "d": "Hermione Granger"
+    "w": "Popeye",
+    "d": "Hercules",
+    "h": "old cartoons"
    },
    {
     "w": "Iron Man",
-    "d": "Captain America"
+    "d": "Captain America",
+    "h": "the Avengers"
    },
    {
     "w": "Captain America",
-    "d": "Black Panther"
+    "d": "Black Panther",
+    "h": "the Avengers"
    },
    {
     "w": "Robin Hood",
-    "d": "King Arthur"
+    "d": "King Arthur",
+    "h": "medieval England"
    },
    {
     "w": "King Arthur",
-    "d": "Merlin"
+    "d": "Merlin",
+    "h": "old legends"
    },
    {
     "w": "Alice In Wonderland",
-    "d": "Dorothy Gale"
+    "d": "Dorothy Gale",
+    "h": "a strange dream"
    },
    {
-    "w": "Dorothy Gale",
-    "d": "Wicked Witch"
+    "w": "Puss In Boots",
+    "d": "Shrek",
+    "h": "a fairy tale"
    },
    {
     "w": "Snow White",
-    "d": "Sleeping Beauty"
+    "d": "Sleeping Beauty",
+    "h": "Disney princesses"
    },
    {
     "w": "Sleeping Beauty",
-    "d": "Rapunzel"
+    "d": "Rapunzel",
+    "h": "Disney princesses"
    },
    {
     "w": "Pinocchio",
-    "d": "Geppetto"
+    "d": "Geppetto",
+    "h": "a wooden puppet"
    },
    {
     "w": "Tarzan",
-    "d": "Robinson Crusoe"
+    "d": "Robinson Crusoe",
+    "h": "the jungle"
    },
    {
     "w": "Hermione Granger",
-    "d": "Ron Weasley"
+    "d": "Ron Weasley",
+    "h": "Hogwarts"
    },
    {
     "w": "Gollum",
-    "d": "Frodo Baggins"
+    "d": "Frodo Baggins",
+    "h": "Middle-earth"
    }
   ]
  },
@@ -2610,183 +3240,228 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "France",
-    "d": "Italy"
+    "d": "Italy",
+    "h": "European culture"
    },
    {
     "w": "Brazil",
-    "d": "Argentina"
+    "d": "Argentina",
+    "h": "the Amazon"
    },
    {
     "w": "Japan",
-    "d": "South Korea"
+    "d": "South Korea",
+    "h": "East Asia"
    },
    {
     "w": "Rome",
-    "d": "Athens"
+    "d": "Athens",
+    "h": "ancient empires"
    },
    {
     "w": "Amsterdam",
-    "d": "Copenhagen"
+    "d": "Copenhagen",
+    "h": "canals and bikes"
    },
    {
     "w": "Egypt",
-    "d": "Morocco"
+    "d": "Morocco",
+    "h": "the Nile"
    },
    {
     "w": "Canada",
-    "d": "Norway"
+    "d": "Norway",
+    "h": "cold northern winters"
    },
    {
     "w": "Mexico",
-    "d": "Spain"
+    "d": "Spain",
+    "h": "spicy food"
    },
    {
     "w": "India",
-    "d": "Pakistan"
+    "d": "Pakistan",
+    "h": "South Asia"
    },
    {
     "w": "China",
-    "d": "Vietnam"
+    "d": "Vietnam",
+    "h": "huge populations"
    },
    {
     "w": "Germany",
-    "d": "Austria"
+    "d": "Austria",
+    "h": "beer and engineering"
    },
    {
     "w": "Los Angeles",
-    "d": "Miami"
+    "d": "Miami",
+    "h": "the movie industry"
    },
    {
     "w": "Las Vegas",
-    "d": "Monaco"
+    "d": "Monaco",
+    "h": "gambling"
    },
    {
     "w": "Singapore",
-    "d": "Hong Kong"
+    "d": "Hong Kong",
+    "h": "Southeast Asia"
    },
    {
     "w": "Greece",
-    "d": "Turkey"
+    "d": "Turkey",
+    "h": "ancient myths"
    },
    {
     "w": "Australia",
-    "d": "New Zealand"
+    "d": "New Zealand",
+    "h": "the southern hemisphere"
    },
    {
     "w": "Switzerland",
-    "d": "Sweden"
+    "d": "Sweden",
+    "h": "the Alps"
    },
    {
     "w": "Ireland",
-    "d": "Scotland"
+    "d": "Scotland",
+    "h": "green islands"
    },
    {
     "w": "Istanbul",
-    "d": "Marrakech"
+    "d": "Marrakech",
+    "h": "the Ottoman era"
    },
    {
     "w": "Cuba",
-    "d": "Jamaica"
+    "d": "Jamaica",
+    "h": "the Caribbean"
    },
    {
     "w": "Kenya",
-    "d": "Tanzania"
+    "d": "Tanzania",
+    "h": "safari wildlife"
    },
    {
     "w": "Peru",
-    "d": "Bolivia"
+    "d": "Bolivia",
+    "h": "the Andes"
    },
    {
     "w": "Portugal",
-    "d": "Croatia"
+    "d": "Croatia",
+    "h": "Atlantic explorers"
    },
    {
     "w": "Chicago",
-    "d": "Toronto"
+    "d": "Toronto",
+    "h": "American skyscrapers"
    },
    {
     "w": "Vienna",
-    "d": "Budapest"
+    "d": "Budapest",
+    "h": "classical music"
    },
    {
     "w": "Seoul",
-    "d": "Taipei"
+    "d": "Taipei",
+    "h": "K-pop"
    },
    {
     "w": "Madrid",
-    "d": "Lisbon"
+    "d": "Lisbon",
+    "h": "Spanish culture"
    },
    {
     "w": "Russia",
-    "d": "Ukraine"
+    "d": "Ukraine",
+    "h": "vast cold territory"
    },
    {
     "w": "Thailand",
-    "d": "Indonesia"
+    "d": "Indonesia",
+    "h": "tropical beaches"
    },
    {
     "w": "Nigeria",
-    "d": "Ghana"
+    "d": "Ghana",
+    "h": "West Africa"
    },
    {
     "w": "Chile",
-    "d": "Colombia"
+    "d": "Colombia",
+    "h": "South America"
    },
    {
     "w": "Finland",
-    "d": "Denmark"
+    "d": "Denmark",
+    "h": "the Arctic north"
    },
    {
     "w": "Cape Town",
-    "d": "Nairobi"
+    "d": "Nairobi",
+    "h": "southern Africa"
    },
    {
     "w": "Buenos Aires",
-    "d": "Santiago"
+    "d": "Santiago",
+    "h": "tango"
    },
    {
     "w": "San Francisco",
-    "d": "Seattle"
+    "d": "Seattle",
+    "h": "tech startups"
    },
    {
-    "w": "Edinburgh",
-    "d": "Dublin"
+    "w": "New Zealand",
+    "d": "Fiji",
+    "h": "remote islands"
    },
    {
     "w": "Saudi Arabia",
-    "d": "Qatar"
+    "d": "Qatar",
+    "h": "desert oil"
    },
    {
     "w": "Philippines",
-    "d": "Malaysia"
+    "d": "Malaysia",
+    "h": "tropical archipelagos"
    },
    {
     "w": "Norway",
-    "d": "Sweden"
+    "d": "Sweden",
+    "h": "fjords"
    },
    {
     "w": "Vietnam",
-    "d": "Cambodia"
+    "d": "Cambodia",
+    "h": "rice paddies"
    },
    {
     "w": "Poland",
-    "d": "Hungary"
+    "d": "Hungary",
+    "h": "Eastern Europe"
    },
    {
     "w": "Morocco",
-    "d": "Tunisia"
+    "d": "Tunisia",
+    "h": "the Sahara"
    },
    {
     "w": "Jamaica",
-    "d": "Bahamas"
+    "d": "Bahamas",
+    "h": "reggae"
    },
    {
     "w": "Colombia",
-    "d": "Ecuador"
+    "d": "Ecuador",
+    "h": "coffee growing"
    },
    {
     "w": "Prague",
-    "d": "Budapest"
+    "d": "Budapest",
+    "h": "old European castles"
    }
   ]
  },
@@ -2796,183 +3471,228 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "WiFi",
-    "d": "Bluetooth"
+    "d": "Bluetooth",
+    "h": "home internet"
    },
    {
     "w": "YouTube",
-    "d": "Twitch"
+    "d": "Twitch",
+    "h": "online video"
    },
    {
     "w": "Emoji",
-    "d": "Sticker"
+    "d": "Sticker",
+    "h": "texting"
    },
    {
     "w": "Selfie",
-    "d": "Group Photo"
+    "d": "Group Photo",
+    "h": "phone cameras"
    },
    {
     "w": "Password",
-    "d": "Fingerprint"
+    "d": "Fingerprint",
+    "h": "account security"
    },
    {
     "w": "Robot",
-    "d": "Drone"
+    "d": "Drone",
+    "h": "factories"
    },
    {
     "w": "Smartphone",
-    "d": "Tablet"
+    "d": "Tablet",
+    "h": "pockets"
    },
    {
     "w": "Instagram",
-    "d": "Snapchat"
+    "d": "Snapchat",
+    "h": "social media"
    },
    {
     "w": "TikTok",
-    "d": "YouTube Shorts"
+    "d": "YouTube Shorts",
+    "h": "short videos"
    },
    {
     "w": "Netflix",
-    "d": "Disney Plus"
+    "d": "Disney Plus",
+    "h": "streaming at home"
    },
    {
     "w": "Google",
-    "d": "Bing"
+    "d": "Bing",
+    "h": "the web"
    },
    {
     "w": "Meme",
-    "d": "GIF"
+    "d": "GIF",
+    "h": "internet humor"
    },
    {
     "w": "Charger",
-    "d": "Power Bank"
+    "d": "Power Bank",
+    "h": "batteries"
    },
    {
     "w": "Laptop",
-    "d": "Desktop Computer"
+    "d": "Desktop Computer",
+    "h": "office work"
    },
    {
     "w": "Video Call",
-    "d": "Voice Message"
+    "d": "Voice Message",
+    "h": "remote work"
    },
    {
     "w": "Spotify",
-    "d": "Podcast"
+    "d": "Podcast",
+    "h": "listening to music"
    },
    {
     "w": "Livestream",
-    "d": "Vlog"
+    "d": "Vlog",
+    "h": "online audiences"
    },
    {
     "w": "Hashtag",
-    "d": "Caption"
+    "d": "Caption",
+    "h": "social posts"
    },
    {
     "w": "Influencer",
-    "d": "Celebrity"
+    "d": "Celebrity",
+    "h": "online fame"
    },
    {
     "w": "Screenshot",
-    "d": "Screen Recording"
+    "d": "Screen Recording",
+    "h": "phone screens"
    },
    {
     "w": "Smartwatch",
-    "d": "Fitness Tracker"
+    "d": "Fitness Tracker",
+    "h": "wrists"
    },
    {
     "w": "Keyboard",
-    "d": "Mouse"
+    "d": "Mouse",
+    "h": "typing"
    },
    {
-    "w": "Cloud Storage",
-    "d": "USB Drive"
+    "w": "Smart TV",
+    "d": "Projector",
+    "h": "the living room"
    },
    {
     "w": "QR Code",
-    "d": "Barcode"
+    "d": "Barcode",
+    "h": "scanning"
    },
    {
     "w": "Autocorrect",
-    "d": "Spell Check"
+    "d": "Spell Check",
+    "h": "typos"
    },
    {
-    "w": "Notification",
-    "d": "Alarm"
+    "w": "Touchscreen",
+    "d": "Stylus Pen",
+    "h": "fingers"
    },
    {
     "w": "Group Chat",
-    "d": "Comment Section"
+    "d": "Comment Section",
+    "h": "friends messaging"
    },
    {
     "w": "Wikipedia",
-    "d": "Encyclopedia"
+    "d": "Encyclopedia",
+    "h": "looking things up"
    },
    {
     "w": "Amazon",
-    "d": "eBay"
+    "d": "eBay",
+    "h": "online shopping"
    },
    {
     "w": "Siri",
-    "d": "Alexa"
+    "d": "Alexa",
+    "h": "voice assistants"
    },
    {
     "w": "Email",
-    "d": "Text Message"
+    "d": "Text Message",
+    "h": "the inbox"
    },
    {
     "w": "Ringtone",
-    "d": "Vibration"
+    "d": "Vibration",
+    "h": "incoming calls"
    },
    {
-    "w": "App Store",
-    "d": "Website"
+    "w": "Printer",
+    "d": "Scanner",
+    "h": "paper"
    },
    {
     "w": "Gaming Console",
-    "d": "Gaming PC"
+    "d": "Gaming PC",
+    "h": "the living room"
    },
    {
     "w": "Virtual Reality",
-    "d": "Video Game"
+    "d": "Video Game",
+    "h": "headsets"
    },
    {
     "w": "Chatbot",
-    "d": "Search Engine"
+    "d": "Search Engine",
+    "h": "customer support"
    },
    {
-    "w": "Face ID",
-    "d": "PIN Code"
+    "w": "Webcam",
+    "d": "Headset",
+    "h": "video meetings"
    },
    {
     "w": "Router",
-    "d": "Modem"
+    "d": "Modem",
+    "h": "home networks"
    },
    {
     "w": "Spam",
-    "d": "Pop-up Ad"
+    "d": "Pop-up Ad",
+    "h": "junk messages"
    },
    {
     "w": "Download",
-    "d": "Upload"
+    "d": "Upload",
+    "h": "files"
    },
    {
     "w": "Airplane Mode",
-    "d": "Do Not Disturb"
+    "d": "Do Not Disturb",
+    "h": "flights"
    },
    {
     "w": "Dark Mode",
-    "d": "Screen Brightness"
+    "d": "Screen Brightness",
+    "h": "screen settings"
    },
    {
     "w": "Bluetooth",
-    "d": "Hotspot"
+    "d": "Hotspot",
+    "h": "wireless devices"
    },
    {
     "w": "Podcast",
-    "d": "Audiobook"
+    "d": "Audiobook",
+    "h": "listening on commutes"
    },
    {
     "w": "Drone",
-    "d": "Dashcam"
+    "d": "Dashcam",
+    "h": "flying gadgets"
    }
   ]
  }

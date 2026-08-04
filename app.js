@@ -332,6 +332,9 @@ function startRound() {
     emoji: pack.emoji,
     word: entry.w,
     decoy: entry.d,
+    // a genuinely helpful associated word for Hint mode — deliberately NOT the
+    // decoy, which is a confusable look-alike and makes a useless hint
+    hint: entry.h || entry.d,
     imposters: pickImposters(),
     clueOrder: shuffle(S.players.map((_, i) => i)),
     revealIdx: 0,
@@ -401,7 +404,7 @@ $('btn-im-ready').addEventListener('click', () => {
     $('secret-category').textContent = '🚨 You are the';
     $('secret-word').textContent = 'Imposter';
     $('secret-sub').textContent = S.settings.mode === 'hint'
-      ? `Hint — the secret word is similar to: ${g.decoy}`
+      ? `💡 Hint: it has something to do with ${g.hint}`
       : 'You don’t know the word. Fake it!';
   }
   $('reveal-gate').classList.add('hidden');

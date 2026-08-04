@@ -195,15 +195,16 @@ const ok = (msg) => console.log('ok –', msg);
   if (await active() !== 'screen-settings') fail('expected settings after decoy abort, got ' + await active());
   await page.evaluate(() => { S.settings.mode = 'hint'; renderSettings(); });
   await page.click('#btn-start-game');
-  const gH = await page.evaluate(() => ({ imp: S.game.imposters[0], decoy: S.game.decoy, word: S.game.word }));
+  const gH = await page.evaluate(() => ({ imp: S.game.imposters[0], hint: S.game.hint, decoy: S.game.decoy, word: S.game.word }));
   for (let i = 0; i < 4; i++) {
     await page.click('#btn-im-ready');
     const sub = await page.textContent('#secret-sub');
     const shown = await page.textContent('#secret-word');
     if (i === gH.imp) {
       if (shown !== 'Imposter') fail('hint imposter card wrong: ' + shown);
-      if (!sub.includes(gH.decoy)) fail('hint card missing the hint word: ' + sub);
+      if (!sub.includes(gH.hint)) fail('hint card missing the hint word: ' + sub);
       if (sub.includes(gH.word)) fail('hint card leaks the secret word: ' + sub);
+      if (gH.hint.toLowerCase() === gH.word.toLowerCase()) fail('hint equals the secret word');
     } else if (shown !== gH.word) fail('hint crew saw wrong word: ' + shown);
     await page.dispatchEvent('#reveal-card', 'pointerdown');
     await page.waitForSelector('#btn-reveal-done:not([disabled])', { timeout: 3000 });
@@ -213,7 +214,7 @@ const ok = (msg) => console.log('ok –', msg);
   await page.click('#btn-abort-round2');
   await page.click('#confirm-yes');
   if (await active() !== 'screen-settings') fail('expected settings after hint abort, got ' + await active());
-  ok('hint mode: imposter gets similar-word hint, secret never leaks');
+  ok('hint mode: imposter gets a helpful clue word, secret never leaks');
 
   // ================= ORIGINAL style: talk & one-tap reveal, no scores =================
   await page.evaluate(() => { S.settings.gameStyle = 'original'; S.settings.mode = 'classic'; S.settings.timer = 0; renderSettings(); });
