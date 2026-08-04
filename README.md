@@ -22,7 +22,7 @@ No build, no install — it's a single static page:
 4. **The twist** — a caught imposter can still steal points by guessing the secret word from 8 options.
 
 ### ✨ Features
-- **3 imposter modes:** Classic (imposter knows nothing), Hint (imposter sees the category), and **Decoy** — the imposter gets a similar-but-wrong word and doesn't even know they're the imposter!
+- **3 imposter modes:** Classic (imposter knows nothing), Hint (imposter gets a hint word similar to the secret word), and **Decoy** — the imposter gets a similar-but-wrong word and doesn't even know they're the imposter!
 - 12 categories, 535 word pairs — 1,070 playable words counting decoys (food, animals, movies, sports, video games…)
 - 3–20 players, 1–3 imposters for bigger groups, discussion timer, score tracking across rounds with a final podium 🏆
 - Words never repeat until a category is exhausted; players, settings & scores are remembered between sessions

@@ -2211,5 +2211,749 @@ const WORD_PACKS = [
     "d": "Weather Vane"
    }
   ]
+ },
+ {
+  "category": "History & Mythology",
+  "emoji": "🏛️",
+  "words": [
+   {
+    "w": "Zeus",
+    "d": "Poseidon"
+   },
+   {
+    "w": "Cleopatra",
+    "d": "Nefertiti"
+   },
+   {
+    "w": "Trojan Horse",
+    "d": "Battering Ram"
+   },
+   {
+    "w": "Medusa",
+    "d": "Hydra"
+   },
+   {
+    "w": "Julius Caesar",
+    "d": "Alexander The Great"
+   },
+   {
+    "w": "Samurai",
+    "d": "Ninja"
+   },
+   {
+    "w": "Thor",
+    "d": "Hercules"
+   },
+   {
+    "w": "Great Wall",
+    "d": "Hadrian's Wall"
+   },
+   {
+    "w": "Pyramids",
+    "d": "Ziggurat"
+   },
+   {
+    "w": "Sphinx",
+    "d": "Minotaur"
+   },
+   {
+    "w": "Vikings",
+    "d": "Pirates"
+   },
+   {
+    "w": "Colosseum",
+    "d": "Parthenon"
+   },
+   {
+    "w": "Excalibur",
+    "d": "Mjolnir"
+   },
+   {
+    "w": "Dragon",
+    "d": "Griffin"
+   },
+   {
+    "w": "Unicorn",
+    "d": "Pegasus"
+   },
+   {
+    "w": "Mermaid",
+    "d": "Siren"
+   },
+   {
+    "w": "Atlantis",
+    "d": "El Dorado"
+   },
+   {
+    "w": "Napoleon",
+    "d": "Genghis Khan"
+   },
+   {
+    "w": "Knight",
+    "d": "Gladiator"
+   },
+   {
+    "w": "Mummy",
+    "d": "Zombie"
+   },
+   {
+    "w": "Anubis",
+    "d": "Hades"
+   },
+   {
+    "w": "Odin",
+    "d": "Jupiter"
+   },
+   {
+    "w": "Loki",
+    "d": "Hermes"
+   },
+   {
+    "w": "Athena",
+    "d": "Aphrodite"
+   },
+   {
+    "w": "Phoenix",
+    "d": "Thunderbird"
+   },
+   {
+    "w": "Kraken",
+    "d": "Leviathan"
+   },
+   {
+    "w": "Stonehenge",
+    "d": "Easter Island"
+   },
+   {
+    "w": "King Tut",
+    "d": "Ramses"
+   },
+   {
+    "w": "Leonardo Da Vinci",
+    "d": "Michelangelo"
+   },
+   {
+    "w": "Printing Press",
+    "d": "Typewriter"
+   },
+   {
+    "w": "Silk Road",
+    "d": "Spice Trade"
+   },
+   {
+    "w": "Achilles",
+    "d": "Odysseus"
+   },
+   {
+    "w": "Pandora's Box",
+    "d": "Holy Grail"
+   },
+   {
+    "w": "Cyclops",
+    "d": "Ogre"
+   },
+   {
+    "w": "Valhalla",
+    "d": "Mount Olympus"
+   },
+   {
+    "w": "Ra",
+    "d": "Apollo"
+   },
+   {
+    "w": "Marco Polo",
+    "d": "Christopher Columbus"
+   },
+   {
+    "w": "Joan Of Arc",
+    "d": "Boudicca"
+   },
+   {
+    "w": "Aztec",
+    "d": "Maya"
+   },
+   {
+    "w": "Terracotta Army",
+    "d": "Rosetta Stone"
+   },
+   {
+    "w": "Werewolf",
+    "d": "Vampire"
+   },
+   {
+    "w": "Centaur",
+    "d": "Satyr"
+   },
+   {
+    "w": "Poseidon's Trident",
+    "d": "Zeus's Lightning Bolt"
+   },
+   {
+    "w": "Moon Landing",
+    "d": "First Flight"
+   },
+   {
+    "w": "Confucius",
+    "d": "Socrates"
+   }
+  ]
+ },
+ {
+  "category": "Fictional Characters",
+  "emoji": "🦸",
+  "words": [
+   {
+    "w": "Mickey Mouse",
+    "d": "Bugs Bunny"
+   },
+   {
+    "w": "Darth Vader",
+    "d": "Kylo Ren"
+   },
+   {
+    "w": "Spider-Man",
+    "d": "Batman"
+   },
+   {
+    "w": "Elsa",
+    "d": "Rapunzel"
+   },
+   {
+    "w": "Pikachu",
+    "d": "Charmander"
+   },
+   {
+    "w": "Harry Potter",
+    "d": "Percy Jackson"
+   },
+   {
+    "w": "Sherlock Holmes",
+    "d": "Hercule Poirot"
+   },
+   {
+    "w": "Homer Simpson",
+    "d": "Peter Griffin"
+   },
+   {
+    "w": "Shrek",
+    "d": "The Grinch"
+   },
+   {
+    "w": "SpongeBob",
+    "d": "Patrick Star"
+   },
+   {
+    "w": "Superman",
+    "d": "Captain America"
+   },
+   {
+    "w": "Cinderella",
+    "d": "Snow White"
+   },
+   {
+    "w": "Mario",
+    "d": "Sonic"
+   },
+   {
+    "w": "Buzz Lightyear",
+    "d": "Iron Man"
+   },
+   {
+    "w": "Winnie the Pooh",
+    "d": "Paddington"
+   },
+   {
+    "w": "Scooby-Doo",
+    "d": "Snoopy"
+   },
+   {
+    "w": "Gandalf",
+    "d": "Dumbledore"
+   },
+   {
+    "w": "Simba",
+    "d": "Bambi"
+   },
+   {
+    "w": "Ariel",
+    "d": "Moana"
+   },
+   {
+    "w": "Woody",
+    "d": "Lightning McQueen"
+   },
+   {
+    "w": "Hulk",
+    "d": "King Kong"
+   },
+   {
+    "w": "Yoda",
+    "d": "Gollum"
+   },
+   {
+    "w": "Peter Pan",
+    "d": "Pinocchio"
+   },
+   {
+    "w": "Wonder Woman",
+    "d": "Captain Marvel"
+   },
+   {
+    "w": "Joker",
+    "d": "Lex Luthor"
+   },
+   {
+    "w": "Tinker Bell",
+    "d": "Thumbelina"
+   },
+   {
+    "w": "Olaf",
+    "d": "Frosty the Snowman"
+   },
+   {
+    "w": "Dumbo",
+    "d": "Nemo"
+   },
+   {
+    "w": "Aladdin",
+    "d": "Robin Hood"
+   },
+   {
+    "w": "Kermit",
+    "d": "Elmo"
+   },
+   {
+    "w": "Thor",
+    "d": "Hercules"
+   },
+   {
+    "w": "Katniss Everdeen",
+    "d": "Lara Croft"
+   },
+   {
+    "w": "Wolverine",
+    "d": "Deadpool"
+   },
+   {
+    "w": "James Bond",
+    "d": "Indiana Jones"
+   },
+   {
+    "w": "Voldemort",
+    "d": "Sauron"
+   },
+   {
+    "w": "Optimus Prime",
+    "d": "Wall-E"
+   },
+   {
+    "w": "Groot",
+    "d": "Chewbacca"
+   },
+   {
+    "w": "Maleficent",
+    "d": "Ursula"
+   },
+   {
+    "w": "Donkey Kong",
+    "d": "Kirby"
+   },
+   {
+    "w": "Willy Wonka",
+    "d": "Mary Poppins"
+   },
+   {
+    "w": "Dracula",
+    "d": "Frankenstein's Monster"
+   },
+   {
+    "w": "Thanos",
+    "d": "Darkseid"
+   },
+   {
+    "w": "Mowgli",
+    "d": "Tarzan"
+   },
+   {
+    "w": "Goku",
+    "d": "Naruto"
+   },
+   {
+    "w": "Matilda",
+    "d": "Hermione Granger"
+   }
+  ]
+ },
+ {
+  "category": "Countries & Cities",
+  "emoji": "🌍",
+  "words": [
+   {
+    "w": "France",
+    "d": "Italy"
+   },
+   {
+    "w": "Brazil",
+    "d": "Argentina"
+   },
+   {
+    "w": "Japan",
+    "d": "South Korea"
+   },
+   {
+    "w": "Rome",
+    "d": "Athens"
+   },
+   {
+    "w": "Amsterdam",
+    "d": "Copenhagen"
+   },
+   {
+    "w": "Egypt",
+    "d": "Morocco"
+   },
+   {
+    "w": "Canada",
+    "d": "Norway"
+   },
+   {
+    "w": "Mexico",
+    "d": "Spain"
+   },
+   {
+    "w": "India",
+    "d": "Pakistan"
+   },
+   {
+    "w": "China",
+    "d": "Vietnam"
+   },
+   {
+    "w": "Germany",
+    "d": "Austria"
+   },
+   {
+    "w": "Moscow",
+    "d": "Warsaw"
+   },
+   {
+    "w": "Los Angeles",
+    "d": "Miami"
+   },
+   {
+    "w": "Las Vegas",
+    "d": "Monaco"
+   },
+   {
+    "w": "Singapore",
+    "d": "Hong Kong"
+   },
+   {
+    "w": "Greece",
+    "d": "Turkey"
+   },
+   {
+    "w": "Australia",
+    "d": "New Zealand"
+   },
+   {
+    "w": "Switzerland",
+    "d": "Sweden"
+   },
+   {
+    "w": "Ireland",
+    "d": "Scotland"
+   },
+   {
+    "w": "Istanbul",
+    "d": "Marrakech"
+   },
+   {
+    "w": "Bangkok",
+    "d": "Manila"
+   },
+   {
+    "w": "Cuba",
+    "d": "Jamaica"
+   },
+   {
+    "w": "Kenya",
+    "d": "Tanzania"
+   },
+   {
+    "w": "Peru",
+    "d": "Bolivia"
+   },
+   {
+    "w": "Portugal",
+    "d": "Croatia"
+   },
+   {
+    "w": "Chicago",
+    "d": "Toronto"
+   },
+   {
+    "w": "Berlin",
+    "d": "Prague"
+   },
+   {
+    "w": "Vienna",
+    "d": "Budapest"
+   },
+   {
+    "w": "Seoul",
+    "d": "Taipei"
+   },
+   {
+    "w": "Madrid",
+    "d": "Lisbon"
+   },
+   {
+    "w": "Russia",
+    "d": "Ukraine"
+   },
+   {
+    "w": "Netherlands",
+    "d": "Belgium"
+   },
+   {
+    "w": "Thailand",
+    "d": "Indonesia"
+   },
+   {
+    "w": "Nigeria",
+    "d": "Ghana"
+   },
+   {
+    "w": "Chile",
+    "d": "Colombia"
+   },
+   {
+    "w": "Finland",
+    "d": "Denmark"
+   },
+   {
+    "w": "Mumbai",
+    "d": "Delhi"
+   },
+   {
+    "w": "Shanghai",
+    "d": "Beijing"
+   },
+   {
+    "w": "Cape Town",
+    "d": "Nairobi"
+   },
+   {
+    "w": "Buenos Aires",
+    "d": "Santiago"
+   },
+   {
+    "w": "San Francisco",
+    "d": "Seattle"
+   },
+   {
+    "w": "Edinburgh",
+    "d": "Dublin"
+   },
+   {
+    "w": "Havana",
+    "d": "Kingston"
+   },
+   {
+    "w": "Saudi Arabia",
+    "d": "Qatar"
+   },
+   {
+    "w": "Philippines",
+    "d": "Malaysia"
+   }
+  ]
+ },
+ {
+  "category": "Technology & Internet",
+  "emoji": "📱",
+  "words": [
+   {
+    "w": "WiFi",
+    "d": "Bluetooth"
+   },
+   {
+    "w": "YouTube",
+    "d": "Twitch"
+   },
+   {
+    "w": "Emoji",
+    "d": "Sticker"
+   },
+   {
+    "w": "Selfie",
+    "d": "Group Photo"
+   },
+   {
+    "w": "Password",
+    "d": "Fingerprint"
+   },
+   {
+    "w": "Robot",
+    "d": "Drone"
+   },
+   {
+    "w": "Smartphone",
+    "d": "Tablet"
+   },
+   {
+    "w": "Instagram",
+    "d": "Snapchat"
+   },
+   {
+    "w": "TikTok",
+    "d": "YouTube Shorts"
+   },
+   {
+    "w": "Netflix",
+    "d": "Disney Plus"
+   },
+   {
+    "w": "Google",
+    "d": "Bing"
+   },
+   {
+    "w": "Meme",
+    "d": "GIF"
+   },
+   {
+    "w": "Charger",
+    "d": "Power Bank"
+   },
+   {
+    "w": "Headphones",
+    "d": "Speaker"
+   },
+   {
+    "w": "Laptop",
+    "d": "Desktop Computer"
+   },
+   {
+    "w": "Video Call",
+    "d": "Voice Message"
+   },
+   {
+    "w": "Spotify",
+    "d": "Podcast"
+   },
+   {
+    "w": "Livestream",
+    "d": "Vlog"
+   },
+   {
+    "w": "Hashtag",
+    "d": "Caption"
+   },
+   {
+    "w": "Influencer",
+    "d": "Celebrity"
+   },
+   {
+    "w": "Screenshot",
+    "d": "Screen Recording"
+   },
+   {
+    "w": "Airpods",
+    "d": "Earbuds Wired"
+   },
+   {
+    "w": "Smartwatch",
+    "d": "Fitness Tracker"
+   },
+   {
+    "w": "Keyboard",
+    "d": "Mouse"
+   },
+   {
+    "w": "Cloud Storage",
+    "d": "USB Drive"
+   },
+   {
+    "w": "QR Code",
+    "d": "Barcode"
+   },
+   {
+    "w": "Autocorrect",
+    "d": "Spell Check"
+   },
+   {
+    "w": "Notification",
+    "d": "Alarm"
+   },
+   {
+    "w": "Group Chat",
+    "d": "Comment Section"
+   },
+   {
+    "w": "Wikipedia",
+    "d": "Encyclopedia"
+   },
+   {
+    "w": "Amazon",
+    "d": "eBay"
+   },
+   {
+    "w": "Siri",
+    "d": "Alexa"
+   },
+   {
+    "w": "Email",
+    "d": "Text Message"
+   },
+   {
+    "w": "Ringtone",
+    "d": "Vibration"
+   },
+   {
+    "w": "App Store",
+    "d": "Website"
+   },
+   {
+    "w": "Gaming Console",
+    "d": "Gaming PC"
+   },
+   {
+    "w": "Virtual Reality",
+    "d": "Video Game"
+   },
+   {
+    "w": "Chatbot",
+    "d": "Search Engine"
+   },
+   {
+    "w": "Face ID",
+    "d": "PIN Code"
+   },
+   {
+    "w": "Router",
+    "d": "Modem"
+   },
+   {
+    "w": "Spam",
+    "d": "Pop-up Ad"
+   },
+   {
+    "w": "Download",
+    "d": "Upload"
+   },
+   {
+    "w": "Airplane Mode",
+    "d": "Do Not Disturb"
+   },
+   {
+    "w": "Dark Mode",
+    "d": "Screen Brightness"
+   },
+   {
+    "w": "Battery",
+    "d": "Charging Cable"
+   }
+  ]
  }
 ];

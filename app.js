@@ -393,7 +393,7 @@ $('btn-im-ready').addEventListener('click', () => {
     $('secret-category').textContent = '🚨 You are the';
     $('secret-word').textContent = 'Imposter';
     $('secret-sub').textContent = S.settings.mode === 'hint'
-      ? `Hint — the category is: ${g.emoji} ${g.category}`
+      ? `Hint — the secret word is similar to: ${g.decoy}`
       : 'You don’t know the word. Fake it!';
   }
   $('reveal-gate').classList.add('hidden');

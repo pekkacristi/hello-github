@@ -189,10 +189,33 @@ const ok = (msg) => console.log('ok –', msg);
   }
   ok('decoy mode: imposter unknowingly sees decoy, crew sees word');
 
-  // ================= ORIGINAL style: talk & one-tap reveal, no scores =================
+  // ================= HINT mode: imposter gets a similar-word hint =================
   await page.click('#btn-abort-round2'); // leave the decoy round
   await page.click('#confirm-yes');
   if (await active() !== 'screen-settings') fail('expected settings after decoy abort, got ' + await active());
+  await page.evaluate(() => { S.settings.mode = 'hint'; renderSettings(); });
+  await page.click('#btn-start-game');
+  const gH = await page.evaluate(() => ({ imp: S.game.imposters[0], decoy: S.game.decoy, word: S.game.word }));
+  for (let i = 0; i < 4; i++) {
+    await page.click('#btn-im-ready');
+    const sub = await page.textContent('#secret-sub');
+    const shown = await page.textContent('#secret-word');
+    if (i === gH.imp) {
+      if (shown !== 'Imposter') fail('hint imposter card wrong: ' + shown);
+      if (!sub.includes(gH.decoy)) fail('hint card missing the hint word: ' + sub);
+      if (sub.includes(gH.word)) fail('hint card leaks the secret word: ' + sub);
+    } else if (shown !== gH.word) fail('hint crew saw wrong word: ' + shown);
+    await page.dispatchEvent('#reveal-card', 'pointerdown');
+    await page.waitForSelector('#btn-reveal-done:not([disabled])', { timeout: 3000 });
+    await page.dispatchEvent('#reveal-card', 'pointerup');
+    await page.click('#btn-reveal-done');
+  }
+  await page.click('#btn-abort-round2');
+  await page.click('#confirm-yes');
+  if (await active() !== 'screen-settings') fail('expected settings after hint abort, got ' + await active());
+  ok('hint mode: imposter gets similar-word hint, secret never leaks');
+
+  // ================= ORIGINAL style: talk & one-tap reveal, no scores =================
   await page.evaluate(() => { S.settings.gameStyle = 'original'; S.settings.mode = 'classic'; S.settings.timer = 0; renderSettings(); });
   const scoresBefore = await page.evaluate(() => S.players.map((p) => p.score));
   await page.click('#btn-start-game');
