@@ -21,6 +21,8 @@ const esc = (s) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>
 const AVATARS = ['😎', '🦊', '🐸', '🐼', '🦄', '🐯', '👽', '🤖', '🐙', '🦁', '🐨', '🐹', '🐢', '🦉', '🐷', '🐳', '🦖', '🐺', '🦜', '🐝'];
 const PLAYER_COLORS = ['#ffd93d', '#5fe8df', '#b07df5', '#ff9d4d', '#ff7ad0', '#8ae05a', '#6cb2ff', '#ff6b6b', '#f5e15f', '#67f0b0', '#e08af5', '#ffb36b', '#8f9dff', '#7adfff', '#f58a8a', '#a4e86a', '#ffcf6b', '#6be8d2', '#d99cff', '#ff8fb3'];
 const MAX_PLAYERS = 20;
+// bump on every release; shown on the home screen so a stale cached page shows
+const BUILD = 'build 14';
 const pcolor = (i) => PLAYER_COLORS[i % PLAYER_COLORS.length];
 const STORAGE_KEY = 'imposterwho.v1';
 
@@ -405,12 +407,9 @@ $('btn-im-ready').addEventListener('click', () => {
     $('secret-category').textContent = '🚨 You are the';
     $('secret-word').textContent = 'Imposter';
     if (S.settings.mode === 'hint') {
-      // two hints together: the category (what the app in the video gives you)
-      // plus a clue word about the word itself — broad enough that several
-      // words in the category still fit
+      // one word, never the category — the category is far too broad to help
       $('secret-sub').innerHTML =
-        `<span class="hint-cat">${g.emoji} ${esc(g.category)}</span>` +
-        `<span class="hint-line">💡 something to do with</span>` +
+        `<span class="hint-line">💡 your hint word</span>` +
         `<b class="hint-word">${esc(g.hint)}</b>`;
     } else {
       $('secret-sub').textContent = 'You don’t know the word. Fake it!';
@@ -916,6 +915,7 @@ $('btn-abort-round2').addEventListener('click', abortRound);
 
 /* ---------- home ---------- */
 function renderHome() {
+  $('build-stamp').textContent = `${BUILD} · ${WORD_PACKS.length} categories · ${WORD_PACKS.reduce((n, p) => n + p.words.length, 0)} words`;
   const resumable = S.round > 0 && S.players.length >= 3;
   $('btn-continue').classList.toggle('hidden', !resumable);
   if (resumable) $('btn-continue').textContent = `Continue game (round ${S.round + 1})`;

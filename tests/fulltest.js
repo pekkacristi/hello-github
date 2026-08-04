@@ -424,6 +424,20 @@ async function T5(browser) {
 async function T6(browser) {
   console.log('T6: word data integrity');
   const page = await newPage(browser);
+  // words rejected in earlier reviews (too obscure, too regional, too bland)
+  // must never come back — not as a secret word and not as a decoy either
+  const banned = require('./banned-words.json');
+  const bannedHits = await page.evaluate((list) => {
+    const norm = (s) => String(s).toLowerCase().replace(/^the\s+/, '').replace(/['’.-]/g, '').replace(/\s+/g, ' ').trim();
+    const set = new Set(list.map(norm));
+    const hits = [];
+    WORD_PACKS.forEach((p) => p.words.forEach((e) => {
+      if (set.has(norm(e.w))) hits.push(`${p.category}: banned word "${e.w}" is a secret word again`);
+      if (set.has(norm(e.d))) hits.push(`${p.category}: banned word "${e.d}" is a decoy again`);
+    }));
+    return hits;
+  }, banned);
+  bannedHits.forEach((h) => fail('T6', h));
   const report = await page.evaluate(() => {
     const problems = [];
     const notes = [];
@@ -439,6 +453,9 @@ async function T6(browser) {
         const wl = w.toLowerCase(), dl = d.toLowerCase();
         if (!w || !d) { problems.push(`${p.category}: empty entry`); return; }
         if (wl === dl) problems.push(`${p.category}: decoy equals word (${w})`);
+        const hint = String(e.h || '').replace(/^(a|an|the)\s+/i, '').trim();
+        if (!hint) problems.push(`${p.category}: ${w} has no hint`);
+        else if (hint.toLowerCase() === p.category.toLowerCase()) problems.push(`${p.category}: ${w} hint is just the category`);
         if (wl.includes(dl) || dl.includes(wl)) problems.push(`${p.category}: containment ${w}/${d}`);
         if (seen.has(wl)) problems.push(`${p.category}: duplicate secret word ${w}`);
         seen.add(wl);
@@ -466,7 +483,7 @@ async function T6(browser) {
   if (report.packCount < 16) fail('T6', `only ${report.packCount} categories`);
   if (page.errors.length) fail('T6', 'page errors: ' + page.errors.join(' | '));
   const total = report.counts.reduce((n, c) => n + c.n, 0);
-  ok(`${report.packCount} categories x 45 = ${total} pairs, every secret word globally unique`);
+  ok(`${report.packCount} categories x 45 = ${total} pairs, unique, and none of the ${banned.length} rejected words are back`);
   report.crossDupes.forEach((d) => fail('T6', `same word in two categories: ${d}`));
   if (report.notes.length) console.log(`  (note: ${report.notes.length} cosmetic decoy/secret overlaps: ${report.notes.slice(0, 3).join(', ')}${report.notes.length > 3 ? '…' : ''})`);
   await page.close();
