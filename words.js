@@ -484,7 +484,7 @@ const WORD_PACKS = [
    {
     "w": "Harry Potter",
     "d": "Percy Jackson",
-    "h": "a strict boarding school"
+    "h": "kids learn spells"
    },
    {
     "w": "Frozen",
@@ -494,7 +494,7 @@ const WORD_PACKS = [
    {
     "w": "Spider-Man",
     "d": "Ant-Man",
-    "h": "a hero in red"
+    "h": "climbs tall walls"
    },
    {
     "w": "Star Wars",
@@ -504,7 +504,7 @@ const WORD_PACKS = [
    {
     "w": "The Lion King",
     "d": "The Jungle Book",
-    "h": "animals on the plains"
+    "h": "son loses father"
    },
    {
     "w": "Stranger Things",
@@ -514,17 +514,17 @@ const WORD_PACKS = [
    {
     "w": "Shrek",
     "d": "Kung Fu Panda",
-    "h": "a beast in love"
+    "h": "green swamp monster"
    },
    {
     "w": "Jurassic Park",
     "d": "King Kong",
-    "h": "an island of monsters"
+    "h": "giant lizards escape"
    },
    {
     "w": "Toy Story",
     "d": "The Lego Movie",
-    "h": "a boy's plastic friends"
+    "h": "dolls come alive"
    },
    {
     "w": "Finding Nemo",
@@ -534,22 +534,22 @@ const WORD_PACKS = [
    {
     "w": "SpongeBob",
     "d": "Phineas And Ferb",
-    "h": "a burger shop cook"
+    "h": "cooks under water"
    },
    {
     "w": "The Avengers",
     "d": "Justice League",
-    "h": "many heroes, one enemy"
+    "h": "team saves world"
    },
    {
     "w": "Pirates Of The Caribbean",
     "d": "Indiana Jones",
-    "h": "buried gold and maps"
+    "h": "ships and treasure"
    },
    {
     "w": "The Simpsons",
     "d": "Family Guy",
-    "h": "a clumsy cartoon dad"
+    "h": "silly cartoon family"
    },
    {
     "w": "Avatar",
@@ -559,12 +559,12 @@ const WORD_PACKS = [
    {
     "w": "Home Alone",
     "d": "Elf",
-    "h": "a Christmas gone wrong"
+    "h": "kid left behind"
    },
    {
     "w": "The Hunger Games",
     "d": "Maze Runner",
-    "h": "a girl with arrows"
+    "h": "teen with arrows"
    },
    {
     "w": "Minions",
@@ -579,7 +579,7 @@ const WORD_PACKS = [
    {
     "w": "Squid Game",
     "d": "Money Heist",
-    "h": "a huge cash prize"
+    "h": "play or die"
    },
    {
     "w": "The Office",
@@ -589,17 +589,17 @@ const WORD_PACKS = [
    {
     "w": "Moana",
     "d": "Pocahontas",
-    "h": "life on an island"
+    "h": "girl sails ocean"
    },
    {
     "w": "Fast And Furious",
     "d": "Mission Impossible",
-    "h": "car chases and crashes"
+    "h": "street racing crew"
    },
    {
     "w": "Cinderella",
     "d": "Snow White",
-    "h": "a fancy royal dance"
+    "h": "girl marries prince"
    },
    {
     "w": "Sherlock",
@@ -609,37 +609,37 @@ const WORD_PACKS = [
    {
     "w": "Back To The Future",
     "d": "Interstellar",
-    "h": "a mad scientist's machine"
+    "h": "time travel car"
    },
    {
     "w": "E.T.",
     "d": "WALL-E",
-    "h": "a creature in hiding"
+    "h": "friendly alien hiding"
    },
    {
     "w": "The Lord Of The Rings",
     "d": "Game Of Thrones",
-    "h": "small heroes, big journey"
+    "h": "wizards and swords"
    },
    {
     "w": "Aladdin",
     "d": "Hercules",
-    "h": "a poor street thief"
+    "h": "poor boy, princess"
    },
    {
     "w": "Wednesday",
     "d": "The Addams Family",
-    "h": "a girl in black"
+    "h": "spooky pale girl"
    },
    {
     "w": "Ratatouille",
     "d": "MasterChef",
-    "h": "a busy restaurant kitchen"
+    "h": "cooking in Paris"
    },
    {
     "w": "Cars",
     "d": "Planes",
-    "h": "a proud young racer"
+    "h": "race track story"
    },
    {
     "w": "The Matrix",
@@ -649,32 +649,32 @@ const WORD_PACKS = [
    {
     "w": "Scooby-Doo",
     "d": "Ghostbusters",
-    "h": "a spooky old house"
+    "h": "kids chasing ghosts"
    },
    {
     "w": "Rocky",
     "d": "Rambo",
-    "h": "training for a fight"
+    "h": "fighter trains hard"
    },
    {
     "w": "Ice Age",
     "d": "Rio",
-    "h": "a long cold journey"
+    "h": "animals in snow"
    },
    {
     "w": "Godzilla",
     "d": "Transformers",
-    "h": "soldiers fight a giant"
+    "h": "monster wrecks city"
    },
    {
     "w": "The Incredibles",
     "d": "Fantastic Four",
-    "h": "heroes hiding their powers"
+    "h": "family with powers"
    },
    {
     "w": "Encanto",
     "d": "Coco",
-    "h": "a big family secret"
+    "h": "magical family house"
    },
    {
     "w": "Mr. Bean",
@@ -684,12 +684,12 @@ const WORD_PACKS = [
    {
     "w": "Jaws",
     "d": "Moby Dick",
-    "h": "a hunt at sea"
+    "h": "danger in water"
    },
    {
     "w": "Breaking Bad",
     "d": "Prison Break",
-    "h": "hidden bags of cash"
+    "h": "teacher turns criminal"
    }
   ]
  },
@@ -2407,7 +2407,7 @@ const WORD_PACKS = [
    {
     "w": "Tornado",
     "d": "Hurricane",
-    "h": "roofs torn off"
+    "h": "wind lifts houses"
    },
    {
     "w": "Thunderstorm",
@@ -2417,7 +2417,7 @@ const WORD_PACKS = [
    {
     "w": "Rainbow",
     "d": "Lightning",
-    "h": "sun during rain"
+    "h": "colors in sky"
    },
    {
     "w": "Sunset",
@@ -2779,7 +2779,7 @@ const WORD_PACKS = [
    {
     "w": "Zeus",
     "d": "Poseidon",
-    "h": "an old bearded god"
+    "h": "rules from clouds"
    },
    {
     "w": "Cleopatra",
@@ -2794,17 +2794,17 @@ const WORD_PACKS = [
    {
     "w": "Medusa",
     "d": "Hydra",
-    "h": "killed by a hero"
+    "h": "deadly stare"
    },
    {
     "w": "Julius Caesar",
     "d": "Alexander The Great",
-    "h": "leader of old Rome"
+    "h": "betrayed old ruler"
    },
    {
     "w": "Samurai",
     "d": "Ninja",
-    "h": "loyal to a master"
+    "h": "sword and armor"
    },
    {
     "w": "Thor",
@@ -2814,12 +2814,12 @@ const WORD_PACKS = [
    {
     "w": "Great Wall",
     "d": "Berlin Wall",
-    "h": "built over many years"
+    "h": "miles of stone"
    },
    {
     "w": "Pyramids",
     "d": "Temple",
-    "h": "built for dead kings"
+    "h": "huge stone tombs"
    },
    {
     "w": "Sphinx",
@@ -2834,17 +2834,17 @@ const WORD_PACKS = [
    {
     "w": "Colosseum",
     "d": "Parthenon",
-    "h": "a ring of seats"
+    "h": "crowds watch fights"
    },
    {
     "w": "Excalibur",
     "d": "Mjolnir",
-    "h": "a weapon with a name"
+    "h": "kings magic sword"
    },
    {
     "w": "Dragon",
     "d": "Griffin",
-    "h": "a beast in a cave"
+    "h": "big scaly monster"
    },
    {
     "w": "Unicorn",
@@ -2859,12 +2859,12 @@ const WORD_PACKS = [
    {
     "w": "Atlantis",
     "d": "El Dorado",
-    "h": "a city never found"
+    "h": "city under water"
    },
    {
     "w": "Napoleon",
     "d": "Genghis Khan",
-    "h": "led armies across Europe"
+    "h": "short famous general"
    },
    {
     "w": "Knight",
@@ -2874,12 +2874,12 @@ const WORD_PACKS = [
    {
     "w": "Mummy",
     "d": "Zombie",
-    "h": "found inside a tomb"
+    "h": "wrapped in cloth"
    },
    {
     "w": "Anubis",
     "d": "Hades",
-    "h": "a god of the dead"
+    "h": "guards the dead"
    },
    {
     "w": "Odin",
@@ -2894,32 +2894,32 @@ const WORD_PACKS = [
    {
     "w": "Athena",
     "d": "Aphrodite",
-    "h": "a goddess in armor"
+    "h": "wise warrior woman"
    },
    {
     "w": "Phoenix",
     "d": "Gargoyle",
-    "h": "comes back after dying"
+    "h": "born from fire"
    },
    {
     "w": "Kraken",
     "d": "Sea Serpent",
-    "h": "a monster in deep water"
+    "h": "giant sea monster"
    },
    {
     "w": "Stonehenge",
     "d": "Easter Island",
-    "h": "lines up with the sun"
+    "h": "old rock circle"
    },
    {
     "w": "Hieroglyphics",
     "d": "Papyrus Scroll",
-    "h": "carved into old walls"
+    "h": "picture writing"
    },
    {
     "w": "Leonardo Da Vinci",
     "d": "Michelangelo",
-    "h": "an artist from Italy"
+    "h": "painter and inventor"
    },
    {
     "w": "Printing Press",
@@ -2929,12 +2929,12 @@ const WORD_PACKS = [
    {
     "w": "Silk Road",
     "d": "Spice Trade",
-    "h": "camels loaded with goods"
+    "h": "old trading path"
    },
    {
     "w": "Achilles",
     "d": "Odysseus",
-    "h": "a fighter at Troy"
+    "h": "fighter with weakness"
    },
    {
     "w": "Pandora's Box",
@@ -2959,37 +2959,37 @@ const WORD_PACKS = [
    {
     "w": "Marco Polo",
     "d": "Christopher Columbus",
-    "h": "wrote about his travels"
+    "h": "famous world traveler"
    },
    {
     "w": "Joan Of Arc",
     "d": "Marie Antoinette",
-    "h": "burned at the stake"
+    "h": "girl led army"
    },
    {
     "w": "Aztec",
     "d": "Maya",
-    "h": "beaten by the Spanish"
+    "h": "gold and temples"
    },
    {
     "w": "Emperor",
     "d": "Pharaoh",
-    "h": "sits on a throne"
+    "h": "wears a crown"
    },
    {
     "w": "Werewolf",
     "d": "Vampire",
-    "h": "spread by a bite"
+    "h": "hairy night monster"
    },
    {
     "w": "Centaur",
     "d": "Elf",
-    "h": "half man, half beast"
+    "h": "man with hooves"
    },
    {
     "w": "Chariot",
     "d": "Catapult",
-    "h": "carried warriors to battle"
+    "h": "horses pull it"
    },
    {
     "w": "Moon Landing",
@@ -2999,7 +2999,7 @@ const WORD_PACKS = [
    {
     "w": "Confucius",
     "d": "Socrates",
-    "h": "people still quote him"
+    "h": "old wise teacher"
    }
   ]
  },
