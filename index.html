@@ -23,9 +23,10 @@
       <p class="tagline">Find the fake in your group!</p>
       <div class="home-buttons">
         <button class="btn btn-primary btn-big" id="btn-new-game">Play</button>
+        <button class="btn btn-ghost hidden" id="btn-continue">Continue game</button>
         <button class="btn btn-ghost" id="btn-howto">How to play</button>
       </div>
-      <p class="home-foot">3–12 players · one phone · pass &amp; play</p>
+      <p class="home-foot">3–20 players · one phone · pass &amp; play</p>
     </div>
   </section>
 
@@ -39,7 +40,7 @@
     <div class="scroll-area">
       <ul id="player-list" class="player-list"></ul>
       <form id="add-player-form" class="add-player" autocomplete="off">
-        <input type="text" id="player-name-input" maxlength="14" placeholder="Add player name…" enterkeyhint="done">
+        <input type="text" id="player-name-input" maxlength="14" placeholder="Add player name…" enterkeyhint="next">
         <button type="submit" class="btn btn-primary btn-add" aria-label="Add player">+</button>
       </form>
       <p class="hint" id="players-hint">Add at least 3 players to start.</p>
@@ -110,6 +111,8 @@
         <div class="flip-card" id="reveal-card">
           <div class="flip-inner">
             <div class="flip-front">
+              <span class="flip-player-name" id="flip-player-name"></span>
+              <span class="flip-front-sub">Don't tell the word to<br>other players.</span>
               <span class="flip-hold-icon">👆</span>
               <span class="flip-hold-text">Hold to reveal</span>
             </div>
@@ -263,7 +266,7 @@
       </ol>
       <div class="howto-scoring">
         <b>Scoring</b>
-        <span>Imposter escapes the vote: <b>+3</b> · Crew catches an imposter: <b>+1 each</b> · Caught imposter guesses the word: <b>+2</b></span>
+        <span>Imposter escapes the vote: <b>+4</b> · Crew catches an imposter: <b>+2 each</b> · Caught imposter guesses the word: <b>+2</b></span>
       </div>
       <button class="btn btn-primary btn-big" id="btn-close-howto">Got it</button>
     </div>

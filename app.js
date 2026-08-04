@@ -18,7 +18,10 @@ const shuffle = (arr) => {
 };
 const esc = (s) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-const AVATARS = ['😎', '🦊', '🐸', '🐼', '🦄', '🐯', '👽', '🤖', '🐙', '🦁', '🐨', '🐹'];
+const AVATARS = ['😎', '🦊', '🐸', '🐼', '🦄', '🐯', '👽', '🤖', '🐙', '🦁', '🐨', '🐹', '🐢', '🦉', '🐷', '🐳', '🦖', '🐺', '🦜', '🐝'];
+const PLAYER_COLORS = ['#ffd93d', '#5fe8df', '#b07df5', '#ff9d4d', '#ff7ad0', '#8ae05a', '#6cb2ff', '#ff6b6b', '#f5e15f', '#67f0b0', '#e08af5', '#ffb36b', '#8f9dff', '#7adfff', '#f58a8a', '#a4e86a', '#ffcf6b', '#6be8d2', '#d99cff', '#ff8fb3'];
+const MAX_PLAYERS = 20;
+const pcolor = (i) => PLAYER_COLORS[i % PLAYER_COLORS.length];
 const STORAGE_KEY = 'imposterwho.v1';
 
 /* ---------- state ---------- */
@@ -40,6 +43,8 @@ function saveState() {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify({
       names: S.players.map((p) => p.name),
+      scores: S.players.map((p) => p.score),
+      round: S.round,
       settings: S.settings,
       usedWords: S.usedWords,
     }));
@@ -50,7 +55,13 @@ function loadState() {
   try {
     const d = JSON.parse(localStorage.getItem(STORAGE_KEY));
     if (!d) return;
-    if (Array.isArray(d.names)) S.players = d.names.slice(0, 12).map((n) => ({ name: String(n).slice(0, 14), score: 0 }));
+    if (Array.isArray(d.names)) {
+      S.players = d.names.slice(0, MAX_PLAYERS).map((n, i) => ({
+        name: String(n).slice(0, 14),
+        score: Array.isArray(d.scores) && Number.isFinite(d.scores[i]) ? d.scores[i] : 0,
+      }));
+    }
+    if (Number.isInteger(d.round) && d.round > 0) S.round = d.round;
     if (d.settings) {
       const st = d.settings;
       if (Array.isArray(st.categories)) {
@@ -75,6 +86,12 @@ function go(name) {
   document.querySelectorAll('.screen').forEach((s) => s.classList.remove('active'));
   $('screen-' + name).classList.add('active');
   currentScreen = name;
+  if (name === 'home') renderHome();
+  // tap shield: a fast double-tap must not hit a button that appears at the
+  // same position on the incoming screen (e.g. results → scoreboard footers)
+  const app = $('app');
+  app.style.pointerEvents = 'none';
+  setTimeout(() => { app.style.pointerEvents = ''; }, 350);
 }
 
 /* ---------- wake lock (best effort) ---------- */
@@ -84,20 +101,33 @@ async function keepAwake() {
     if ('wakeLock' in navigator) wakeLock = await navigator.wakeLock.request('screen');
   } catch (e) { /* not critical */ }
 }
+function releaseWake() {
+  if (wakeLock) { wakeLock.release().catch(() => {}); wakeLock = null; }
+}
 document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'visible' && S.game) keepAwake();
 });
 
-/* ---------- tiny beep ---------- */
+/* ---------- tiny beep ----------
+   iOS only allows audio from a context created/resumed inside a user
+   gesture, so a single shared context is primed when the discussion
+   starts and reused by the timer-expiry beep. */
+let audioCtx = null;
+function primeAudio() {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+  } catch (e) { /* no audio — fine */ }
+}
 function beep(times = 1) {
   try {
-    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    if (!audioCtx) return;
     for (let i = 0; i < times; i++) {
-      const o = ctx.createOscillator();
-      const g = ctx.createGain();
-      o.connect(g); g.connect(ctx.destination);
+      const o = audioCtx.createOscillator();
+      const g = audioCtx.createGain();
+      o.connect(g); g.connect(audioCtx.destination);
       o.frequency.value = 880;
-      const t = ctx.currentTime + i * 0.25;
+      const t = audioCtx.currentTime + i * 0.25;
       g.gain.setValueAtTime(0.001, t);
       g.gain.exponentialRampToValueAtTime(0.2, t + 0.02);
       g.gain.exponentialRampToValueAtTime(0.001, t + 0.2);
@@ -121,20 +151,21 @@ function renderPlayers() {
       saveState(); renderPlayers();
     });
   });
-  $('player-count').textContent = S.players.length ? `${S.players.length}/12` : '';
+  $('player-count').textContent = S.players.length ? `${S.players.length}/${MAX_PLAYERS}` : '';
   $('btn-to-settings').disabled = S.players.length < 3;
   $('players-hint').textContent = S.players.length < 3
     ? 'Add at least 3 players to start.'
-    : 'Sitting order = passing order. Add up to 12.';
-  $('add-player-form').style.display = S.players.length >= 12 ? 'none' : '';
+    : `Sitting order = passing order. Add up to ${MAX_PLAYERS}.`;
+  $('add-player-form').style.display = S.players.length >= MAX_PLAYERS ? 'none' : '';
 }
 
 $('add-player-form').addEventListener('submit', (e) => {
   e.preventDefault();
   const input = $('player-name-input');
   const name = input.value.trim().slice(0, 14);
+  if (!name) { input.blur(); return; } // empty enter = dismiss keyboard
   const dup = S.players.some((p) => p.name.toLowerCase() === name.toLowerCase());
-  if (!name || dup || S.players.length >= 12) {
+  if (dup || S.players.length >= MAX_PLAYERS) {
     input.classList.remove('shake'); void input.offsetWidth; input.classList.add('shake');
     return;
   }
@@ -142,6 +173,11 @@ $('add-player-form').addEventListener('submit', (e) => {
   input.value = '';
   saveState(); renderPlayers();
   input.focus();
+});
+// tapping outside the add-form dismisses the keyboard so Next is reachable
+$('screen-players').addEventListener('pointerdown', (e) => {
+  const input = $('player-name-input');
+  if (document.activeElement === input && !e.target.closest('.add-player')) input.blur();
 });
 
 /* ---------- settings screen ---------- */
@@ -242,9 +278,11 @@ function pickImposters() {
 }
 
 function startRound() {
+  const prevLastImposter = S.lastImposter;
   const { packIdx, pack, entry } = pickWord();
   S.round++;
   S.game = {
+    prevLastImposter, // restored if the round is aborted
     packIdx,
     category: pack.category,
     emoji: pack.emoji,
@@ -263,9 +301,21 @@ function startRound() {
     deltas: new Array(S.players.length).fill(0),
   };
   keepAwake();
+  // a browser back-gesture mid-round must not silently destroy the round
+  if (!history.state || !history.state.inGame) history.pushState({ inGame: true }, '');
   renderRevealGate();
   go('reveal');
 }
+
+window.addEventListener('popstate', () => {
+  if (S.game) {
+    history.pushState({ inGame: true }, '');
+    abortRound();
+  }
+});
+window.addEventListener('beforeunload', (e) => {
+  if (S.game) { e.preventDefault(); e.returnValue = ''; }
+});
 
 /* ---------- reveal phase ---------- */
 function renderDots(el, total, cur) {
@@ -279,11 +329,15 @@ function renderRevealGate() {
   $('reveal-round-label').textContent = `Round ${S.round}`;
   renderDots($('reveal-dots'), S.players.length, g.revealIdx);
   $('reveal-player-name').textContent = p.name;
+  $('reveal-player-name').style.color = pcolor(g.revealIdx);
   $('reveal-player-name2').textContent = p.name;
+  $('reveal-card').style.setProperty('--pc', pcolor(g.revealIdx));
+  $('flip-player-name').textContent = p.name;
   $('reveal-gate').classList.remove('hidden');
   $('reveal-card-wrap').classList.add('hidden');
   $('reveal-card').classList.remove('flipped');
   $('btn-reveal-done').disabled = true;
+  resetHoldGate();
 }
 
 $('btn-im-ready').addEventListener('click', () => {
@@ -310,11 +364,33 @@ $('btn-im-ready').addEventListener('click', () => {
   $('reveal-card-wrap').classList.remove('hidden');
 });
 
-// hold-to-reveal
+// hold-to-reveal — "Got it" only unlocks after ~0.8s of total hold so every
+// player (crew or imposter) spends a similar time on the card and nobody can
+// be read by a suspiciously quick pass
+let holdAccum = 0;
+let holdStart = 0;
+let holdTimer = null;
+function resetHoldGate() {
+  holdAccum = 0;
+  clearTimeout(holdTimer);
+  holdTimer = null;
+}
 (() => {
   const card = $('reveal-card');
-  const show = (e) => { e.preventDefault(); card.classList.add('flipped'); $('btn-reveal-done').disabled = false; };
-  const hide = () => card.classList.remove('flipped');
+  const MIN_HOLD = 800;
+  const show = (e) => {
+    e.preventDefault();
+    card.classList.add('flipped');
+    holdStart = performance.now();
+    clearTimeout(holdTimer);
+    holdTimer = setTimeout(() => { $('btn-reveal-done').disabled = false; }, Math.max(0, MIN_HOLD - holdAccum));
+  };
+  const hide = () => {
+    if (!card.classList.contains('flipped')) return;
+    card.classList.remove('flipped');
+    holdAccum += performance.now() - holdStart;
+    if (holdAccum < MIN_HOLD) clearTimeout(holdTimer);
+  };
   card.addEventListener('pointerdown', show);
   card.addEventListener('pointerup', hide);
   card.addEventListener('pointercancel', hide);
@@ -344,6 +420,7 @@ function renderClues() {
 }
 
 $('btn-to-discussion').addEventListener('click', () => {
+  primeAudio(); // user gesture: unlock audio so the timer-end beep works on iOS
   go('discuss');
   startTimer();
 });
@@ -390,6 +467,16 @@ $('btn-to-vote').addEventListener('click', () => {
 function startVoting(candidates) {
   const g = S.game;
   g.voteCandidates = candidates; // null → everyone votable
+  // in a tie-break revote the accused sit out (no forced one-button ballots)
+  g.voters = S.players.map((_, i) => i).filter((i) => !candidates || !candidates.includes(i));
+  if (!g.voters.length) {
+    // everyone is tied with everyone (e.g. 3 players, 1-1-1) — nobody left
+    // to break it, the imposter slips away
+    g.accused = null;
+    g.caught = false;
+    endRound();
+    return;
+  }
   g.votes = new Array(S.players.length).fill(-1);
   g.voteIdx = 0;
   renderVoteGate();
@@ -398,9 +485,11 @@ function startVoting(candidates) {
 
 function renderVoteGate() {
   const g = S.game;
-  const p = S.players[g.voteIdx];
-  renderDots($('vote-dots'), S.players.length, g.voteIdx);
+  const voter = g.voters[g.voteIdx];
+  const p = S.players[voter];
+  renderDots($('vote-dots'), g.voters.length, g.voteIdx);
   $('vote-player-name').textContent = p.name;
+  $('vote-player-name').style.color = pcolor(voter);
   $('vote-player-name2').textContent = p.name;
   $('vote-gate').classList.remove('hidden');
   $('vote-ballot').classList.add('hidden');
@@ -408,11 +497,13 @@ function renderVoteGate() {
 
 $('btn-vote-ready').addEventListener('click', () => {
   const g = S.game;
-  const voter = g.voteIdx;
+  const voter = g.voters[g.voteIdx];
   const candidates = (g.voteCandidates || S.players.map((_, i) => i)).filter((i) => i !== voter);
-  $('ballot-question').innerHTML = `<b>${esc(S.players[voter].name)}</b>, who is the imposter?`;
+  $('ballot-question').innerHTML = g.voteCandidates
+    ? `<b>${esc(S.players[voter].name)}</b>, break the tie — who is the imposter?`
+    : `<b>${esc(S.players[voter].name)}</b>, who is the imposter?`;
   $('ballot-grid').innerHTML = candidates.map((i) => `
-    <button class="ballot-btn" data-i="${i}">
+    <button class="ballot-btn" data-i="${i}" style="border-top: 3px solid ${pcolor(i)}">
       <span class="b-emoji">${AVATARS[i % AVATARS.length]}</span>${esc(S.players[i].name)}
     </button>`).join('');
   $('ballot-grid').querySelectorAll('.ballot-btn').forEach((b) => {
@@ -424,9 +515,9 @@ $('btn-vote-ready').addEventListener('click', () => {
 
 function castVote(target) {
   const g = S.game;
-  g.votes[g.voteIdx] = target;
+  g.votes[g.voters[g.voteIdx]] = target;
   g.voteIdx++;
-  if (g.voteIdx < S.players.length) {
+  if (g.voteIdx < g.voters.length) {
     renderVoteGate();
   } else {
     tallyVotes();
@@ -546,7 +637,7 @@ $('btn-guess-ready').addEventListener('click', () => {
   const pool = pack.words
     .map((e) => e.w)
     .filter((w) => w.toLowerCase() !== wordL && w.toLowerCase() !== decoyL);
-  const options = shuffle([g.word, ...shuffle(pool).slice(0, 5)]);
+  const options = shuffle([g.word, ...shuffle(pool).slice(0, 7)]);
   $('guess-grid').innerHTML = options.map((w) => `
     <button class="ballot-btn" data-w="${esc(w)}">${esc(w)}</button>`).join('');
   $('guess-grid').querySelectorAll('.ballot-btn').forEach((b) => {
@@ -565,17 +656,18 @@ function endRound() {
   const deltas = g.deltas;
 
   if (g.caught) {
-    // crew catches an imposter: crew +1 each; other imposters slipped by: +1
+    // crew catches an imposter: crew +2 each; co-imposters who slipped by: +2
     S.players.forEach((_, i) => {
-      if (!g.imposters.includes(i)) deltas[i] += 1;
-      else if (i !== g.accused) deltas[i] += 1;
+      if (!g.imposters.includes(i)) deltas[i] += 2;
+      else if (i !== g.accused) deltas[i] += 2;
     });
-    if (g.guessedRight) deltas[g.accused] += 2; // steal!
+    if (g.guessedRight) deltas[g.accused] += 2; // steal — matches a crew share
   } else {
     // imposters fooled everyone
-    g.imposters.forEach((i) => { deltas[i] += 3; });
+    g.imposters.forEach((i) => { deltas[i] += 4; });
   }
   S.players.forEach((p, i) => { p.score += deltas[i]; });
+  saveState(); // checkpoint scores/round so a reload can resume the session
   renderScoreboard();
   go('scoreboard');
 }
@@ -612,6 +704,9 @@ function renderScoreboard() {
 $('btn-next-round').addEventListener('click', () => startRound());
 
 $('btn-end-game').addEventListener('click', () => {
+  if (!confirm('End the game and crown the winner?')) return;
+  S.game = null;
+  releaseWake();
   renderFinal();
   go('final');
   launchConfetti();
@@ -643,6 +738,9 @@ function resetScores() {
   S.players.forEach((p) => { p.score = 0; });
   S.round = 0;
   S.game = null;
+  S.lastImposter = -1;
+  releaseWake();
+  saveState();
 }
 
 $('btn-play-again').addEventListener('click', () => {
@@ -699,16 +797,33 @@ function launchConfetti() {
 function abortRound() {
   if (!confirm('Quit this round? The word will be discarded.')) return;
   stopTimer();
+  releaseWake();
   S.round--; // round never happened
+  S.lastImposter = S.game.prevLastImposter; // the aborted roll shouldn't count
   S.game = null;
+  saveState();
   renderSettings();
   go('settings');
 }
 $('btn-abort-round').addEventListener('click', abortRound);
 $('btn-abort-round2').addEventListener('click', abortRound);
 
+/* ---------- home ---------- */
+function renderHome() {
+  const resumable = S.round > 0 && S.players.length >= 3;
+  $('btn-continue').classList.toggle('hidden', !resumable);
+  if (resumable) $('btn-continue').textContent = `Continue game (round ${S.round + 1})`;
+  $('btn-new-game').textContent = resumable ? 'New game' : 'Play';
+}
+
 /* ---------- global nav wiring ---------- */
-$('btn-new-game').addEventListener('click', () => { renderPlayers(); go('players'); });
+$('btn-new-game').addEventListener('click', () => {
+  if (S.round > 0 && !confirm('Start a new game? Current scores will be reset.')) return;
+  resetScores();
+  renderPlayers();
+  go('players');
+});
+$('btn-continue').addEventListener('click', () => { renderSettings(); go('settings'); });
 $('btn-to-settings').addEventListener('click', () => { renderSettings(); go('settings'); });
 $('btn-start-game').addEventListener('click', () => startRound());
 document.querySelectorAll('.btn-back[data-back]').forEach((b) => {

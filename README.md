@@ -26,8 +26,8 @@ No build, no install — it's a single static page:
 ### 🧮 Scoring
 | Outcome | Points |
 |---|---|
-| Imposter escapes the vote | **+3** for the imposter |
-| Crew catches an imposter | **+1** for each crew member |
+| Imposter escapes the vote | **+4** for the imposter |
+| Crew catches an imposter | **+2** for each crew member |
 | Caught imposter guesses the word | **+2** bonus steal |
 
 ## Tech used
