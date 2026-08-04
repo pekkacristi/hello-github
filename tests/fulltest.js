@@ -72,7 +72,7 @@ async function T1(browser) {
   console.log('T1: marathon bookkeeping');
   const page = await newPage(browser);
   await addPlayers(page, ['Ana', 'Ben', 'Cleo', 'Dan']);
-  await page.evaluate(() => { S.settings.timer = 0; S.settings.mode = 'classic'; S.settings.imposters = 1; saveState(); renderSettings(); });
+  await page.evaluate(() => { S.settings.gameStyle = 'evolution'; S.settings.timer = 0; S.settings.mode = 'classic'; S.settings.imposters = 1; saveState(); renderSettings(); });
   const seenWords = [];
   let expectedScores = [0, 0, 0, 0];
 
@@ -130,7 +130,7 @@ async function T2(browser) {
 
   // --- 3 players: 1-1-1 all-tied -> straight to escape ---
   await addPlayers(page, ['A', 'B', 'C']);
-  await page.evaluate(() => { S.settings.timer = 0; S.settings.mode = 'classic'; saveState(); renderSettings(); });
+  await page.evaluate(() => { S.settings.gameStyle = 'evolution'; S.settings.timer = 0; S.settings.mode = 'classic'; saveState(); renderSettings(); });
   const segs = await page.$$eval('#imposter-picker .seg', (b) => b.map((x) => x.disabled));
   if (JSON.stringify(segs) !== JSON.stringify([false, true, true])) fail('T2', '3p imposter clamp wrong: ' + segs);
   await page.click('#btn-start-game');
@@ -155,7 +155,7 @@ async function T2(browser) {
   await page.evaluate(() => localStorage.clear());
   await page.reload(); await page.waitForTimeout(300);
   await addPlayers(page, ['P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7']);
-  await page.evaluate(() => { S.settings.timer = 0; S.settings.mode = 'classic'; saveState(); renderSettings(); });
+  await page.evaluate(() => { S.settings.gameStyle = 'evolution'; S.settings.timer = 0; S.settings.mode = 'classic'; saveState(); renderSettings(); });
   const seg7 = await page.$$eval('#imposter-picker .seg', (b) => b.map((x) => x.disabled));
   if (JSON.stringify(seg7) !== JSON.stringify([false, false, true])) fail('T2', '7p imposter clamp wrong: ' + seg7);
   await page.click('#imposter-picker .seg[data-n="2"]');
@@ -197,7 +197,7 @@ async function T2(browser) {
   const seg20 = await page.$$eval('#imposter-picker .seg', (b) => b.map((x) => x.disabled));
   if (JSON.stringify(seg20) !== JSON.stringify([false, false, false])) fail('T2', '20p imposter clamp wrong: ' + seg20);
   await page.click('#imposter-picker .seg[data-n="3"]');
-  await page.evaluate(() => { S.settings.timer = 0; saveState(); renderSettings(); });
+  await page.evaluate(() => { S.settings.gameStyle = 'evolution'; S.settings.timer = 0; saveState(); renderSettings(); });
   await page.click('#btn-start-game');
   if ((await S(page, 'S.game.imposters.length')) !== 3) fail('T2', 'expected 3 imposters at 20 players');
   // check first reveal works, then bail via abort (20 x 0.8s holds is pointless here)
@@ -244,7 +244,7 @@ async function T3(browser) {
 
   // start a round and chaos-tap through it with coordinate double-taps
   await page.click('#btn-to-settings');
-  await page.evaluate(() => { S.settings.timer = 0; S.settings.mode = 'classic'; saveState(); renderSettings(); });
+  await page.evaluate(() => { S.settings.gameStyle = 'evolution'; S.settings.timer = 0; S.settings.mode = 'classic'; saveState(); renderSettings(); });
   const dbl = async (sel) => {
     await page.waitForTimeout(400); // let any prior navigation shield lift
     const box = await (await page.$(sel)).boundingBox();
@@ -309,7 +309,7 @@ async function T4(browser) {
 
   // play one round, reload at scoreboard, Continue game must resume scores+round
   await addPlayers(page, ['Ana', 'Ben', 'Cleo', 'Dan']);
-  await page.evaluate(() => { S.settings.timer = 0; S.settings.mode = 'classic'; saveState(); renderSettings(); });
+  await page.evaluate(() => { S.settings.gameStyle = 'evolution'; S.settings.timer = 0; S.settings.mode = 'classic'; saveState(); renderSettings(); });
   await page.click('#btn-start-game');
   const imp = (await S(page, 'S.game.imposters'))[0];
   await revealAll(page);
@@ -351,7 +351,7 @@ async function T4(browser) {
   ok('back-gesture: dismiss keeps round, accept aborts cleanly');
 
   // end-game confirm declined keeps scoreboard; timer expiry harmless
-  await page.evaluate(() => { S.settings.timer = 2; renderSettings(); });
+  await page.evaluate(() => { S.settings.gameStyle = 'evolution'; S.settings.timer = 2; renderSettings(); });
   await page.click('#btn-start-game');
   await revealAll(page);
   await page.click('#btn-to-discussion');
@@ -385,7 +385,7 @@ async function T5(browser) {
   for (const [w, h, tag] of [[320, 568, 'SE portrait'], [844, 390, 'landscape'], [360, 640, 'small android']]) {
     const page = await newPage(browser, { width: w, height: h });
     await addPlayers(page, Array.from({ length: 10 }, (_, i) => 'Player' + (i + 1)));
-    await page.evaluate(() => { S.settings.timer = 60; S.settings.mode = 'classic'; saveState(); renderSettings(); });
+    await page.evaluate(() => { S.settings.gameStyle = 'evolution'; S.settings.timer = 60; S.settings.mode = 'classic'; saveState(); renderSettings(); });
     await page.click('#btn-start-game');
 
     const noHscroll = await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1);

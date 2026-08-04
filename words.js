@@ -162,7 +162,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Matcha",
-    "d": "Green Tea"
+    "d": "Chai"
    },
    {
     "w": "Croquette",
@@ -902,7 +902,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Parkour",
-    "d": "Free Running"
+    "d": "Breakdancing"
    },
    {
     "w": "Softball",
@@ -1048,7 +1048,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Harbor",
-    "d": "Marina"
+    "d": "Pier"
    },
    {
     "w": "Rio De Janeiro",
@@ -1158,7 +1158,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Barber",
-    "d": "Hairdresser"
+    "d": "Tattoo Artist"
    },
    {
     "w": "Mail Carrier",
@@ -1356,7 +1356,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Comb",
-    "d": "Hairbrush"
+    "d": "Razor"
    },
    {
     "w": "Towel",
@@ -1792,7 +1792,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Pokemon Go",
-    "d": "Geocaching"
+    "d": "Just Dance"
    },
    {
     "w": "Kirby",
@@ -1828,7 +1828,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Splatoon",
-    "d": "Fortnite"
+    "d": "Overcooked"
    },
    {
     "w": "Bowser",
@@ -1836,7 +1836,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Joystick",
-    "d": "Gamepad"
+    "d": "Console"
    },
    {
     "w": "Arcade",
@@ -1886,7 +1886,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Ocean",
-    "d": "Sea"
+    "d": "Bay"
    },
    {
     "w": "Cave",
@@ -1902,7 +1902,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Forest",
-    "d": "Woods"
+    "d": "Orchard"
    },
    {
     "w": "Meadow",
@@ -1922,7 +1922,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Swamp",
-    "d": "Marsh"
+    "d": "Mangrove"
    },
    {
     "w": "Tornado",
@@ -1946,7 +1946,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Campfire",
-    "d": "Bonfire"
+    "d": "Lantern"
    },
    {
     "w": "Tent",
@@ -1966,7 +1966,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Trail",
-    "d": "Footpath"
+    "d": "Summit"
    },
    {
     "w": "National Park",
@@ -1990,7 +1990,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Tide Pool",
-    "d": "Rock Pool"
+    "d": "Sandbar"
    },
    {
     "w": "Quicksand",
@@ -2022,7 +2022,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Fog",
-    "d": "Mist"
+    "d": "Dew"
    },
    {
     "w": "Stargazing",
@@ -2208,7 +2208,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Lightning Rod",
-    "d": "Windmill"
+    "d": "Weather Vane"
    }
   ]
  }

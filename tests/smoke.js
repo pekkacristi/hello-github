@@ -51,8 +51,9 @@ const ok = (msg) => console.log('ok –', msg);
   const locked = await page.evaluate(() =>
     [...document.querySelectorAll('#imposter-picker .seg')].map((b) => b.disabled));
   if (JSON.stringify(locked) !== JSON.stringify([false, true, true])) fail('imposter clamp wrong: ' + locked);
-  // timer off for a fast test
+  // timer off for a fast test, full Evolution flow
   await page.click('#timer-picker .seg[data-v="0"]');
+  await page.click('#style-cards .mode-card[data-style="evolution"]');
 
   const playRevealPhase = async () => {
     for (let i = 0; i < 4; i++) {
@@ -169,7 +170,7 @@ const ok = (msg) => console.log('ok –', msg);
   ok('end game, podium, play-again reset');
 
   // ================= decoy mode: imposter sees decoy styled as crew =================
-  await page.evaluate(() => { S.settings.mode = 'decoy'; renderSettings(); });
+  await page.evaluate(() => { S.settings.gameStyle = 'evolution'; S.settings.mode = 'decoy'; renderSettings(); });
   await page.click('#btn-start-game');
   const g4 = await page.evaluate(() => ({ imp: S.game.imposters[0], word: S.game.word, decoy: S.game.decoy }));
   for (let i = 0; i < 4; i++) {
@@ -186,6 +187,41 @@ const ok = (msg) => console.log('ok –', msg);
     await page.click('#btn-reveal-done');
   }
   ok('decoy mode: imposter unknowingly sees decoy, crew sees word');
+
+  // ================= ORIGINAL style: talk & one-tap reveal, no scores =================
+  await page.click('#btn-abort-round2'); // leave the decoy round (confirm auto-accepted)
+  if (await active() !== 'screen-settings') fail('expected settings after decoy abort, got ' + await active());
+  await page.evaluate(() => { S.settings.gameStyle = 'original'; S.settings.mode = 'classic'; S.settings.timer = 0; renderSettings(); });
+  const scoresBefore = await page.evaluate(() => S.players.map((p) => p.score));
+  await page.click('#btn-start-game');
+  const gO = await page.evaluate(() => ({ imp: S.game.imposters[0], word: S.game.word, starter: S.players[S.game.clueOrder[0]].name }));
+  for (let i = 0; i < 4; i++) {
+    await page.click('#btn-im-ready');
+    await page.dispatchEvent('#reveal-card', 'pointerdown');
+    await page.waitForSelector('#btn-reveal-done:not([disabled])', { timeout: 3000 });
+    await page.dispatchEvent('#reveal-card', 'pointerup');
+    await page.click('#btn-reveal-done');
+  }
+  if (await active() !== 'screen-discuss') fail('original: expected talk screen, got ' + await active());
+  const talkTitle = await page.textContent('#discuss-title');
+  if (talkTitle !== 'Game started!') fail('original: talk title wrong: ' + talkTitle);
+  const talkIntro = await page.textContent('#discuss-intro');
+  if (!talkIntro.includes(gO.starter) || !talkIntro.includes('starts the conversation')) fail('original: starter line wrong: ' + talkIntro);
+  const revealLabel = await page.textContent('#btn-to-vote');
+  if (!revealLabel.includes('Reveal imposter')) fail('original: reveal button label wrong: ' + revealLabel);
+  await page.click('#btn-to-vote');
+  if (await active() !== 'screen-bigreveal') fail('original: expected big reveal, got ' + await active());
+  const shownWord = await page.textContent('#bigreveal-word');
+  if (shownWord !== gO.word) fail(`original: reveal shows "${shownWord}", expected "${gO.word}"`);
+  const impLine = await page.textContent('#bigreveal-imposters');
+  const impName = await page.evaluate((i) => S.players[i].name, gO.imp);
+  if (!impLine.includes(impName)) fail('original: imposter name missing from reveal: ' + impLine);
+  const scoresAfter = await page.evaluate(() => S.players.map((p) => p.score));
+  if (JSON.stringify(scoresAfter) !== JSON.stringify(scoresBefore)) fail('original: scores changed in no-score style');
+  await page.click('#btn-bigreveal-next');
+  if (await active() !== 'screen-reveal') fail('original: next round should start reveals, got ' + await active());
+  await page.click('#btn-abort-round');
+  ok('original style: talk screen, starter line, one-tap reveal, no scoring, next round');
 
   if (errors.length) fail('page errors:\n' + errors.join('\n'));
   console.log('\nALL SMOKE TESTS PASSED');

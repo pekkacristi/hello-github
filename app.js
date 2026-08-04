@@ -28,6 +28,7 @@ const STORAGE_KEY = 'imposterwho.v1';
 const S = {
   players: [],            // [{name, score}]
   settings: {
+    gameStyle: 'original', // original (talk & reveal) | evolution (vote, steal, scores)
     categories: WORD_PACKS.map((_, i) => i), // selected pack indices
     imposters: 1,
     mode: 'classic',      // classic | hint | decoy
@@ -70,6 +71,7 @@ function loadState() {
       }
       if ([1, 2, 3].includes(st.imposters)) S.settings.imposters = st.imposters;
       if (['classic', 'hint', 'decoy'].includes(st.mode)) S.settings.mode = st.mode;
+      if (['original', 'evolution'].includes(st.gameStyle)) S.settings.gameStyle = st.gameStyle;
       if ([0, 60, 90, 120].includes(st.timer)) S.settings.timer = st.timer;
     }
     if (d.usedWords && typeof d.usedWords === 'object') {
@@ -228,6 +230,11 @@ function renderSettings() {
     maxI === 2 ? 'A third imposter unlocks with 9+ players.' :
     'Chaos mode available. 😈';
 
+  // game style
+  document.querySelectorAll('#style-cards .mode-card').forEach((c) => {
+    c.classList.toggle('on', c.dataset.style === S.settings.gameStyle);
+  });
+
   // mode
   document.querySelectorAll('#mode-cards .mode-card').forEach((c) => {
     c.classList.toggle('on', c.dataset.mode === S.settings.mode);
@@ -246,6 +253,10 @@ function renderSettings() {
 
 document.querySelectorAll('#mode-cards .mode-card').forEach((c) => {
   c.addEventListener('click', () => { S.settings.mode = c.dataset.mode; saveState(); renderSettings(); });
+});
+
+document.querySelectorAll('#style-cards .mode-card').forEach((c) => {
+  c.addEventListener('click', () => { S.settings.gameStyle = c.dataset.style; saveState(); renderSettings(); });
 });
 
 /* ---------- round setup ---------- */
@@ -282,6 +293,7 @@ function startRound() {
   const { packIdx, pack, entry } = pickWord();
   S.round++;
   S.game = {
+    style: S.settings.gameStyle,
     prevLastImposter, // restored if the round is aborted
     packIdx,
     category: pack.category,
@@ -403,6 +415,12 @@ $('btn-reveal-done').addEventListener('click', () => {
   g.revealIdx++;
   if (g.revealIdx < S.players.length) {
     renderRevealGate();
+  } else if (g.style === 'original') {
+    // Original style: no clue-order list — straight to "Game started!"
+    primeAudio();
+    renderDiscuss();
+    go('discuss');
+    startTimer();
   } else {
     renderClues();
     go('clues');
@@ -419,8 +437,20 @@ function renderClues() {
     </li>`).join('');
 }
 
+function renderDiscuss() {
+  const original = S.game.style === 'original';
+  const starter = S.players[S.game.clueOrder[0]];
+  $('discuss-title').textContent = original ? 'Game started!' : 'Discuss! 🗣️';
+  $('discuss-intro').innerHTML = original
+    ? `Time to talk and catch the imposter. <b>${esc(starter.name)}</b> starts the conversation!`
+    : 'Who sounded vague? Who was too generic? Accuse, defend, bluff.';
+  $('btn-to-vote').textContent = original ? 'Reveal imposter & word' : 'Vote now';
+  $('btn-talk-newgame').classList.toggle('hidden', !original);
+}
+
 $('btn-to-discussion').addEventListener('click', () => {
   primeAudio(); // user gesture: unlock audio so the timer-end beep works on iOS
+  renderDiscuss();
   go('discuss');
   startTimer();
 });
@@ -460,7 +490,35 @@ function startTimer() {
 
 $('btn-to-vote').addEventListener('click', () => {
   stopTimer();
-  startVoting(null);
+  if (S.game.style === 'original') {
+    renderBigReveal();
+    go('bigreveal');
+  } else {
+    startVoting(null);
+  }
+});
+
+$('btn-talk-newgame').addEventListener('click', abortRound);
+
+/* ---------- big reveal (Original style) ---------- */
+function renderBigReveal() {
+  const g = S.game;
+  $('bigreveal-word').textContent = g.word;
+  $('bigreveal-cat').textContent = `${g.emoji} ${g.category}`;
+  const names = g.imposters.map((i) => `<b>${esc(S.players[i].name)}</b>`);
+  $('bigreveal-imposters').innerHTML =
+    `${names.join(' and ')} ${g.imposters.length > 1 ? 'were the imposters' : 'was the imposter'}! 🚨` +
+    (S.settings.mode === 'decoy' ? `<br>Their decoy word was <b>${esc(g.decoy)}</b>` : '');
+  saveState(); // checkpoint the round counter for Continue game
+}
+
+$('btn-bigreveal-next').addEventListener('click', () => startRound());
+
+$('btn-bigreveal-setup').addEventListener('click', () => {
+  S.game = null;
+  releaseWake();
+  renderSettings();
+  go('settings');
 });
 
 /* ---------- voting ---------- */

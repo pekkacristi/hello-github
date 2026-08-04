@@ -11,17 +11,21 @@ No build, no install — it's a single static page:
 - **Open locally:** clone the repo and open `index.html` in any browser (best on a phone).
 - **Host it:** enable GitHub Pages for this repo (Settings → Pages → deploy from branch) and play from the link on any phone.
 
-### 🎮 How to play
+### 🎭 Two game styles
+- **📼 Original** — like the classic app: peek the cards, talk it out, then one tap reveals the imposter & word. No voting, no scores — pure conversation.
+- **🚀 Evolution** — the full game: secret in-app voting with tie revotes, a caught imposter's last-chance word steal, score tracking, and a final podium.
+
+### 🎮 How to play (Evolution)
 1. **Secret word** — pass the phone around; each player holds the card to peek. Everyone sees the same word, except the imposter.
 2. **Clues** — in the shown order, each player says one word related to the secret word. The imposter must bluff!
 3. **Discuss & vote** — argue about who sounded fake, then vote secretly on the phone. Ties trigger one revote.
-4. **The twist** — a caught imposter can still steal points by guessing the secret word from 6 options.
+4. **The twist** — a caught imposter can still steal points by guessing the secret word from 8 options.
 
 ### ✨ Features
 - **3 imposter modes:** Classic (imposter knows nothing), Hint (imposter sees the category), and **Decoy** — the imposter gets a similar-but-wrong word and doesn't even know they're the imposter!
-- 12 categories, 535 word pairs (food, animals, movies, sports, video games…)
-- 1–3 imposters for bigger groups, discussion timer, score tracking across rounds with a final podium 🏆
-- Words never repeat until a category is exhausted; players & settings are remembered between sessions
+- 12 categories, 535 word pairs — 1,070 playable words counting decoys (food, animals, movies, sports, video games…)
+- 3–20 players, 1–3 imposters for bigger groups, discussion timer, score tracking across rounds with a final podium 🏆
+- Words never repeat until a category is exhausted; players, settings & scores are remembered between sessions
 
 ### 🧮 Scoring
 | Outcome | Points |

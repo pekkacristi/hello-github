@@ -86,7 +86,7 @@ const say = (m) => { log.push(m); if (log.length <= 400) console.log('  ' + m); 
     if (okState) fails.push(okState + ' @step ' + steps);
   };
 
-  while (gamesFinished < 3 && steps < 900 && !fails.length) {
+  while (gamesFinished < 3 && roundsPlayed < 14 && steps < 900 && !fails.length) {
     steps++;
     const screen = await active();
     if (screen === lastScreen) { if (++sameScreen > 80) { fails.push(`stuck on ${screen} for 80 steps`); break; } }
@@ -120,6 +120,7 @@ const say = (m) => { log.push(m); if (log.length <= 400) console.log('  ' + m); 
         if (chance(0.4)) { const chips = await page.$$('#category-grid .cat-chip'); await pick(chips).click(); say('fiddles with categories'); }
         if (chance(0.3)) { const segs = await page.$$('#imposter-picker .seg:not([disabled])'); await pick(segs).click(); say('changes imposter count'); }
         if (chance(0.4)) { const modes = await page.$$('#mode-cards .mode-card'); await pick(modes).click(); say('switches imposter mode'); }
+        if (chance(0.5)) { const styles = await page.$$('#style-cards .mode-card'); await pick(styles).click(); say(`picks ${await st("S.settings.gameStyle")} style`); }
         if (chance(0.3)) { const ts = await page.$$('#timer-picker .seg'); await pick(ts).click(); say('changes the timer'); }
         // mostly keep the timer off so the sim doesn't idle
         if (chance(0.8)) await page.evaluate(() => { S.settings.timer = 0; renderSettings(); });
@@ -205,6 +206,13 @@ const say = (m) => { log.push(m); if (log.length <= 400) console.log('  ' + m); 
         }
         break;
       }
+      case 'screen-bigreveal': {
+        roundsPlayed++;
+        say(`🥁 original-style reveal (round ${await st('S.round')})`);
+        if (chance(0.3)) { await page.click('#btn-bigreveal-setup'); say('back to setup'); }
+        else { await doubleTapMaybe('#btn-bigreveal-next'); say('next round!'); }
+        break;
+      }
       case 'screen-final': {
         gamesFinished++;
         say(`🏆 game ${gamesFinished} finished after ${roundsPlayed} total rounds`);
@@ -219,6 +227,7 @@ const say = (m) => { log.push(m); if (log.length <= 400) console.log('  ' + m); 
   }
 
   if (steps >= 900) fails.push('exceeded 900 steps without finishing 3 games');
+  if (gamesFinished < 3 && roundsPlayed < 6) fails.push('too little play: ' + roundsPlayed + ' rounds');
   console.log(`\nseed=${SEED} steps=${steps} games=${gamesFinished} rounds=${roundsPlayed}`);
   if (fails.length) { console.log('PERSONA FAILURES:\n' + fails.join('\n')); process.exit(1); }
   console.log('PERSONA SIMULATION CLEAN');

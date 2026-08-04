@@ -58,6 +58,18 @@
       <span></span>
     </header>
     <div class="scroll-area">
+      <h3 class="set-label">Game style</h3>
+      <div class="mode-cards" id="style-cards">
+        <button class="mode-card" data-style="original">
+          <span class="mode-name">📼 Original</span>
+          <span class="mode-desc">Like the classic app: peek the cards, talk it out, then one tap reveals the imposter &amp; word. No voting, no scores.</span>
+        </button>
+        <button class="mode-card" data-style="evolution">
+          <span class="mode-name">🚀 Evolution</span>
+          <span class="mode-desc">The full game: secret voting, tie revotes, a caught imposter's last-chance word steal, scoring &amp; podium.</span>
+        </button>
+      </div>
+
       <h3 class="set-label">Categories</h3>
       <div id="category-grid" class="category-grid"></div>
 
@@ -146,11 +158,11 @@
     </footer>
   </section>
 
-  <!-- ============ DISCUSSION ============ -->
+  <!-- ============ DISCUSSION / TALK ============ -->
   <section id="screen-discuss" class="screen">
     <div class="center-area">
-      <h2 class="big-title">Discuss! 🗣️</h2>
-      <p class="phase-intro">Who sounded vague? Who was too generic? Accuse, defend, bluff.</p>
+      <h2 class="big-title" id="discuss-title">Discuss! 🗣️</h2>
+      <p class="phase-intro" id="discuss-intro">Who sounded vague? Who was too generic? Accuse, defend, bluff.</p>
       <div class="timer-ring" id="timer-ring">
         <svg viewBox="0 0 120 120">
           <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
@@ -161,6 +173,22 @@
     </div>
     <footer class="bottombar">
       <button class="btn btn-primary btn-big" id="btn-to-vote">Vote now</button>
+      <button class="btn btn-ghost btn-big hidden" id="btn-talk-newgame" style="margin-top:10px">New game</button>
+    </footer>
+  </section>
+
+  <!-- ============ BIG REVEAL (Original style) ============ -->
+  <section id="screen-bigreveal" class="screen">
+    <div class="center-area">
+      <h2 class="big-title">The reveal 🥁</h2>
+      <p class="pass-label">The secret word was</p>
+      <span class="secret-word" id="bigreveal-word"></span>
+      <p class="pass-label" id="bigreveal-cat"></p>
+      <p class="phase-intro" id="bigreveal-imposters"></p>
+    </div>
+    <footer class="bottombar two-btns">
+      <button class="btn btn-ghost" id="btn-bigreveal-setup">Change setup</button>
+      <button class="btn btn-primary" id="btn-bigreveal-next">Next round</button>
     </footer>
   </section>
 
@@ -258,6 +286,7 @@
   <div id="howto-modal" class="modal hidden" role="dialog" aria-modal="true">
     <div class="modal-card">
       <h2>How to play</h2>
+      <p class="phase-intro" style="margin-bottom:14px">Two styles: <b>📼 Original</b> — peek, talk, one-tap reveal, no scores. <b>🚀 Evolution</b> — the full game below.</p>
       <ol class="howto-list">
         <li><b>🤫 Secret word.</b> Everyone privately peeks at the same secret word — except the imposter, who gets nothing (or a decoy!).</li>
         <li><b>🗣️ One-word clues.</b> In order, each player says one word related to the secret word. The imposter must bluff.</li>
