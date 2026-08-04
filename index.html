@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#0b0c08">
+<title>Imposter Who? — Party Word Game</title>
+<meta name="description" content="Find the fake in your group! A pass-and-play social deduction word game for 3-12 players on one phone.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23ccf537'/%3E%3Ctext x='50' y='44' font-family='Arial Black,sans-serif' font-size='26' font-weight='900' text-anchor='middle' fill='%23111'%3EIMP%3C/text%3E%3Ctext x='50' y='76' font-family='Arial Black,sans-serif' font-size='26' font-weight='900' text-anchor='middle' fill='%23111'%3EWHO%3F%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- ============ HOME ============ -->
+  <section id="screen-home" class="screen">
+    <div class="rays"></div>
+    <div class="home-wrap">
+      <div class="logo-badge">
+        <span class="logo-line">Imposter</span>
+        <span class="logo-line logo-q">Who?</span>
+      </div>
+      <p class="tagline">Find the fake in your group!</p>
+      <div class="home-buttons">
+        <button class="btn btn-primary btn-big" id="btn-new-game">Play</button>
+        <button class="btn btn-ghost" id="btn-howto">How to play</button>
+      </div>
+      <p class="home-foot">3–12 players · one phone · pass &amp; play</p>
+    </div>
+  </section>
+
+  <!-- ============ PLAYERS ============ -->
+  <section id="screen-players" class="screen">
+    <header class="topbar">
+      <button class="btn-back" data-back="home" aria-label="Back">‹</button>
+      <h2>Players</h2>
+      <span class="topbar-count" id="player-count">0</span>
+    </header>
+    <div class="scroll-area">
+      <ul id="player-list" class="player-list"></ul>
+      <form id="add-player-form" class="add-player" autocomplete="off">
+        <input type="text" id="player-name-input" maxlength="14" placeholder="Add player name…" enterkeyhint="done">
+        <button type="submit" class="btn btn-primary btn-add" aria-label="Add player">+</button>
+      </form>
+      <p class="hint" id="players-hint">Add at least 3 players to start.</p>
+    </div>
+    <footer class="bottombar">
+      <button class="btn btn-primary btn-big" id="btn-to-settings" disabled>Next</button>
+    </footer>
+  </section>
+
+  <!-- ============ SETTINGS ============ -->
+  <section id="screen-settings" class="screen">
+    <header class="topbar">
+      <button class="btn-back" data-back="players" aria-label="Back">‹</button>
+      <h2>Game setup</h2>
+      <span></span>
+    </header>
+    <div class="scroll-area">
+      <h3 class="set-label">Categories</h3>
+      <div id="category-grid" class="category-grid"></div>
+
+      <h3 class="set-label">Imposters</h3>
+      <div id="imposter-picker" class="seg-row"></div>
+      <p class="hint" id="imposter-hint"></p>
+
+      <h3 class="set-label">Imposter mode</h3>
+      <div class="mode-cards" id="mode-cards">
+        <button class="mode-card" data-mode="classic">
+          <span class="mode-name">🕵️ Classic</span>
+          <span class="mode-desc">Imposter knows they're the imposter, but gets no info.</span>
+        </button>
+        <button class="mode-card" data-mode="hint">
+          <span class="mode-name">💡 Hint</span>
+          <span class="mode-desc">Imposter also sees the category. Easier to blend in.</span>
+        </button>
+        <button class="mode-card" data-mode="decoy">
+          <span class="mode-name">🎭 Decoy</span>
+          <span class="mode-desc">Imposter secretly gets a similar-but-wrong word — and doesn't even know they're the imposter!</span>
+        </button>
+      </div>
+
+      <h3 class="set-label">Discussion timer</h3>
+      <div id="timer-picker" class="seg-row"></div>
+    </div>
+    <footer class="bottombar">
+      <button class="btn btn-primary btn-big" id="btn-start-game">Start round 1</button>
+    </footer>
+  </section>
+
+  <!-- ============ REVEAL (pass & peek) ============ -->
+  <section id="screen-reveal" class="screen">
+    <header class="topbar">
+      <button class="btn-back" id="btn-abort-round" aria-label="Quit round">✕</button>
+      <h2 id="reveal-round-label">Round 1</h2>
+      <span></span>
+    </header>
+    <div class="center-area">
+      <div class="pass-dots" id="reveal-dots"></div>
+
+      <!-- pass gate -->
+      <div id="reveal-gate">
+        <p class="pass-label">Pass the phone to</p>
+        <div class="pass-name" id="reveal-player-name"></div>
+        <button class="btn btn-primary btn-big" id="btn-im-ready">I'm <span id="reveal-player-name2"></span> — show me</button>
+      </div>
+
+      <!-- secret card -->
+      <div id="reveal-card-wrap" class="hidden">
+        <div class="flip-card" id="reveal-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <span class="flip-hold-icon">👆</span>
+              <span class="flip-hold-text">Hold to reveal</span>
+            </div>
+            <div class="flip-back" id="reveal-card-back">
+              <span class="secret-category" id="secret-category"></span>
+              <span class="secret-word" id="secret-word"></span>
+              <span class="secret-sub" id="secret-sub"></span>
+            </div>
+          </div>
+        </div>
+        <p class="hint hold-hint">Hold the card, memorize, release.</p>
+        <button class="btn btn-primary btn-big" id="btn-reveal-done" disabled>Got it — pass on</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLUES ============ -->
+  <section id="screen-clues" class="screen">
+    <header class="topbar">
+      <button class="btn-back" id="btn-abort-round2" aria-label="Quit round">✕</button>
+      <h2 id="clues-round-label">Clue time</h2>
+      <span></span>
+    </header>
+    <div class="scroll-area">
+      <p class="phase-intro">Going around in this order, everyone says <b>one word</b> related to the secret word. Don't say the word itself!</p>
+      <ol class="order-list" id="clue-order"></ol>
+      <p class="hint">Do a second lap if you're still not sure. 👀</p>
+    </div>
+    <footer class="bottombar">
+      <button class="btn btn-primary btn-big" id="btn-to-discussion">Done — discuss!</button>
+    </footer>
+  </section>
+
+  <!-- ============ DISCUSSION ============ -->
+  <section id="screen-discuss" class="screen">
+    <div class="center-area">
+      <h2 class="big-title">Discuss! 🗣️</h2>
+      <p class="phase-intro">Who sounded vague? Who was too generic? Accuse, defend, bluff.</p>
+      <div class="timer-ring" id="timer-ring">
+        <svg viewBox="0 0 120 120">
+          <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+          <circle class="ring-fg" id="ring-fg" cx="60" cy="60" r="52"></circle>
+        </svg>
+        <div class="timer-num" id="timer-num">90</div>
+      </div>
+    </div>
+    <footer class="bottombar">
+      <button class="btn btn-primary btn-big" id="btn-to-vote">Vote now</button>
+    </footer>
+  </section>
+
+  <!-- ============ VOTE ============ -->
+  <section id="screen-vote" class="screen">
+    <header class="topbar">
+      <span></span>
+      <h2>Secret vote</h2>
+      <span></span>
+    </header>
+    <div class="center-area">
+      <div class="pass-dots" id="vote-dots"></div>
+
+      <div id="vote-gate">
+        <p class="pass-label">Pass the phone to</p>
+        <div class="pass-name" id="vote-player-name"></div>
+        <button class="btn btn-primary btn-big" id="btn-vote-ready">I'm <span id="vote-player-name2"></span> — vote</button>
+      </div>
+
+      <div id="vote-ballot" class="hidden">
+        <p class="phase-intro" id="ballot-question">Who is the imposter?</p>
+        <div class="ballot-grid" id="ballot-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESULTS ============ -->
+  <section id="screen-results" class="screen">
+    <div class="center-area">
+      <h2 class="big-title" id="results-title">The votes are in…</h2>
+      <div class="tally" id="vote-tally"></div>
+      <div id="accused-wrap" class="hidden">
+        <p class="pass-label" id="accused-label">The group accuses</p>
+        <div class="flip-card small" id="accused-card">
+          <div class="flip-inner">
+            <div class="flip-front"><span class="accused-name" id="accused-name"></span><span class="flip-hold-text">Tap to reveal</span></div>
+            <div class="flip-back" id="accused-back"></div>
+          </div>
+        </div>
+      </div>
+      <p class="phase-intro hidden" id="results-msg"></p>
+    </div>
+    <footer class="bottombar">
+      <button class="btn btn-primary btn-big hidden" id="btn-results-next">Continue</button>
+    </footer>
+  </section>
+
+  <!-- ============ IMPOSTER GUESS ============ -->
+  <section id="screen-guess" class="screen">
+    <div class="center-area">
+      <div id="guess-gate">
+        <h2 class="big-title">Caught! 🚨</h2>
+        <p class="phase-intro"><b id="guess-imposter-name"></b>, you have one last chance: guess the secret word to steal points!</p>
+        <button class="btn btn-danger btn-big" id="btn-guess-ready">Show me the options</button>
+      </div>
+      <div id="guess-options" class="hidden">
+        <p class="phase-intro">What was the secret word?</p>
+        <div class="ballot-grid" id="guess-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCOREBOARD ============ -->
+  <section id="screen-scoreboard" class="screen">
+    <header class="topbar">
+      <span></span>
+      <h2 id="score-round-label">Round 1 results</h2>
+      <span></span>
+    </header>
+    <div class="scroll-area">
+      <div class="round-summary" id="round-summary"></div>
+      <ul class="score-list" id="score-list"></ul>
+    </div>
+    <footer class="bottombar two-btns">
+      <button class="btn btn-ghost" id="btn-end-game">End game</button>
+      <button class="btn btn-primary" id="btn-next-round">Next round</button>
+    </footer>
+  </section>
+
+  <!-- ============ FINAL ============ -->
+  <section id="screen-final" class="screen">
+    <div class="rays"></div>
+    <div class="center-area">
+      <h2 class="big-title">🏆 Winner</h2>
+      <div class="podium" id="podium"></div>
+      <ul class="score-list" id="final-score-list"></ul>
+    </div>
+    <footer class="bottombar two-btns">
+      <button class="btn btn-ghost" id="btn-final-home">Home</button>
+      <button class="btn btn-primary" id="btn-play-again">Play again</button>
+    </footer>
+  </section>
+
+  <!-- ============ HOW TO PLAY MODAL ============ -->
+  <div id="howto-modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <h2>How to play</h2>
+      <ol class="howto-list">
+        <li><b>🤫 Secret word.</b> Everyone privately peeks at the same secret word — except the imposter, who gets nothing (or a decoy!).</li>
+        <li><b>🗣️ One-word clues.</b> In order, each player says one word related to the secret word. The imposter must bluff.</li>
+        <li><b>🔎 Discuss &amp; vote.</b> Argue about who sounded fake, then vote secretly on one phone.</li>
+        <li><b>🚨 The twist.</b> If the imposter is caught, they can still steal points by guessing the secret word!</li>
+      </ol>
+      <div class="howto-scoring">
+        <b>Scoring</b>
+        <span>Imposter escapes the vote: <b>+3</b> · Crew catches an imposter: <b>+1 each</b> · Caught imposter guesses the word: <b>+2</b></span>
+      </div>
+      <button class="btn btn-primary btn-big" id="btn-close-howto">Got it</button>
+    </div>
+  </div>
+
+  <canvas id="confetti"></canvas>
+</div>
+<script src="words.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,19 +1,34 @@
 # hello-github
-<<<<<<< HEAD
 A practice repo where I learned Git and Github
 
-## What it does
-Tracks my notes while I figured out version control - commits, branches, and merges.
+## 🕵️ Imposter Who? — Party Word Game
 
-## How to run it
-git clone https://github.com/your-username/hello-github.git
+A pass-and-play social deduction game for **3–12 players on one phone**, inspired by the "Imposter Who?" app. Everyone secretly sees the same word — except the imposter. Give one-word clues, argue, vote, and catch the fake!
 
-## Example
-<img width="1146" height="512" alt="Screenshot 2026-06-23 161657" src="https://github.com/user-attachments/assets/a5b29564-7d4c-4fe9-88bb-d046e35b88a9" />
+### ▶️ How to run it
+No build, no install — it's a single static page:
 
+- **Open locally:** clone the repo and open `index.html` in any browser (best on a phone).
+- **Host it:** enable GitHub Pages for this repo (Settings → Pages → deploy from branch) and play from the link on any phone.
+
+### 🎮 How to play
+1. **Secret word** — pass the phone around; each player holds the card to peek. Everyone sees the same word, except the imposter.
+2. **Clues** — in the shown order, each player says one word related to the secret word. The imposter must bluff!
+3. **Discuss & vote** — argue about who sounded fake, then vote secretly on the phone. Ties trigger one revote.
+4. **The twist** — a caught imposter can still steal points by guessing the secret word from 6 options.
+
+### ✨ Features
+- **3 imposter modes:** Classic (imposter knows nothing), Hint (imposter sees the category), and **Decoy** — the imposter gets a similar-but-wrong word and doesn't even know they're the imposter!
+- 12 categories, 535 word pairs (food, animals, movies, sports, video games…)
+- 1–3 imposters for bigger groups, discussion timer, score tracking across rounds with a final podium 🏆
+- Words never repeat until a category is exhausted; players & settings are remembered between sessions
+
+### 🧮 Scoring
+| Outcome | Points |
+|---|---|
+| Imposter escapes the vote | **+3** for the imposter |
+| Crew catches an imposter | **+1** for each crew member |
+| Caught imposter guesses the word | **+2** bonus steal |
 
 ## Tech used
-Git, Github, Markdown
-=======
-i will make a pull request
->>>>>>> 0f99a1fc926994c7d091f681ef2cb0206d541e2d
+Git, GitHub, Markdown, HTML/CSS/JavaScript (no frameworks, no build step)
