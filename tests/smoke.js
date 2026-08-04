@@ -160,6 +160,7 @@ const ok = (msg) => console.log('ok –', msg);
 
   // ================= end game =================
   await page.click('#btn-end-game');
+  await page.click('#confirm-yes');
   if (await active() !== 'screen-final') fail('expected final screen');
   const podium = await page.evaluate(() => document.querySelectorAll('.pod').length);
   if (podium !== 3) fail('expected 3 podium slots, got ' + podium);
@@ -189,7 +190,8 @@ const ok = (msg) => console.log('ok –', msg);
   ok('decoy mode: imposter unknowingly sees decoy, crew sees word');
 
   // ================= ORIGINAL style: talk & one-tap reveal, no scores =================
-  await page.click('#btn-abort-round2'); // leave the decoy round (confirm auto-accepted)
+  await page.click('#btn-abort-round2'); // leave the decoy round
+  await page.click('#confirm-yes');
   if (await active() !== 'screen-settings') fail('expected settings after decoy abort, got ' + await active());
   await page.evaluate(() => { S.settings.gameStyle = 'original'; S.settings.mode = 'classic'; S.settings.timer = 0; renderSettings(); });
   const scoresBefore = await page.evaluate(() => S.players.map((p) => p.score));
@@ -221,6 +223,7 @@ const ok = (msg) => console.log('ok –', msg);
   await page.click('#btn-bigreveal-next');
   if (await active() !== 'screen-reveal') fail('original: next round should start reveals, got ' + await active());
   await page.click('#btn-abort-round');
+  await page.click('#confirm-yes');
   ok('original style: talk screen, starter line, one-tap reveal, no scoring, next round');
 
   if (errors.length) fail('page errors:\n' + errors.join('\n'));

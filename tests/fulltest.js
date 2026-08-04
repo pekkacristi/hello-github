@@ -205,6 +205,7 @@ async function T2(browser) {
   await holdReveal(page);
   await page.click('#btn-reveal-done');
   await page.click('#btn-abort-round');
+  await page.click('#confirm-yes');
   if (await active(page) !== 'screen-settings') fail('T2', 'abort should land on settings');
   if (page.errors.length) fail('T2', 'page errors: ' + page.errors.join(' | '));
   ok('20-player cap, 3 imposters, abort clean');
@@ -334,17 +335,18 @@ async function T4(browser) {
   if (!label.includes('round 2')) fail('T4', 'settings should offer round 2, says: ' + label);
   ok('reload at scoreboard -> Continue game restores scores & round');
 
-  // back-gesture mid-reveal: dismiss keeps the round, accept aborts it
+  // back-gesture mid-reveal: Cancel keeps the round, Quit aborts it
   await page.click('#btn-start-game');
   await page.click('#btn-im-ready');
-  page.dialogAction = 'dismiss';
   await page.goBack();
   await page.waitForTimeout(300);
+  await page.click('#confirm-no');
   if (!(await S(page, 'S.game !== null'))) fail('T4', 'dismissed back-abort still killed the round');
   if (await active(page) !== 'screen-reveal') fail('T4', 'declined abort left reveal screen: ' + await active(page));
-  page.dialogAction = 'accept';
   await page.goBack();
   await page.waitForTimeout(300);
+  await page.click('#confirm-yes');
+  await page.waitForTimeout(200);
   if (await S(page, 'S.game !== null')) fail('T4', 'accepted back-abort did not end round');
   if (await active(page) !== 'screen-settings') fail('T4', 'accepted abort should land settings: ' + await active(page));
   if ((await S(page, 'S.round')) !== 1) fail('T4', 'aborted round not rolled back');
@@ -366,12 +368,12 @@ async function T4(browser) {
   await page.click('#btn-results-next');
   await page.click('#btn-guess-ready');
   await page.click('#guess-grid .ballot-btn');
-  page.dialogAction = 'dismiss';
   await page.click('#btn-end-game');
+  await page.click('#confirm-no');
   await page.waitForTimeout(200);
   if (await active(page) !== 'screen-scoreboard') fail('T4', 'declined end-game left scoreboard');
-  page.dialogAction = 'accept';
   await page.click('#btn-end-game');
+  await page.click('#confirm-yes');
   await page.waitForTimeout(300);
   if (await active(page) !== 'screen-final') fail('T4', 'accepted end-game should land final');
   if (page.errors.length) fail('T4', 'page errors: ' + page.errors.join(' | '));

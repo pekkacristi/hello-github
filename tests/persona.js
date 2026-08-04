@@ -88,6 +88,13 @@ const say = (m) => { log.push(m); if (log.length <= 400) console.log('  ' + m); 
 
   while (gamesFinished < 3 && roundsPlayed < 14 && steps < 900 && !fails.length) {
     steps++;
+    // a confirm sheet interrupts whatever Mia was doing
+    if (await page.evaluate(() => !document.getElementById('confirm-modal').classList.contains('hidden'))) {
+      if (chance(0.75)) { await page.click('#confirm-yes'); say('  …confirms'); }
+      else { await page.click('#confirm-no'); say('  …changes her mind'); }
+      await invariant();
+      continue;
+    }
     const screen = await active();
     if (screen === lastScreen) { if (++sameScreen > 80) { fails.push(`stuck on ${screen} for 80 steps`); break; } }
     else { sameScreen = 0; lastScreen = screen; }
@@ -96,7 +103,7 @@ const say = (m) => { log.push(m); if (log.length <= 400) console.log('  ' + m); 
       case 'screen-home': {
         if (chance(0.1)) { await page.click('#btn-howto'); await page.waitForTimeout(250); await page.click('#btn-close-howto'); say('Mia skims the rules again'); }
         if (await vis('#btn-continue') && chance(0.5)) { say('Mia continues the interrupted game'); await page.click('#btn-continue'); }
-        else { say('Mia starts a new game'); dialogAction = 'accept'; await page.click('#btn-new-game'); }
+        else { say('Mia starts a new game'); await page.click('#btn-new-game'); }
         break;
       }
       case 'screen-players': {
@@ -131,7 +138,7 @@ const say = (m) => { log.push(m); if (log.length <= 400) console.log('  ' + m); 
       }
       case 'screen-reveal': {
         if (!(await st('S.game'))) break; // aborted between checks
-        if (chance(0.02)) { say('📵 phone rings — Mia quits the round'); dialogAction = 'accept'; await page.click('#btn-abort-round'); break; }
+        if (chance(0.02)) { say('📵 phone rings — Mia quits the round'); await page.click('#btn-abort-round'); break; }
         if (chance(0.02)) { say('📲 app-switch! page reloads mid-reveal'); await page.reload(); await page.waitForTimeout(350); break; }
         if (await vis('#btn-im-ready')) {
           await page.click('#btn-im-ready');
@@ -197,10 +204,10 @@ const say = (m) => { log.push(m); if (log.length <= 400) console.log('  ' + m); 
         if (chance(0.05)) { say('📲 phone dies at the scoreboard, reload'); await page.reload(); await page.waitForTimeout(350); break; }
         if (chance(0.12)) {
           say('…Mia almost ends the game, then changes her mind');
-          dialogAction = 'dismiss'; await page.click('#btn-end-game'); await page.waitForTimeout(150);
-          dialogAction = 'accept'; await page.click('#btn-next-round');
+          await page.click('#btn-end-game'); await page.waitForTimeout(150);
+          await page.click('#confirm-no'); await page.click('#btn-next-round');
         } else if (roundsPlayed % 4 === 3 || chance(0.25)) {
-          dialogAction = 'accept'; await page.click('#btn-end-game'); say('🏁 game over, crowning the winner');
+          await page.click('#btn-end-game'); say('🏁 game over, crowning the winner');
         } else {
           await doubleTapMaybe('#btn-next-round');
         }

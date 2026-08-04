@@ -82,6 +82,30 @@ function loadState() {
   } catch (e) { /* corrupted storage — start fresh */ }
 }
 
+/* ---------- confirm sheet ----------
+   Native confirm() can be silently blocked inside sandboxed embeds
+   (e.g. hosted artifact viewers), so confirmations use an in-page sheet. */
+let confirmYesFn = null;
+function askConfirm(msg, yesLabel, onYes) {
+  $('confirm-msg').textContent = msg;
+  $('confirm-yes').textContent = yesLabel;
+  confirmYesFn = onYes;
+  $('confirm-modal').classList.remove('hidden');
+}
+$('confirm-yes').addEventListener('click', () => {
+  $('confirm-modal').classList.add('hidden');
+  const fn = confirmYesFn;
+  confirmYesFn = null;
+  if (fn) fn();
+});
+$('confirm-no').addEventListener('click', () => {
+  $('confirm-modal').classList.add('hidden');
+  confirmYesFn = null;
+});
+$('confirm-modal').addEventListener('click', (e) => {
+  if (e.target === $('confirm-modal')) { $('confirm-modal').classList.add('hidden'); confirmYesFn = null; }
+});
+
 /* ---------- navigation ---------- */
 let currentScreen = 'home';
 function go(name) {
@@ -762,12 +786,13 @@ function renderScoreboard() {
 $('btn-next-round').addEventListener('click', () => startRound());
 
 $('btn-end-game').addEventListener('click', () => {
-  if (!confirm('End the game and crown the winner?')) return;
-  S.game = null;
-  releaseWake();
-  renderFinal();
-  go('final');
-  launchConfetti();
+  askConfirm('End the game and crown the winner?', 'End game', () => {
+    S.game = null;
+    releaseWake();
+    renderFinal();
+    go('final');
+    launchConfetti();
+  });
 });
 
 /* ---------- final ---------- */
@@ -853,15 +878,18 @@ function launchConfetti() {
 
 /* ---------- abort round ---------- */
 function abortRound() {
-  if (!confirm('Quit this round? The word will be discarded.')) return;
-  stopTimer();
-  releaseWake();
-  S.round--; // round never happened
-  S.lastImposter = S.game.prevLastImposter; // the aborted roll shouldn't count
-  S.game = null;
-  saveState();
-  renderSettings();
-  go('settings');
+  if (!S.game) return;
+  askConfirm('Quit this round? The word will be discarded.', 'Quit round', () => {
+    if (!S.game) return;
+    stopTimer();
+    releaseWake();
+    S.round--; // round never happened
+    S.lastImposter = S.game.prevLastImposter; // the aborted roll shouldn't count
+    S.game = null;
+    saveState();
+    renderSettings();
+    go('settings');
+  });
 }
 $('btn-abort-round').addEventListener('click', abortRound);
 $('btn-abort-round2').addEventListener('click', abortRound);
@@ -876,10 +904,9 @@ function renderHome() {
 
 /* ---------- global nav wiring ---------- */
 $('btn-new-game').addEventListener('click', () => {
-  if (S.round > 0 && !confirm('Start a new game? Current scores will be reset.')) return;
-  resetScores();
-  renderPlayers();
-  go('players');
+  const fresh = () => { resetScores(); renderPlayers(); go('players'); };
+  if (S.round > 0) askConfirm('Start a new game? Current scores will be reset.', 'New game', fresh);
+  else fresh();
 });
 $('btn-continue').addEventListener('click', () => { renderSettings(); go('settings'); });
 $('btn-to-settings').addEventListener('click', () => { renderSettings(); go('settings'); });

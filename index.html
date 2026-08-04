@@ -301,6 +301,17 @@
     </div>
   </div>
 
+  <!-- in-game confirm sheet (native confirm() can be blocked in embedded/sandboxed views) -->
+  <div id="confirm-modal" class="modal hidden" role="alertdialog" aria-modal="true">
+    <div class="modal-card">
+      <p class="confirm-msg" id="confirm-msg"></p>
+      <div class="confirm-btns">
+        <button class="btn btn-ghost" id="confirm-no">Cancel</button>
+        <button class="btn btn-primary" id="confirm-yes">Yes</button>
+      </div>
+    </div>
+  </div>
+
   <canvas id="confetti"></canvas>
 </div>
 <script src="words.js"></script>

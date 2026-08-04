@@ -384,5 +384,9 @@ body {
 }
 .howto-scoring b { color: var(--lime); }
 
+.confirm-msg { font-size: 17px; font-weight: 700; line-height: 1.45; text-align: center; padding: 4px 0 6px; }
+.confirm-btns { display: flex; gap: 10px; margin-top: 16px; }
+.confirm-btns .btn { flex: 1; }
+
 /* ---- confetti ---- */
 #confetti { position: absolute; inset: 0; pointer-events: none; z-index: 40; }
