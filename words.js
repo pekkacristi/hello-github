@@ -69,10 +69,6 @@ const WORD_PACKS = [
     "d": "Milkshake"
    },
    {
-    "w": "Cheeseburger",
-    "d": "Sloppy Joe"
-   },
-   {
     "w": "Cereal",
     "d": "Oatmeal"
    },
@@ -119,10 +115,6 @@ const WORD_PACKS = [
    {
     "w": "Bubble Tea",
     "d": "Iced Coffee"
-   },
-   {
-    "w": "Caesar Salad",
-    "d": "Greek Salad"
    },
    {
     "w": "Fish And Chips",
@@ -183,6 +175,14 @@ const WORD_PACKS = [
    {
     "w": "Apple Pie",
     "d": "Peach Cobbler"
+   },
+   {
+    "w": "Lasagna",
+    "d": "Risotto"
+   },
+   {
+    "w": "Waffles",
+    "d": "French Toast"
    }
   ]
  },
@@ -533,10 +533,6 @@ const WORD_PACKS = [
     "d": "Madagascar"
    },
    {
-    "w": "Pokemon",
-    "d": "Digimon"
-   },
-   {
     "w": "Godzilla",
     "d": "Pacific Rim"
    },
@@ -545,16 +541,20 @@ const WORD_PACKS = [
     "d": "Fantastic Four"
    },
    {
-    "w": "Willy Wonka",
-    "d": "Matilda"
-   },
-   {
     "w": "Encanto",
     "d": "Coco"
    },
    {
     "w": "Mr. Bean",
     "d": "Charlie Chaplin"
+   },
+   {
+    "w": "Jaws",
+    "d": "King Kong"
+   },
+   {
+    "w": "The Mandalorian",
+    "d": "Doctor Who"
    }
   ]
  },
@@ -703,10 +703,6 @@ const WORD_PACKS = [
     "d": "Maracas"
    },
    {
-    "w": "Chorus",
-    "d": "Verse"
-   },
-   {
     "w": "Melody",
     "d": "Harmony"
    },
@@ -735,12 +731,16 @@ const WORD_PACKS = [
     "d": "Soundcheck"
    },
    {
-    "w": "Air Guitar",
-    "d": "Drum Solo"
-   },
-   {
     "w": "Whistling",
     "d": "Humming"
+   },
+   {
+    "w": "Cello",
+    "d": "Banjo"
+   },
+   {
+    "w": "Banjo",
+    "d": "Accordion"
    }
   ]
  },
@@ -905,10 +905,6 @@ const WORD_PACKS = [
     "d": "Breakdancing"
    },
    {
-    "w": "Softball",
-    "d": "Rounders"
-   },
-   {
     "w": "Muay Thai",
     "d": "MMA"
    },
@@ -925,8 +921,12 @@ const WORD_PACKS = [
     "d": "Capoeira"
    },
    {
-    "w": "Track Relay",
-    "d": "Steeplechase"
+    "w": "Badminton",
+    "d": "Handball"
+   },
+   {
+    "w": "Surfing",
+    "d": "Kayaking"
    }
   ]
  },
@@ -939,16 +939,8 @@ const WORD_PACKS = [
     "d": "Rome"
    },
    {
-    "w": "Beach",
-    "d": "Lakeside"
-   },
-   {
     "w": "Airport",
     "d": "Train Station"
-   },
-   {
-    "w": "Eiffel Tower",
-    "d": "Statue Of Liberty"
    },
    {
     "w": "New York",
@@ -963,16 +955,8 @@ const WORD_PACKS = [
     "d": "Ferry"
    },
    {
-    "w": "Desert",
-    "d": "Savanna"
-   },
-   {
     "w": "Tokyo",
     "d": "Seoul"
-   },
-   {
-    "w": "Great Wall",
-    "d": "Colosseum"
    },
    {
     "w": "Passport",
@@ -983,16 +967,8 @@ const WORD_PACKS = [
     "d": "Dublin"
    },
    {
-    "w": "Pyramids",
-    "d": "Sphinx"
-   },
-   {
     "w": "Grand Canyon",
     "d": "Niagara Falls"
-   },
-   {
-    "w": "Island",
-    "d": "Peninsula"
    },
    {
     "w": "Campsite",
@@ -1023,10 +999,6 @@ const WORD_PACKS = [
     "d": "Melbourne"
    },
    {
-    "w": "Rainforest",
-    "d": "Jungle Safari"
-   },
-   {
     "w": "Lighthouse",
     "d": "Windmill"
    },
@@ -1043,10 +1015,6 @@ const WORD_PACKS = [
     "d": "Art Gallery"
    },
    {
-    "w": "Times Square",
-    "d": "Piccadilly Circus"
-   },
-   {
     "w": "Ski Resort",
     "d": "Ice Rink"
    },
@@ -1055,20 +1023,12 @@ const WORD_PACKS = [
     "d": "Marrakech"
    },
    {
-    "w": "Waterfall",
-    "d": "Geyser"
-   },
-   {
     "w": "Harbor",
     "d": "Pier"
    },
    {
     "w": "Rio De Janeiro",
     "d": "Buenos Aires"
-   },
-   {
-    "w": "Hot Springs",
-    "d": "Sauna"
    },
    {
     "w": "Castle",
@@ -1091,14 +1051,6 @@ const WORD_PACKS = [
     "d": "Lisbon"
    },
    {
-    "w": "National Park",
-    "d": "Botanical Garden"
-   },
-   {
-    "w": "Volcano",
-    "d": "Canyon"
-   },
-   {
     "w": "Dubai",
     "d": "Singapore"
    },
@@ -1113,6 +1065,54 @@ const WORD_PACKS = [
    {
     "w": "Customs",
     "d": "Security Check"
+   },
+   {
+    "w": "Boarding Pass",
+    "d": "Luggage Tag"
+   },
+   {
+    "w": "Backpacker Hostel",
+    "d": "Resort"
+   },
+   {
+    "w": "Train Station",
+    "d": "Bus Terminal"
+   },
+   {
+    "w": "Hot Air Balloon",
+    "d": "Helicopter Tour"
+   },
+   {
+    "w": "Safari",
+    "d": "Whale Watching"
+   },
+   {
+    "w": "Postcard",
+    "d": "Fridge Magnet"
+   },
+   {
+    "w": "Tour Guide",
+    "d": "Flight Attendant"
+   },
+   {
+    "w": "Sunscreen",
+    "d": "Insect Repellent"
+   },
+   {
+    "w": "Snorkeling",
+    "d": "Scuba Diving"
+   },
+   {
+    "w": "Bullet Train",
+    "d": "Double Decker Bus"
+   },
+   {
+    "w": "Zip Line",
+    "d": "Bungee Jumping"
+   },
+   {
+    "w": "Duty Free",
+    "d": "Baggage Claim"
    }
   ]
  },
@@ -1273,10 +1273,6 @@ const WORD_PACKS = [
     "d": "Tour Guide"
    },
    {
-    "w": "Surgeon",
-    "d": "Anesthesiologist"
-   },
-   {
     "w": "Ballet Dancer",
     "d": "Figure Skater"
    },
@@ -1299,6 +1295,10 @@ const WORD_PACKS = [
    {
     "w": "Astronomer",
     "d": "Physicist"
+   },
+   {
+    "w": "Electrician",
+    "d": "Plumber"
    }
   ]
  },
@@ -1313,10 +1313,6 @@ const WORD_PACKS = [
    {
     "w": "Toothbrush",
     "d": "Dental Floss"
-   },
-   {
-    "w": "Backpack",
-    "d": "Suitcase"
    },
    {
     "w": "Pillow",
@@ -1363,10 +1359,6 @@ const WORD_PACKS = [
     "d": "Paper Clip"
    },
    {
-    "w": "Eraser",
-    "d": "Correction Fluid"
-   },
-   {
     "w": "Comb",
     "d": "Razor"
    },
@@ -1393,10 +1385,6 @@ const WORD_PACKS = [
    {
     "w": "Sunglasses",
     "d": "Reading Glasses"
-   },
-   {
-    "w": "Notebook",
-    "d": "Diary"
    },
    {
     "w": "Chair",
@@ -1439,10 +1427,6 @@ const WORD_PACKS = [
     "d": "Game Controller"
    },
    {
-    "w": "Headphones",
-    "d": "Speaker"
-   },
-   {
     "w": "Trash Can",
     "d": "Recycling Bin"
    },
@@ -1463,10 +1447,6 @@ const WORD_PACKS = [
     "d": "Teacup"
    },
    {
-    "w": "Alarm",
-    "d": "Doorbell"
-   },
-   {
     "w": "Calendar",
     "d": "Planner"
    },
@@ -1485,6 +1465,26 @@ const WORD_PACKS = [
    {
     "w": "Piggy Bank",
     "d": "Coin Jar"
+   },
+   {
+    "w": "Blanket",
+    "d": "Rug"
+   },
+   {
+    "w": "Toaster",
+    "d": "Blender"
+   },
+   {
+    "w": "Flashlight",
+    "d": "Light Switch"
+   },
+   {
+    "w": "Hammer",
+    "d": "Wrench"
+   },
+   {
+    "w": "Napkin",
+    "d": "Toilet Paper"
    }
   ]
  },
@@ -1503,18 +1503,6 @@ const WORD_PACKS = [
    {
     "w": "Beyonce",
     "d": "Rihanna"
-   },
-   {
-    "w": "Taylor Swift",
-    "d": "Ariana Grande"
-   },
-   {
-    "w": "Michael Jackson",
-    "d": "Elvis Presley"
-   },
-   {
-    "w": "Leonardo Da Vinci",
-    "d": "Michelangelo"
    },
    {
     "w": "William Shakespeare",
@@ -1645,14 +1633,6 @@ const WORD_PACKS = [
     "d": "Buzz Aldrin"
    },
    {
-    "w": "Cleopatra",
-    "d": "Nefertiti"
-   },
-   {
-    "w": "Napoleon",
-    "d": "Julius Caesar"
-   },
-   {
     "w": "Mark Zuckerberg",
     "d": "Larry Page"
    },
@@ -1671,6 +1651,26 @@ const WORD_PACKS = [
    {
     "w": "Frida Kahlo",
     "d": "Salvador Dali"
+   },
+   {
+    "w": "Cristiano Ronaldo",
+    "d": "Neymar"
+   },
+   {
+    "w": "LeBron James",
+    "d": "Stephen Curry"
+   },
+   {
+    "w": "Steve Jobs",
+    "d": "Jeff Bezos"
+   },
+   {
+    "w": "Isaac Newton",
+    "d": "Galileo Galilei"
+   },
+   {
+    "w": "Charles Darwin",
+    "d": "Nikola Tesla"
    }
   ]
  },
@@ -1717,10 +1717,6 @@ const WORD_PACKS = [
    {
     "w": "Super Smash Bros",
     "d": "Street Fighter"
-   },
-   {
-    "w": "Mario Kart",
-    "d": "Need for Speed"
    },
    {
     "w": "FIFA",
@@ -1807,10 +1803,6 @@ const WORD_PACKS = [
     "d": "Temple Run"
    },
    {
-    "w": "Pokemon Go",
-    "d": "Just Dance"
-   },
-   {
     "w": "Kirby",
     "d": "Yoshi"
    },
@@ -1857,6 +1849,14 @@ const WORD_PACKS = [
    {
     "w": "Arcade",
     "d": "Casino"
+   },
+   {
+    "w": "Roblox",
+    "d": "Minecraft"
+   },
+   {
+    "w": "Candy Crush",
+    "d": "Angry Birds"
    }
   ]
  },
@@ -1867,10 +1867,6 @@ const WORD_PACKS = [
    {
     "w": "Volcano",
     "d": "Geyser"
-   },
-   {
-    "w": "Rainforest",
-    "d": "Jungle"
    },
    {
     "w": "Camping",
@@ -1965,16 +1961,8 @@ const WORD_PACKS = [
     "d": "Lantern"
    },
    {
-    "w": "Tent",
-    "d": "Cabin"
-   },
-   {
     "w": "Fishing",
     "d": "Kayaking"
-   },
-   {
-    "w": "Rock Climbing",
-    "d": "Zip Lining"
    },
    {
     "w": "Picnic",
@@ -2043,6 +2031,18 @@ const WORD_PACKS = [
    {
     "w": "Stargazing",
     "d": "Birdwatching"
+   },
+   {
+    "w": "Hurricane",
+    "d": "Blizzard"
+   },
+   {
+    "w": "Northern Lights",
+    "d": "Shooting Star"
+   },
+   {
+    "w": "Kayaking",
+    "d": "Snorkeling"
    }
   ]
  },
@@ -2077,10 +2077,6 @@ const WORD_PACKS = [
    {
     "w": "Gravity",
     "d": "Magnetism"
-   },
-   {
-    "w": "Volcano Model",
-    "d": "Solar System Model"
    },
    {
     "w": "Test Tube",
@@ -2123,10 +2119,6 @@ const WORD_PACKS = [
     "d": "Diploma"
    },
    {
-    "w": "Teacher",
-    "d": "Principal"
-   },
-   {
     "w": "Field Trip",
     "d": "School Assembly"
    },
@@ -2161,10 +2153,6 @@ const WORD_PACKS = [
    {
     "w": "Lab Coat",
     "d": "Safety Goggles"
-   },
-   {
-    "w": "Chalk",
-    "d": "Marker"
    },
    {
     "w": "Notebook",
@@ -2229,6 +2217,18 @@ const WORD_PACKS = [
    {
     "w": "Ballpoint Pen",
     "d": "Crayon"
+   },
+   {
+    "w": "Cafeteria Tray",
+    "d": "Locker"
+   },
+   {
+    "w": "Locker",
+    "d": "Water Fountain"
+   },
+   {
+    "w": "Protractor",
+    "d": "Abacus"
    }
   ]
  },
@@ -2431,20 +2431,8 @@ const WORD_PACKS = [
     "d": "Kylo Ren"
    },
    {
-    "w": "Spider-Man",
-    "d": "Batman"
-   },
-   {
     "w": "Elsa",
     "d": "Rapunzel"
-   },
-   {
-    "w": "Pikachu",
-    "d": "Charmander"
-   },
-   {
-    "w": "Harry Potter",
-    "d": "Percy Jackson"
    },
    {
     "w": "Sherlock Holmes",
@@ -2455,36 +2443,12 @@ const WORD_PACKS = [
     "d": "Peter Griffin"
    },
    {
-    "w": "Shrek",
-    "d": "The Grinch"
-   },
-   {
-    "w": "SpongeBob",
-    "d": "Patrick Star"
-   },
-   {
-    "w": "Superman",
-    "d": "Captain America"
-   },
-   {
-    "w": "Cinderella",
-    "d": "Snow White"
-   },
-   {
-    "w": "Mario",
-    "d": "Sonic"
-   },
-   {
     "w": "Buzz Lightyear",
     "d": "Iron Man"
    },
    {
     "w": "Winnie the Pooh",
     "d": "Paddington"
-   },
-   {
-    "w": "Scooby-Doo",
-    "d": "Snoopy"
    },
    {
     "w": "Gandalf",
@@ -2535,16 +2499,8 @@ const WORD_PACKS = [
     "d": "Nemo"
    },
    {
-    "w": "Aladdin",
-    "d": "Robin Hood"
-   },
-   {
     "w": "Kermit",
     "d": "Elmo"
-   },
-   {
-    "w": "Thor",
-    "d": "Hercules"
    },
    {
     "w": "Katniss Everdeen",
@@ -2575,10 +2531,6 @@ const WORD_PACKS = [
     "d": "Ursula"
    },
    {
-    "w": "Donkey Kong",
-    "d": "Kirby"
-   },
-   {
     "w": "Willy Wonka",
     "d": "Mary Poppins"
    },
@@ -2601,6 +2553,54 @@ const WORD_PACKS = [
    {
     "w": "Matilda",
     "d": "Hermione Granger"
+   },
+   {
+    "w": "Iron Man",
+    "d": "Captain America"
+   },
+   {
+    "w": "Captain America",
+    "d": "Black Panther"
+   },
+   {
+    "w": "Robin Hood",
+    "d": "King Arthur"
+   },
+   {
+    "w": "King Arthur",
+    "d": "Merlin"
+   },
+   {
+    "w": "Alice In Wonderland",
+    "d": "Dorothy Gale"
+   },
+   {
+    "w": "Dorothy Gale",
+    "d": "Wicked Witch"
+   },
+   {
+    "w": "Snow White",
+    "d": "Sleeping Beauty"
+   },
+   {
+    "w": "Sleeping Beauty",
+    "d": "Rapunzel"
+   },
+   {
+    "w": "Pinocchio",
+    "d": "Geppetto"
+   },
+   {
+    "w": "Tarzan",
+    "d": "Robinson Crusoe"
+   },
+   {
+    "w": "Hermione Granger",
+    "d": "Ron Weasley"
+   },
+   {
+    "w": "Gollum",
+    "d": "Frodo Baggins"
    }
   ]
  },
@@ -2653,10 +2653,6 @@ const WORD_PACKS = [
     "d": "Austria"
    },
    {
-    "w": "Moscow",
-    "d": "Warsaw"
-   },
-   {
     "w": "Los Angeles",
     "d": "Miami"
    },
@@ -2689,10 +2685,6 @@ const WORD_PACKS = [
     "d": "Marrakech"
    },
    {
-    "w": "Bangkok",
-    "d": "Manila"
-   },
-   {
     "w": "Cuba",
     "d": "Jamaica"
    },
@@ -2713,10 +2705,6 @@ const WORD_PACKS = [
     "d": "Toronto"
    },
    {
-    "w": "Berlin",
-    "d": "Prague"
-   },
-   {
     "w": "Vienna",
     "d": "Budapest"
    },
@@ -2731,10 +2719,6 @@ const WORD_PACKS = [
    {
     "w": "Russia",
     "d": "Ukraine"
-   },
-   {
-    "w": "Netherlands",
-    "d": "Belgium"
    },
    {
     "w": "Thailand",
@@ -2753,14 +2737,6 @@ const WORD_PACKS = [
     "d": "Denmark"
    },
    {
-    "w": "Mumbai",
-    "d": "Delhi"
-   },
-   {
-    "w": "Shanghai",
-    "d": "Beijing"
-   },
-   {
     "w": "Cape Town",
     "d": "Nairobi"
    },
@@ -2777,16 +2753,40 @@ const WORD_PACKS = [
     "d": "Dublin"
    },
    {
-    "w": "Havana",
-    "d": "Kingston"
-   },
-   {
     "w": "Saudi Arabia",
     "d": "Qatar"
    },
    {
     "w": "Philippines",
     "d": "Malaysia"
+   },
+   {
+    "w": "Norway",
+    "d": "Sweden"
+   },
+   {
+    "w": "Vietnam",
+    "d": "Cambodia"
+   },
+   {
+    "w": "Poland",
+    "d": "Hungary"
+   },
+   {
+    "w": "Morocco",
+    "d": "Tunisia"
+   },
+   {
+    "w": "Jamaica",
+    "d": "Bahamas"
+   },
+   {
+    "w": "Colombia",
+    "d": "Ecuador"
+   },
+   {
+    "w": "Prague",
+    "d": "Budapest"
    }
   ]
  },
@@ -2847,10 +2847,6 @@ const WORD_PACKS = [
     "d": "Power Bank"
    },
    {
-    "w": "Headphones",
-    "d": "Speaker"
-   },
-   {
     "w": "Laptop",
     "d": "Desktop Computer"
    },
@@ -2877,10 +2873,6 @@ const WORD_PACKS = [
    {
     "w": "Screenshot",
     "d": "Screen Recording"
-   },
-   {
-    "w": "Airpods",
-    "d": "Earbuds Wired"
    },
    {
     "w": "Smartwatch",
@@ -2971,8 +2963,16 @@ const WORD_PACKS = [
     "d": "Screen Brightness"
    },
    {
-    "w": "Battery",
-    "d": "Charging Cable"
+    "w": "Bluetooth",
+    "d": "Hotspot"
+   },
+   {
+    "w": "Podcast",
+    "d": "Audiobook"
+   },
+   {
+    "w": "Drone",
+    "d": "Dashcam"
    }
   ]
  }

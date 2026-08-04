@@ -465,8 +465,8 @@ async function T6(browser) {
   if (report.packCount < 16) fail('T6', `only ${report.packCount} categories`);
   if (page.errors.length) fail('T6', 'page errors: ' + page.errors.join(' | '));
   const total = report.counts.reduce((n, c) => n + c.n, 0);
-  ok(`${report.packCount} categories x 45 = ${total} pairs, no duplicates or containment`);
-  if (report.crossDupes.length) console.log(`  (note: ${report.crossDupes.length} words appear in more than one category: ${report.crossDupes.slice(0, 5).join(', ')}${report.crossDupes.length > 5 ? '…' : ''})`);
+  ok(`${report.packCount} categories x 45 = ${total} pairs, every secret word globally unique`);
+  report.crossDupes.forEach((d) => fail('T6', `same word in two categories: ${d}`));
   if (report.notes.length) console.log(`  (note: ${report.notes.length} cosmetic decoy/secret overlaps: ${report.notes.slice(0, 3).join(', ')}${report.notes.length > 3 ? '…' : ''})`);
   await page.close();
 }
