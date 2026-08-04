@@ -1,7 +1,7 @@
-/* Five test suites for Imposter Who?
+/* Six test suites for Imposter Who?
    T1 marathon bookkeeping · T2 player-count edges & multi-imposter
    T3 hostile input & chaos taps · T4 interruptions & recovery
-   T5 small screens & landscape */
+   T5 small screens & landscape · T6 word data integrity */
 const { chromium } = require('playwright-core');
 // Portable paths: game root is the repo root; Chromium comes from
 // CHROMIUM_PATH or the Playwright browsers dir.
@@ -418,13 +418,66 @@ async function T5(browser) {
   }
 }
 
+
+/* ============ T6: word data integrity ============ */
+async function T6(browser) {
+  console.log('T6: word data integrity');
+  const page = await newPage(browser);
+  const report = await page.evaluate(() => {
+    const problems = [];
+    const notes = [];
+    const counts = [];
+    const allSecrets = new Map(); // word -> [categories]
+    WORD_PACKS.forEach((p) => {
+      counts.push({ cat: p.category, n: p.words.length });
+      if (p.words.length !== 45) problems.push(`${p.category} has ${p.words.length} pairs, expected 45`);
+      if (!p.emoji) problems.push(`${p.category} missing emoji`);
+      const seen = new Set();
+      p.words.forEach((e) => {
+        const w = (e.w || '').trim(), d = (e.d || '').trim();
+        const wl = w.toLowerCase(), dl = d.toLowerCase();
+        if (!w || !d) { problems.push(`${p.category}: empty entry`); return; }
+        if (wl === dl) problems.push(`${p.category}: decoy equals word (${w})`);
+        if (wl.includes(dl) || dl.includes(wl)) problems.push(`${p.category}: containment ${w}/${d}`);
+        if (seen.has(wl)) problems.push(`${p.category}: duplicate secret word ${w}`);
+        seen.add(wl);
+        if (wl === p.category.toLowerCase()) problems.push(`${p.category}: word equals category name`);
+        if (!allSecrets.has(wl)) allSecrets.set(wl, []);
+        allSecrets.get(wl).push(p.category);
+      });
+      // a decoy that is also a secret word elsewhere in the pack is cosmetic —
+      // the two entries never appear in the same round — so it is only noted
+      p.words.forEach((e) => {
+        if (seen.has((e.d || '').trim().toLowerCase())) {
+          notes.push(`${p.category}: decoy ${e.d} is also a secret word in this pack`);
+        }
+      });
+    });
+    const crossDupes = [...allSecrets.entries()].filter(([, cats]) => cats.length > 1)
+      .map(([w, cats]) => `${w} in ${cats.join(' + ')}`);
+    return { problems, notes, counts, packCount: WORD_PACKS.length, crossDupes };
+  });
+
+  report.counts.forEach((c) => {
+    if (c.n !== 45) fail('T6', `${c.cat}: ${c.n} pairs (expected 45)`);
+  });
+  report.problems.forEach((p) => fail('T6', p));
+  if (report.packCount < 16) fail('T6', `only ${report.packCount} categories`);
+  if (page.errors.length) fail('T6', 'page errors: ' + page.errors.join(' | '));
+  const total = report.counts.reduce((n, c) => n + c.n, 0);
+  ok(`${report.packCount} categories x 45 = ${total} pairs, no duplicates or containment`);
+  if (report.crossDupes.length) console.log(`  (note: ${report.crossDupes.length} words appear in more than one category: ${report.crossDupes.slice(0, 5).join(', ')}${report.crossDupes.length > 5 ? '…' : ''})`);
+  if (report.notes.length) console.log(`  (note: ${report.notes.length} cosmetic decoy/secret overlaps: ${report.notes.slice(0, 3).join(', ')}${report.notes.length > 3 ? '…' : ''})`);
+  await page.close();
+}
+
 (async () => {
   const browser = await chromium.launch({ executablePath: CHROME });
-  for (const t of [T1, T2, T3, T4, T5]) {
+  for (const t of [T1, T2, T3, T4, T5, T6]) {
     try { await t(browser); }
     catch (e) { fail(t.name, 'crashed: ' + e.message.split('\n')[0]); }
   }
   await browser.close();
-  console.log(failures.length ? `\n${failures.length} FAILURE(S):\n` + failures.join('\n') : '\nALL 5 SUITES PASSED');
+  console.log(failures.length ? `\n${failures.length} FAILURE(S):\n` + failures.join('\n') : '\nALL 6 SUITES PASSED');
   process.exit(failures.length ? 1 : 0);
 })();

@@ -23,9 +23,9 @@ No build, no install — it's a single static page:
 
 ### ✨ Features
 - **3 imposter modes:** Classic (imposter knows nothing), Hint (imposter gets a hint word similar to the secret word), and **Decoy** — the imposter gets a similar-but-wrong word and doesn't even know they're the imposter!
-- 12 categories, 535 word pairs — 1,070 playable words counting decoys (food, animals, movies, sports, video games…)
+- 16 categories × 45 word pairs = 720 pairs — 1,440 playable words counting decoys (food, animals, movies, sports, video games, history & mythology, fictional characters, countries & cities, technology…)
 - 3–20 players, 1–3 imposters for bigger groups, discussion timer, score tracking across rounds with a final podium 🏆
-- Words never repeat until a category is exhausted; players, settings & scores are remembered between sessions
+- Words never repeat until every selected category is exhausted; players, settings & scores are remembered between sessions
 
 ### 🧮 Scoring
 | Outcome | Points |

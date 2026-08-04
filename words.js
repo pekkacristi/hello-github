@@ -915,6 +915,18 @@ const WORD_PACKS = [
    {
     "w": "Trampoline",
     "d": "Acrobatics"
+   },
+   {
+    "w": "Golf",
+    "d": "Croquet"
+   },
+   {
+    "w": "Kung Fu",
+    "d": "Capoeira"
+   },
+   {
+    "w": "Track Relay",
+    "d": "Steeplechase"
    }
   ]
  },
@@ -1469,6 +1481,10 @@ const WORD_PACKS = [
    {
     "w": "Thermos",
     "d": "Water Bottle"
+   },
+   {
+    "w": "Piggy Bank",
+    "d": "Coin Jar"
    }
   ]
  },
@@ -2209,6 +2225,10 @@ const WORD_PACKS = [
    {
     "w": "Lightning Rod",
     "d": "Weather Vane"
+   },
+   {
+    "w": "Ballpoint Pen",
+    "d": "Crayon"
    }
   ]
  },

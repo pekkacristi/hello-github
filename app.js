@@ -285,14 +285,22 @@ document.querySelectorAll('#style-cards .mode-card').forEach((c) => {
 
 /* ---------- round setup ---------- */
 function pickWord() {
-  const packIdx = S.settings.categories[rand(S.settings.categories.length)];
-  const pack = WORD_PACKS[packIdx];
-  const used = new Set(S.usedWords[packIdx] || []);
-  let pool = pack.words.filter((e) => !used.has(e.w.toLowerCase()));
-  if (!pool.length) { // pack exhausted — recycle
-    S.usedWords[packIdx] = [];
-    pool = pack.words;
+  // a few words live in two categories (Harry Potter is both a movie and a
+  // character), so "used" is tracked across every selected category
+  const usedAnywhere = new Set(Object.values(S.usedWords).flat());
+  const fresh = (i) => WORD_PACKS[i].words.filter((e) => !usedAnywhere.has(e.w.toLowerCase()));
+  // prefer categories that still have unplayed words, so one pack running dry
+  // doesn't start repeating while others are still untouched
+  const available = S.settings.categories.filter((i) => fresh(i).length);
+  if (!available.length) { // every selected category exhausted — start over
+    S.settings.categories.forEach((i) => { S.usedWords[i] = []; });
+    usedAnywhere.clear();
   }
+  const choices = available.length ? available : S.settings.categories;
+  const packIdx = choices[rand(choices.length)];
+  const pack = WORD_PACKS[packIdx];
+  let pool = fresh(packIdx);
+  if (!pool.length) pool = pack.words;
   const entry = pool[rand(pool.length)];
   S.usedWords[packIdx] = [...(S.usedWords[packIdx] || []), entry.w.toLowerCase()];
   saveState();
