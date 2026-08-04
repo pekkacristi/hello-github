@@ -333,8 +333,9 @@ function startRound() {
     word: entry.w,
     decoy: entry.d,
     // a genuinely helpful associated word for Hint mode — deliberately NOT the
-    // decoy, which is a confusable look-alike and makes a useless hint
-    hint: entry.h || entry.d,
+    // decoy, which is a confusable look-alike and makes a useless hint.
+    // Falls back to the category so the hint line can never come up blank.
+    hint: (entry.h && entry.h.trim()) || pack.category.toLowerCase(),
     imposters: pickImposters(),
     clueOrder: shuffle(S.players.map((_, i) => i)),
     revealIdx: 0,
@@ -403,9 +404,11 @@ $('btn-im-ready').addEventListener('click', () => {
     back.classList.add('imposter-card');
     $('secret-category').textContent = '🚨 You are the';
     $('secret-word').textContent = 'Imposter';
-    $('secret-sub').textContent = S.settings.mode === 'hint'
-      ? `💡 Hint: it has something to do with ${g.hint}`
-      : 'You don’t know the word. Fake it!';
+    if (S.settings.mode === 'hint') {
+      $('secret-sub').innerHTML = `💡 Hint: it has something to do with<br><b class="hint-word">${esc(g.hint)}</b>`;
+    } else {
+      $('secret-sub').textContent = 'You don’t know the word. Fake it!';
+    }
   }
   $('reveal-gate').classList.add('hidden');
   $('reveal-card-wrap').classList.remove('hidden');

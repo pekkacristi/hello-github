@@ -3143,9 +3143,9 @@ const WORD_PACKS = [
     "h": "Disney villains"
    },
    {
-    "w": "Fairy Godmother",
-    "d": "Genie",
-    "h": "a royal ball"
+    "w": "Santa Claus",
+    "d": "Tooth Fairy",
+    "h": "presents at night"
    },
    {
     "w": "Dracula",

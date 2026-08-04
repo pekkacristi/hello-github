@@ -1,7 +1,8 @@
 /* Six test suites for Imposter Who?
    T1 marathon bookkeeping · T2 player-count edges & multi-imposter
    T3 hostile input & chaos taps · T4 interruptions & recovery
-   T5 small screens & landscape · T6 word data integrity */
+   T5 small screens & landscape · T6 word data integrity
+   T7 imposter card / hint coverage */
 const { chromium } = require('playwright-core');
 // Portable paths: game root is the repo root; Chromium comes from
 // CHROMIUM_PATH or the Playwright browsers dir.
@@ -471,13 +472,68 @@ async function T6(browser) {
   await page.close();
 }
 
+
+/* ============ T7: every word renders a hint in Hint mode ============ */
+async function T7(browser) {
+  console.log('T7: imposter card across all 720 words x 3 modes');
+  const page = await newPage(browser);
+  const report = await page.evaluate(() => {
+    const bad = [];
+    let checked = 0;
+    S.players = [{ name: 'A', score: 0 }, { name: 'B', score: 0 }, { name: 'C', score: 0 }];
+    const setRound = (pack, pi, entry) => {
+      S.game = { style: 'evolution', packIdx: pi, category: pack.category, emoji: pack.emoji,
+        word: entry.w, decoy: entry.d, hint: (entry.h && entry.h.trim()) || pack.category.toLowerCase(),
+        imposters: [0], clueOrder: [0, 1, 2], revealIdx: 0, votes: [], voteIdx: 0, deltas: [0, 0, 0] };
+      renderRevealGate();
+      document.getElementById('btn-im-ready').click();
+    };
+    WORD_PACKS.forEach((pack, pi) => {
+      pack.words.forEach((entry) => {
+        if (!entry.h || !String(entry.h).trim()) bad.push(`${pack.category}/${entry.w}: no hint in data`);
+        // hint mode: the hint word must be visible, the secret word must not be
+        S.settings.mode = 'hint';
+        setRound(pack, pi, entry);
+        const sub = document.getElementById('secret-sub').textContent.trim();
+        const shown = document.getElementById('secret-word').textContent.trim();
+        checked++;
+        if (!sub) bad.push(`${pack.category}/${entry.w}: hint line EMPTY`);
+        else if (/undefined|null/.test(sub)) bad.push(`${pack.category}/${entry.w}: "${sub}"`);
+        else if (!sub.includes(entry.h)) bad.push(`${pack.category}/${entry.w}: hint word missing`);
+        if (sub.toLowerCase().includes(entry.w.toLowerCase())) bad.push(`${pack.category}/${entry.w}: hint leaks the word`);
+        if (shown !== 'Imposter') bad.push(`${pack.category}/${entry.w}: hint-mode card should read Imposter`);
+        // classic mode: no hint by design, but never blank
+        S.settings.mode = 'classic';
+        setRound(pack, pi, entry);
+        const csub = document.getElementById('secret-sub').textContent.trim();
+        if (!csub) bad.push(`${pack.category}/${entry.w}: classic sub EMPTY`);
+        if (csub.toLowerCase().includes(entry.w.toLowerCase())) bad.push(`${pack.category}/${entry.w}: classic leaks the word`);
+        // decoy mode: imposter sees the decoy word, styled as crew
+        S.settings.mode = 'decoy';
+        setRound(pack, pi, entry);
+        const dshown = document.getElementById('secret-word').textContent.trim();
+        if (dshown !== entry.d) bad.push(`${pack.category}/${entry.w}: decoy card shows "${dshown}"`);
+        if (document.getElementById('reveal-card-back').classList.contains('imposter-card')) {
+          bad.push(`${pack.category}/${entry.w}: decoy card styled as imposter`);
+        }
+      });
+    });
+    return { checked, bad };
+  });
+  report.bad.slice(0, 10).forEach((b) => fail('T7', b));
+  if (report.bad.length > 10) fail('T7', `...and ${report.bad.length - 10} more`);
+  if (page.errors.length) fail('T7', 'page errors: ' + page.errors.join(' | '));
+  if (!report.bad.length) ok(`${report.checked} words x 3 imposter modes: hint always present, word never leaked`);
+  await page.close();
+}
+
 (async () => {
   const browser = await chromium.launch({ executablePath: CHROME });
-  for (const t of [T1, T2, T3, T4, T5, T6]) {
+  for (const t of [T1, T2, T3, T4, T5, T6, T7]) {
     try { await t(browser); }
     catch (e) { fail(t.name, 'crashed: ' + e.message.split('\n')[0]); }
   }
   await browser.close();
-  console.log(failures.length ? `\n${failures.length} FAILURE(S):\n` + failures.join('\n') : '\nALL 6 SUITES PASSED');
+  console.log(failures.length ? `\n${failures.length} FAILURE(S):\n` + failures.join('\n') : '\nALL 7 SUITES PASSED');
   process.exit(failures.length ? 1 : 0);
 })();
