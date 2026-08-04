@@ -7,227 +7,227 @@ const WORD_PACKS = [
    {
     "w": "Pizza",
     "d": "Lasagna",
-    "h": "a shared favorite"
+    "h": "cut into triangles"
    },
    {
     "w": "Sushi",
     "d": "Rice",
-    "h": "made fresh cold"
+    "h": "soy sauce dip"
    },
    {
     "w": "Hamburger",
     "d": "Hot Dog",
-    "h": "stacked and held"
+    "h": "stacked in bread"
    },
    {
     "w": "Espresso",
     "d": "Cappuccino",
-    "h": "a quick pickup"
+    "h": "dark and bitter"
    },
    {
     "w": "Pancakes",
     "d": "Waffles",
-    "h": "a morning treat"
+    "h": "fluffy and flipped"
    },
    {
     "w": "Ice Cream",
     "d": "Frozen Yogurt",
-    "h": "a chilled treat"
+    "h": "brain freeze"
    },
    {
     "w": "Tacos",
     "d": "Burrito",
-    "h": "folded and messy"
+    "h": "salsa on top"
    },
    {
     "w": "Spaghetti",
     "d": "Ramen",
-    "h": "a warm dinner"
+    "h": "with red sauce"
    },
    {
     "w": "French Fries",
     "d": "Onion Rings",
-    "h": "salty and shareable"
+    "h": "comes with burgers"
    },
    {
     "w": "Chocolate Cake",
     "d": "Brownie",
-    "h": "candles and slices"
+    "h": "candles on top"
    },
    {
     "w": "Orange Juice",
     "d": "Lemonade",
-    "h": "poured cold early"
+    "h": "poured at breakfast"
    },
    {
     "w": "Popcorn",
     "d": "Nachos",
-    "h": "keep reaching in"
+    "h": "salty and crunchy"
    },
    {
     "w": "Donut",
     "d": "Bagel",
-    "h": "gone in bites"
+    "h": "goes with coffee"
    },
    {
     "w": "Fried Chicken",
     "d": "Chicken Nuggets",
-    "h": "crispy outside"
+    "h": "bones left over"
    },
    {
     "w": "Croissant",
     "d": "Pretzel",
-    "h": "from the counter"
+    "h": "layers of butter"
    },
    {
     "w": "Smoothie",
     "d": "Milkshake",
-    "h": "a cold cup"
+    "h": "thick and fruity"
    },
    {
     "w": "Cereal",
     "d": "Oatmeal",
-    "h": "a bowl first"
+    "h": "bowl and spoon"
    },
    {
     "w": "Grilled Cheese",
     "d": "Quesadilla",
-    "h": "served warm"
+    "h": "hot and stringy"
    },
    {
     "w": "Cupcake",
     "d": "Muffin",
-    "h": "a sweet single"
+    "h": "paper wrapper"
    },
    {
     "w": "Hot Chocolate",
     "d": "Mocha",
-    "h": "steaming mug"
+    "h": "warms your hands"
    },
    {
     "w": "Watermelon",
     "d": "Cantaloupe",
-    "h": "cool in summer"
+    "h": "juicy summer slice"
    },
    {
     "w": "Peanut Butter",
     "d": "Nutella",
-    "h": "breakfast favorite"
+    "h": "thick brown spread"
    },
    {
     "w": "Salad",
     "d": "Coleslaw",
-    "h": "a light plate"
+    "h": "crunchy leaves"
    },
    {
     "w": "Steak",
     "d": "Pork Chop",
-    "h": "a dinner plate"
+    "h": "knife and fork"
    },
    {
     "w": "Dumplings",
     "d": "Ravioli",
-    "h": "small shared bites"
+    "h": "steamed in baskets"
    },
    {
     "w": "Pad Thai",
     "d": "Fried Rice",
-    "h": "tangled noodles"
+    "h": "lime and peanuts"
    },
    {
     "w": "Guacamole",
     "d": "Hummus",
-    "h": "served for sharing"
+    "h": "scooped with chips"
    },
    {
     "w": "Bubble Tea",
     "d": "Iced Coffee",
-    "h": "sweet cold drink"
+    "h": "extra wide straw"
    },
    {
     "w": "Fish And Chips",
     "d": "Calamari",
-    "h": "a takeaway classic"
+    "h": "salt and vinegar"
    },
    {
     "w": "Churros",
     "d": "Cinnamon Roll",
-    "h": "sugar-dusted and shared"
+    "h": "dunked in chocolate"
    },
    {
     "w": "Curry",
     "d": "Stew",
-    "h": "a hearty bowl"
+    "h": "makes you sweat"
    },
    {
     "w": "Falafel",
     "d": "Meatballs",
-    "h": "often eaten outside"
+    "h": "inside a pita"
    },
    {
     "w": "Tiramisu",
     "d": "Cheesecake",
-    "h": "layered and spooned"
+    "h": "dusted with cocoa"
    },
    {
     "w": "Paella",
     "d": "Risotto",
-    "h": "cooked for crowds"
+    "h": "one big pan"
    },
    {
     "w": "Miso Soup",
     "d": "Tomato Soup",
-    "h": "sipped slowly"
+    "h": "seaweed and tofu"
    },
    {
     "w": "Crepe",
     "d": "Tortilla",
-    "h": "a breakfast favorite"
+    "h": "lemon and sugar"
    },
    {
     "w": "Kebab",
     "d": "Sausage",
-    "h": "cooked over flame"
+    "h": "grilled over coals"
    },
    {
     "w": "Matcha",
     "d": "Chai",
-    "h": "whisked and warm"
+    "h": "turns things green"
    },
    {
     "w": "Sandwich",
     "d": "Wrap",
-    "h": "a midday bite"
+    "h": "lunchbox"
    },
    {
     "w": "Baguette",
     "d": "Toast",
-    "h": "tears not cuts"
+    "h": "stale by tomorrow"
    },
    {
     "w": "Fried Egg",
     "d": "Omelette",
-    "h": "quick pan breakfast"
+    "h": "runny middle"
    },
    {
     "w": "Cookie",
     "d": "Wafer",
-    "h": "goes with coffee"
+    "h": "crumbs everywhere"
    },
    {
     "w": "Apple Pie",
     "d": "Fruit Tart",
-    "h": "a sweet dessert"
+    "h": "smells like cinnamon"
    },
    {
     "w": "Lasagna",
     "d": "Risotto",
-    "h": "heavy dinner shared"
+    "h": "bubbling hot dish"
    },
    {
     "w": "Waffles",
     "d": "French Toast",
-    "h": "lazy weekend plate"
+    "h": "soaks up syrup"
    }
   ]
  },
@@ -238,227 +238,227 @@ const WORD_PACKS = [
    {
     "w": "Lion",
     "d": "Tiger",
-    "h": "lives in groups"
+    "h": "hunts with family"
    },
    {
     "w": "Elephant",
     "d": "Rhinoceros",
-    "h": "bigger than most"
+    "h": "sprays water around"
    },
    {
     "w": "Giraffe",
     "d": "Camel",
-    "h": "grazes in herds"
+    "h": "eats tree leaves"
    },
    {
     "w": "Dolphin",
     "d": "Stingray",
-    "h": "moves through water"
+    "h": "trained for shows"
    },
    {
     "w": "Eagle",
     "d": "Hawk",
-    "h": "seen up high"
+    "h": "a hooked beak"
    },
    {
     "w": "Penguin",
     "d": "Seagull",
-    "h": "handles harsh weather"
+    "h": "lives on ice"
    },
    {
     "w": "Kangaroo",
     "d": "Grasshopper",
-    "h": "gets around quickly"
+    "h": "big back legs"
    },
    {
     "w": "Wolf",
     "d": "Coyote",
-    "h": "travels with others"
+    "h": "snowy forest hunter"
    },
    {
     "w": "Shark",
     "d": "Swordfish",
-    "h": "keep your distance"
+    "h": "swimmers fear it"
    },
    {
     "w": "Octopus",
     "d": "Squid",
-    "h": "slippery down there"
+    "h": "squirts ink"
    },
    {
     "w": "Crocodile",
     "d": "Alligator",
-    "h": "near water's edge"
+    "h": "scaly and green"
    },
    {
     "w": "Cheetah",
     "d": "Leopard",
-    "h": "very quick burst"
+    "h": "a spotted cat"
    },
    {
     "w": "Gorilla",
     "d": "Chimpanzee",
-    "h": "strong climber"
+    "h": "hairy and strong"
    },
    {
     "w": "Zebra",
     "d": "Horse",
-    "h": "black and white"
+    "h": "runs from lions"
    },
    {
     "w": "Hippopotamus",
     "d": "Rhinoceros",
-    "h": "days in water"
+    "h": "huge open mouth"
    },
    {
     "w": "Panda",
     "d": "Koala",
-    "h": "chubby plant eater"
+    "h": "a chubby climber"
    },
    {
     "w": "Rabbit",
     "d": "Hare",
-    "h": "small and quick"
+    "h": "nibbles garden plants"
    },
    {
     "w": "Owl",
     "d": "Falcon",
-    "h": "active after dark"
+    "h": "catches mice quietly"
    },
    {
     "w": "Frog",
     "d": "Toad",
-    "h": "near wet ground"
+    "h": "catches flies"
    },
    {
     "w": "Snake",
     "d": "Eel",
-    "h": "handle with care"
+    "h": "sheds its skin"
    },
    {
     "w": "Turtle",
     "d": "Tortoise",
-    "h": "takes its time"
+    "h": "carries a shell"
    },
    {
     "w": "Bat",
     "d": "Owl",
-    "h": "hides while resting"
+    "h": "sleeps in caves"
    },
    {
     "w": "Fox",
     "d": "Deer",
-    "h": "near the woods"
+    "h": "red bushy tail"
    },
    {
     "w": "Bear",
     "d": "Bull",
-    "h": "forest dweller"
+    "h": "catches river fish"
    },
    {
     "w": "Monkey",
     "d": "Lemur",
-    "h": "happy up high"
+    "h": "grabs your snacks"
    },
    {
     "w": "Whale",
     "d": "Orca",
-    "h": "bigger than expected"
+    "h": "deep sea swimmer"
    },
    {
     "w": "Parrot",
     "d": "Toucan",
-    "h": "colour worth noticing"
+    "h": "a caged bird"
    },
    {
     "w": "Peacock",
     "d": "Rooster",
-    "h": "hard to ignore"
+    "h": "proud garden bird"
    },
    {
     "w": "Flamingo",
     "d": "Stork",
-    "h": "found near shallows"
+    "h": "long thin legs"
    },
    {
     "w": "Squirrel",
     "d": "Chipmunk",
-    "h": "always busy outside"
+    "h": "buries its food"
    },
    {
     "w": "Hedgehog",
     "d": "Porcupine",
-    "h": "easily overlooked"
+    "h": "curls up tight"
    },
    {
     "w": "Otter",
     "d": "Beaver",
-    "h": "busy near water"
+    "h": "furry river swimmer"
    },
    {
     "w": "Seal",
     "d": "Walrus",
-    "h": "water suits it"
+    "h": "naps on rocks"
    },
    {
     "w": "Cow",
     "d": "Goat",
-    "h": "kept by people"
+    "h": "always chewing grass"
    },
    {
     "w": "Llama",
     "d": "Alpaca",
-    "h": "kept for coat"
+    "h": "woolly mountain walker"
    },
    {
     "w": "Ostrich",
     "d": "Emu",
-    "h": "stays on land"
+    "h": "lays huge eggs"
    },
    {
     "w": "Jellyfish",
     "d": "Starfish",
-    "h": "carried by currents"
+    "h": "soft and see-through"
    },
    {
     "w": "Lobster",
     "d": "Crab",
-    "h": "hard shell below"
+    "h": "big front claws"
    },
    {
     "w": "Sloth",
     "d": "Koala",
-    "h": "takes its time"
+    "h": "hangs from branches"
    },
    {
     "w": "Raccoon",
     "d": "Badger",
-    "h": "curious and nimble"
+    "h": "clever little paws"
    },
    {
     "w": "Hyena",
     "d": "Vulture",
-    "h": "takes the leftovers"
+    "h": "eats the leftovers"
    },
    {
     "w": "Chameleon",
     "d": "Iguana",
-    "h": "blends in easily"
+    "h": "slow tree lizard"
    },
    {
     "w": "Donkey",
     "d": "Mule",
-    "h": "carries heavy loads"
+    "h": "carries loads"
    },
    {
     "w": "Hamster",
     "d": "Guinea Pig",
-    "h": "kept by people"
+    "h": "small furry pet"
    },
    {
     "w": "Swan",
     "d": "Goose",
-    "h": "moves across water"
+    "h": "long white neck"
    }
   ]
  },
@@ -469,227 +469,227 @@ const WORD_PACKS = [
    {
     "w": "Titanic",
     "d": "The Notebook",
-    "h": "long cold night"
+    "h": "sad love story"
    },
    {
     "w": "Batman",
     "d": "Iron Man",
-    "h": "hiding a self"
+    "h": "hero with gadgets"
    },
    {
     "w": "Friends",
     "d": "How I Met Your Mother",
-    "h": "people you know"
+    "h": "sharing an apartment"
    },
    {
     "w": "Harry Potter",
     "d": "Percy Jackson",
-    "h": "a young power"
+    "h": "a strict boarding school"
    },
    {
     "w": "Frozen",
     "d": "Tangled",
-    "h": "a difficult gift"
+    "h": "a magic snowman"
    },
    {
     "w": "Spider-Man",
     "d": "Ant-Man",
-    "h": "a young burden"
+    "h": "a hero in red"
    },
    {
     "w": "Star Wars",
     "d": "Star Trek",
-    "h": "far from Earth"
+    "h": "robots in space"
    },
    {
     "w": "The Lion King",
     "d": "The Jungle Book",
-    "h": "animal royalty"
+    "h": "animals on the plains"
    },
    {
     "w": "Stranger Things",
     "d": "The X-Files",
-    "h": "quiet town wrong"
+    "h": "kids on bikes"
    },
    {
     "w": "Shrek",
     "d": "Kung Fu Panda",
-    "h": "judged too early"
+    "h": "a beast in love"
    },
    {
     "w": "Jurassic Park",
     "d": "King Kong",
-    "h": "safety stops holding"
+    "h": "an island of monsters"
    },
    {
     "w": "Toy Story",
     "d": "The Lego Movie",
-    "h": "odd companions loyal"
+    "h": "a boy's plastic friends"
    },
    {
     "w": "Finding Nemo",
     "d": "The Little Mermaid",
-    "h": "a watery adventure"
+    "h": "a worried father"
    },
    {
     "w": "SpongeBob",
     "d": "Phineas And Ferb",
-    "h": "bright constant nonsense"
+    "h": "a burger shop cook"
    },
    {
     "w": "The Avengers",
     "d": "Justice League",
-    "h": "heroes joining forces"
+    "h": "many heroes, one enemy"
    },
    {
     "w": "Pirates Of The Caribbean",
     "d": "Indiana Jones",
-    "h": "sea adventure"
+    "h": "buried gold and maps"
    },
    {
     "w": "The Simpsons",
     "d": "Family Guy",
-    "h": "a drawn family"
+    "h": "a clumsy cartoon dad"
    },
    {
     "w": "Avatar",
     "d": "Guardians Of The Galaxy",
-    "h": "another world"
+    "h": "riding flying creatures"
    },
    {
     "w": "Home Alone",
     "d": "Elf",
-    "h": "family chaos"
+    "h": "a Christmas gone wrong"
    },
    {
     "w": "The Hunger Games",
     "d": "Maze Runner",
-    "h": "a deadly contest"
+    "h": "a girl with arrows"
    },
    {
     "w": "Minions",
     "d": "The Smurfs",
-    "h": "noisy little troublemakers"
+    "h": "they talk nonsense"
    },
    {
     "w": "Superman",
     "d": "Captain America",
-    "h": "far from home"
+    "h": "he lifts cars"
    },
    {
     "w": "Squid Game",
     "d": "Money Heist",
-    "h": "players dropping out"
+    "h": "a huge cash prize"
    },
    {
     "w": "The Office",
     "d": "The Big Bang Theory",
-    "h": "stuck together daily"
+    "h": "a terrible boss"
    },
    {
     "w": "Moana",
     "d": "Pocahontas",
-    "h": "an island journey"
+    "h": "life on an island"
    },
    {
     "w": "Fast And Furious",
     "d": "Mission Impossible",
-    "h": "engines and stunts"
+    "h": "car chases and crashes"
    },
    {
     "w": "Cinderella",
     "d": "Snow White",
-    "h": "a royal story"
+    "h": "a fancy royal dance"
    },
    {
     "w": "Sherlock",
     "d": "Doctor Who",
-    "h": "a famous character"
+    "h": "notices tiny details"
    },
    {
     "w": "Back To The Future",
     "d": "Interstellar",
-    "h": "bending time"
+    "h": "a mad scientist's machine"
    },
    {
     "w": "E.T.",
     "d": "WALL-E",
-    "h": "an unbelievable bond"
+    "h": "a creature in hiding"
    },
    {
     "w": "The Lord Of The Rings",
     "d": "Game Of Thrones",
-    "h": "long journey swords"
+    "h": "small heroes, big journey"
    },
    {
     "w": "Aladdin",
     "d": "Hercules",
-    "h": "a costly wish"
+    "h": "a poor street thief"
    },
    {
     "w": "Wednesday",
     "d": "The Addams Family",
-    "h": "an outsider anywhere"
+    "h": "a girl in black"
    },
    {
     "w": "Ratatouille",
     "d": "MasterChef",
-    "h": "unlikely talent proven"
+    "h": "a busy restaurant kitchen"
    },
    {
     "w": "Cars",
     "d": "Planes",
-    "h": "racing on wheels"
+    "h": "a proud young racer"
    },
    {
     "w": "The Matrix",
     "d": "Inception",
-    "h": "reality questioned"
+    "h": "machines rule people"
    },
    {
     "w": "Scooby-Doo",
     "d": "Ghostbusters",
-    "h": "group chasing oddities"
+    "h": "a spooky old house"
    },
    {
     "w": "Rocky",
     "d": "Rambo",
-    "h": "getting up again"
+    "h": "training for a fight"
    },
    {
     "w": "Ice Age",
     "d": "Rio",
-    "h": "animals on move"
+    "h": "a long cold journey"
    },
    {
     "w": "Godzilla",
     "d": "Transformers",
-    "h": "a giant loose"
+    "h": "soldiers fight a giant"
    },
    {
     "w": "The Incredibles",
     "d": "Fantastic Four",
-    "h": "a super family"
+    "h": "heroes hiding their powers"
    },
    {
     "w": "Encanto",
     "d": "Coco",
-    "h": "household keeps quiet"
+    "h": "a big family secret"
    },
    {
     "w": "Mr. Bean",
     "d": "Tom And Jerry",
-    "h": "one person chaos"
+    "h": "funny without talking"
    },
    {
     "w": "Jaws",
     "d": "Moby Dick",
-    "h": "people stop going"
+    "h": "a hunt at sea"
    },
    {
     "w": "Breaking Bad",
     "d": "Prison Break",
-    "h": "choices piling up"
+    "h": "hidden bags of cash"
    }
   ]
  },
@@ -700,227 +700,227 @@ const WORD_PACKS = [
    {
     "w": "Guitar",
     "d": "Banjo",
-    "h": "held while playing"
+    "h": "curvy wooden body"
    },
    {
     "w": "Piano",
     "d": "Organ",
-    "h": "takes both hands"
+    "h": "bench and pedals"
    },
    {
     "w": "Drums",
     "d": "Bongos",
-    "h": "you hit it"
+    "h": "keeps time loudly"
    },
    {
     "w": "Violin",
     "d": "Cello",
-    "h": "years to master"
+    "h": "squeaky beginner lessons"
    },
    {
     "w": "Trumpet",
     "d": "Trombone",
-    "h": "needs good lungs"
+    "h": "loud at parades"
    },
    {
     "w": "Flute",
     "d": "Clarinet",
-    "h": "needs steady breath"
+    "h": "high, breathy notes"
    },
    {
     "w": "Saxophone",
     "d": "Oboe",
-    "h": "best late night"
+    "h": "blown, shiny metal"
    },
    {
     "w": "Harp",
     "d": "Lyre",
-    "h": "large and elegant"
+    "h": "strings you pluck"
    },
    {
     "w": "Microphone",
     "d": "Megaphone",
-    "h": "gear on stage"
+    "h": "talk into it"
    },
    {
     "w": "DJ",
     "d": "Producer",
-    "h": "person making music"
+    "h": "keeps parties going"
    },
    {
     "w": "Opera",
     "d": "Musical",
-    "h": "big performance"
+    "h": "big voices, costumes"
    },
    {
     "w": "Choir",
     "d": "Boy Band",
-    "h": "a group effort"
+    "h": "matching robes, singing"
    },
    {
     "w": "Orchestra",
     "d": "Marching Band",
-    "h": "many performers together"
+    "h": "black suits, instruments"
    },
    {
     "w": "Conductor",
     "d": "Composer",
-    "h": "someone out front"
+    "h": "keeps everyone together"
    },
    {
     "w": "Concert",
     "d": "Festival",
-    "h": "night out music"
+    "h": "bright lights, crowd"
    },
    {
     "w": "Karaoke",
     "d": "Lip Sync",
-    "h": "fun night out"
+    "h": "taking turns singing"
    },
    {
     "w": "Headphones",
     "d": "Earbuds",
-    "h": "how sound reaches"
+    "h": "only you hear"
    },
    {
     "w": "Vinyl Record",
     "d": "Cassette Tape",
-    "h": "old way listening"
+    "h": "crackly and old"
    },
    {
     "w": "Rock",
     "d": "Metal",
-    "h": "gets loud"
+    "h": "long hair, leather"
    },
    {
     "w": "Jazz",
     "d": "Blues",
-    "h": "lots of improvising"
+    "h": "trumpets, late nights"
    },
    {
     "w": "Hip Hop",
     "d": "R&B",
-    "h": "a modern genre"
+    "h": "graffiti and sneakers"
    },
    {
     "w": "Country",
     "d": "Folk",
-    "h": "tells a story"
+    "h": "banjos and boots"
    },
    {
     "w": "Pop",
     "d": "Disco",
-    "h": "everybody knows it"
+    "h": "everyone sings along"
    },
    {
     "w": "Reggae",
     "d": "Salsa",
-    "h": "slow and easygoing"
+    "h": "warm island sound"
    },
    {
     "w": "Rapper",
     "d": "Beatboxer",
-    "h": "performer with mic"
+    "h": "talks in rhyme"
    },
    {
     "w": "Lullaby",
     "d": "Serenade",
-    "h": "soft and short"
+    "h": "makes eyes close"
    },
    {
     "w": "National Anthem",
     "d": "School Song",
-    "h": "everyone stands together"
+    "h": "flags and standing"
    },
    {
     "w": "Beethoven",
     "d": "Bach",
-    "h": "long-dead genius"
+    "h": "wig and piano"
    },
    {
     "w": "The Beatles",
     "d": "The Rolling Stones",
-    "h": "legendary act"
+    "h": "fans screaming everywhere"
    },
    {
     "w": "Taylor Swift",
     "d": "Ariana Grande",
-    "h": "huge modern star"
+    "h": "sings her diary"
    },
    {
     "w": "Michael Jackson",
     "d": "Elvis Presley",
-    "h": "famous performer"
+    "h": "singer who dances"
    },
    {
     "w": "Ukulele",
     "d": "Harmonica",
-    "h": "easy to carry"
+    "h": "small, cheap, cheerful"
    },
    {
     "w": "Bagpipes",
     "d": "Accordion",
-    "h": "heard from far"
+    "h": "played by squeezing"
    },
    {
     "w": "Xylophone",
     "d": "Triangle",
-    "h": "you hit it"
+    "h": "hit with sticks"
    },
    {
     "w": "Tambourine",
     "d": "Maracas",
-    "h": "you shake it"
+    "h": "shaken by hand"
    },
    {
     "w": "Melody",
     "d": "Harmony",
-    "h": "part of songs"
+    "h": "the singing part"
    },
    {
     "w": "Rhythm",
     "d": "Tempo",
-    "h": "keeps things moving"
+    "h": "clap along steadily"
    },
    {
     "w": "Sheet Music",
     "d": "Songbook",
-    "h": "you follow along"
+    "h": "read while playing"
    },
    {
     "w": "Music Video",
     "d": "Album Cover",
-    "h": "something to watch"
+    "h": "dancers and cameras"
    },
    {
     "w": "Dancing",
     "d": "Clapping",
-    "h": "bodies moving"
+    "h": "stepping in time"
    },
    {
     "w": "Speaker",
     "d": "Radio",
-    "h": "fills the room"
+    "h": "shakes the room"
    },
    {
     "w": "Encore",
     "d": "Soundcheck",
-    "h": "happens at shows"
+    "h": "back onstage again"
    },
    {
     "w": "Whistling",
     "d": "Humming",
-    "h": "no instrument needed"
+    "h": "just your mouth"
    },
    {
     "w": "Cello",
     "d": "Banjo",
-    "h": "you sit down"
+    "h": "big, deep strings"
    },
    {
     "w": "Music Festival",
     "d": "Talent Show",
-    "h": "crowds outdoors"
+    "h": "mud, tents, crowds"
    }
   ]
  },
@@ -931,217 +931,217 @@ const WORD_PACKS = [
    {
     "w": "Soccer",
     "d": "Futsal",
-    "h": "team scores goals"
+    "h": "ball on grass"
    },
    {
     "w": "Basketball",
     "d": "Handball",
-    "h": "keep it moving"
+    "h": "throwing to teammates"
    },
    {
     "w": "Tennis",
     "d": "Badminton",
-    "h": "racket in hand"
+    "h": "hitting it back"
    },
    {
     "w": "Baseball",
     "d": "Cricket",
-    "h": "turns in sunshine"
+    "h": "catching in gloves"
    },
    {
     "w": "Volleyball",
     "d": "Handball",
-    "h": "net divides sides"
+    "h": "over the net"
    },
    {
     "w": "Swimming",
     "d": "Diving",
-    "h": "water is involved"
+    "h": "goggles and splashing"
    },
    {
     "w": "Marathon",
     "d": "Triathlon",
-    "h": "endurance over time"
+    "h": "hours of racing"
    },
    {
     "w": "Ice Hockey",
     "d": "Field Hockey",
-    "h": "fast cold surface"
+    "h": "rough on skates"
    },
    {
     "w": "Skiing",
     "d": "Snowboarding",
-    "h": "cold conditions help"
+    "h": "down snowy hills"
    },
    {
     "w": "Skateboarding",
     "d": "Rollerblading",
-    "h": "balance while moving"
+    "h": "ramps and tricks"
    },
    {
     "w": "Gymnastics",
     "d": "Cheerleading",
-    "h": "body control matters"
+    "h": "chalky hands"
    },
    {
     "w": "Karate",
     "d": "Taekwondo",
-    "h": "trained fighting style"
+    "h": "belts and kicks"
    },
    {
     "w": "Wrestling",
     "d": "Judo",
-    "h": "grip your opponent"
+    "h": "grabbing and holding"
    },
    {
     "w": "Cycling",
     "d": "Motocross",
-    "h": "steady long route"
+    "h": "two wheels racing"
    },
    {
     "w": "Table Tennis",
     "d": "Badminton Rally",
-    "h": "fast indoor rallies"
+    "h": "tiny bouncing ball"
    },
    {
     "w": "Rugby",
     "d": "American Football",
-    "h": "physical contact happens"
+    "h": "rough and muddy"
    },
    {
     "w": "Archery",
     "d": "Darts",
-    "h": "hit a target"
+    "h": "hitting the middle"
    },
    {
     "w": "Bowling",
     "d": "Curling",
-    "h": "hit the target"
+    "h": "rolling a ball"
    },
    {
     "w": "Fencing",
     "d": "Kickboxing",
-    "h": "two face off"
+    "h": "masks and weapons"
    },
    {
     "w": "Rock Climbing",
     "d": "Mountaineering",
-    "h": "grip going up"
+    "h": "pulling yourself up"
    },
    {
     "w": "Figure Skating",
     "d": "Speed Skating",
-    "h": "graceful to music"
+    "h": "costumes and judges"
    },
    {
     "w": "Rowing",
     "d": "Kayaking",
-    "h": "moving across water"
+    "h": "teams in boats"
    },
    {
     "w": "Weightlifting",
     "d": "Shot Put",
-    "h": "raw power counts"
+    "h": "strongest"
    },
    {
     "w": "Sprinting",
     "d": "Hurdles",
-    "h": "over almost instantly"
+    "h": "over in seconds"
    },
    {
     "w": "High Jump",
     "d": "Pole Vault",
-    "h": "explosive push upward"
+    "h": "landing on mats"
    },
    {
     "w": "Javelin",
     "d": "Discus",
-    "h": "throwing or launching"
+    "h": "throwing far"
    },
    {
     "w": "Water Polo",
     "d": "Synchronized Swimming",
-    "h": "wet and competitive"
+    "h": "teams in pools"
    },
    {
     "w": "Horse Racing",
     "d": "Show Jumping",
-    "h": "speed around circuit"
+    "h": "riders and saddles"
    },
    {
     "w": "Formula One",
     "d": "NASCAR",
-    "h": "speed and laps"
+    "h": "cars going round"
    },
    {
     "w": "Sumo",
     "d": "Arm Wrestling",
-    "h": "force wins it"
+    "h": "shoving each other"
    },
    {
     "w": "Yoga",
     "d": "Pilates",
-    "h": "slow, controlled breathing"
+    "h": "breathing and stretching"
    },
    {
     "w": "Boxing",
     "d": "Fencing",
-    "h": "split into rounds"
+    "h": "fists and rounds"
    },
    {
     "w": "Relay Race",
     "d": "Obstacle Course",
-    "h": "teamwork on track"
+    "h": "team takes turns"
    },
    {
     "w": "Tug Of War",
     "d": "Sack Race",
-    "h": "brute force contest"
+    "h": "rope"
    },
    {
     "w": "Jump Rope",
     "d": "Hula Hoop",
-    "h": "simple no gear"
+    "h": "quick hops"
    },
    {
     "w": "Sailing",
     "d": "Canoeing",
-    "h": "outdoors with elements"
+    "h": "wind and water"
    },
    {
     "w": "Scuba Diving",
     "d": "Snorkeling",
-    "h": "below the surface"
+    "h": "deep underwater"
    },
    {
     "w": "Ice Skating",
     "d": "Roller Skating",
-    "h": "gliding smooth surface"
+    "h": "gliding somewhere cold"
    },
    {
     "w": "Parkour",
     "d": "Breakdancing",
-    "h": "obstacles at speed"
+    "h": "getting over walls"
    },
    {
     "w": "Muay Thai",
     "d": "MMA",
-    "h": "fighting style Asia"
+    "h": "kicking and punching"
    },
    {
     "w": "Trampoline",
     "d": "Acrobatics",
-    "h": "up in air"
+    "h": "springs underneath"
    },
    {
     "w": "Golf",
     "d": "Croquet",
-    "h": "precision beats power"
+    "h": "aiming for holes"
    },
    {
     "w": "Kung Fu",
     "d": "Tai Chi",
-    "h": "discipline through practice"
+    "h": "learning from masters"
    },
    {
     "w": "Badminton",
@@ -1151,7 +1151,7 @@ const WORD_PACKS = [
    {
     "w": "Surfing",
     "d": "Kayaking",
-    "h": "upright while moving"
+    "h": "balancing on water"
    }
   ]
  },
@@ -1162,227 +1162,227 @@ const WORD_PACKS = [
    {
     "w": "Paris",
     "d": "Rome",
-    "h": "high on lists"
+    "h": "cafes and cobblestones"
    },
    {
     "w": "Airport",
     "d": "Train Station",
-    "h": "waiting before leaving"
+    "h": "waiting with luggage"
    },
    {
     "w": "New York",
     "d": "Chicago",
-    "h": "busy and crowded"
+    "h": "traffic and towers"
    },
    {
     "w": "Hotel",
     "d": "Hostel",
-    "h": "booked in advance"
+    "h": "beds you rent"
    },
    {
     "w": "Cruise Ship",
     "d": "Ferry",
-    "h": "days of water"
+    "h": "cabins on water"
    },
    {
     "w": "Tokyo",
     "d": "Seoul",
-    "h": "worth long flights"
+    "h": "noodles and crowds"
    },
    {
     "w": "Passport",
     "d": "Boarding Pass",
-    "h": "trip essential item"
+    "h": "checked before flying"
    },
    {
     "w": "London",
     "d": "Dublin",
-    "h": "one stop along"
+    "h": "grey skies, pubs"
    },
    {
     "w": "Grand Canyon",
     "d": "Niagara Falls",
-    "h": "huge natural view"
+    "h": "hot dusty cliffs"
    },
    {
     "w": "Campsite",
     "d": "Cabin",
-    "h": "sleeping outdoors"
+    "h": "where hikers sleep"
    },
    {
     "w": "Subway",
     "d": "Tram",
-    "h": "getting around town"
+    "h": "rush hour"
    },
    {
     "w": "Venice",
     "d": "Amsterdam",
-    "h": "very photogenic"
+    "h": "bridges over water"
    },
    {
     "w": "Mount Everest",
     "d": "Kilimanjaro",
-    "h": "a serious climb"
+    "h": "ice, thin air"
    },
    {
     "w": "Suitcase",
     "d": "Backpack",
-    "h": "carried and weighed"
+    "h": "holds folded clothes"
    },
    {
     "w": "Taxi",
     "d": "Bus",
-    "h": "way to move"
+    "h": "pay the driver"
    },
    {
     "w": "Sydney",
     "d": "Melbourne",
-    "h": "sunny coastal city"
+    "h": "beaches down under"
    },
    {
     "w": "Lighthouse",
     "d": "Windmill",
-    "h": "near the water"
+    "h": "keeps ships safe"
    },
    {
     "w": "Road Trip",
     "d": "Bus Tour",
-    "h": "hours in motion"
+    "h": "stopping for snacks"
    },
    {
     "w": "Hawaii",
     "d": "Bali",
-    "h": "warm and sandy"
+    "h": "palm trees, waves"
    },
    {
     "w": "Museum",
     "d": "Art Gallery",
-    "h": "walking and looking"
+    "h": "look, don't touch"
    },
    {
     "w": "Ski Resort",
     "d": "Ice Rink",
-    "h": "cold weather holiday"
+    "h": "cold mountain holiday"
    },
    {
     "w": "Cairo",
     "d": "Istanbul",
-    "h": "warm and old"
+    "h": "ancient desert city"
    },
    {
     "w": "Harbor",
     "d": "Pier",
-    "h": "a stop along"
+    "h": "seagulls over boats"
    },
    {
     "w": "Rio De Janeiro",
     "d": "Buenos Aires",
-    "h": "music, beaches, crowds"
+    "h": "drums and dancing"
    },
    {
     "w": "Castle",
     "d": "Palace",
-    "h": "old worth seeing"
+    "h": "walls and towers"
    },
    {
     "w": "Iceland",
     "d": "Greenland",
-    "h": "the views matter"
+    "h": "long dark winters"
    },
    {
     "w": "Souvenir Shop",
     "d": "Duty Free",
-    "h": "bring something back"
+    "h": "cheap holiday gifts"
    },
    {
     "w": "Cable Car",
     "d": "Chairlift",
-    "h": "ride above ground"
+    "h": "up the mountain"
    },
    {
     "w": "Barcelona",
     "d": "Lisbon",
-    "h": "sunny and tasty"
+    "h": "tapas and sunshine"
    },
    {
     "w": "Dubai",
     "d": "Singapore",
-    "h": "not cheap"
+    "h": "malls and heat"
    },
    {
     "w": "Ferris Wheel",
     "d": "Roller Coaster",
-    "h": "an afternoon out"
+    "h": "seats going round"
    },
    {
     "w": "Machu Picchu",
     "d": "Angkor Wat",
-    "h": "old stone slopes"
+    "h": "empty stone city"
    },
    {
     "w": "Statue Of Liberty",
     "d": "Eiffel Tower",
-    "h": "tourists photograph it"
+    "h": "giant standing figure"
    },
    {
     "w": "Zoo",
     "d": "Aquarium",
-    "h": "good with kids"
+    "h": "animals behind fences"
    },
    {
     "w": "Camel Ride",
     "d": "Safari",
-    "h": "hot sand adventure"
+    "h": "bouncing across sand"
    },
    {
     "w": "Rental Car",
     "d": "Motorbike",
-    "h": "how travelers travel"
+    "h": "signing for keys"
    },
    {
     "w": "Hot Air Balloon",
     "d": "Helicopter Tour",
-    "h": "floating up slowly"
+    "h": "riding the wind"
    },
    {
     "w": "Safari",
     "d": "Whale Watching",
-    "h": "bring a camera"
+    "h": "spotting wild animals"
    },
    {
     "w": "Postcard",
     "d": "Fridge Magnet",
-    "h": "small keepsake"
+    "h": "short note, stamp"
    },
    {
     "w": "Tour Guide",
     "d": "Flight Attendant",
-    "h": "leading the group"
+    "h": "everyone follows them"
    },
    {
     "w": "Sunscreen",
     "d": "Insect Repellent",
-    "h": "brought along outdoors"
+    "h": "rubbed on skin"
    },
    {
     "w": "Snorkeling",
     "d": "Scuba Diving",
-    "h": "done somewhere warm"
+    "h": "looking under water"
    },
    {
     "w": "Bullet Train",
     "d": "Double Decker Bus",
-    "h": "gets there fast"
+    "h": "quick between cities"
    },
    {
     "w": "Zip Line",
     "d": "Bungee Jumping",
-    "h": "a quick rush"
+    "h": "helmet and straps"
    },
    {
     "w": "Amusement Park",
     "d": "Water Park",
-    "h": "noisy busy day"
+    "h": "screams and lights"
    }
   ]
  },
@@ -1393,227 +1393,227 @@ const WORD_PACKS = [
    {
     "w": "Doctor",
     "d": "Nurse",
-    "h": "trained for emergencies"
+    "h": "checks your temperature"
    },
    {
     "w": "Teacher",
     "d": "Tutor",
-    "h": "explains until understood"
+    "h": "keeps kids quiet"
    },
    {
     "w": "Firefighter",
     "d": "Paramedic",
-    "h": "things went wrong"
+    "h": "answers the alarm"
    },
    {
     "w": "Police Officer",
     "d": "Security Guard",
-    "h": "called when trouble"
+    "h": "wears a badge"
    },
    {
     "w": "Chef",
     "d": "Baker",
-    "h": "orders come constantly"
+    "h": "tastes before serving"
    },
    {
     "w": "Pilot",
     "d": "Flight Attendant",
-    "h": "licensed and checked"
+    "h": "speaks to passengers"
    },
    {
     "w": "Dentist",
     "d": "Surgeon",
-    "h": "go when hurting"
+    "h": "a tilting chair"
    },
    {
     "w": "Farmer",
     "d": "Gardener",
-    "h": "seasons shape work"
+    "h": "muddy boots"
    },
    {
     "w": "Lawyer",
     "d": "Judge",
-    "h": "words carry weight"
+    "h": "papers to sign"
    },
    {
     "w": "Astronaut",
     "d": "Fighter Pilot",
-    "h": "training rarely used"
+    "h": "air tank, helmet"
    },
    {
     "w": "Actor",
     "d": "Stunt Double",
-    "h": "judged by audience"
+    "h": "makeup and costume"
    },
    {
     "w": "Singer",
     "d": "Comedian",
-    "h": "people pay tickets"
+    "h": "the recording booth"
    },
    {
     "w": "Barber",
     "d": "Tattoo Artist",
-    "h": "regular customers return"
+    "h": "cape over shoulders"
    },
    {
     "w": "Miner",
     "d": "Blacksmith",
-    "h": "hard physical shifts"
+    "h": "digs deep down"
    },
    {
     "w": "Veterinarian",
     "d": "Zookeeper",
-    "h": "they cannot explain"
+    "h": "a scared dog"
    },
    {
     "w": "Plumber",
     "d": "Electrician",
-    "h": "come quickly please"
+    "h": "stops the dripping"
    },
    {
     "w": "Carpenter",
     "d": "Welder",
-    "h": "raw into solid"
+    "h": "shelves and doors"
    },
    {
     "w": "Mechanic",
     "d": "Car Salesman",
-    "h": "tools and hands"
+    "h": "greasy hands"
    },
    {
     "w": "Waiter",
     "d": "Barista",
-    "h": "serving many people"
+    "h": "refills your glass"
    },
    {
     "w": "Cashier",
     "d": "Bank Teller",
-    "h": "last one spoken"
+    "h": "prints a receipt"
    },
    {
     "w": "Librarian",
     "d": "Bookseller",
-    "h": "indoor careful work"
+    "h": "borrow and return"
    },
    {
     "w": "Photographer",
     "d": "Cameraman",
-    "h": "creative and technical"
+    "h": "says hold still"
    },
    {
     "w": "Journalist",
     "d": "News Anchor",
-    "h": "asks many questions"
+    "h": "asks the questions"
    },
    {
     "w": "Architect",
     "d": "Civil Engineer",
-    "h": "drawings before building"
+    "h": "rolled up drawings"
    },
    {
     "w": "Scientist",
     "d": "Lab Technician",
-    "h": "repeat until clear"
+    "h": "goggles and gloves"
    },
    {
     "w": "Soldier",
     "d": "Bodyguard",
-    "h": "trained in groups"
+    "h": "follows strict orders"
    },
    {
     "w": "Fisherman",
     "d": "Sailor",
-    "h": "early outdoor start"
+    "h": "wet ropes, buckets"
    },
    {
     "w": "Lifeguard",
     "d": "Swim Coach",
-    "h": "watching hoping nothing"
+    "h": "sits up high"
    },
    {
     "w": "Magician",
     "d": "Clown",
-    "h": "performs for people"
+    "h": "a hidden pocket"
    },
    {
     "w": "Referee",
     "d": "Coach",
-    "h": "decisions get judged"
+    "h": "settles arguments"
    },
    {
     "w": "Taxi Driver",
     "d": "Bus Driver",
-    "h": "moving all day"
+    "h": "knows every street"
    },
    {
     "w": "Painter",
     "d": "Sculptor",
-    "h": "people look after"
+    "h": "up a ladder"
    },
    {
     "w": "Tailor",
     "d": "Fashion Designer",
-    "h": "small mistake ruins"
+    "h": "buttons and pins"
    },
    {
     "w": "Butcher",
     "d": "Hunter",
-    "h": "works with food"
+    "h": "weighs and wraps"
    },
    {
     "w": "Pharmacist",
     "d": "Eye Doctor",
-    "h": "visited second"
+    "h": "twice a day"
    },
    {
     "w": "Accountant",
     "d": "Banker",
-    "h": "careful with numbers"
+    "h": "keeps every receipt"
    },
    {
     "w": "Programmer",
     "d": "Game Designer",
-    "h": "solves logical problems"
+    "h": "types all day"
    },
    {
     "w": "Translator",
     "d": "Diplomat",
-    "h": "between two people"
+    "h": "speaks for others"
    },
    {
     "w": "Ballet Dancer",
     "d": "Acrobat",
-    "h": "years for minutes"
+    "h": "spins and lands"
    },
    {
     "w": "Beekeeper",
     "d": "Shepherd",
-    "h": "covered around living"
+    "h": "puffs of smoke"
    },
    {
     "w": "Construction Worker",
     "d": "Bricklayer",
-    "h": "builds something physical"
+    "h": "early morning drilling"
    },
    {
     "w": "Weather Forecaster",
     "d": "News Reporter",
-    "h": "predicts using data"
+    "h": "predicts tomorrow"
    },
    {
     "w": "Detective",
     "d": "Spy",
-    "h": "figures things out"
+    "h": "waits and watches"
    },
    {
     "w": "Astronomer",
     "d": "Physicist",
-    "h": "awake while sleeping"
+    "h": "works after dark"
    },
    {
     "w": "Electrician",
     "d": "Handyman",
-    "h": "fixes hidden systems"
+    "h": "fixes the lights"
    }
   ]
  },
@@ -1624,167 +1624,167 @@ const WORD_PACKS = [
    {
     "w": "Umbrella",
     "d": "Raincoat",
-    "h": "grab before leaving"
+    "h": "for rainy days"
    },
    {
     "w": "Toothbrush",
     "d": "Dental Floss",
-    "h": "used without thinking"
+    "h": "beside the sink"
    },
    {
     "w": "Pillow",
     "d": "Mattress",
-    "h": "adds comfort indoors"
+    "h": "sits on beds"
    },
    {
     "w": "Scissors",
     "d": "Knife",
-    "h": "a household tool"
+    "h": "sharp and pointy"
    },
    {
     "w": "Mirror",
     "d": "Window",
-    "h": "found in bathrooms"
+    "h": "smooth and shiny"
    },
    {
     "w": "Candle",
     "d": "Lantern",
-    "h": "changes a room"
+    "h": "lit with matches"
    },
    {
     "w": "Wallet",
     "d": "Purse",
-    "h": "lives in pockets"
+    "h": "opened when paying"
    },
    {
     "w": "Clock",
     "d": "Wristwatch",
-    "h": "glanced at rushing"
+    "h": "hangs on walls"
    },
    {
     "w": "Spoon",
     "d": "Fork",
-    "h": "beside the plate"
+    "h": "beside your plate"
    },
    {
     "w": "Kettle",
     "d": "Coffee Maker",
-    "h": "sits in kitchens"
+    "h": "for making tea"
    },
    {
     "w": "Broom",
     "d": "Vacuum Cleaner",
-    "h": "keeps things tidy"
+    "h": "long wooden handle"
    },
    {
     "w": "Ladder",
     "d": "Stool",
-    "h": "used for chores"
+    "h": "steps you climb"
    },
    {
     "w": "Stapler",
     "d": "Paper Clip",
-    "h": "stops things scattering"
+    "h": "found in offices"
    },
    {
     "w": "Comb",
     "d": "Razor",
-    "h": "quick tidying up"
+    "h": "for messy hair"
    },
    {
     "w": "Towel",
     "d": "Bathrobe",
-    "h": "deals with messes"
+    "h": "soaks up water"
    },
    {
     "w": "Refrigerator",
     "d": "Freezer",
-    "h": "hums in kitchens"
+    "h": "keeps things fresh"
    },
    {
     "w": "Microwave",
     "d": "Oven",
-    "h": "found in kitchens"
+    "h": "beeps when done"
    },
    {
     "w": "Lamp",
     "d": "Ceiling Fan",
-    "h": "used in evenings"
+    "h": "helps you read"
    },
    {
     "w": "Keys",
     "d": "Padlock",
-    "h": "small but missed"
+    "h": "jingles in pockets"
    },
    {
     "w": "Sunglasses",
     "d": "Reading Glasses",
-    "h": "helps you see"
+    "h": "for the beach"
    },
    {
     "w": "Chair",
     "d": "Sofa",
-    "h": "where you settle"
+    "h": "has four legs"
    },
    {
     "w": "Table",
     "d": "Desk",
-    "h": "sits in rooms"
+    "h": "where plates sit"
    },
    {
     "w": "Curtains",
     "d": "Blinds",
-    "h": "controls the light"
+    "h": "keeps light out"
    },
    {
     "w": "Doormat",
     "d": "Rug",
-    "h": "walked right past"
+    "h": "stepped on daily"
    },
    {
     "w": "Hanger",
     "d": "Clothespin",
-    "h": "keeps things ordered"
+    "h": "found in closets"
    },
    {
     "w": "Iron",
     "d": "Steamer",
-    "h": "look put together"
+    "h": "makes clothes neat"
    },
    {
     "w": "Bucket",
     "d": "Watering Can",
-    "h": "a big clean"
+    "h": "used for mopping"
    },
    {
     "w": "Envelope",
     "d": "Postcard",
-    "h": "kept with stationery"
+    "h": "arrives by mail"
    },
    {
     "w": "Battery",
     "d": "Charger",
-    "h": "small everyday item"
+    "h": "needs replacing often"
    },
    {
     "w": "Remote Control",
     "d": "Game Controller",
-    "h": "vanishes into cushions"
+    "h": "found under cushions"
    },
    {
     "w": "Trash Can",
     "d": "Recycling Bin",
-    "h": "by the door"
+    "h": "emptied every week"
    },
    {
     "w": "Soap",
     "d": "Shampoo",
-    "h": "waiting by sinks"
+    "h": "used in showers"
    },
    {
     "w": "Sponge",
     "d": "Dishcloth",
-    "h": "for dirty dishes"
+    "h": "squeeze it out"
    },
    {
     "w": "Frying Pan",
@@ -1794,57 +1794,57 @@ const WORD_PACKS = [
    {
     "w": "Mug",
     "d": "Teacup",
-    "h": "held while warm"
+    "h": "warms your hands"
    },
    {
     "w": "Calendar",
     "d": "Planner",
-    "h": "helps you organize"
+    "h": "for planning ahead"
    },
    {
     "w": "Screwdriver",
     "d": "Wrench",
-    "h": "a small fix"
+    "h": "for building furniture"
    },
    {
     "w": "Toothpaste",
     "d": "Mouthwash",
-    "h": "a little each"
+    "h": "squeezed from tubes"
    },
    {
     "w": "Thermos",
     "d": "Water Bottle",
-    "h": "a drink travelling"
+    "h": "taken on picnics"
    },
    {
     "w": "Piggy Bank",
     "d": "Coin Jar",
-    "h": "holds something precious"
+    "h": "for spare change"
    },
    {
     "w": "Blanket",
     "d": "Bedsheet",
-    "h": "kept for warmth"
+    "h": "keeps you warm"
    },
    {
     "w": "Toaster",
     "d": "Blender",
-    "h": "on the counter"
+    "h": "sits on counters"
    },
    {
     "w": "Flashlight",
     "d": "Light Switch",
-    "h": "when things darken"
+    "h": "camping at night"
    },
    {
     "w": "Hammer",
     "d": "Nail",
-    "h": "kept in drawers"
+    "h": "kept in toolboxes"
    },
    {
     "w": "Napkin",
     "d": "Toilet Paper",
-    "h": "used for cleaning"
+    "h": "catches spills"
    }
   ]
  },
@@ -1855,227 +1855,227 @@ const WORD_PACKS = [
    {
     "w": "Albert Einstein",
     "d": "Isaac Newton",
-    "h": "a famous mind"
+    "h": "thinking about time"
    },
    {
     "w": "Lionel Messi",
     "d": "Cristiano Ronaldo",
-    "h": "a stadium hero"
+    "h": "dribbles past defenders"
    },
    {
     "w": "Beyonce",
     "d": "Rihanna",
-    "h": "sells out arenas"
+    "h": "sings and dances"
    },
    {
     "w": "William Shakespeare",
     "d": "Charles Dickens",
-    "h": "famous long ago"
+    "h": "old fashioned writer"
    },
    {
     "w": "Elon Musk",
     "d": "Jeff Bezos",
-    "h": "enormously rich"
+    "h": "rich company boss"
    },
    {
     "w": "Bill Gates",
     "d": "Steve Jobs",
-    "h": "very rich American"
+    "h": "computer company founder"
    },
    {
     "w": "Michael Phelps",
     "d": "Usain Bolt",
-    "h": "podium finishes"
+    "h": "goggles and laps"
    },
    {
     "w": "Barack Obama",
     "d": "Abraham Lincoln",
-    "h": "speaks to nations"
+    "h": "big election speeches"
    },
    {
     "w": "Queen Elizabeth II",
     "d": "Princess Diana",
-    "h": "a national symbol"
+    "h": "lived in palaces"
    },
    {
     "w": "Michael Jordan",
     "d": "LeBron James",
-    "h": "a court legend"
+    "h": "jumps and dunks"
    },
    {
     "w": "Serena Williams",
     "d": "Venus Williams",
-    "h": "a dominant champion"
+    "h": "swings a racket"
    },
    {
     "w": "Usain Bolt",
     "d": "Jesse Owens",
-    "h": "an Olympic name"
+    "h": "medals for running"
    },
    {
     "w": "Muhammad Ali",
     "d": "Mike Tyson",
-    "h": "fearless sporting icon"
+    "h": "boxing gloves"
    },
    {
     "w": "Nelson Mandela",
     "d": "Mahatma Gandhi",
-    "h": "stood for justice"
+    "h": "jailed for protesting"
    },
    {
     "w": "Marilyn Monroe",
     "d": "Audrey Hepburn",
-    "h": "old Hollywood shine"
+    "h": "old movie star"
    },
    {
     "w": "Charlie Chaplin",
     "d": "Mr. Bean",
-    "h": "made audiences laugh"
+    "h": "old time comedian"
    },
    {
     "w": "Walt Disney",
     "d": "Steven Spielberg",
-    "h": "dreamed up worlds"
+    "h": "drawings that move"
    },
    {
     "w": "Leonardo DiCaprio",
     "d": "Brad Pitt",
-    "h": "big screen lead"
+    "h": "Hollywood leading man"
    },
    {
     "w": "Tom Cruise",
     "d": "Tom Hanks",
-    "h": "action on screen"
+    "h": "action movie star"
    },
    {
     "w": "Dwayne Johnson",
     "d": "Arnold Schwarzenegger",
-    "h": "huge action presence"
+    "h": "muscles in movies"
    },
    {
     "w": "Jackie Chan",
     "d": "Bruce Lee",
-    "h": "does risky stunts"
+    "h": "fights in films"
    },
    {
     "w": "Emma Watson",
     "d": "Emma Stone",
-    "h": "grew up famous"
+    "h": "wizard school actor"
    },
    {
     "w": "Johnny Depp",
     "d": "Keanu Reeves",
-    "h": "plays odd characters"
+    "h": "wears odd costumes"
    },
    {
     "w": "Will Smith",
     "d": "Eddie Murphy",
-    "h": "a crowd-pleasing star"
+    "h": "music then movies"
    },
    {
     "w": "Ed Sheeran",
     "d": "Justin Bieber",
-    "h": "sings with guitar"
+    "h": "guitar and singing"
    },
    {
     "w": "Adele",
     "d": "Lady Gaga",
-    "h": "voice for rain"
+    "h": "breakup songs"
    },
    {
     "w": "Drake",
     "d": "Kanye West",
-    "h": "tops the charts"
+    "h": "raps about feelings"
    },
    {
     "w": "Shakira",
     "d": "Jennifer Lopez",
-    "h": "sings and dances"
+    "h": "dancing singer"
    },
    {
     "w": "Freddie Mercury",
     "d": "David Bowie",
-    "h": "a legendary frontman"
+    "h": "rock band singer"
    },
    {
     "w": "Bob Marley",
     "d": "Snoop Dogg",
-    "h": "music with meaning"
+    "h": "island beat music"
    },
    {
     "w": "Mozart",
     "d": "Beethoven",
-    "h": "a historical legend"
+    "h": "wrote piano music"
    },
    {
     "w": "Pablo Picasso",
     "d": "Vincent Van Gogh",
-    "h": "bold new style"
+    "h": "paintings worth millions"
    },
    {
     "w": "Marie Curie",
     "d": "Louis Pasteur",
-    "h": "pioneering lab work"
+    "h": "won science prizes"
    },
    {
     "w": "Stephen Hawking",
     "d": "Aristotle",
-    "h": "big cosmic questions"
+    "h": "wrote about space"
    },
    {
     "w": "Neil Armstrong",
     "d": "Buzz Aldrin",
-    "h": "went somewhere unreached"
+    "h": "rode a rocket"
    },
    {
     "w": "Mark Zuckerberg",
     "d": "Jack Ma",
-    "h": "connected the world"
+    "h": "big website owner"
    },
    {
     "w": "MrBeast",
     "d": "PewDiePie",
-    "h": "teenagers know them"
+    "h": "online video stunts"
    },
    {
     "w": "Zendaya",
     "d": "Selena Gomez",
-    "h": "young and everywhere"
+    "h": "superhero film actor"
    },
    {
     "w": "Roger Federer",
     "d": "Rafael Nadal",
-    "h": "elegant on court"
+    "h": "wins on grass"
    },
    {
     "w": "Frida Kahlo",
     "d": "Salvador Dali",
-    "h": "unmistakable artistic style"
+    "h": "paints bright colors"
    },
    {
     "w": "Cristiano Ronaldo",
     "d": "Neymar",
-    "h": "cheered by millions"
+    "h": "always scores goals"
    },
    {
     "w": "LeBron James",
     "d": "Stephen Curry",
-    "h": "dominates the court"
+    "h": "long basketball career"
    },
    {
     "w": "Steve Jobs",
     "d": "Jeff Bezos",
-    "h": "changed everyday devices"
+    "h": "gadgets and design"
    },
    {
     "w": "Isaac Newton",
     "d": "Galileo Galilei",
-    "h": "laws of nature"
+    "h": "why things move"
    },
    {
     "w": "Charles Darwin",
     "d": "Nikola Tesla",
-    "h": "changed human understanding"
+    "h": "wrote about animals"
    }
   ]
  },
@@ -2086,227 +2086,227 @@ const WORD_PACKS = [
    {
     "w": "Minecraft",
     "d": "Roblox",
-    "h": "screens and controllers"
+    "h": "monsters at night"
    },
    {
     "w": "Mario",
     "d": "Luigi",
-    "h": "a bright hero"
+    "h": "jumps over pits"
    },
    {
     "w": "Fortnite",
     "d": "PUBG",
-    "h": "everyone against everyone"
+    "h": "costumes and dancing"
    },
    {
     "w": "Pac-Man",
     "d": "Space Invaders",
-    "h": "keep moving"
+    "h": "chased through mazes"
    },
    {
     "w": "Tetris",
     "d": "Candy Crush",
-    "h": "neat arrangement matters"
+    "h": "fitting shapes together"
    },
    {
     "w": "Pokemon",
     "d": "Digimon",
-    "h": "leveling up"
+    "h": "cards you trade"
    },
    {
     "w": "Sonic",
     "d": "Crash Bandicoot",
-    "h": "all about speed"
+    "h": "cartoon animal hero"
    },
    {
     "w": "Game Over",
     "d": "Respawn",
-    "h": "words you dread"
+    "h": "back to start"
    },
    {
     "w": "Among Us",
     "d": "Fall Guys",
-    "h": "players compete online"
+    "h": "fixing a spaceship"
    },
    {
     "w": "Super Smash Bros",
     "d": "Street Fighter",
-    "h": "fists flying"
+    "h": "grabbing random items"
    },
    {
     "w": "FIFA",
     "d": "NBA 2K",
-    "h": "teams chase points"
+    "h": "control real athletes"
    },
    {
     "w": "Call of Duty",
     "d": "Battlefield",
-    "h": "aim and react"
+    "h": "throwing grenades"
    },
    {
     "w": "Animal Crossing",
     "d": "Farmville",
-    "h": "a cosy life"
+    "h": "fishing and decorating"
    },
    {
     "w": "The Sims",
     "d": "SimCity",
-    "h": "ordinary life controlled"
+    "h": "playing house"
    },
    {
     "w": "Angry Birds",
     "d": "Fruit Ninja",
-    "h": "tap to play"
+    "h": "knocking towers over"
    },
    {
     "w": "Pikachu",
     "d": "Charizard",
-    "h": "a famous mascot"
+    "h": "small yellow pet"
    },
    {
     "w": "PlayStation",
     "d": "Xbox",
-    "h": "plugged into TV"
+    "h": "under the TV"
    },
    {
     "w": "Nintendo Switch",
     "d": "Game Boy",
-    "h": "play anywhere"
+    "h": "play it anywhere"
    },
    {
     "w": "Donkey Kong",
     "d": "Kirby",
-    "h": "a strong classic"
+    "h": "jungle hero"
    },
    {
     "w": "Lara Croft",
     "d": "Indiana Jones",
-    "h": "hunting treasure"
+    "h": "exploring old ruins"
    },
    {
     "w": "Grand Theft Auto",
     "d": "Need for Speed",
-    "h": "breaking the law"
+    "h": "police chasing you"
    },
    {
     "w": "Overwatch",
     "d": "Counter-Strike",
-    "h": "squads shooting"
+    "h": "everyone has powers"
    },
    {
     "w": "League of Legends",
     "d": "World of Warcraft",
-    "h": "teams push forward"
+    "h": "towers and teams"
    },
    {
     "w": "Wii Sports",
     "d": "Just Dance",
-    "h": "moving your body"
+    "h": "swing your controller"
    },
    {
     "w": "Game Boy",
     "d": "Tamagotchi",
-    "h": "held in hands"
+    "h": "batteries and buttons"
    },
    {
     "w": "Skyrim",
     "d": "The Witcher",
-    "h": "wander anywhere freely"
+    "h": "swords and snow"
    },
    {
     "w": "Halo",
     "d": "Destiny",
-    "h": "far from Earth"
+    "h": "shooting space aliens"
    },
    {
     "w": "God of War",
     "d": "Assassin's Creed",
-    "h": "action adventure title"
+    "h": "beard and axe"
    },
    {
     "w": "Rocket League",
     "d": "Mario Party",
-    "h": "driving fast"
+    "h": "cars doing flips"
    },
    {
     "w": "Clash of Clans",
     "d": "Age of Empires",
-    "h": "build then attack"
+    "h": "training an army"
    },
    {
     "w": "Subway Surfers",
     "d": "Temple Run",
-    "h": "never stop moving"
+    "h": "running for coins"
    },
    {
     "w": "Kirby",
     "d": "Yoshi",
-    "h": "famous character franchise"
+    "h": "swallows its enemies"
    },
    {
     "w": "Tomb Raider",
     "d": "Uncharted",
-    "h": "exploring risky ruins"
+    "h": "hunting treasure"
    },
    {
     "w": "Fruit Ninja",
     "d": "Temple Run",
-    "h": "fast finger taps"
+    "h": "quick finger swipes"
    },
    {
     "w": "Flappy Bird",
     "d": "Doodle Jump",
-    "h": "phone screen tapping"
+    "h": "squeezing through gaps"
    },
    {
     "w": "Street Fighter",
     "d": "Mortal Kombat",
-    "h": "combos and moves"
+    "h": "punches and kicks"
    },
    {
     "w": "Solitaire",
     "d": "Minesweeper",
-    "h": "quiet game alone"
+    "h": "deck of cards"
    },
    {
     "w": "Plants vs Zombies",
     "d": "Whack-A-Mole",
-    "h": "hold the line"
+    "h": "rows of monsters"
    },
    {
     "w": "Pinball",
     "d": "Air Hockey",
-    "h": "bouncing ball"
+    "h": "lights and bells"
    },
    {
     "w": "Just Dance",
     "d": "Guitar Hero",
-    "h": "follow the moves"
+    "h": "party pop songs"
    },
    {
     "w": "Bowser",
     "d": "King Kong",
-    "h": "must be beaten"
+    "h": "spikes and fire"
    },
    {
     "w": "Joystick",
     "d": "Console",
-    "h": "in your hands"
+    "h": "tilt to steer"
    },
    {
     "w": "Arcade",
     "d": "Casino",
-    "h": "gaming place thing"
+    "h": "coins and prizes"
    },
    {
     "w": "Roblox",
     "d": "Minecraft",
-    "h": "kids playing together"
+    "h": "blocky little people"
    },
    {
     "w": "Candy Crush",
     "d": "Angry Birds",
-    "h": "matching for rewards"
+    "h": "lining up colors"
    }
   ]
  },
@@ -2317,167 +2317,167 @@ const WORD_PACKS = [
    {
     "w": "Volcano",
     "d": "Geyser",
-    "h": "the earth moves"
+    "h": "hot rock below"
    },
    {
     "w": "Camping",
     "d": "Hiking",
-    "h": "time outdoors somewhere"
+    "h": "you carry everything"
    },
    {
     "w": "Waterfall",
     "d": "Rapids",
-    "h": "worth the hike"
+    "h": "spray on rocks"
    },
    {
     "w": "Desert",
     "d": "Savanna",
-    "h": "harsh open place"
+    "h": "cracked dry ground"
    },
    {
     "w": "Mountain",
     "d": "Hill",
-    "h": "hard to cross"
+    "h": "boots and ropes"
    },
    {
     "w": "Beach",
     "d": "Lagoon",
-    "h": "sun and water"
+    "h": "swimsuits and sunburn"
    },
    {
     "w": "River",
     "d": "Stream",
-    "h": "follow it far"
+    "h": "the current pulls"
    },
    {
     "w": "Lake",
     "d": "Pond",
-    "h": "water you visit"
+    "h": "ducks and rowboats"
    },
    {
     "w": "Ocean",
     "d": "Bay",
-    "h": "wide water body"
+    "h": "sunken ships below"
    },
    {
     "w": "Cave",
     "d": "Canyon",
-    "h": "a natural formation"
+    "h": "cold and dripping"
    },
    {
     "w": "Glacier",
     "d": "Iceberg",
-    "h": "cold high place"
+    "h": "old blue ice"
    },
    {
     "w": "Island",
     "d": "Peninsula",
-    "h": "far from everything"
+    "h": "no roads out"
    },
    {
     "w": "Forest",
     "d": "Orchard",
-    "h": "lots of plants"
+    "h": "green from above"
    },
    {
     "w": "Jungle",
     "d": "Grassland",
-    "h": "green wild place"
+    "h": "snakes and heat"
    },
    {
     "w": "Cliff",
     "d": "Ridge",
-    "h": "a long drop"
+    "h": "don't look down"
    },
    {
     "w": "Sand Dune",
     "d": "Oasis",
-    "h": "shaped by wind"
+    "h": "built by wind"
    },
    {
     "w": "Coral Reef",
     "d": "Seaweed",
-    "h": "colour underneath"
+    "h": "fish hide inside"
    },
    {
     "w": "Swamp",
     "d": "Rainforest",
-    "h": "soft wet ground"
+    "h": "still green water"
    },
    {
     "w": "Tornado",
     "d": "Hurricane",
-    "h": "wild weather"
+    "h": "roofs torn off"
    },
    {
     "w": "Thunderstorm",
     "d": "Blizzard",
-    "h": "a loud sky"
+    "h": "flash then boom"
    },
    {
     "w": "Rainbow",
     "d": "Lightning",
-    "h": "brief and pretty"
+    "h": "sun during rain"
    },
    {
     "w": "Sunset",
     "d": "Sunrise",
-    "h": "colour in sky"
+    "h": "long shadows"
    },
    {
     "w": "Full Moon",
     "d": "Eclipse",
-    "h": "after dark"
+    "h": "bright all night"
    },
    {
     "w": "Campfire",
     "d": "Lantern",
-    "h": "an evening thing"
+    "h": "smoke follows you"
    },
    {
     "w": "Fishing",
     "d": "Kayaking",
-    "h": "an outdoor pastime"
+    "h": "nets and buckets"
    },
    {
     "w": "Picnic",
     "d": "Barbecue",
-    "h": "a leisure outing"
+    "h": "food from home"
    },
    {
     "w": "Sunflower",
     "d": "Rose Bush",
-    "h": "tall in fields"
+    "h": "taller than people"
    },
    {
     "w": "National Park",
     "d": "Botanical Garden",
-    "h": "left as is"
+    "h": "no building allowed"
    },
    {
     "w": "Earthquake",
     "d": "Landslide",
-    "h": "the ground moves"
+    "h": "dishes rattle"
    },
    {
     "w": "Avalanche",
     "d": "Flood",
-    "h": "comes down fast"
+    "h": "buried in seconds"
    },
    {
     "w": "Valley",
     "d": "Canyon",
-    "h": "low wide land"
+    "h": "roads follow it"
    },
    {
     "w": "Hot Spring",
     "d": "Sauna",
-    "h": "sit and relax"
+    "h": "people soak there"
    },
    {
     "w": "Seashell",
     "d": "Starfish",
-    "h": "picked up walking"
+    "h": "collected in jars"
    },
    {
     "w": "Quicksand",
@@ -2492,52 +2492,52 @@ const WORD_PACKS = [
    {
     "w": "Cactus",
     "d": "Palm Tree",
-    "h": "a growing thing"
+    "h": "survives without water"
    },
    {
     "w": "Oak Tree",
     "d": "Pine Tree",
-    "h": "big and old"
+    "h": "squirrels gather nuts"
    },
    {
     "w": "Wildflower",
     "d": "Fern",
-    "h": "small and colourful"
+    "h": "grows beside roads"
    },
    {
     "w": "Boulder",
     "d": "Pebble",
-    "h": "something on ground"
+    "h": "climbers grip it"
    },
    {
     "w": "Snowflake",
     "d": "Icicle",
-    "h": "freezing weather thing"
+    "h": "floats down slowly"
    },
    {
     "w": "Fog",
     "d": "Dew",
-    "h": "a weather thing"
+    "h": "headlights come on"
    },
    {
     "w": "Stargazing",
     "d": "Birdwatching",
-    "h": "a clear night"
+    "h": "looking straight up"
    },
    {
     "w": "Sandstorm",
     "d": "Heat Wave",
-    "h": "wind in face"
+    "h": "cover your face"
    },
    {
     "w": "Northern Lights",
     "d": "Shooting Star",
-    "h": "rare sky show"
+    "h": "moving colors overhead"
    },
    {
     "w": "Hammock",
     "d": "Tent",
-    "h": "a lazy afternoon"
+    "h": "for napping outside"
    }
   ]
  },
@@ -2548,227 +2548,227 @@ const WORD_PACKS = [
    {
     "w": "Microscope",
     "d": "Telescope",
-    "h": "science lab gear"
+    "h": "one eye closed"
    },
    {
     "w": "Chemistry",
     "d": "Biology",
-    "h": "on the timetable"
+    "h": "goggles and beakers"
    },
    {
     "w": "Homework",
     "d": "Exam",
-    "h": "you'd rather avoid"
+    "h": "finished before bedtime"
    },
    {
     "w": "Blackboard",
     "d": "Whiteboard",
-    "h": "classroom fixture"
+    "h": "write and wipe"
    },
    {
     "w": "Eraser",
     "d": "Sharpener",
-    "h": "small and handy"
+    "h": "leaves little crumbs"
    },
    {
     "w": "Backpack",
     "d": "Locker",
-    "h": "students carry it"
+    "h": "holds your lunch"
    },
    {
     "w": "Gravity",
     "d": "Magnetism",
-    "h": "you cannot see"
+    "h": "water runs downhill"
    },
    {
     "w": "Test Tube",
     "d": "Beaker",
-    "h": "on the bench"
+    "h": "holds a sample"
    },
    {
     "w": "Bunsen Burner",
     "d": "Hot Plate",
-    "h": "handle with care"
+    "h": "flame under glass"
    },
    {
     "w": "Periodic Table",
     "d": "Multiplication Table",
-    "h": "chemistry class staple"
+    "h": "colored wall chart"
    },
    {
     "w": "Calculator",
     "d": "Abacus",
-    "h": "helps get answers"
+    "h": "shows the total"
    },
    {
     "w": "Ruler",
     "d": "Protractor",
-    "h": "straightforward and handy"
+    "h": "wooden and straight"
    },
    {
     "w": "Compass",
     "d": "Sundial",
-    "h": "math class tool"
+    "h": "the needle spins"
    },
    {
     "w": "Globe",
     "d": "Map",
-    "h": "the whole picture"
+    "h": "a spinning ball"
    },
    {
     "w": "Library",
     "d": "Classroom",
-    "h": "somewhere between classes"
+    "h": "everyone whispers here"
    },
    {
     "w": "Telescope",
     "d": "Microscope",
-    "h": "about distant things"
+    "h": "seeing far away"
    },
    {
     "w": "Report Card",
     "d": "Diploma",
-    "h": "how you did"
+    "h": "signed and returned"
    },
    {
     "w": "Field Trip",
     "d": "School Assembly",
-    "h": "break from routine"
+    "h": "a guided tour"
    },
    {
     "w": "Dinosaur Fossil",
     "d": "Seashell",
-    "h": "very, very old"
+    "h": "chipped from rock"
    },
    {
     "w": "DNA",
     "d": "Cell",
-    "h": "inside living things"
+    "h": "crime scene evidence"
    },
    {
     "w": "Atom",
     "d": "Molecule",
-    "h": "very tiny indeed"
+    "h": "the smallest piece"
    },
    {
     "w": "Electron",
     "d": "Proton",
-    "h": "a textbook diagram"
+    "h": "circles the center"
    },
    {
     "w": "Photosynthesis",
     "d": "Respiration",
-    "h": "something living does"
+    "h": "gives off oxygen"
    },
    {
     "w": "Skeleton",
     "d": "Brain",
-    "h": "slightly unsettling sight"
+    "h": "a Halloween costume"
    },
    {
     "w": "Magnet",
     "d": "Battery",
-    "h": "a classroom demo"
+    "h": "on the fridge"
    },
    {
     "w": "Lab Coat",
     "d": "Safety Goggles",
-    "h": "worn before starting"
+    "h": "protects from spills"
    },
    {
     "w": "Notebook",
     "d": "Textbook",
-    "h": "used every day"
+    "h": "pages you fill"
    },
    {
     "w": "Detention",
     "d": "Suspension",
-    "h": "nobody wants it"
+    "h": "sitting in silence"
    },
    {
     "w": "Pop Quiz",
     "d": "Final Exam",
-    "h": "sprung on you"
+    "h": "nobody was ready"
    },
    {
     "w": "Science Fair",
     "d": "Spelling Bee",
-    "h": "on the calendar"
+    "h": "judges walk around"
    },
    {
     "w": "Algebra",
     "d": "Geometry",
-    "h": "a studied subject"
+    "h": "the missing number"
    },
    {
     "w": "Physics",
     "d": "Astronomy",
-    "h": "why things happen"
+    "h": "ramps and levers"
    },
    {
     "w": "Evolution",
     "d": "Genetics",
-    "h": "still argued about"
+    "h": "changing over time"
    },
    {
     "w": "Magnifying Glass",
     "d": "Binoculars",
-    "h": "makes things bigger"
+    "h": "makes letters bigger"
    },
    {
     "w": "Frog Dissection",
     "d": "Plant Experiment",
-    "h": "the dreaded lesson"
+    "h": "look inside it"
    },
    {
     "w": "Solar Eclipse",
     "d": "Full Moon",
-    "h": "a rare sight"
+    "h": "everyone looks up"
    },
    {
     "w": "Thermometer",
     "d": "Barometer",
-    "h": "gives a number"
+    "h": "used when sick"
    },
    {
     "w": "Graduation",
     "d": "Prom",
-    "h": "end of year"
+    "h": "families take photos"
    },
    {
     "w": "School Bus",
     "d": "Bicycle",
-    "h": "the morning routine"
+    "h": "stops at corners"
    },
    {
     "w": "Solar System",
     "d": "Constellation",
-    "h": "out there somewhere"
+    "h": "circling one star"
    },
    {
     "w": "Space Station",
     "d": "Rocket Launch",
-    "h": "far above us"
+    "h": "everything floats inside"
    },
    {
     "w": "Ballpoint Pen",
     "d": "Crayon",
-    "h": "marks on paper"
+    "h": "pocket clip"
    },
    {
     "w": "School Uniform",
     "d": "Gym Class",
-    "h": "rules to follow"
+    "h": "tie and badge"
    },
    {
     "w": "Locker",
     "d": "Water Fountain",
-    "h": "school hallway thing"
+    "h": "slams shut"
    },
    {
     "w": "Protractor",
     "d": "Abacus",
-    "h": "one of several"
+    "h": "for measuring corners"
    }
   ]
  },
@@ -2779,227 +2779,227 @@ const WORD_PACKS = [
    {
     "w": "Zeus",
     "d": "Poseidon",
-    "h": "power in myth"
+    "h": "an old bearded god"
    },
    {
     "w": "Cleopatra",
     "d": "Nefertiti",
-    "h": "an ancient throne"
+    "h": "ruled ancient Egypt"
    },
    {
     "w": "Trojan Horse",
     "d": "Battering Ram",
-    "h": "a clever trick"
+    "h": "a sneaky gift"
    },
    {
     "w": "Medusa",
     "d": "Hydra",
-    "h": "old legend creature"
+    "h": "killed by a hero"
    },
    {
     "w": "Julius Caesar",
     "d": "Alexander The Great",
-    "h": "a leaders fall"
+    "h": "leader of old Rome"
    },
    {
     "w": "Samurai",
     "d": "Ninja",
-    "h": "a trained fighter"
+    "h": "loyal to a master"
    },
    {
     "w": "Thor",
     "d": "Hercules",
-    "h": "storied ancient figure"
+    "h": "he brings storms"
    },
    {
     "w": "Great Wall",
     "d": "Berlin Wall",
-    "h": "built to last"
+    "h": "built over many years"
    },
    {
     "w": "Pyramids",
     "d": "Temple",
-    "h": "ancient burial site"
+    "h": "built for dead kings"
    },
    {
     "w": "Sphinx",
     "d": "Minotaur",
-    "h": "old carved stone"
+    "h": "a stone guard"
    },
    {
     "w": "Vikings",
     "d": "Pirates",
-    "h": "travellers of old"
+    "h": "raided the coasts"
    },
    {
     "w": "Colosseum",
     "d": "Parthenon",
-    "h": "big and stone"
+    "h": "a ring of seats"
    },
    {
     "w": "Excalibur",
     "d": "Mjolnir",
-    "h": "a royal tale"
+    "h": "a weapon with a name"
    },
    {
     "w": "Dragon",
     "d": "Griffin",
-    "h": "beast of tales"
+    "h": "a beast in a cave"
    },
    {
     "w": "Unicorn",
     "d": "Pegasus",
-    "h": "figure from folklore"
+    "h": "a magic horse"
    },
    {
     "w": "Mermaid",
     "d": "Siren",
-    "h": "legend involving water"
+    "h": "sings at sea"
    },
    {
     "w": "Atlantis",
     "d": "El Dorado",
-    "h": "place in legend"
+    "h": "a city never found"
    },
    {
     "w": "Napoleon",
     "d": "Genghis Khan",
-    "h": "a great campaigner"
+    "h": "led armies across Europe"
    },
    {
     "w": "Knight",
     "d": "Gladiator",
-    "h": "figure of old"
+    "h": "carries a shield"
    },
    {
     "w": "Mummy",
     "d": "Zombie",
-    "h": "found somewhere ancient"
+    "h": "found inside a tomb"
    },
    {
     "w": "Anubis",
     "d": "Hades",
-    "h": "worshipped long ago"
+    "h": "a god of the dead"
    },
    {
     "w": "Odin",
     "d": "Jupiter",
-    "h": "very old stories"
+    "h": "welcomes dead warriors"
    },
    {
     "w": "Loki",
     "d": "Hermes",
-    "h": "trouble in tales"
+    "h": "changes his shape"
    },
    {
     "w": "Athena",
     "d": "Aphrodite",
-    "h": "honoured long ago"
+    "h": "a goddess in armor"
    },
    {
     "w": "Phoenix",
     "d": "Gargoyle",
-    "h": "storybook beast"
+    "h": "comes back after dying"
    },
    {
     "w": "Kraken",
     "d": "Sea Serpent",
-    "h": "stories from water"
+    "h": "a monster in deep water"
    },
    {
     "w": "Stonehenge",
     "d": "Easter Island",
-    "h": "old and standing"
+    "h": "lines up with the sun"
    },
    {
     "w": "Hieroglyphics",
     "d": "Papyrus Scroll",
-    "h": "marks on walls"
+    "h": "carved into old walls"
    },
    {
     "w": "Leonardo Da Vinci",
     "d": "Michelangelo",
-    "h": "a brilliant mind"
+    "h": "an artist from Italy"
    },
    {
     "w": "Printing Press",
     "d": "Typewriter",
-    "h": "changed everyday life"
+    "h": "made books cheap"
    },
    {
     "w": "Silk Road",
     "d": "Spice Trade",
-    "h": "connected faraway places"
+    "h": "camels loaded with goods"
    },
    {
     "w": "Achilles",
     "d": "Odysseus",
-    "h": "from a battle"
+    "h": "a fighter at Troy"
    },
    {
     "w": "Pandora's Box",
     "d": "Holy Grail",
-    "h": "unleashing ancient trouble"
+    "h": "curiosity caused trouble"
    },
    {
     "w": "Cyclops",
     "d": "Ogre",
-    "h": "myths feared it"
+    "h": "a hungry giant"
    },
    {
     "w": "Genie",
     "d": "Fairy",
-    "h": "appears in stories"
+    "h": "trapped until freed"
    },
    {
     "w": "Crown",
     "d": "Throne",
-    "h": "linked with power"
+    "h": "covered in jewels"
    },
    {
     "w": "Marco Polo",
     "d": "Christopher Columbus",
-    "h": "remembered by name"
+    "h": "wrote about his travels"
    },
    {
     "w": "Joan Of Arc",
     "d": "Marie Antoinette",
-    "h": "died for belief"
+    "h": "burned at the stake"
    },
    {
     "w": "Aztec",
     "d": "Maya",
-    "h": "an old civilization"
+    "h": "beaten by the Spanish"
    },
    {
     "w": "Emperor",
     "d": "Pharaoh",
-    "h": "sits at top"
+    "h": "sits on a throne"
    },
    {
     "w": "Werewolf",
     "d": "Vampire",
-    "h": "scary old folklore"
+    "h": "spread by a bite"
    },
    {
     "w": "Centaur",
     "d": "Elf",
-    "h": "odd myth creature"
+    "h": "half man, half beast"
    },
    {
     "w": "Chariot",
     "d": "Catapult",
-    "h": "used long ago"
+    "h": "carried warriors to battle"
    },
    {
     "w": "Moon Landing",
     "d": "First Flight",
-    "h": "people remember it"
+    "h": "planting a flag"
    },
    {
     "w": "Confucius",
     "d": "Socrates",
-    "h": "old teachers wisdom"
+    "h": "people still quote him"
    }
   ]
  },
@@ -3010,167 +3010,167 @@ const WORD_PACKS = [
    {
     "w": "Mickey Mouse",
     "d": "Bugs Bunny",
-    "h": "drawn for kids"
+    "h": "big yellow shoes"
    },
    {
     "w": "Darth Vader",
     "d": "Kylo Ren",
-    "h": "a fearsome villain"
+    "h": "cape and helmet"
    },
    {
     "w": "Elsa",
     "d": "Rapunzel",
-    "h": "a royal tale"
+    "h": "a magic queen"
    },
    {
     "w": "Sherlock Holmes",
     "d": "Hercule Poirot",
-    "h": "solves puzzles"
+    "h": "helps the police"
    },
    {
     "w": "Homer Simpson",
     "d": "Peter Griffin",
-    "h": "a clumsy dad"
+    "h": "loves the couch"
    },
    {
     "w": "Buzz Lightyear",
     "d": "Iron Man",
-    "h": "a toy hero"
+    "h": "toy with wings"
    },
    {
     "w": "Winnie the Pooh",
     "d": "Paddington",
-    "h": "a gentle friend"
+    "h": "a talking bear"
    },
    {
     "w": "Gandalf",
     "d": "Dumbledore",
-    "h": "older mentor figure"
+    "h": "a gray beard"
    },
    {
     "w": "Simba",
     "d": "Bambi",
-    "h": "growing up wild"
+    "h": "his father died"
    },
    {
     "w": "Ariel",
     "d": "Moana",
-    "h": "curious about elsewhere"
+    "h": "collects human things"
    },
    {
     "w": "Woody",
     "d": "Lightning McQueen",
-    "h": "a loyal sidekick"
+    "h": "a pull string"
    },
    {
     "w": "Hulk",
     "d": "King Kong",
-    "h": "big and powerful"
+    "h": "rips his shirt"
    },
    {
     "w": "Yoda",
     "d": "Gollum",
-    "h": "wise mentor figure"
+    "h": "trains young heroes"
    },
    {
     "w": "Peter Pan",
     "d": "Pinocchio",
-    "h": "playful and slippery"
+    "h": "fights a pirate"
    },
    {
     "w": "Wonder Woman",
     "d": "Captain Marvel",
-    "h": "a costumed fighter"
+    "h": "a warrior princess"
    },
    {
     "w": "Joker",
     "d": "Lex Luthor",
-    "h": "makes people laugh"
+    "h": "wears face paint"
    },
    {
     "w": "Tinker Bell",
     "d": "Elf",
-    "h": "a little magic"
+    "h": "tiny and glowing"
    },
    {
     "w": "Olaf",
     "d": "Anna",
-    "h": "brightens the group"
+    "h": "sticks for arms"
    },
    {
     "w": "Dumbo",
     "d": "Nemo",
-    "h": "a teased youngster"
+    "h": "misses his mother"
    },
    {
     "w": "Bugs Bunny",
     "d": "Tom And Jerry",
-    "h": "a wisecracking trickster"
+    "h": "tricks the hunter"
    },
    {
     "w": "Katniss Everdeen",
     "d": "Lara Croft",
-    "h": "a young survivor"
+    "h": "saves her sister"
    },
    {
     "w": "Wolverine",
     "d": "Deadpool",
-    "h": "keeps people away"
+    "h": "heals fast"
    },
    {
     "w": "James Bond",
     "d": "Indiana Jones",
-    "h": "smooth problem solver"
+    "h": "wears a tuxedo"
    },
    {
     "w": "Voldemort",
     "d": "Sauron",
-    "h": "casts long shadows"
+    "h": "a pet snake"
    },
    {
     "w": "Optimus Prime",
     "d": "Wall-E",
-    "h": "metal and mighty"
+    "h": "a giant robot"
    },
    {
     "w": "Groot",
     "d": "Chewbacca",
-    "h": "not quite human"
+    "h": "repeats his name"
    },
    {
     "w": "Maleficent",
     "d": "Ursula",
-    "h": "graceful but dangerous"
+    "h": "black horns"
    },
    {
     "w": "Santa Claus",
     "d": "Tooth Fairy",
-    "h": "wears a costume"
+    "h": "eats the cookies"
    },
    {
     "w": "Dracula",
     "d": "Frankenstein's Monster",
-    "h": "old feared figure"
+    "h": "hates the sunlight"
    },
    {
     "w": "Thanos",
     "d": "Green Goblin",
-    "h": "wants to rule"
+    "h": "a golden glove"
    },
    {
     "w": "Mowgli",
     "d": "Tarzan",
-    "h": "raised by animals"
+    "h": "lives among animals"
    },
    {
     "w": "Goku",
     "d": "Naruto",
-    "h": "always pushing further"
+    "h": "trains to fight"
    },
    {
     "w": "Popeye",
     "d": "Hercules",
-    "h": "small but fierce"
+    "h": "huge arms"
    },
    {
     "w": "Iron Man",
@@ -3180,32 +3180,32 @@ const WORD_PACKS = [
    {
     "w": "Captain America",
     "d": "Black Panther",
-    "h": "stands for something"
+    "h": "wears a star"
    },
    {
     "w": "Robin Hood",
     "d": "King Arthur",
-    "h": "clever against odds"
+    "h": "a feathered hat"
    },
    {
     "w": "King Arthur",
     "d": "Merlin",
-    "h": "legendary storybook figure"
+    "h": "a magic sword"
    },
    {
     "w": "Alice In Wonderland",
     "d": "Willy Wonka",
-    "h": "lost somewhere strange"
+    "h": "strange tea party"
    },
    {
     "w": "Puss In Boots",
     "d": "Shrek",
-    "h": "charming rogue"
+    "h": "big sad eyes"
    },
    {
     "w": "Snow White",
     "d": "Sleeping Beauty",
-    "h": "gentle and trusting"
+    "h": "sings while cleaning"
    },
    {
     "w": "Sleeping Beauty",
@@ -3215,22 +3215,22 @@ const WORD_PACKS = [
    {
     "w": "Pinocchio",
     "d": "Geppetto",
-    "h": "wanted to belong"
+    "h": "inside a whale"
    },
    {
     "w": "Tarzan",
     "d": "Pocahontas",
-    "h": "grew up wild"
+    "h": "climbs trees fast"
    },
    {
     "w": "Hermione Granger",
     "d": "Ron Weasley",
-    "h": "the clever one"
+    "h": "always reading books"
    },
    {
     "w": "Gollum",
     "d": "Frodo Baggins",
-    "h": "obsessed with something"
+    "h": "guards his treasure"
    }
   ]
  },
@@ -3241,227 +3241,227 @@ const WORD_PACKS = [
    {
     "w": "France",
     "d": "Italy",
-    "h": "proud about food"
+    "h": "castles by rivers"
    },
    {
     "w": "Brazil",
     "d": "Argentina",
-    "h": "hot and loud"
+    "h": "coffee farms, sun"
    },
    {
     "w": "Japan",
     "d": "South Korea",
-    "h": "temples and mountains"
+    "h": "temples and noodles"
    },
    {
     "w": "Rome",
     "d": "Athens",
-    "h": "ancient stones"
+    "h": "old stone ruins"
    },
    {
     "w": "Amsterdam",
     "d": "Copenhagen",
-    "h": "old streets water"
+    "h": "canals and bikes"
    },
    {
     "w": "Egypt",
     "d": "Morocco",
-    "h": "warm dusty land"
+    "h": "river through desert"
    },
    {
     "w": "Canada",
     "d": "Norway",
-    "h": "cold and huge"
+    "h": "big lakes, moose"
    },
    {
     "w": "Mexico",
     "d": "Spain",
-    "h": "spicy street food"
+    "h": "guitars, hot peppers"
    },
    {
     "w": "India",
     "d": "Pakistan",
-    "h": "hot and crowded"
+    "h": "cricket and spices"
    },
    {
     "w": "China",
     "d": "Vietnam",
-    "h": "many people history"
+    "h": "chopsticks and tea"
    },
    {
     "w": "Germany",
     "d": "Austria",
-    "h": "known for order"
+    "h": "cars and factories"
    },
    {
     "w": "Los Angeles",
     "d": "Miami",
-    "h": "large spread-out place"
+    "h": "sunshine and traffic"
    },
    {
     "w": "Las Vegas",
     "d": "Monaco",
-    "h": "bright busy nights"
+    "h": "hotels and betting"
    },
    {
     "w": "Singapore",
     "d": "Hong Kong",
-    "h": "gleaming skyline"
+    "h": "hot, tall buildings"
    },
    {
     "w": "Greece",
     "d": "Turkey",
-    "h": "warm with history"
+    "h": "lemon trees, sea"
    },
    {
     "w": "Australia",
     "d": "New Zealand",
-    "h": "far southern hemisphere"
+    "h": "surfing and heat"
    },
    {
     "w": "Switzerland",
     "d": "Nepal",
-    "h": "cool costly place"
+    "h": "cows and mountains"
    },
    {
     "w": "Ireland",
     "d": "Scotland",
-    "h": "green rainy land"
+    "h": "rain and pubs"
    },
    {
     "w": "Istanbul",
     "d": "Jerusalem",
-    "h": "old empire capital"
+    "h": "domes and boats"
    },
    {
     "w": "Cuba",
     "d": "Jamaica",
-    "h": "warm lively rhythm"
+    "h": "sugar fields, sea"
    },
    {
     "w": "Kenya",
     "d": "Tanzania",
-    "h": "wide open land"
+    "h": "dry plains, cattle"
    },
    {
     "w": "Peru",
     "d": "Bolivia",
-    "h": "mountains plus history"
+    "h": "high cold farms"
    },
    {
     "w": "Portugal",
     "d": "Croatia",
-    "h": "seaside trading past"
+    "h": "old sailing ships"
    },
    {
     "w": "Chicago",
     "d": "Toronto",
-    "h": "tall towers downtown"
+    "h": "tall towers, jazz"
    },
    {
     "w": "Vienna",
     "d": "Budapest",
-    "h": "old stone landmarks"
+    "h": "coffee and music"
    },
    {
     "w": "Seoul",
     "d": "Shanghai",
-    "h": "neon megacity"
+    "h": "pop music, neon"
    },
    {
     "w": "Madrid",
     "d": "Lisbon",
-    "h": "sunny late dinners"
+    "h": "late dinners, football"
    },
    {
     "w": "Russia",
     "d": "Ukraine",
-    "h": "vast and freezing"
+    "h": "fur hats, snow"
    },
    {
     "w": "Thailand",
     "d": "Indonesia",
-    "h": "warm coastal escape"
+    "h": "spicy street food"
    },
    {
     "w": "Nigeria",
     "d": "Ghana",
-    "h": "big hot young"
+    "h": "drums, bright cloth"
    },
    {
     "w": "Chile",
     "d": "Colombia",
-    "h": "water and heights"
+    "h": "wine and copper"
    },
    {
     "w": "Finland",
     "d": "Denmark",
-    "h": "long dark winters"
+    "h": "reindeer and forests"
    },
    {
     "w": "Cape Town",
     "d": "Nairobi",
-    "h": "southern coastal city"
+    "h": "mountains by sea"
    },
    {
     "w": "Buenos Aires",
     "d": "Santiago",
-    "h": "big lively place"
+    "h": "steak and dancing"
    },
    {
     "w": "San Francisco",
     "d": "Seattle",
-    "h": "misty coastal spot"
+    "h": "steep streets, fog"
    },
    {
     "w": "New Zealand",
     "d": "Fiji",
-    "h": "remote green islands"
+    "h": "green hills, sheep"
    },
    {
     "w": "Saudi Arabia",
     "d": "Qatar",
-    "h": "hot dry wealthy"
+    "h": "oil money"
    },
    {
     "w": "Philippines",
     "d": "Malaysia",
-    "h": "thousands of islands"
+    "h": "warm sea, boats"
    },
    {
     "w": "Norway",
     "d": "Sweden",
-    "h": "cold northern water"
+    "h": "cold sea cliffs"
    },
    {
     "w": "Vietnam",
     "d": "Cambodia",
-    "h": "farms and waterways"
+    "h": "rice fields, motorbikes"
    },
    {
     "w": "Poland",
     "d": "Hungary",
-    "h": "long complicated history"
+    "h": "cabbage and dumplings"
    },
    {
     "w": "Morocco",
     "d": "Tunisia",
-    "h": "busy warm markets"
+    "h": "markets and rugs"
    },
    {
     "w": "Jamaica",
     "d": "Bahamas",
-    "h": "small hot island"
+    "h": "rum and beaches"
    },
    {
     "w": "Colombia",
     "d": "Ecuador",
-    "h": "green mountain farmland"
+    "h": "flowers and jungle"
    },
    {
     "w": "Prague",
     "d": "Moscow",
-    "h": "old riverside streets"
+    "h": "castles and beer"
    }
   ]
  },
@@ -3472,227 +3472,227 @@ const WORD_PACKS = [
    {
     "w": "WiFi",
     "d": "Mobile Data",
-    "h": "part of setup"
+    "h": "signal fades upstairs"
    },
    {
     "w": "YouTube",
     "d": "Twitch",
-    "h": "endless clips"
+    "h": "ads before watching"
    },
    {
     "w": "Emoji",
     "d": "Sticker",
-    "h": "small everyday thing"
+    "h": "sending little pictures"
    },
    {
     "w": "Selfie",
     "d": "Group Photo",
-    "h": "often shared after"
+    "h": "the front camera"
    },
    {
     "w": "Password",
     "d": "Fingerprint",
-    "h": "keeps things private"
+    "h": "unlocks your account"
    },
    {
     "w": "Robot",
     "d": "Artificial Intelligence",
-    "h": "does it instead"
+    "h": "machine with arms"
    },
    {
     "w": "Smartphone",
     "d": "Tablet",
-    "h": "common daily object"
+    "h": "full of apps"
    },
    {
     "w": "Instagram",
     "d": "Snapchat",
-    "h": "only best moments"
+    "h": "likes under photos"
    },
    {
     "w": "TikTok",
     "d": "Viral Video",
-    "h": "one more clip"
+    "h": "copying a dance"
    },
    {
     "w": "Netflix",
     "d": "Disney Plus",
-    "h": "evening disappears"
+    "h": "movies at home"
    },
    {
     "w": "Google",
     "d": "Bing",
-    "h": "ask and answered"
+    "h": "typing a question"
    },
    {
     "w": "Meme",
     "d": "GIF",
-    "h": "passed around online"
+    "h": "joke everyone reposts"
    },
    {
     "w": "Charger",
     "d": "Power Bank",
-    "h": "kept in bags"
+    "h": "a tangled cable"
    },
    {
     "w": "Laptop",
     "d": "Desktop Computer",
-    "h": "work stuff"
+    "h": "gets hot working"
    },
    {
     "w": "Video Call",
     "d": "Voice Message",
-    "h": "chatting with screens"
+    "h": "faces on screen"
    },
    {
     "w": "Spotify",
     "d": "Radio",
-    "h": "something to hear"
+    "h": "shuffle and skip"
    },
    {
     "w": "Livestream",
     "d": "Vlog",
-    "h": "people tune in"
+    "h": "nothing is edited"
    },
    {
     "w": "Hashtag",
     "d": "Caption",
-    "h": "added under posts"
+    "h": "a clickable word"
    },
    {
     "w": "Influencer",
     "d": "Celebrity",
-    "h": "built on followers"
+    "h": "sent free stuff"
    },
    {
     "w": "Screenshot",
     "d": "Screen Recording",
-    "h": "saved for later"
+    "h": "sent as proof"
    },
    {
     "w": "Smartwatch",
     "d": "Fitness Tracker",
-    "h": "buzzes all day"
+    "h": "counts your steps"
    },
    {
     "w": "Keyboard",
     "d": "Mouse",
-    "h": "hands do work"
+    "h": "letters under fingers"
    },
    {
     "w": "Smart TV",
     "d": "Projector",
-    "h": "whole room watches"
+    "h": "living room screen"
    },
    {
     "w": "QR Code",
     "d": "Barcode",
-    "h": "there without typing"
+    "h": "scan to pay"
    },
    {
     "w": "Autocorrect",
     "d": "Spell Check",
-    "h": "it knows better"
+    "h": "picks wrong words"
    },
    {
     "w": "Touchscreen",
     "d": "Stylus Pen",
-    "h": "part of devices"
+    "h": "covered in fingerprints"
    },
    {
     "w": "Group Chat",
     "d": "Comment Section",
-    "h": "everyone at once"
+    "h": "endless unread messages"
    },
    {
     "w": "Wikipedia",
     "d": "Encyclopedia",
-    "h": "look it up"
+    "h": "written by strangers"
    },
    {
     "w": "Amazon",
     "d": "eBay",
-    "h": "tap then wait"
+    "h": "it arrives tomorrow"
    },
    {
     "w": "Siri",
     "d": "Alexa",
-    "h": "just ask aloud"
+    "h": "voice that answers"
    },
    {
     "w": "Email",
     "d": "Text Message",
-    "h": "something arrives"
+    "h": "attach a file"
    },
    {
     "w": "Ringtone",
     "d": "Vibration",
-    "h": "noise that interrupts"
+    "h": "everyone checks pockets"
    },
    {
     "w": "Printer",
     "d": "Scanner",
-    "h": "racket rarely used"
+    "h": "spits out pages"
    },
    {
     "w": "Gaming Console",
     "d": "Gaming PC",
-    "h": "friends come over"
+    "h": "controller in hand"
    },
    {
     "w": "Virtual Reality",
     "d": "Video Game",
-    "h": "newer than most"
+    "h": "covers your eyes"
    },
    {
     "w": "Chatbot",
     "d": "Search Engine",
-    "h": "nobody behind it"
+    "h": "it types back"
    },
    {
     "w": "Webcam",
     "d": "Headset",
-    "h": "seen from desk"
+    "h": "covered with tape"
    },
    {
     "w": "Router",
     "d": "Modem",
-    "h": "everything falls apart"
+    "h": "restart when slow"
    },
    {
     "w": "Spam",
     "d": "Pop-up Ad",
-    "h": "often ignored"
+    "h": "strangers offering money"
    },
    {
     "w": "Download",
     "d": "Upload",
-    "h": "takes a moment"
+    "h": "bar fills slowly"
    },
    {
     "w": "Airplane Mode",
     "d": "Do Not Disturb",
-    "h": "cut off deliberately"
+    "h": "nothing gets through"
    },
    {
     "w": "Dark Mode",
     "d": "Screen Brightness",
-    "h": "changed in settings"
+    "h": "screen turns black"
    },
    {
     "w": "Bluetooth",
     "d": "Hotspot",
-    "h": "connects things wirelessly"
+    "h": "finds nearby devices"
    },
    {
     "w": "Podcast",
     "d": "Audiobook",
-    "h": "listening while going"
+    "h": "listened while driving"
    },
    {
     "w": "Drone",
     "d": "Security Camera",
-    "h": "gadget people buy"
+    "h": "films from above"
    }
   ]
  }
