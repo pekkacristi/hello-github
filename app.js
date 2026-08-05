@@ -22,7 +22,7 @@ const AVATARS = ['😎', '🦊', '🐸', '🐼', '🦄', '🐯', '👽', '🤖',
 const PLAYER_COLORS = ['#ffd93d', '#5fe8df', '#b07df5', '#ff9d4d', '#ff7ad0', '#8ae05a', '#6cb2ff', '#ff6b6b', '#f5e15f', '#67f0b0', '#e08af5', '#ffb36b', '#8f9dff', '#7adfff', '#f58a8a', '#a4e86a', '#ffcf6b', '#6be8d2', '#d99cff', '#ff8fb3'];
 const MAX_PLAYERS = 20;
 // bump on every release; shown on the home screen so a stale cached page shows
-const BUILD = 'build 18';
+const BUILD = 'build 19';
 const pcolor = (i) => PLAYER_COLORS[i % PLAYER_COLORS.length];
 const STORAGE_KEY = 'imposterwho.v1';
 

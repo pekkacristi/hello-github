@@ -12,7 +12,7 @@ const WORD_PACKS = [
    {
     "w": "Sushi",
     "d": "Rice",
-    "h": "eaten with chopsticks"
+    "h": "comes with rice"
    },
    {
     "w": "Hamburger",
@@ -57,7 +57,7 @@ const WORD_PACKS = [
    {
     "w": "Orange Juice",
     "d": "Lemonade",
-    "h": "poured at breakfast"
+    "h": "sold in cartons"
    },
    {
     "w": "Popcorn",
@@ -67,7 +67,7 @@ const WORD_PACKS = [
    {
     "w": "Donut",
     "d": "Bagel",
-    "h": "covered in sprinkles"
+    "h": "from the bakery"
    },
    {
     "w": "Fried Chicken",
@@ -82,7 +82,7 @@ const WORD_PACKS = [
    {
     "w": "Smoothie",
     "d": "Milkshake",
-    "h": "blender and straw"
+    "h": "needs a straw"
    },
    {
     "w": "Cereal",
@@ -102,12 +102,12 @@ const WORD_PACKS = [
    {
     "w": "Hot Chocolate",
     "d": "Mocha",
-    "h": "warms your hands"
+    "h": "served in mugs"
    },
    {
     "w": "Watermelon",
     "d": "Cantaloupe",
-    "h": "full of seeds"
+    "h": "eaten in slices"
    },
    {
     "w": "Peanut Butter",
@@ -117,7 +117,7 @@ const WORD_PACKS = [
    {
     "w": "Salad",
     "d": "Coleslaw",
-    "h": "dressing on top"
+    "h": "green and leafy"
    },
    {
     "w": "Steak",
@@ -127,17 +127,17 @@ const WORD_PACKS = [
    {
     "w": "Dumplings",
     "d": "Ravioli",
-    "h": "dipped in soy"
+    "h": "folded and filled"
    },
    {
     "w": "Pad Thai",
     "d": "Fried Rice",
-    "h": "stir fried noodles"
+    "h": "noodles in sauce"
    },
    {
     "w": "Guacamole",
     "d": "Hummus",
-    "h": "scooped with chips"
+    "h": "goes with tacos"
    },
    {
     "w": "Bubble Tea",
@@ -147,7 +147,7 @@ const WORD_PACKS = [
    {
     "w": "Fish And Chips",
     "d": "Calamari",
-    "h": "a seaside meal"
+    "h": "wrapped in paper"
    },
    {
     "w": "Churros",
@@ -162,17 +162,17 @@ const WORD_PACKS = [
    {
     "w": "Falafel",
     "d": "Meatballs",
-    "h": "stuffed in pita"
+    "h": "round and fried"
    },
    {
     "w": "Tiramisu",
     "d": "Cheesecake",
-    "h": "dusted with cocoa"
+    "h": "made in layers"
    },
    {
     "w": "Paella",
     "d": "Risotto",
-    "h": "shrimp and rice"
+    "h": "one pan meal"
    },
    {
     "w": "Miso Soup",
@@ -197,7 +197,7 @@ const WORD_PACKS = [
    {
     "w": "Sandwich",
     "d": "Wrap",
-    "h": "lunchbox"
+    "h": "cut in triangles"
    },
    {
     "w": "Baguette",
@@ -227,7 +227,7 @@ const WORD_PACKS = [
    {
     "w": "Waffles",
     "d": "French Toast",
-    "h": "made from batter"
+    "h": "topped with syrup"
    }
   ]
  },
@@ -238,7 +238,7 @@ const WORD_PACKS = [
    {
     "w": "Lion",
     "d": "Tiger",
-    "h": "hunts with family"
+    "h": "naps all day"
    },
    {
     "w": "Elephant",
@@ -298,7 +298,7 @@ const WORD_PACKS = [
    {
     "w": "Gorilla",
     "d": "Chimpanzee",
-    "h": "beats its chest"
+    "h": "eats mostly leaves"
    },
    {
     "w": "Zebra",
@@ -308,7 +308,7 @@ const WORD_PACKS = [
    {
     "w": "Hippopotamus",
     "d": "Rhinoceros",
-    "h": "stays in rivers"
+    "h": "huge and gray"
    },
    {
     "w": "Panda",
@@ -318,7 +318,7 @@ const WORD_PACKS = [
    {
     "w": "Rabbit",
     "d": "Hare",
-    "h": "a soft pet"
+    "h": "digs deep tunnels"
    },
    {
     "w": "Owl",
@@ -348,7 +348,7 @@ const WORD_PACKS = [
    {
     "w": "Fox",
     "d": "Deer",
-    "h": "a wild dog"
+    "h": "a bushy tail"
    },
    {
     "w": "Bear",
@@ -358,22 +358,22 @@ const WORD_PACKS = [
    {
     "w": "Monkey",
     "d": "Lemur",
-    "h": "plays in treetops"
+    "h": "steals your snacks"
    },
    {
     "w": "Whale",
     "d": "Orca",
-    "h": "sings underwater"
+    "h": "swims in pods"
    },
    {
     "w": "Parrot",
     "d": "Toucan",
-    "h": "kept in cages"
+    "h": "cracks nuts open"
    },
    {
     "w": "Peacock",
     "d": "Rooster",
-    "h": "struts around yards"
+    "h": "has blue feathers"
    },
    {
     "w": "Flamingo",
@@ -393,17 +393,17 @@ const WORD_PACKS = [
    {
     "w": "Otter",
     "d": "Beaver",
-    "h": "floats belly up"
+    "h": "loves to slide"
    },
    {
     "w": "Seal",
     "d": "Walrus",
-    "h": "naps on rocks"
+    "h": "loves cold water"
    },
    {
     "w": "Cow",
     "d": "Goat",
-    "h": "kept in herds"
+    "h": "grazes on hills"
    },
    {
     "w": "Llama",
@@ -423,7 +423,7 @@ const WORD_PACKS = [
    {
     "w": "Lobster",
     "d": "Crab",
-    "h": "big front claws"
+    "h": "walks the seafloor"
    },
    {
     "w": "Sloth",
@@ -458,7 +458,7 @@ const WORD_PACKS = [
    {
     "w": "Swan",
     "d": "Goose",
-    "h": "glides on ponds"
+    "h": "a long neck"
    }
   ]
  },
@@ -474,7 +474,7 @@ const WORD_PACKS = [
    {
     "w": "Batman",
     "d": "Iron Man",
-    "h": "wears a cape"
+    "h": "lots of gadgets"
    },
    {
     "w": "Friends",
@@ -494,7 +494,7 @@ const WORD_PACKS = [
    {
     "w": "Spider-Man",
     "d": "Ant-Man",
-    "h": "swings up high"
+    "h": "a secret identity"
    },
    {
     "w": "Star Wars",
@@ -514,7 +514,7 @@ const WORD_PACKS = [
    {
     "w": "Shrek",
     "d": "Kung Fu Panda",
-    "h": "a talking donkey"
+    "h": "rescues a princess"
    },
    {
     "w": "Jurassic Park",
@@ -534,22 +534,22 @@ const WORD_PACKS = [
    {
     "w": "SpongeBob",
     "d": "Phineas And Ferb",
-    "h": "flips burgers"
+    "h": "under the sea"
    },
    {
     "w": "The Avengers",
     "d": "Justice League",
-    "h": "shield and hammer"
+    "h": "saves the city"
    },
    {
     "w": "Pirates Of The Caribbean",
     "d": "Indiana Jones",
-    "h": "cursed skeleton crew"
+    "h": "a treasure map"
    },
    {
     "w": "The Simpsons",
     "d": "Family Guy",
-    "h": "everyone is yellow"
+    "h": "never grows up"
    },
    {
     "w": "Avatar",
@@ -579,7 +579,7 @@ const WORD_PACKS = [
    {
     "w": "Squid Game",
     "d": "Money Heist",
-    "h": "players get eliminated"
+    "h": "a deadly contest"
    },
    {
     "w": "The Office",
@@ -644,7 +644,7 @@ const WORD_PACKS = [
    {
     "w": "The Matrix",
     "d": "Inception",
-    "h": "wears dark sunglasses"
+    "h": "a fake world"
    },
    {
     "w": "Scooby-Doo",
@@ -659,7 +659,7 @@ const WORD_PACKS = [
    {
     "w": "Ice Age",
     "d": "Rio",
-    "h": "snow everywhere"
+    "h": "world turns cold"
    },
    {
     "w": "Godzilla",
@@ -669,7 +669,7 @@ const WORD_PACKS = [
    {
     "w": "The Incredibles",
     "d": "Fantastic Four",
-    "h": "a hero team"
+    "h": "powers kept hidden"
    },
    {
     "w": "Encanto",
@@ -679,7 +679,7 @@ const WORD_PACKS = [
    {
     "w": "Mr. Bean",
     "d": "Tom And Jerry",
-    "h": "hardly ever talks"
+    "h": "a teddy bear"
    },
    {
     "w": "Jaws",
@@ -730,7 +730,7 @@ const WORD_PACKS = [
    {
     "w": "Saxophone",
     "d": "Oboe",
-    "h": "jazz club nights"
+    "h": "uses a reed"
    },
    {
     "w": "Harp",
@@ -800,7 +800,7 @@ const WORD_PACKS = [
    {
     "w": "Hip Hop",
     "d": "R&B",
-    "h": "born on streets"
+    "h": "lots of bass"
    },
    {
     "w": "Country",
@@ -931,17 +931,17 @@ const WORD_PACKS = [
    {
     "w": "Soccer",
     "d": "Futsal",
-    "h": "a grassy field"
+    "h": "a halftime break"
    },
    {
     "w": "Basketball",
     "d": "Handball",
-    "h": "shooting into nets"
+    "h": "played on courts"
    },
    {
     "w": "Tennis",
     "d": "Badminton",
-    "h": "served over nets"
+    "h": "played on grass"
    },
    {
     "w": "Baseball",
@@ -961,7 +961,7 @@ const WORD_PACKS = [
    {
     "w": "Marathon",
     "d": "Triathlon",
-    "h": "closes city streets"
+    "h": "a finish line"
    },
    {
     "w": "Ice Hockey",
@@ -971,12 +971,12 @@ const WORD_PACKS = [
    {
     "w": "Skiing",
     "d": "Snowboarding",
-    "h": "on snowy mountains"
+    "h": "sliding down hills"
    },
    {
     "w": "Skateboarding",
     "d": "Rollerblading",
-    "h": "rolling on sidewalks"
+    "h": "a half pipe"
    },
    {
     "w": "Gymnastics",
@@ -1021,7 +1021,7 @@ const WORD_PACKS = [
    {
     "w": "Fencing",
     "d": "Kickboxing",
-    "h": "masks over faces"
+    "h": "fancy footwork"
    },
    {
     "w": "Rock Climbing",
@@ -1041,7 +1041,7 @@ const WORD_PACKS = [
    {
     "w": "Weightlifting",
     "d": "Shot Put",
-    "h": "strongest"
+    "h": "very big muscles"
    },
    {
     "w": "Sprinting",
@@ -1106,7 +1106,7 @@ const WORD_PACKS = [
    {
     "w": "Sailing",
     "d": "Canoeing",
-    "h": "moved by wind"
+    "h": "a small boat"
    },
    {
     "w": "Scuba Diving",
@@ -1136,12 +1136,12 @@ const WORD_PACKS = [
    {
     "w": "Golf",
     "d": "Croquet",
-    "h": "crowds stay quiet"
+    "h": "aiming at targets"
    },
    {
     "w": "Kung Fu",
     "d": "Tai Chi",
-    "h": "practiced by monks"
+    "h": "punching and blocking"
    },
    {
     "w": "Badminton",
@@ -1202,7 +1202,7 @@ const WORD_PACKS = [
    {
     "w": "Grand Canyon",
     "d": "Niagara Falls",
-    "h": "a deep drop"
+    "h": "hear your echo"
    },
    {
     "w": "Campsite",
@@ -1212,7 +1212,7 @@ const WORD_PACKS = [
    {
     "w": "Subway",
     "d": "Tram",
-    "h": "rush hour"
+    "h": "standing room only"
    },
    {
     "w": "Venice",
@@ -1252,7 +1252,7 @@ const WORD_PACKS = [
    {
     "w": "Hawaii",
     "d": "Bali",
-    "h": "palm trees, waves"
+    "h": "a sunny state"
    },
    {
     "w": "Museum",
@@ -1287,12 +1287,12 @@ const WORD_PACKS = [
    {
     "w": "Iceland",
     "d": "Greenland",
-    "h": "long dark winters"
+    "h": "snow in summer"
    },
    {
     "w": "Souvenir Shop",
     "d": "Duty Free",
-    "h": "spend spare change"
+    "h": "crowded with tourists"
    },
    {
     "w": "Cable Car",
@@ -1322,12 +1322,12 @@ const WORD_PACKS = [
    {
     "w": "Statue Of Liberty",
     "d": "Eiffel Tower",
-    "h": "a huge monument"
+    "h": "wears a crown"
    },
    {
     "w": "Zoo",
     "d": "Aquarium",
-    "h": "animals and fences"
+    "h": "smells like hay"
    },
    {
     "w": "Camel Ride",
@@ -1337,7 +1337,7 @@ const WORD_PACKS = [
    {
     "w": "Rental Car",
     "d": "Motorbike",
-    "h": "borrow it, drive"
+    "h": "return it later"
    },
    {
     "w": "Hot Air Balloon",
@@ -1367,12 +1367,12 @@ const WORD_PACKS = [
    {
     "w": "Snorkeling",
     "d": "Scuba Diving",
-    "h": "face in water"
+    "h": "colorful fish nearby"
    },
    {
     "w": "Bullet Train",
     "d": "Double Decker Bus",
-    "h": "faster than cars"
+    "h": "famous in Japan"
    },
    {
     "w": "Zip Line",
@@ -1423,7 +1423,7 @@ const WORD_PACKS = [
    {
     "w": "Dentist",
     "d": "Surgeon",
-    "h": "wears rubber gloves"
+    "h": "a white coat"
    },
    {
     "w": "Farmer",
@@ -1438,7 +1438,7 @@ const WORD_PACKS = [
    {
     "w": "Astronaut",
     "d": "Fighter Pilot",
-    "h": "floating, no gravity"
+    "h": "wears a helmet"
    },
    {
     "w": "Actor",
@@ -1518,7 +1518,7 @@ const WORD_PACKS = [
    {
     "w": "Soldier",
     "d": "Bodyguard",
-    "h": "sleeps in bunks"
+    "h": "wears a uniform"
    },
    {
     "w": "Fisherman",
@@ -1533,7 +1533,7 @@ const WORD_PACKS = [
    {
     "w": "Magician",
     "d": "Clown",
-    "h": "performs at parties"
+    "h": "keeps big secrets"
    },
    {
     "w": "Referee",
@@ -1553,7 +1553,7 @@ const WORD_PACKS = [
    {
     "w": "Tailor",
     "d": "Fashion Designer",
-    "h": "works with fabric"
+    "h": "uses sharp scissors"
    },
    {
     "w": "Butcher",
@@ -1568,7 +1568,7 @@ const WORD_PACKS = [
    {
     "w": "Accountant",
     "d": "Banker",
-    "h": "checks the math"
+    "h": "suit and tie"
    },
    {
     "w": "Programmer",
@@ -1603,7 +1603,7 @@ const WORD_PACKS = [
    {
     "w": "Detective",
     "d": "Spy",
-    "h": "waits and watches"
+    "h": "takes sneaky photos"
    },
    {
     "w": "Astronomer",
@@ -1613,7 +1613,7 @@ const WORD_PACKS = [
    {
     "w": "Electrician",
     "d": "Handyman",
-    "h": "fixes the lights"
+    "h": "a heavy toolbox"
    }
   ]
  },
@@ -1659,7 +1659,7 @@ const WORD_PACKS = [
    {
     "w": "Clock",
     "d": "Wristwatch",
-    "h": "hands that tick"
+    "h": "hangs on walls"
    },
    {
     "w": "Spoon",
@@ -1689,17 +1689,17 @@ const WORD_PACKS = [
    {
     "w": "Comb",
     "d": "Razor",
-    "h": "has little teeth"
+    "h": "fits in pockets"
    },
    {
     "w": "Towel",
     "d": "Bathrobe",
-    "h": "seen at pools"
+    "h": "hangs on hooks"
    },
    {
     "w": "Refrigerator",
     "d": "Freezer",
-    "h": "hums all day"
+    "h": "has shelves inside"
    },
    {
     "w": "Microwave",
@@ -1724,7 +1724,7 @@ const WORD_PACKS = [
    {
     "w": "Chair",
     "d": "Sofa",
-    "h": "has four legs"
+    "h": "seen in classrooms"
    },
    {
     "w": "Table",
@@ -1734,12 +1734,12 @@ const WORD_PACKS = [
    {
     "w": "Curtains",
     "d": "Blinds",
-    "h": "opened each morning"
+    "h": "sways in breeze"
    },
    {
     "w": "Doormat",
     "d": "Rug",
-    "h": "stepped on daily"
+    "h": "lies on floors"
    },
    {
     "w": "Hanger",
@@ -1749,12 +1749,12 @@ const WORD_PACKS = [
    {
     "w": "Iron",
     "d": "Steamer",
-    "h": "used on laundry"
+    "h": "gets very hot"
    },
    {
     "w": "Bucket",
     "d": "Watering Can",
-    "h": "holds soapy water"
+    "h": "has a handle"
    },
    {
     "w": "Envelope",
@@ -1794,7 +1794,7 @@ const WORD_PACKS = [
    {
     "w": "Mug",
     "d": "Teacup",
-    "h": "holds hot drinks"
+    "h": "kept in cupboards"
    },
    {
     "w": "Calendar",
@@ -1809,7 +1809,7 @@ const WORD_PACKS = [
    {
     "w": "Toothpaste",
     "d": "Mouthwash",
-    "h": "tastes like mint"
+    "h": "found near sinks"
    },
    {
     "w": "Thermos",
@@ -1824,7 +1824,7 @@ const WORD_PACKS = [
    {
     "w": "Blanket",
     "d": "Bedsheet",
-    "h": "makes a fort"
+    "h": "found on beds"
    },
    {
     "w": "Toaster",
@@ -1834,7 +1834,7 @@ const WORD_PACKS = [
    {
     "w": "Flashlight",
     "d": "Light Switch",
-    "h": "used in blackouts"
+    "h": "runs on batteries"
    },
    {
     "w": "Hammer",
@@ -1844,7 +1844,7 @@ const WORD_PACKS = [
    {
     "w": "Napkin",
     "d": "Toilet Paper",
-    "h": "wipe your mouth"
+    "h": "beside your plate"
    }
   ]
  },
@@ -1885,7 +1885,7 @@ const WORD_PACKS = [
    {
     "w": "Michael Phelps",
     "d": "Usain Bolt",
-    "h": "won Olympic medals"
+    "h": "won many races"
    },
    {
     "w": "Barack Obama",
@@ -1905,12 +1905,12 @@ const WORD_PACKS = [
    {
     "w": "Serena Williams",
     "d": "Venus Williams",
-    "h": "plays on courts"
+    "h": "wears bold outfits"
    },
    {
     "w": "Usain Bolt",
     "d": "Jesse Owens",
-    "h": "from Jamaica"
+    "h": "won gold medals"
    },
    {
     "w": "Muhammad Ali",
@@ -1920,7 +1920,7 @@ const WORD_PACKS = [
    {
     "w": "Nelson Mandela",
     "d": "Mahatma Gandhi",
-    "h": "fought for rights"
+    "h": "became a president"
    },
    {
     "w": "Marilyn Monroe",
@@ -1930,12 +1930,12 @@ const WORD_PACKS = [
    {
     "w": "Charlie Chaplin",
     "d": "Mr. Bean",
-    "h": "tiny black mustache"
+    "h": "made people laugh"
    },
    {
     "w": "Walt Disney",
     "d": "Steven Spielberg",
-    "h": "told kids stories"
+    "h": "won many Oscars"
    },
    {
     "w": "Leonardo DiCaprio",
@@ -1945,7 +1945,7 @@ const WORD_PACKS = [
    {
     "w": "Tom Cruise",
     "d": "Tom Hanks",
-    "h": "does own stunts"
+    "h": "a short actor"
    },
    {
     "w": "Dwayne Johnson",
@@ -1955,7 +1955,7 @@ const WORD_PACKS = [
    {
     "w": "Jackie Chan",
     "d": "Bruce Lee",
-    "h": "fights in films"
+    "h": "knows martial arts"
    },
    {
     "w": "Emma Watson",
@@ -1975,7 +1975,7 @@ const WORD_PACKS = [
    {
     "w": "Ed Sheeran",
     "d": "Justin Bieber",
-    "h": "sings love songs"
+    "h": "fills big stadiums"
    },
    {
     "w": "Adele",
@@ -1995,7 +1995,7 @@ const WORD_PACKS = [
    {
     "w": "Freddie Mercury",
     "d": "David Bowie",
-    "h": "sang about champions"
+    "h": "grew a mustache"
    },
    {
     "w": "Bob Marley",
@@ -2015,7 +2015,7 @@ const WORD_PACKS = [
    {
     "w": "Marie Curie",
     "d": "Louis Pasteur",
-    "h": "did lab experiments"
+    "h": "worked in Paris"
    },
    {
     "w": "Stephen Hawking",
@@ -2025,7 +2025,7 @@ const WORD_PACKS = [
    {
     "w": "Neil Armstrong",
     "d": "Buzz Aldrin",
-    "h": "explored new places"
+    "h": "was a pilot"
    },
    {
     "w": "Mark Zuckerberg",
@@ -2045,22 +2045,22 @@ const WORD_PACKS = [
    {
     "w": "Roger Federer",
     "d": "Rafael Nadal",
-    "h": "holds a racket"
+    "h": "played till forty"
    },
    {
     "w": "Frida Kahlo",
     "d": "Salvador Dali",
-    "h": "paints herself often"
+    "h": "painted many flowers"
    },
    {
     "w": "Cristiano Ronaldo",
     "d": "Neymar",
-    "h": "played in Spain"
+    "h": "always at gym"
    },
    {
     "w": "LeBron James",
     "d": "Stephen Curry",
-    "h": "dribbles a ball"
+    "h": "called the king"
    },
    {
     "w": "Steve Jobs",
@@ -2070,7 +2070,7 @@ const WORD_PACKS = [
    {
     "w": "Isaac Newton",
     "d": "Galileo Galilei",
-    "h": "from old England"
+    "h": "studied the stars"
    },
    {
     "w": "Charles Darwin",
@@ -2086,7 +2086,7 @@ const WORD_PACKS = [
    {
     "w": "Minecraft",
     "d": "Roblox",
-    "h": "building with blocks"
+    "h": "survive the night"
    },
    {
     "w": "Mario",
@@ -2106,12 +2106,12 @@ const WORD_PACKS = [
    {
     "w": "Tetris",
     "d": "Candy Crush",
-    "h": "stacking things up"
+    "h": "made of blocks"
    },
    {
     "w": "Pokemon",
     "d": "Digimon",
-    "h": "kids collect them"
+    "h": "raising little pets"
    },
    {
     "w": "Sonic",
@@ -2141,7 +2141,7 @@ const WORD_PACKS = [
    {
     "w": "Call of Duty",
     "d": "Battlefield",
-    "h": "soldiers in battle"
+    "h": "capture the flag"
    },
    {
     "w": "Animal Crossing",
@@ -2171,7 +2171,7 @@ const WORD_PACKS = [
    {
     "w": "Nintendo Switch",
     "d": "Game Boy",
-    "h": "screen you carry"
+    "h": "red and blue"
    },
    {
     "w": "Donkey Kong",
@@ -2191,7 +2191,7 @@ const WORD_PACKS = [
    {
     "w": "Overwatch",
     "d": "Counter-Strike",
-    "h": "heroes team up"
+    "h": "pick your character"
    },
    {
     "w": "League of Legends",
@@ -2236,7 +2236,7 @@ const WORD_PACKS = [
    {
     "w": "Subway Surfers",
     "d": "Temple Run",
-    "h": "never stop running"
+    "h": "chased while running"
    },
    {
     "w": "Kirby",
@@ -2251,7 +2251,7 @@ const WORD_PACKS = [
    {
     "w": "Fruit Ninja",
     "d": "Temple Run",
-    "h": "chopping things fast"
+    "h": "avoid the bombs"
    },
    {
     "w": "Flappy Bird",
@@ -2271,17 +2271,17 @@ const WORD_PACKS = [
    {
     "w": "Plants vs Zombies",
     "d": "Whack-A-Mole",
-    "h": "keeping pests out"
+    "h": "waves keep coming"
    },
    {
     "w": "Pinball",
     "d": "Air Hockey",
-    "h": "old flashing machine"
+    "h": "keep it bouncing"
    },
    {
     "w": "Just Dance",
     "d": "Guitar Hero",
-    "h": "copy the moves"
+    "h": "follow the leader"
    },
    {
     "w": "Bowser",
@@ -2291,7 +2291,7 @@ const WORD_PACKS = [
    {
     "w": "Joystick",
     "d": "Console",
-    "h": "arcade hand control"
+    "h": "wiggle to steer"
    },
    {
     "w": "Arcade",
@@ -2317,7 +2317,7 @@ const WORD_PACKS = [
    {
     "w": "Volcano",
     "d": "Geyser",
-    "h": "smoke comes out"
+    "h": "gets very hot"
    },
    {
     "w": "Camping",
@@ -2332,12 +2332,12 @@ const WORD_PACKS = [
    {
     "w": "Desert",
     "d": "Savanna",
-    "h": "hot endless sand"
+    "h": "hard to cross"
    },
    {
     "w": "Mountain",
     "d": "Hill",
-    "h": "hard to climb"
+    "h": "echoes bounce around"
    },
    {
     "w": "Beach",
@@ -2347,12 +2347,12 @@ const WORD_PACKS = [
    {
     "w": "River",
     "d": "Stream",
-    "h": "boats travel it"
+    "h": "fish live there"
    },
    {
     "w": "Lake",
     "d": "Pond",
-    "h": "calm blue water"
+    "h": "people swim there"
    },
    {
     "w": "Ocean",
@@ -2362,7 +2362,7 @@ const WORD_PACKS = [
    {
     "w": "Cave",
     "d": "Canyon",
-    "h": "dark inside"
+    "h": "cool in summer"
    },
    {
     "w": "Glacier",
@@ -2387,7 +2387,7 @@ const WORD_PACKS = [
    {
     "w": "Cliff",
     "d": "Ridge",
-    "h": "steep and rocky"
+    "h": "birds nest there"
    },
    {
     "w": "Sand Dune",
@@ -2397,7 +2397,7 @@ const WORD_PACKS = [
    {
     "w": "Coral Reef",
     "d": "Seaweed",
-    "h": "under the sea"
+    "h": "full of color"
    },
    {
     "w": "Swamp",
@@ -2417,7 +2417,7 @@ const WORD_PACKS = [
    {
     "w": "Rainbow",
     "d": "Lightning",
-    "h": "many bright colors"
+    "h": "kids draw it"
    },
    {
     "w": "Sunset",
@@ -2437,7 +2437,7 @@ const WORD_PACKS = [
    {
     "w": "Fishing",
     "d": "Kayaking",
-    "h": "done from boats"
+    "h": "starts before dawn"
    },
    {
     "w": "Picnic",
@@ -2447,12 +2447,12 @@ const WORD_PACKS = [
    {
     "w": "Sunflower",
     "d": "Rose Bush",
-    "h": "tall yellow petals"
+    "h": "taller than you"
    },
    {
     "w": "National Park",
     "d": "Botanical Garden",
-    "h": "full of trails"
+    "h": "needs a ticket"
    },
    {
     "w": "Earthquake",
@@ -2462,7 +2462,7 @@ const WORD_PACKS = [
    {
     "w": "Avalanche",
     "d": "Flood",
-    "h": "slides downhill fast"
+    "h": "comes without warning"
    },
    {
     "w": "Valley",
@@ -2497,7 +2497,7 @@ const WORD_PACKS = [
    {
     "w": "Oak Tree",
     "d": "Pine Tree",
-    "h": "drops its leaves"
+    "h": "older than grandpa"
    },
    {
     "w": "Wildflower",
@@ -2532,7 +2532,7 @@ const WORD_PACKS = [
    {
     "w": "Northern Lights",
     "d": "Shooting Star",
-    "h": "seen in Alaska"
+    "h": "worth staying up"
    },
    {
     "w": "Hammock",
@@ -2583,7 +2583,7 @@ const WORD_PACKS = [
    {
     "w": "Test Tube",
     "d": "Beaker",
-    "h": "stored in racks"
+    "h": "made of glass"
    },
    {
     "w": "Bunsen Burner",
@@ -2593,7 +2593,7 @@ const WORD_PACKS = [
    {
     "w": "Periodic Table",
     "d": "Multiplication Table",
-    "h": "colored wall chart"
+    "h": "full of squares"
    },
    {
     "w": "Calculator",
@@ -2618,12 +2618,12 @@ const WORD_PACKS = [
    {
     "w": "Library",
     "d": "Classroom",
-    "h": "a quiet building"
+    "h": "sorted by alphabet"
    },
    {
     "w": "Telescope",
     "d": "Microscope",
-    "h": "pointed at Saturn"
+    "h": "used at night"
    },
    {
     "w": "Report Card",
@@ -2633,12 +2633,12 @@ const WORD_PACKS = [
    {
     "w": "Field Trip",
     "d": "School Assembly",
-    "h": "a guided tour"
+    "h": "everyone rides together"
    },
    {
     "w": "Dinosaur Fossil",
     "d": "Seashell",
-    "h": "found by digging"
+    "h": "shown in museums"
    },
    {
     "w": "DNA",
@@ -2648,7 +2648,7 @@ const WORD_PACKS = [
    {
     "w": "Atom",
     "d": "Molecule",
-    "h": "splitting makes energy"
+    "h": "cannot be seen"
    },
    {
     "w": "Electron",
@@ -2663,7 +2663,7 @@ const WORD_PACKS = [
    {
     "w": "Skeleton",
     "d": "Brain",
-    "h": "inside your body"
+    "h": "seen every Halloween"
    },
    {
     "w": "Magnet",
@@ -2673,12 +2673,12 @@ const WORD_PACKS = [
    {
     "w": "Lab Coat",
     "d": "Safety Goggles",
-    "h": "protects from spills"
+    "h": "usually bright white"
    },
    {
     "w": "Notebook",
     "d": "Textbook",
-    "h": "full of paper"
+    "h": "fits in backpacks"
    },
    {
     "w": "Detention",
@@ -2713,17 +2713,17 @@ const WORD_PACKS = [
    {
     "w": "Magnifying Glass",
     "d": "Binoculars",
-    "h": "has one lens"
+    "h": "has a handle"
    },
    {
     "w": "Frog Dissection",
     "d": "Plant Experiment",
-    "h": "sharp tools, gloves"
+    "h": "makes people queasy"
    },
    {
     "w": "Solar Eclipse",
     "d": "Full Moon",
-    "h": "everyone looks up"
+    "h": "blocks the light"
    },
    {
     "w": "Thermometer",
@@ -2738,7 +2738,7 @@ const WORD_PACKS = [
    {
     "w": "School Bus",
     "d": "Bicycle",
-    "h": "a long vehicle"
+    "h": "painted bright yellow"
    },
    {
     "w": "Solar System",
@@ -2794,7 +2794,7 @@ const WORD_PACKS = [
    {
     "w": "Medusa",
     "d": "Hydra",
-    "h": "never look directly"
+    "h": "had two sisters"
    },
    {
     "w": "Julius Caesar",
@@ -2809,7 +2809,7 @@ const WORD_PACKS = [
    {
     "w": "Thor",
     "d": "Hercules",
-    "h": "swings a hammer"
+    "h": "famously strong"
    },
    {
     "w": "Great Wall",
@@ -2844,7 +2844,7 @@ const WORD_PACKS = [
    {
     "w": "Dragon",
     "d": "Griffin",
-    "h": "covered in scales"
+    "h": "has huge wings"
    },
    {
     "w": "Unicorn",
@@ -2884,7 +2884,7 @@ const WORD_PACKS = [
    {
     "w": "Odin",
     "d": "Jupiter",
-    "h": "one eye, beard"
+    "h": "rules the gods"
    },
    {
     "w": "Loki",
@@ -2924,7 +2924,7 @@ const WORD_PACKS = [
    {
     "w": "Printing Press",
     "d": "Typewriter",
-    "h": "makes many copies"
+    "h": "spread news fast"
    },
    {
     "w": "Silk Road",
@@ -2949,17 +2949,17 @@ const WORD_PACKS = [
    {
     "w": "Genie",
     "d": "Fairy",
-    "h": "found in bottles"
+    "h": "escapes tight spaces"
    },
    {
     "w": "Crown",
     "d": "Throne",
-    "h": "worn on head"
+    "h": "made of gold"
    },
    {
     "w": "Marco Polo",
     "d": "Christopher Columbus",
-    "h": "explored far lands"
+    "h": "traveled for years"
    },
    {
     "w": "Joan Of Arc",
@@ -2984,7 +2984,7 @@ const WORD_PACKS = [
    {
     "w": "Centaur",
     "d": "Elf",
-    "h": "man with hooves"
+    "h": "good with arrows"
    },
    {
     "w": "Chariot",
@@ -2994,7 +2994,7 @@ const WORD_PACKS = [
    {
     "w": "Moon Landing",
     "d": "First Flight",
-    "h": "millions watched live"
+    "h": "a famous countdown"
    },
    {
     "w": "Confucius",
@@ -3015,12 +3015,12 @@ const WORD_PACKS = [
    {
     "w": "Darth Vader",
     "d": "Kylo Ren",
-    "h": "helmet, glowing sword"
+    "h": "a black cape"
    },
    {
     "w": "Elsa",
     "d": "Rapunzel",
-    "h": "has a sister"
+    "h": "a long braid"
    },
    {
     "w": "Sherlock Holmes",
@@ -3035,7 +3035,7 @@ const WORD_PACKS = [
    {
     "w": "Buzz Lightyear",
     "d": "Iron Man",
-    "h": "travels in space"
+    "h": "belongs to Andy"
    },
    {
     "w": "Winnie the Pooh",
@@ -3045,7 +3045,7 @@ const WORD_PACKS = [
    {
     "w": "Gandalf",
     "d": "Dumbledore",
-    "h": "an old wizard"
+    "h": "a long beard"
    },
    {
     "w": "Simba",
@@ -3070,7 +3070,7 @@ const WORD_PACKS = [
    {
     "w": "Yoda",
     "d": "Gollum",
-    "h": "a wise teacher"
+    "h": "has pointy ears"
    },
    {
     "w": "Peter Pan",
@@ -3080,7 +3080,7 @@ const WORD_PACKS = [
    {
     "w": "Wonder Woman",
     "d": "Captain Marvel",
-    "h": "a warrior princess"
+    "h": "carries a shield"
    },
    {
     "w": "Joker",
@@ -3130,7 +3130,7 @@ const WORD_PACKS = [
    {
     "w": "Optimus Prime",
     "d": "Wall-E",
-    "h": "a giant robot"
+    "h": "can change shape"
    },
    {
     "w": "Groot",
@@ -3140,12 +3140,12 @@ const WORD_PACKS = [
    {
     "w": "Maleficent",
     "d": "Ursula",
-    "h": "an evil witch"
+    "h": "has big horns"
    },
    {
     "w": "Santa Claus",
     "d": "Tooth Fairy",
-    "h": "brings gifts secretly"
+    "h": "flies at night"
    },
    {
     "w": "Dracula",
@@ -3155,7 +3155,7 @@ const WORD_PACKS = [
    {
     "w": "Thanos",
     "d": "Green Goblin",
-    "h": "big and purple"
+    "h": "comes from space"
    },
    {
     "w": "Mowgli",
@@ -3200,7 +3200,7 @@ const WORD_PACKS = [
    {
     "w": "Puss In Boots",
     "d": "Shrek",
-    "h": "a clever cat"
+    "h": "carries a sword"
    },
    {
     "w": "Snow White",
@@ -3225,7 +3225,7 @@ const WORD_PACKS = [
    {
     "w": "Hermione Granger",
     "d": "Ron Weasley",
-    "h": "smart girl, wand"
+    "h": "loves reading books"
    },
    {
     "w": "Gollum",
@@ -3286,7 +3286,7 @@ const WORD_PACKS = [
    {
     "w": "China",
     "d": "Vietnam",
-    "h": "ruled by emperors"
+    "h": "has fast trains"
    },
    {
     "w": "Germany",
@@ -3301,7 +3301,7 @@ const WORD_PACKS = [
    {
     "w": "Las Vegas",
     "d": "Monaco",
-    "h": "lights all night"
+    "h": "in the desert"
    },
    {
     "w": "Singapore",
@@ -3321,7 +3321,7 @@ const WORD_PACKS = [
    {
     "w": "Switzerland",
     "d": "Nepal",
-    "h": "high snowy peaks"
+    "h": "makes great cheese"
    },
    {
     "w": "Ireland",
@@ -3396,7 +3396,7 @@ const WORD_PACKS = [
    {
     "w": "Finland",
     "d": "Denmark",
-    "h": "long dark winters"
+    "h": "loves ice hockey"
    },
    {
     "w": "Cape Town",
@@ -3431,7 +3431,7 @@ const WORD_PACKS = [
    {
     "w": "Norway",
     "d": "Sweden",
-    "h": "cold sea cliffs"
+    "h": "rich from oil"
    },
    {
     "w": "Vietnam",
@@ -3507,12 +3507,12 @@ const WORD_PACKS = [
    {
     "w": "Instagram",
     "d": "Snapchat",
-    "h": "scrolling a feed"
+    "h": "stories that vanish"
    },
    {
     "w": "TikTok",
     "d": "Viral Video",
-    "h": "clips go viral"
+    "h": "watch endless videos"
    },
    {
     "w": "Netflix",
@@ -3532,12 +3532,12 @@ const WORD_PACKS = [
    {
     "w": "Charger",
     "d": "Power Bank",
-    "h": "plugs into walls"
+    "h": "cord gets tangled"
    },
    {
     "w": "Laptop",
     "d": "Desktop Computer",
-    "h": "folds open"
+    "h": "carried to school"
    },
    {
     "w": "Video Call",
@@ -3547,7 +3547,7 @@ const WORD_PACKS = [
    {
     "w": "Spotify",
     "d": "Radio",
-    "h": "shuffle and skip"
+    "h": "plays while jogging"
    },
    {
     "w": "Livestream",
@@ -3602,12 +3602,12 @@ const WORD_PACKS = [
    {
     "w": "Group Chat",
     "d": "Comment Section",
-    "h": "everyone texting together"
+    "h": "phones buzz nonstop"
    },
    {
     "w": "Wikipedia",
     "d": "Encyclopedia",
-    "h": "look up facts"
+    "h": "used for homework"
    },
    {
     "w": "Amazon",
@@ -3617,7 +3617,7 @@ const WORD_PACKS = [
    {
     "w": "Siri",
     "d": "Alexa",
-    "h": "voice that answers"
+    "h": "sets your timers"
    },
    {
     "w": "Email",
@@ -3627,7 +3627,7 @@ const WORD_PACKS = [
    {
     "w": "Ringtone",
     "d": "Vibration",
-    "h": "phone makes noise"
+    "h": "interrupts the movie"
    },
    {
     "w": "Printer",
@@ -3642,7 +3642,7 @@ const WORD_PACKS = [
    {
     "w": "Virtual Reality",
     "d": "Video Game",
-    "h": "a pretend world"
+    "h": "worn over eyes"
    },
    {
     "w": "Chatbot",
@@ -3652,7 +3652,7 @@ const WORD_PACKS = [
    {
     "w": "Webcam",
     "d": "Headset",
-    "h": "records your face"
+    "h": "used in meetings"
    },
    {
     "w": "Router",
@@ -3667,7 +3667,7 @@ const WORD_PACKS = [
    {
     "w": "Download",
     "d": "Upload",
-    "h": "bar fills slowly"
+    "h": "slowly reaches hundred"
    },
    {
     "w": "Airplane Mode",
@@ -3682,7 +3682,7 @@ const WORD_PACKS = [
    {
     "w": "Bluetooth",
     "d": "Hotspot",
-    "h": "connects without wires"
+    "h": "beams between phones"
    },
    {
     "w": "Podcast",
