@@ -31,7 +31,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Ice Cream",
-    "d": "Frozen Yogurt",
+    "d": "Yogurt",
     "h": "melts in heat"
    },
    {
@@ -66,7 +66,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Donut",
-    "d": "Bagel",
+    "d": "Cake",
     "h": "from the bakery"
    },
    {
@@ -90,9 +90,9 @@ const WORD_PACKS = [
     "h": "eaten with spoons"
    },
    {
-    "w": "Grilled Cheese",
-    "d": "Quesadilla",
-    "h": "hot and stringy"
+    "w": "Banana",
+    "d": "Mango",
+    "h": "peeled before eating"
    },
    {
     "w": "Cupcake",
@@ -106,7 +106,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Watermelon",
-    "d": "Cantaloupe",
+    "d": "Pineapple",
     "h": "eaten in slices"
    },
    {
@@ -116,7 +116,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Salad",
-    "d": "Coleslaw",
+    "d": "Lettuce",
     "h": "green and leafy"
    },
    {
@@ -130,14 +130,14 @@ const WORD_PACKS = [
     "h": "folded and filled"
    },
    {
-    "w": "Pad Thai",
-    "d": "Fried Rice",
-    "h": "noodles in sauce"
+    "w": "Potato",
+    "d": "Tomato",
+    "h": "grows underground"
    },
    {
-    "w": "Guacamole",
-    "d": "Hummus",
-    "h": "goes with tacos"
+    "w": "Ketchup",
+    "d": "Mayonnaise",
+    "h": "squeezed on fries"
    },
    {
     "w": "Bubble Tea",
@@ -146,7 +146,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Fish And Chips",
-    "d": "Calamari",
+    "d": "Shrimp",
     "h": "wrapped in paper"
    },
    {
@@ -160,9 +160,9 @@ const WORD_PACKS = [
     "h": "makes you sweat"
    },
    {
-    "w": "Falafel",
-    "d": "Meatballs",
-    "h": "round and fried"
+    "w": "Cheese",
+    "d": "Butter",
+    "h": "made from milk"
    },
    {
     "w": "Tiramisu",
@@ -171,13 +171,13 @@ const WORD_PACKS = [
    },
    {
     "w": "Paella",
-    "d": "Risotto",
+    "d": "Noodles",
     "h": "one pan meal"
    },
    {
-    "w": "Miso Soup",
-    "d": "Tomato Soup",
-    "h": "slurped from bowls"
+    "w": "Chocolate",
+    "d": "Candy",
+    "h": "wrapped in foil"
    },
    {
     "w": "Crepe",
@@ -190,9 +190,9 @@ const WORD_PACKS = [
     "h": "roasted over flames"
    },
    {
-    "w": "Matcha",
-    "d": "Chai",
-    "h": "bitter leaf drink"
+    "w": "Coffee",
+    "d": "Tea",
+    "h": "hot morning drink"
    },
    {
     "w": "Sandwich",
@@ -221,7 +221,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Lasagna",
-    "d": "Risotto",
+    "d": "Roast Chicken",
     "h": "hot and cheesy"
    },
    {
@@ -382,7 +382,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Squirrel",
-    "d": "Chipmunk",
+    "d": "Rat",
     "h": "hangs around parks"
    },
    {
@@ -407,12 +407,12 @@ const WORD_PACKS = [
    },
    {
     "w": "Llama",
-    "d": "Alpaca",
+    "d": "Sheep",
     "h": "carries bags uphill"
    },
    {
     "w": "Ostrich",
-    "d": "Emu",
+    "d": "Chicken",
     "h": "runs really fast"
    },
    {
@@ -432,7 +432,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Raccoon",
-    "d": "Badger",
+    "d": "Cat",
     "h": "sneaks around houses"
    },
    {
@@ -468,7 +468,7 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "Titanic",
-    "d": "The Notebook",
+    "d": "Romeo And Juliet",
     "h": "out at sea"
    },
    {
@@ -478,22 +478,22 @@ const WORD_PACKS = [
    },
    {
     "w": "Friends",
-    "d": "How I Met Your Mother",
+    "d": "Teletubbies",
     "h": "funny roommates"
    },
    {
     "w": "Harry Potter",
-    "d": "Percy Jackson",
+    "d": "Beauty And The Beast",
     "h": "an old castle"
    },
    {
     "w": "Frozen",
-    "d": "Tangled",
+    "d": "Mulan",
     "h": "a magic snowman"
    },
    {
     "w": "Spider-Man",
-    "d": "Ant-Man",
+    "d": "The Flash",
     "h": "a secret identity"
    },
    {
@@ -508,7 +508,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Stranger Things",
-    "d": "The X-Files",
+    "d": "Monsters Inc",
     "h": "monsters at night"
    },
    {
@@ -533,12 +533,12 @@ const WORD_PACKS = [
    },
    {
     "w": "SpongeBob",
-    "d": "Phineas And Ferb",
+    "d": "Peppa Pig",
     "h": "under the sea"
    },
    {
     "w": "The Avengers",
-    "d": "Justice League",
+    "d": "X-Men",
     "h": "saves the city"
    },
    {
@@ -548,22 +548,22 @@ const WORD_PACKS = [
    },
    {
     "w": "The Simpsons",
-    "d": "Family Guy",
+    "d": "Donald Duck",
     "h": "never grows up"
    },
    {
     "w": "Avatar",
-    "d": "Guardians Of The Galaxy",
+    "d": "How To Train Your Dragon",
     "h": "riding flying creatures"
    },
    {
     "w": "Home Alone",
-    "d": "Elf",
+    "d": "The Grinch",
     "h": "traps for burglars"
    },
    {
     "w": "The Hunger Games",
-    "d": "Maze Runner",
+    "d": "Jumanji",
     "h": "shoots arrows"
    },
    {
@@ -582,9 +582,9 @@ const WORD_PACKS = [
     "h": "a deadly contest"
    },
    {
-    "w": "The Office",
-    "d": "The Big Bang Theory",
-    "h": "a terrible boss"
+    "w": "Barbie",
+    "d": "Hello Kitty",
+    "h": "lots of pink"
    },
    {
     "w": "Moana",
@@ -603,12 +603,12 @@ const WORD_PACKS = [
    },
    {
     "w": "Sherlock",
-    "d": "Doctor Who",
+    "d": "Mary Poppins",
     "h": "lives in London"
    },
    {
     "w": "Back To The Future",
-    "d": "Interstellar",
+    "d": "The Terminator",
     "h": "a special car"
    },
    {
@@ -638,7 +638,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Cars",
-    "d": "Planes",
+    "d": "Thomas The Tank Engine",
     "h": "super speedy"
    },
    {
@@ -658,7 +658,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Ice Age",
-    "d": "Rio",
+    "d": "Madagascar",
     "h": "world turns cold"
    },
    {
@@ -668,7 +668,7 @@ const WORD_PACKS = [
    },
    {
     "w": "The Incredibles",
-    "d": "Fantastic Four",
+    "d": "Power Rangers",
     "h": "powers kept hidden"
    },
    {
@@ -688,7 +688,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Breaking Bad",
-    "d": "Prison Break",
+    "d": "The Godfather",
     "h": "a crime boss"
    }
   ]
@@ -699,7 +699,7 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "Guitar",
-    "d": "Banjo",
+    "d": "Bass",
     "h": "in every band"
    },
    {
@@ -729,12 +729,12 @@ const WORD_PACKS = [
    },
    {
     "w": "Saxophone",
-    "d": "Oboe",
+    "d": "Recorder",
     "h": "uses a reed"
    },
    {
     "w": "Harp",
-    "d": "Lyre",
+    "d": "Bell",
     "h": "angels play it"
    },
    {
@@ -824,7 +824,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Lullaby",
-    "d": "Serenade",
+    "d": "Music Box",
     "h": "heard at bedtime"
    },
    {
@@ -903,9 +903,9 @@ const WORD_PACKS = [
     "h": "shakes the room"
    },
    {
-    "w": "Encore",
-    "d": "Soundcheck",
-    "h": "after the ending"
+    "w": "Happy Birthday",
+    "d": "Jingle Bells",
+    "h": "heard at parties"
    },
    {
     "w": "Whistling",
@@ -914,7 +914,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Cello",
-    "d": "Banjo",
+    "d": "Tuba",
     "h": "tall and wooden"
    },
    {
@@ -930,12 +930,12 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "Soccer",
-    "d": "Futsal",
+    "d": "World Cup",
     "h": "a halftime break"
    },
    {
     "w": "Basketball",
-    "d": "Handball",
+    "d": "Beach Volleyball",
     "h": "played on courts"
    },
    {
@@ -950,7 +950,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Volleyball",
-    "d": "Handball",
+    "d": "Basketball",
     "h": "played in gyms"
    },
    {
@@ -965,7 +965,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Ice Hockey",
-    "d": "Field Hockey",
+    "d": "Sledding",
     "h": "played on skates"
    },
    {
@@ -1000,7 +1000,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Table Tennis",
-    "d": "Badminton Rally",
+    "d": "Billiards",
     "h": "played in basements"
    },
    {
@@ -1015,7 +1015,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Bowling",
-    "d": "Curling",
+    "d": "Paintball",
     "h": "aiming at targets"
    },
    {
@@ -1030,7 +1030,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Figure Skating",
-    "d": "Speed Skating",
+    "d": "Ballet",
     "h": "scored by judges"
    },
    {
@@ -1059,18 +1059,18 @@ const WORD_PACKS = [
     "h": "uses long poles"
    },
    {
-    "w": "Water Polo",
-    "d": "Synchronized Swimming",
-    "h": "has a goalie"
+    "w": "Hide And Seek",
+    "d": "Tag",
+    "h": "count to ten"
    },
    {
     "w": "Horse Racing",
-    "d": "Show Jumping",
+    "d": "Rodeo",
     "h": "riders and saddles"
    },
    {
     "w": "Formula One",
-    "d": "NASCAR",
+    "d": "Go-Karting",
     "h": "cars going round"
    },
    {
@@ -1119,14 +1119,14 @@ const WORD_PACKS = [
     "h": "done at rinks"
    },
    {
-    "w": "Parkour",
-    "d": "Breakdancing",
-    "h": "moving like ninjas"
+    "w": "Push-Ups",
+    "d": "Sit-Ups",
+    "h": "arms get tired"
    },
    {
-    "w": "Muay Thai",
-    "d": "MMA",
-    "h": "kicking and punching"
+    "w": "Pillow Fight",
+    "d": "Snowball Fight",
+    "h": "soft weapons only"
    },
    {
     "w": "Trampoline",
@@ -1135,7 +1135,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Golf",
-    "d": "Croquet",
+    "d": "Bowling",
     "h": "aiming at targets"
    },
    {
@@ -1145,7 +1145,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Badminton",
-    "d": "Handball",
+    "d": "Beach Volleyball",
     "h": "swinging a racket"
    },
    {
@@ -1196,7 +1196,7 @@ const WORD_PACKS = [
    },
    {
     "w": "London",
-    "d": "Dublin",
+    "d": "Berlin",
     "h": "river runs through"
    },
    {
@@ -1211,7 +1211,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Subway",
-    "d": "Tram",
+    "d": "Train",
     "h": "standing room only"
    },
    {
@@ -1221,7 +1221,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Mount Everest",
-    "d": "Kilimanjaro",
+    "d": "Mount Fuji",
     "h": "snow all year"
    },
    {
@@ -1236,7 +1236,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Sydney",
-    "d": "Melbourne",
+    "d": "Bangkok",
     "h": "beaches down under"
    },
    {
@@ -1291,12 +1291,12 @@ const WORD_PACKS = [
    },
    {
     "w": "Souvenir Shop",
-    "d": "Duty Free",
+    "d": "Street Market",
     "h": "crowded with tourists"
    },
    {
     "w": "Cable Car",
-    "d": "Chairlift",
+    "d": "Escalator",
     "h": "an uphill ride"
    },
    {
@@ -1316,7 +1316,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Machu Picchu",
-    "d": "Angkor Wat",
+    "d": "Taj Mahal",
     "h": "very old ruins"
    },
    {
@@ -1512,7 +1512,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Scientist",
-    "d": "Lab Technician",
+    "d": "Inventor",
     "h": "wears safety goggles"
    },
    {
@@ -1748,7 +1748,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Iron",
-    "d": "Steamer",
+    "d": "Hair Dryer",
     "h": "gets very hot"
    },
    {
@@ -1869,7 +1869,7 @@ const WORD_PACKS = [
    },
    {
     "w": "William Shakespeare",
-    "d": "Charles Dickens",
+    "d": "J.K. Rowling",
     "h": "Romeo and Juliet"
    },
    {
@@ -1883,9 +1883,9 @@ const WORD_PACKS = [
     "h": "donates to charity"
    },
    {
-    "w": "Michael Phelps",
-    "d": "Usain Bolt",
-    "h": "won many races"
+    "w": "David Beckham",
+    "d": "Diego Maradona",
+    "h": "kicked a ball"
    },
    {
     "w": "Barack Obama",
@@ -1904,12 +1904,12 @@ const WORD_PACKS = [
    },
    {
     "w": "Serena Williams",
-    "d": "Venus Williams",
+    "d": "Katy Perry",
     "h": "wears bold outfits"
    },
    {
     "w": "Usain Bolt",
-    "d": "Jesse Owens",
+    "d": "Kylian Mbappe",
     "h": "won gold medals"
    },
    {
@@ -1924,7 +1924,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Marilyn Monroe",
-    "d": "Audrey Hepburn",
+    "d": "Madonna",
     "h": "white dress blowing"
    },
    {
@@ -1934,7 +1934,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Walt Disney",
-    "d": "Steven Spielberg",
+    "d": "Robert Downey Jr.",
     "h": "won many Oscars"
    },
    {
@@ -1959,7 +1959,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Emma Watson",
-    "d": "Emma Stone",
+    "d": "Daniel Radcliffe",
     "h": "wizard school actor"
    },
    {
@@ -1969,7 +1969,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Will Smith",
-    "d": "Eddie Murphy",
+    "d": "Vin Diesel",
     "h": "acts in movies"
    },
    {
@@ -1994,7 +1994,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Freddie Mercury",
-    "d": "David Bowie",
+    "d": "Elton John",
     "h": "grew a mustache"
    },
    {
@@ -2024,23 +2024,23 @@ const WORD_PACKS = [
    },
    {
     "w": "Neil Armstrong",
-    "d": "Buzz Aldrin",
+    "d": "Yuri Gagarin",
     "h": "was a pilot"
    },
    {
     "w": "Mark Zuckerberg",
-    "d": "Jack Ma",
+    "d": "Thomas Edison",
     "h": "works with computers"
    },
    {
-    "w": "MrBeast",
-    "d": "PewDiePie",
-    "h": "gives away prizes"
+    "w": "Mother Teresa",
+    "d": "Pope Francis",
+    "h": "helped poor people"
    },
    {
-    "w": "Zendaya",
-    "d": "Selena Gomez",
-    "h": "superhero film actor"
+    "w": "Angelina Jolie",
+    "d": "Scarlett Johansson",
+    "h": "has many tattoos"
    },
    {
     "w": "Roger Federer",
@@ -2059,7 +2059,7 @@ const WORD_PACKS = [
    },
    {
     "w": "LeBron James",
-    "d": "Stephen Curry",
+    "d": "Pele",
     "h": "called the king"
    },
    {
@@ -2095,7 +2095,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Fortnite",
-    "d": "PUBG",
+    "d": "Roblox",
     "h": "costumes and dancing"
    },
    {
@@ -2110,47 +2110,47 @@ const WORD_PACKS = [
    },
    {
     "w": "Pokemon",
-    "d": "Digimon",
+    "d": "Trading Cards",
     "h": "raising little pets"
    },
    {
     "w": "Sonic",
-    "d": "Crash Bandicoot",
+    "d": "Mario",
     "h": "built for speed"
    },
    {
     "w": "Game Over",
-    "d": "Respawn",
+    "d": "Restart",
     "h": "screen after losing"
    },
    {
     "w": "Among Us",
-    "d": "Fall Guys",
+    "d": "Party Game",
     "h": "crew in space"
    },
    {
-    "w": "Super Smash Bros",
-    "d": "Street Fighter",
-    "h": "grabbing random items"
+    "w": "Level Up",
+    "d": "Power-Up",
+    "h": "getting stronger"
    },
    {
     "w": "FIFA",
-    "d": "NBA 2K",
+    "d": "Sports Game",
     "h": "kicking a ball"
    },
    {
     "w": "Call of Duty",
-    "d": "Battlefield",
+    "d": "War Game",
     "h": "capture the flag"
    },
    {
-    "w": "Animal Crossing",
-    "d": "Farmville",
-    "h": "quiet village life"
+    "w": "High Score",
+    "d": "Leaderboard",
+    "h": "top of list"
    },
    {
     "w": "The Sims",
-    "d": "SimCity",
+    "d": "Doll House",
     "h": "little pretend people"
    },
    {
@@ -2160,7 +2160,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Pikachu",
-    "d": "Charizard",
+    "d": "Cartoon Mascot",
     "h": "little and yellow"
    },
    {
@@ -2175,33 +2175,33 @@ const WORD_PACKS = [
    },
    {
     "w": "Donkey Kong",
-    "d": "Kirby",
+    "d": "King Kong",
     "h": "a big ape"
    },
    {
-    "w": "Lara Croft",
-    "d": "Indiana Jones",
-    "h": "hunts for treasure"
+    "w": "Achievement",
+    "d": "Badge",
+    "h": "something unlocked"
    },
    {
     "w": "Grand Theft Auto",
-    "d": "Need for Speed",
+    "d": "Car Chase",
     "h": "cops and robbers"
    },
    {
-    "w": "Overwatch",
-    "d": "Counter-Strike",
-    "h": "pick your character"
+    "w": "Cheat Code",
+    "d": "Glitch",
+    "h": "breaking the rules"
    },
    {
-    "w": "League of Legends",
-    "d": "World of Warcraft",
-    "h": "five versus five"
+    "w": "Boss Fight",
+    "d": "Final Level",
+    "h": "the hardest part"
    },
    {
-    "w": "Wii Sports",
-    "d": "Just Dance",
-    "h": "waving your arms"
+    "w": "Loading Screen",
+    "d": "Main Menu",
+    "h": "waiting to start"
    },
    {
     "w": "Game Boy",
@@ -2209,29 +2209,29 @@ const WORD_PACKS = [
     "h": "batteries and buttons"
    },
    {
-    "w": "Skyrim",
-    "d": "The Witcher",
-    "h": "dragons and castles"
+    "w": "Controller",
+    "d": "Headset",
+    "h": "held in hands"
    },
    {
-    "w": "Halo",
-    "d": "Destiny",
-    "h": "shooting space aliens"
+    "w": "Multiplayer",
+    "d": "Single Player",
+    "h": "playing together"
    },
    {
-    "w": "God of War",
-    "d": "Assassin's Creed",
-    "h": "myths and monsters"
+    "w": "Mario Kart",
+    "d": "Racing Game",
+    "h": "racing with friends"
    },
    {
-    "w": "Rocket League",
-    "d": "Mario Party",
-    "h": "cars doing stunts"
+    "w": "Tutorial",
+    "d": "Instructions",
+    "h": "learning the basics"
    },
    {
-    "w": "Clash of Clans",
-    "d": "Age of Empires",
-    "h": "planning big attacks"
+    "w": "Extra Life",
+    "d": "Bonus Round",
+    "h": "one more chance"
    },
    {
     "w": "Subway Surfers",
@@ -2239,13 +2239,13 @@ const WORD_PACKS = [
     "h": "chased while running"
    },
    {
-    "w": "Kirby",
-    "d": "Yoshi",
-    "h": "round and pink"
+    "w": "Pause Button",
+    "d": "Restart",
+    "h": "stops for now"
    },
    {
     "w": "Tomb Raider",
-    "d": "Uncharted",
+    "d": "Treasure Hunt",
     "h": "hunting treasure"
    },
    {
@@ -2254,9 +2254,9 @@ const WORD_PACKS = [
     "h": "avoid the bombs"
    },
    {
-    "w": "Flappy Bird",
-    "d": "Doodle Jump",
-    "h": "squeezing through gaps"
+    "w": "Countdown",
+    "d": "Timer",
+    "h": "three two one"
    },
    {
     "w": "Street Fighter",
@@ -2280,12 +2280,12 @@ const WORD_PACKS = [
    },
    {
     "w": "Just Dance",
-    "d": "Guitar Hero",
+    "d": "Karaoke Game",
     "h": "follow the leader"
    },
    {
     "w": "Bowser",
-    "d": "King Kong",
+    "d": "Cartoon Villain",
     "h": "spikes and fire"
    },
    {
@@ -2316,7 +2316,7 @@ const WORD_PACKS = [
   "words": [
    {
     "w": "Volcano",
-    "d": "Geyser",
+    "d": "Crater",
     "h": "gets very hot"
    },
    {
@@ -2326,7 +2326,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Waterfall",
-    "d": "Rapids",
+    "d": "Fountain",
     "h": "loud rushing sound"
    },
    {
@@ -2376,7 +2376,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Forest",
-    "d": "Orchard",
+    "d": "Park",
     "h": "shady and green"
    },
    {
@@ -2386,7 +2386,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Cliff",
-    "d": "Ridge",
+    "d": "Coast",
     "h": "birds nest there"
    },
    {
@@ -2411,7 +2411,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Thunderstorm",
-    "d": "Blizzard",
+    "d": "Rain",
     "h": "dark clouds coming"
    },
    {
@@ -2481,7 +2481,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Quicksand",
-    "d": "Sinkhole",
+    "d": "Mud",
     "h": "ground gives way"
    },
    {
@@ -2495,9 +2495,9 @@ const WORD_PACKS = [
     "h": "sharp to touch"
    },
    {
-    "w": "Oak Tree",
-    "d": "Pine Tree",
-    "h": "older than grandpa"
+    "w": "Cloud",
+    "d": "Smoke",
+    "h": "floats up high"
    },
    {
     "w": "Wildflower",
@@ -2511,7 +2511,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Snowflake",
-    "d": "Icicle",
+    "d": "Snowman",
     "h": "white and cold"
    },
    {
@@ -2582,13 +2582,13 @@ const WORD_PACKS = [
    },
    {
     "w": "Test Tube",
-    "d": "Beaker",
+    "d": "Light Bulb",
     "h": "made of glass"
    },
    {
-    "w": "Bunsen Burner",
-    "d": "Hot Plate",
-    "h": "a small flame"
+    "w": "Stopwatch",
+    "d": "Hourglass",
+    "h": "measures time"
    },
    {
     "w": "Periodic Table",
@@ -2632,7 +2632,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Field Trip",
-    "d": "School Assembly",
+    "d": "School Play",
     "h": "everyone rides together"
    },
    {
@@ -2681,19 +2681,19 @@ const WORD_PACKS = [
     "h": "fits in backpacks"
    },
    {
-    "w": "Detention",
-    "d": "Suspension",
-    "h": "sitting in silence"
+    "w": "School Bell",
+    "d": "Fire Alarm",
+    "h": "rings loudly"
    },
    {
-    "w": "Pop Quiz",
-    "d": "Final Exam",
-    "h": "comes without warning"
+    "w": "Glue",
+    "d": "Tape",
+    "h": "sticks things together"
    },
    {
-    "w": "Science Fair",
-    "d": "Spelling Bee",
-    "h": "held in gyms"
+    "w": "Summer Vacation",
+    "d": "Weekend",
+    "h": "no school"
    },
    {
     "w": "Algebra",
@@ -2716,9 +2716,9 @@ const WORD_PACKS = [
     "h": "has a handle"
    },
    {
-    "w": "Frog Dissection",
-    "d": "Plant Experiment",
-    "h": "makes people queasy"
+    "w": "X-Ray",
+    "d": "Vaccine",
+    "h": "done in hospitals"
    },
    {
     "w": "Solar Eclipse",
@@ -2727,12 +2727,12 @@ const WORD_PACKS = [
    },
    {
     "w": "Thermometer",
-    "d": "Barometer",
+    "d": "Speedometer",
     "h": "shows a number"
    },
    {
     "w": "Graduation",
-    "d": "Prom",
+    "d": "Wedding",
     "h": "a big ceremony"
    },
    {
@@ -2783,12 +2783,12 @@ const WORD_PACKS = [
    },
    {
     "w": "Cleopatra",
-    "d": "Nefertiti",
+    "d": "Pharaoh",
     "h": "ruled ancient Egypt"
    },
    {
     "w": "Trojan Horse",
-    "d": "Battering Ram",
+    "d": "Catapult",
     "h": "made of wood"
    },
    {
@@ -2858,7 +2858,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Atlantis",
-    "d": "El Dorado",
+    "d": "Treasure Island",
     "h": "sank long ago"
    },
    {
@@ -2913,7 +2913,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Hieroglyphics",
-    "d": "Papyrus Scroll",
+    "d": "Cave Painting",
     "h": "carved on walls"
    },
    {
@@ -2928,7 +2928,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Silk Road",
-    "d": "Spice Trade",
+    "d": "Caravan",
     "h": "crossed by camels"
    },
    {
@@ -3014,7 +3014,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Darth Vader",
-    "d": "Kylo Ren",
+    "d": "Voldemort",
     "h": "a black cape"
    },
    {
@@ -3024,12 +3024,12 @@ const WORD_PACKS = [
    },
    {
     "w": "Sherlock Holmes",
-    "d": "Hercule Poirot",
+    "d": "James Bond",
     "h": "has a sidekick"
    },
    {
     "w": "Homer Simpson",
-    "d": "Peter Griffin",
+    "d": "Bart Simpson",
     "h": "hates his job"
    },
    {
@@ -3039,7 +3039,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Winnie the Pooh",
-    "d": "Paddington",
+    "d": "Teddy Bear",
     "h": "always hungry"
    },
    {
@@ -3069,7 +3069,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Yoda",
-    "d": "Gollum",
+    "d": "Chewbacca",
     "h": "has pointy ears"
    },
    {
@@ -3079,12 +3079,12 @@ const WORD_PACKS = [
    },
    {
     "w": "Wonder Woman",
-    "d": "Captain Marvel",
+    "d": "Supergirl",
     "h": "carries a shield"
    },
    {
     "w": "Joker",
-    "d": "Lex Luthor",
+    "d": "Catwoman",
     "h": "a scary clown"
    },
    {
@@ -3109,7 +3109,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Katniss Everdeen",
-    "d": "Lara Croft",
+    "d": "Robin Hood",
     "h": "bow and arrow"
    },
    {
@@ -3124,7 +3124,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Voldemort",
-    "d": "Sauron",
+    "d": "Witch",
     "h": "commands an army"
    },
    {
@@ -3154,7 +3154,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Thanos",
-    "d": "Green Goblin",
+    "d": "Loki",
     "h": "comes from space"
    },
    {
@@ -3184,17 +3184,17 @@ const WORD_PACKS = [
    },
    {
     "w": "Robin Hood",
-    "d": "King Arthur",
+    "d": "Peter Pan",
     "h": "shoots a bow"
    },
    {
-    "w": "King Arthur",
-    "d": "Merlin",
-    "h": "rules a castle"
+    "w": "Garfield",
+    "d": "Snoopy",
+    "h": "a lazy pet"
    },
    {
     "w": "Alice In Wonderland",
-    "d": "Willy Wonka",
+    "d": "Dorothy",
     "h": "far from home"
    },
    {
@@ -3214,7 +3214,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Pinocchio",
-    "d": "Geppetto",
+    "d": "Woody",
     "h": "a living toy"
    },
    {
@@ -3228,9 +3228,9 @@ const WORD_PACKS = [
     "h": "loves reading books"
    },
    {
-    "w": "Gollum",
-    "d": "Frodo Baggins",
-    "h": "guards his treasure"
+    "w": "Donald Duck",
+    "d": "Daffy Duck",
+    "h": "wears no pants"
    }
   ]
  },
@@ -3596,7 +3596,7 @@ const WORD_PACKS = [
    },
    {
     "w": "Touchscreen",
-    "d": "Stylus Pen",
+    "d": "Mouse Pad",
     "h": "tapped and swiped"
    },
    {
